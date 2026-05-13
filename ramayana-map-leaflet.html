@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Путешествие Рамы · Карта</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
+<style>
+:root{--ink:#1a1410;--ink-soft:#3d3428;--ink-muted:#7a6e62;--paper:#f5f0e8;--paper-dark:#ede6d6;--gold:#b8913a;--gold-light:#d4a84b;--border:rgba(184,145,58,0.25);--border-strong:rgba(184,145,58,0.5);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;}
+body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;display:flex;flex-direction:column;}
+header{text-align:center;padding:26px 2rem 20px;border-bottom:1px solid var(--border-strong);flex-shrink:0;}
+.back-link{display:inline-block;font-size:12px;letter-spacing:.12em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--border);margin-bottom:10px;}
+h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weight:300;letter-spacing:.08em;margin-bottom:5px;}
+.subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--ink-muted);}
+.layout{display:flex;flex:1;min-height:0;}
+#map{flex:1;}
+.sidebar{width:290px;flex-shrink:0;background:var(--paper-dark);border-left:1px solid var(--border-strong);display:flex;flex-direction:column;overflow:hidden;}
+.sb-head{padding:14px 16px 12px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.sb-title{font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:10px;}
+.controls{display:flex;gap:5px;}
+.ctrl{flex:1;font-family:'Jost',sans-serif;font-size:11px;font-weight:300;letter-spacing:.06em;color:var(--ink-soft);background:transparent;border:1px solid var(--border-strong);padding:5px 6px;cursor:pointer;transition:color .2s,border-color .2s;}
+.ctrl:hover{color:var(--gold);border-color:var(--gold);}
+.counter{text-align:center;font-size:11px;color:var(--ink-muted);letter-spacing:.08em;margin-top:7px;}
+.prog-bar{height:2px;background:var(--border);flex-shrink:0;}
+.prog-fill{height:100%;background:var(--gold);width:0%;transition:width .5s ease;}
+.stops-list{flex:1;overflow-y:auto;list-style:none;}
+.stops-list::-webkit-scrollbar{width:3px;}
+.stops-list::-webkit-scrollbar-thumb{background:var(--border-strong);}
+.stop-item{padding:11px 16px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .2s;position:relative;}
+.stop-item:hover{background:rgba(184,145,58,.06);}
+.stop-item.active{background:rgba(184,145,58,.1);}
+.stop-item.active::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gold);}
+.stop-item.locked{opacity:.4;cursor:default;}
+.sn{font-family:'Cormorant Garamond',serif;font-size:10px;font-style:italic;color:var(--gold);margin-bottom:1px;}
+.sl{font-family:'Cormorant SC',serif;font-size:12.5px;color:var(--ink);margin-bottom:1px;}
+.sb2{font-size:10.5px;color:var(--ink-muted);}
+.detail{flex-shrink:0;padding:13px 16px 16px;border-top:1px solid var(--border-strong);background:var(--paper);min-height:115px;}
+.d-book{font-family:'Cormorant Garamond',serif;font-size:10.5px;font-style:italic;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;}
+.d-name{font-family:'Cormorant SC',serif;font-size:14px;color:var(--ink);margin-bottom:5px;}
+.d-desc{font-size:11.5px;line-height:1.75;color:var(--ink-muted);}
+.rama-marker{width:28px;height:28px;border-radius:50%;background:var(--paper-dark);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:11px;color:var(--gold);font-style:italic;box-shadow:0 0 0 4px rgba(184,145,58,0.15);}
+.rama-marker.active-marker{background:var(--gold);color:var(--paper);box-shadow:0 0 0 6px rgba(184,145,58,0.25);}
+.leaflet-popup-content-wrapper{background:var(--paper);border:1px solid var(--border-strong);border-radius:0;box-shadow:none;font-family:'Jost',sans-serif;font-weight:300;}
+.leaflet-popup-tip{background:var(--paper);}
+.leaflet-popup-content{margin:12px 14px;}
+.popup-name{font-family:'Cormorant SC',serif;font-size:14px;color:var(--ink);margin-bottom:4px;}
+.popup-text{font-size:12px;color:var(--ink-muted);line-height:1.6;}
+.leaflet-tile{filter:sepia(0.45) brightness(0.88) contrast(0.95);}
+@media(max-width:680px){.layout{flex-direction:column;}#map{height:55vw;min-height:260px;}.sidebar{width:100%;border-left:none;border-top:1px solid var(--border-strong);}}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="back-link" href="ramayana.html">← Русская Рамаяна</a>
+  <h1>Путешествие Рамы</h1>
+  <p class="subtitle">Исторический маршрут · Рамаяна Вальмики</p>
+</header>
+
+<div class="layout">
+  <div id="map"></div>
+  <aside class="sidebar">
+    <div class="sb-head">
+      <p class="sb-title">Маршрут · 9 остановок</p>
+      <div class="controls">
+        <button class="ctrl" id="btn-prev">← Назад</button>
+        <button class="ctrl" id="btn-play">▶ Начать</button>
+        <button class="ctrl" id="btn-next">Вперёд →</button>
+      </div>
+      <p class="counter" id="counter"></p>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" id="prog"></div></div>
+    <ul class="stops-list" id="stops-list"></ul>
+    <div class="detail">
+      <p class="d-book" id="d-book">&nbsp;</p>
+      <p class="d-name" id="d-name">Выберите остановку</p>
+      <p class="d-desc" id="d-desc">Нажмите «Начать» — маршрут разворачивается шаг за шагом по историческим дорогам.</p>
+    </div>
+  </aside>
+</div>
+
+<!-- Leaflet JS в самом конце body — гарантированно после DOM -->
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const STOPS=[
+  {lat:26.80,lng:82.20,label:"Айодхья",   num:"I",   book:"Бала-канда · I",        name:"Айодхья — родина Рамы",         desc:"Царевич Рама рождается в солнечной Айодхье на берегу Сарайю. Здесь он взрослеет, совершает первые подвиги и женится на Сите."},
+  {lat:26.67,lng:85.90,label:"Митхила",   num:"II",  book:"Бала-канда · I",        name:"Митхила — свадьба с Ситой",     desc:"В царстве Джанаки Рама переламывает лук Шивы и получает руку Ситы. Четыре брата женятся в один день."},
+  {lat:25.20,lng:81.00,label:"Читракут",  num:"III", book:"Айодхья-канда · II",    name:"Читракут — начало изгнания",    desc:"Изгнанный из Айодхьи, Рама с Ситой и Лакшманой уходит в леса. Брат Бхарата приходит умолять о возвращении."},
+  {lat:20.50,lng:77.80,label:"Дандака",   num:"IV",  book:"Аранья-канда · III",    name:"Лес Дандака — скитания",        desc:"Четырнадцать лет Рама странствует по лесам Декана через горы Виндхья, защищая отшельников от демонов."},
+  {lat:19.90,lng:73.70,label:"Панчавати", num:"V",   book:"Аранья-канда · III",    name:"Панчавати — похищение Ситы",    desc:"На берегу Годавари Равана похищает Ситу. Орёл Джатаюс погибает, защищая её. Начало великого похода."},
+  {lat:15.35,lng:76.45,label:"Кишкиндха",num:"VI",  book:"Кишкиндха-канда · IV",  name:"Кишкиндха — союз с обезьянами", desc:"У реки Тунгабхадра (совр. Хампи) Рама помогает Сугриве вернуть трон. Хануман отправляется на поиски Ситы."},
+  {lat:9.30, lng:79.30,label:"Рамешварам",num:"VII", book:"Юддха-канда · VI",      name:"Рамешварам — мост в Ланку",     desc:"На южной оконечности Индии войско возводит мост через пролив. Цепь островов Адамова моста указывает путь."},
+  {lat:7.90, lng:80.70,label:"Ланка",     num:"VIII",book:"Сундара/Юддха-канда",   name:"Ланка — битва и победа",        desc:"Хануман находит Ситу в саду Ашока. После великой битвы Рама убивает Равану. Сита проходит испытание огнём."},
+  {lat:26.80,lng:82.20,label:"Айодхья",  num:"IX",  book:"Уттара-канда · VII",    name:"Возвращение и воцарение",       desc:"Рама и Сита возвращаются в Айодхью на небесной колеснице Пушпака. Наступает эпоха Рама-раджья."}
+];
+
+const SEGS=[
+  [[26.80,82.20],[26.82,82.65],[26.87,83.10],[26.92,83.60],[26.97,84.10],[27.02,84.60],[26.95,85.10],[26.82,85.55],[26.67,85.90]],
+  [[26.67,85.90],[26.48,85.20],[26.25,84.45],[26.00,83.70],[25.75,83.00],[25.50,82.40],[25.35,81.90],[25.25,81.45],[25.20,81.00]],
+  [[25.20,81.00],[24.75,80.45],[24.10,79.70],[23.40,78.95],[22.65,78.40],[21.85,78.05],[21.10,77.90],[20.75,77.85],[20.50,77.80]],
+  [[20.50,77.80],[20.20,77.35],[19.95,76.75],[19.85,76.15],[19.80,75.50],[19.78,74.80],[19.82,74.20],[19.87,73.90],[19.90,73.70]],
+  [[19.90,73.70],[19.48,73.85],[18.85,74.05],[18.20,74.30],[17.55,74.55],[16.90,74.85],[16.30,75.05],[15.88,75.55],[15.55,76.00],[15.35,76.45]],
+  [[15.35,76.45],[14.75,77.05],[14.10,77.65],[13.40,78.20],[12.70,78.75],[12.00,79.15],[11.30,79.40],[10.60,79.50],[10.00,79.42],[9.60,79.35],[9.30,79.30]],
+  [[9.30,79.30],[9.18,79.52],[9.05,79.72],[8.88,79.92],[8.68,80.10],[8.48,80.24],[8.28,80.38],[8.08,80.54],[7.90,80.70]],
+  [[7.90,80.70],[8.80,79.60],[10.20,78.60],[12.00,77.85],[14.10,77.10],[16.20,76.55],[18.10,77.40],[20.00,78.40],[22.00,79.50],[23.60,80.50],[24.90,81.10],[26.10,81.60],[26.80,82.20]]
+];
+
+// Инициализация карты
+const map = L.map('map', {center:[18,80], zoom:5, zoomControl:true});
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  attribution:'&copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
+  subdomains:'abc', maxZoom:18
+}).addTo(map);
+
+// Бледный полный маршрут
+const ghostLine = L.polyline(SEGS.flat(), {
+  color:'#B8913A', weight:1.5, opacity:0.2, dashArray:'4,6'
+}).addTo(map);
+
+// Активный маршрут
+const routeLine = L.polyline([], {
+  color:'#B8913A', weight:2.5, opacity:0.85, dashArray:'7,5'
+}).addTo(map);
+
+let markers=[], step=-1, timer=null;
+
+function makeIcon(s, active){
+  return L.divIcon({
+    className:'',
+    html:`<div class="rama-marker${active?' active-marker':''}">${s.num}</div>`,
+    iconSize:[28,28], iconAnchor:[14,14], popupAnchor:[0,-18]
+  });
+}
+
+function buildRoute(idx){
+  if(idx<0){routeLine.setLatLngs([]);return;}
+  const pts=[[STOPS[0].lat,STOPS[0].lng]];
+  for(let i=0;i<idx;i++) SEGS[i].slice(1).forEach(p=>pts.push(p));
+  routeLine.setLatLngs(pts);
+}
+
+function buildMarkers(idx){
+  markers.forEach(m=>map.removeLayer(m));
+  markers=[];
+  STOPS.slice(0,idx+1).forEach((s,i)=>{
+    const active=i===idx;
+    const m=L.marker([s.lat,s.lng],{icon:makeIcon(s,active)})
+      .addTo(map)
+      .bindPopup(`<div class="popup-name">${s.label}</div><div class="popup-text">${s.desc}</div>`);
+    m.on('click',()=>{stopAuto();goTo(i);});
+    markers.push(m);
+    if(active){
+      map.flyTo([s.lat,s.lng],Math.max(map.getZoom(),6),{animate:true,duration:1.4});
+      setTimeout(()=>m.openPopup(),1500);
+    }
+  });
+}
+
+function updatePanel(idx){
+  const s=STOPS[idx];
+  document.getElementById('d-book').textContent=s?s.book:'';
+  document.getElementById('d-name').textContent=s?s.name:'Выберите остановку';
+  document.getElementById('d-desc').textContent=s?s.desc:'Нажмите «Начать» для запуска анимации.';
+  document.getElementById('counter').textContent=idx>=0?`${idx+1} / ${STOPS.length}`:'';
+  document.getElementById('prog').style.width=idx>=0?`${(idx+1)/STOPS.length*100}%`:'0%';
+  document.getElementById('btn-play').textContent=idx>=STOPS.length-1?'↺ Сначала':(timer?'⏸ Пауза':'▶ Продолжить');
+}
+
+function updateList(idx){
+  [...document.getElementById('stops-list').children].forEach((li,i)=>{
+    li.classList.toggle('locked',i>idx);
+    li.classList.toggle('active',i===idx);
+  });
+  if(idx>=0) document.getElementById('stops-list').children[idx].scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function goTo(idx){
+  step=Math.max(-1,Math.min(STOPS.length-1,idx));
+  buildRoute(step);
+  if(step>=0) buildMarkers(step);
+  else{markers.forEach(m=>map.removeLayer(m));markers=[];}
+  updateList(step);
+  updatePanel(step);
+}
+
+function advance(){
+  if(step>=STOPS.length-1){stopAuto();document.getElementById('btn-play').textContent='↺ Сначала';return;}
+  goTo(step+1);
+  if(step>=STOPS.length-1){stopAuto();document.getElementById('btn-play').textContent='↺ Сначала';}
+}
+
+function stopAuto(){
+  if(timer){clearInterval(timer);timer=null;}
+  document.getElementById('btn-play').textContent=step>=STOPS.length-1?'↺ Сначала':'▶ Продолжить';
+}
+
+function startAuto(){
+  document.getElementById('btn-play').textContent='⏸ Пауза';
+  timer=setInterval(advance,13000);
+  advance();
+}
+
+document.getElementById('btn-play').addEventListener('click',()=>{
+  if(step>=STOPS.length-1){goTo(-1);setTimeout(startAuto,80);return;}
+  if(timer)stopAuto(); else startAuto();
+});
+document.getElementById('btn-prev').addEventListener('click',()=>{stopAuto();if(step>0)goTo(step-1);});
+document.getElementById('btn-next').addEventListener('click',()=>{stopAuto();if(step<STOPS.length-1)goTo(step+1);});
+
+function buildList(){
+  const ul=document.getElementById('stops-list');
+  STOPS.forEach((s,i)=>{
+    const li=document.createElement('li');li.className='stop-item locked';
+    li.innerHTML=`<p class="sn">${s.num}</p><p class="sl">${s.label}</p><p class="sb2">${s.book}</p>`;
+    li.addEventListener('click',()=>{if(!li.classList.contains('locked')){stopAuto();goTo(i);}});
+    ul.appendChild(li);
+  });
+}
+
+buildList();
+updatePanel(-1);
+setTimeout(startAuto, 800);
+</script>
+</body>
+</html>

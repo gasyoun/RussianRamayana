@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Русская Рамаяна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --ink-soft: #3d3428;
+    --ink-muted: #7a6e62;
+    --paper: #f5f0e8;
+    --paper-dark: #ede6d6;
+    --gold: #b8913a;
+    --gold-light: #d4a84b;
+    --gold-pale: #f0e0b0;
+    --border: rgba(184,145,58,0.25);
+    --border-strong: rgba(184,145,58,0.5);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Subtle paper texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 28px,
+        rgba(184,145,58,0.03) 28px,
+        rgba(184,145,58,0.03) 29px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: relative;
+    text-align: center;
+    padding: 80px 2rem 60px;
+    border-bottom: 1px solid var(--border-strong);
+  }
+
+  .header-ornament {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+
+  h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .divider-line { width: 60px; height: 1px; background: var(--border-strong); }
+  .divider-diamond {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    transform: rotate(45deg);
+  }
+
+  /* ── AUDIOBOOK SECTION ── */
+  .audiobook-section {
+    max-width: 680px;
+    margin: 60px auto 0;
+    padding: 0 2rem;
+  }
+
+  .audiobook-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .audiobook-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .audiobook-meta {
+    font-size: 13px;
+    color: var(--ink-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .audio-list {
+    list-style: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .audio-item {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+  }
+
+  .audio-item-label {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .audio-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--gold);
+    min-width: 20px;
+    font-style: italic;
+  }
+
+  .audio-name {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--ink-soft);
+    letter-spacing: 0.03em;
+  }
+
+  .audio-name .kanda {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--ink-muted);
+    font-size: 13px;
+    margin-left: 4px;
+  }
+
+  audio {
+    width: 100%;
+    height: 32px;
+    accent-color: var(--gold);
+    filter: sepia(0.3) brightness(0.95);
+  }
+
+  .audio-unavailable {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(184,145,58,0.06);
+    border: 1px dashed var(--border-strong);
+    border-radius: 2px;
+  }
+  .audio-unavailable span {
+    font-size: 12px;
+    color: var(--ink-muted);
+    font-style: italic;
+  }
+  .audio-unavailable a {
+    font-size: 12px;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border-strong);
+    transition: color 0.2s;
+  }
+  .audio-unavailable a:hover { color: var(--gold-light); }
+
+  .audio-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0;
+  }
+  .audio-row audio { flex: 1; }
+  .dl-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    border: 1px solid var(--border-strong);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+    line-height: 1;
+  }
+  .dl-btn:hover { background: var(--gold); color: var(--paper); }
+
+  .vk-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 7px;
+    font-size: 11px;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    transition: color 0.2s;
+  }
+  .vk-link:hover { color: var(--gold-light); }
+
+  /* ── CHAPTERS GRID ── */
+  .chapters-section {
+    max-width: 1100px;
+    margin: 80px auto 0;
+    padding: 0 2rem 100px;
+  }
+
+  .section-label {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .section-label span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  .chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+
+  /* ── CHAPTER CARD ── */
+  .chapter-card {
+    position: relative;
+    background: var(--paper-dark);
+    overflow: hidden;
+    cursor: default;
+    transition: transform 0.4s ease;
+  }
+
+  .chapter-card:hover { transform: translateY(-3px); z-index: 2; }
+
+  .card-image-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: #2a2218;
+  }
+
+  .card-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease, filter 0.4s ease;
+    filter: sepia(0.2) brightness(0.92);
+  }
+
+  .chapter-card:hover .card-image-wrap img {
+    transform: scale(1.04);
+    filter: sepia(0.1) brightness(1);
+  }
+
+  .card-num {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    font-style: italic;
+    color: var(--gold-pale);
+    letter-spacing: 0.1em;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+
+  .card-body {
+    padding: 20px 18px 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .card-kanda {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    font-style: italic;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .card-title {
+    font-family: 'Cormorant SC', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  .card-desc {
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: var(--ink-muted);
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  /* inline audio in card */
+  .card-audio audio {
+    width: 100%;
+    height: 28px;
+  }
+
+  .card-audio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    transition: color 0.2s;
+  }
+  .card-audio-link:hover { color: var(--gold-light); }
+
+  /* preface card spans full width on second row */
+  .chapter-card.preface {
+    grid-column: span 1;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 40px 2rem 48px;
+    border-top: 1px solid var(--border);
+  }
+
+  .footer-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 12px;
+    color: var(--ink-muted);
+    letter-spacing: 0.08em;
+    line-height: 1.9;
+  }
+
+  footer a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+  footer a:hover { color: var(--gold-light); }
+
+  /* ── MAP ── */
+  .map-section {
+    max-width: 680px;
+    margin: 80px auto 0;
+    padding: 0 2rem;
+  }
+  .map-inner { margin-top: 32px; }
+  .map-panel {
+    margin: 16px auto 0;
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
+    padding: 14px 18px;
+    min-height: 80px;
+  }
+  .map-panel-book {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    font-style: italic;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .map-panel-name {
+    font-family: 'Cormorant SC', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 5px;
+  }
+  .map-panel-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ink-muted);
+    font-weight: 300;
+  }
+  .map-dots {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin: 14px 0 0;
+  }
+  .map-dots span {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--border-strong);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .map-dots span.active { background: var(--gold); }
+  .map-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .map-btn {
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .map-btn:hover { color: var(--gold); border-color: var(--gold); }
+  .map-counter {
+    text-align: center;
+    font-size: 11px;
+    color: var(--ink-muted);
+    margin-top: 8px;
+    letter-spacing: 0.08em;
+  }
+  .timeline-section {
+    max-width: 680px;
+    margin: 80px auto 0;
+    padding: 0 2rem;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 28px;
+    margin-top: 40px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--border-strong) 8%, var(--border-strong) 92%, transparent);
+  }
+
+  .tl-item {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  .tl-item:last-child { margin-bottom: 0; }
+
+  .tl-dot {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  .tl-book {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    font-style: italic;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+
+  .tl-title {
+    font-family: 'Cormorant SC', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 5px;
+    letter-spacing: 0.02em;
+  }
+
+  .tl-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ink-muted);
+    font-weight: 300;
+  }
+
+  /* ── CORPUS SECTION ── */
+  .corpus-section {
+    max-width: 680px;
+    margin: 80px auto 0;
+    padding: 0 2rem;
+  }
+
+  .corpus-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--ink-muted);
+    line-height: 1.8;
+    margin: 20px 0 32px;
+    text-align: center;
+  }
+
+  .corpus-list {
+    list-style: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .corpus-item {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .corpus-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--gold);
+    min-width: 20px;
+    flex-shrink: 0;
+  }
+
+  .corpus-info { flex: 1; }
+
+  .corpus-name {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--ink-soft);
+  }
+
+  .corpus-name a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .corpus-name a:hover {
+    color: var(--gold);
+    border-color: var(--border-strong);
+  }
+
+  .corpus-translator {
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: 3px;
+    font-style: italic;
+  }
+
+  .corpus-status {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    padding: 2px 8px;
+    border: 1px solid;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  .status-done {
+    color: var(--gold);
+    border-color: var(--border-strong);
+  }
+
+  .status-wip {
+    color: var(--ink-muted);
+    border-color: rgba(122,110,98,0.3);
+  }
+
+  .status-draft {
+    color: var(--ink-muted);
+    border-color: rgba(122,110,98,0.2);
+    font-style: italic;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .chapters-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .corpus-item { flex-wrap: wrap; gap: 8px; }
+    .corpus-status { margin-left: 36px; }
+  }
+  @media (max-width: 500px) {
+    .chapters-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <span class="header-ornament">Вальмики · Перевод с санскрита</span>
+  <h1>Русская Рамаяна</h1>
+  <p class="subtitle">Избранные книги великого эпоса</p>
+  <div class="divider">
+    <div class="divider-line"></div>
+    <div class="divider-diamond"></div>
+    <div class="divider-line"></div>
+  </div>
+</header>
+
+<!-- AUDIOBOOK -->
+<section class="audiobook-section">
+  <div class="audiobook-header">
+    <div class="divider" style="margin: 0 auto 20px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <p class="audiobook-title">Аудиокнига · Рамаяна 1986</p>
+    <p class="audiobook-meta">Читает Евгений Кривецкий &nbsp;·&nbsp; Общество ревнителей санскрита</p>
+  </div>
+
+  <ul class="audio-list">
+
+    <li class="audio-item">
+      <div class="audio-item-label">
+        <span class="audio-num">I</span>
+        <span class="audio-name">Книга первая <span class="kanda">Бала-канда</span></span>
+      </div>
+      <div class="audio-row">
+        <audio controls preload="none"
+          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3">
+        </audio>
+        <a class="dl-btn" title="Скачать MP3"
+          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3"
+          download>↓</a>
+      </div>
+      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+    </li>
+
+    <li class="audio-item">
+      <div class="audio-item-label">
+        <span class="audio-num">II</span>
+        <span class="audio-name">Книга вторая <span class="kanda">Айодхья-канда</span></span>
+      </div>
+      <div class="audio-row">
+        <audio controls preload="none"
+          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3">
+        </audio>
+        <a class="dl-btn" title="Скачать MP3"
+          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3"
+          download>↓</a>
+      </div>
+      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+    </li>
+
+    <li class="audio-item">
+      <div class="audio-item-label">
+        <span class="audio-num">III</span>
+        <span class="audio-name">Книга третья <span class="kanda">Аранья-канда</span></span>
+      </div>
+      <div class="audio-row">
+        <audio controls preload="none"
+          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3">
+        </audio>
+        <a class="dl-btn" title="Скачать MP3"
+          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3"
+          download>↓</a>
+      </div>
+      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+    </li>
+
+    <li class="audio-item">
+      <div class="audio-item-label">
+        <span class="audio-num">IV</span>
+        <span class="audio-name">Книга четвёртая <span class="kanda">Кишкиндха-канда</span></span>
+      </div>
+      <div class="audio-row">
+        <audio controls preload="none"
+          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3">
+        </audio>
+        <a class="dl-btn" title="Скачать MP3"
+          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3"
+          download>↓</a>
+      </div>
+      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+    </li>
+
+    <li class="audio-item">
+      <div class="audio-item-label">
+        <span class="audio-num">V</span>
+        <span class="audio-name">Книга пятая <span class="kanda">Сундара-канда</span></span>
+      </div>
+      <div class="audio-unavailable">
+        <span>Файл не загружен — добавьте MP3 на сервер.</span>
+        <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+      </div>
+    </li>
+
+    <li class="audio-item">
+      <div class="audio-item-label">
+        <span class="audio-num">VI</span>
+        <span class="audio-name">Книга шестая <span class="kanda">Юддха-канда</span></span>
+      </div>
+      <div class="audio-unavailable">
+        <span>Файл не загружен — добавьте MP3 на сервер.</span>
+        <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+      </div>
+    </li>
+
+    <li class="audio-item">
+      <div class="audio-item-label">
+        <span class="audio-num">VII</span>
+        <span class="audio-name">Книга седьмая <span class="kanda">Уттара-канда</span></span>
+      </div>
+      <div class="audio-row">
+        <audio controls preload="none"
+          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3">
+        </audio>
+        <a class="dl-btn" title="Скачать MP3"
+          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3"
+          download>↓</a>
+      </div>
+      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+    </li>
+
+  </ul>
+</section>
+
+<!-- CHAPTERS GRID -->
+<section class="chapters-section">
+  <div class="section-label">
+    <div class="divider" style="margin: 0 auto 20px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <span>Семь книг · Избранные главы</span>
+  </div>
+
+  <div class="chapters-grid">
+
+    <!-- Предисловие -->
+    <div class="chapter-card preface">
+      <div class="card-image-wrap">
+        <span class="card-num">Предисловие</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/_meta/preface.png"
+          alt="Предисловие" loading="lazy"
+          onerror="this.style.background='#2a2218'; this.style.opacity='0.4'">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Вступление</p>
+        <h2 class="card-title">Предисловие</h2>
+        <p class="card-desc">Рамаяна — одна из двух великих санскритских эпопей Древней Индии, сложенная мудрецом Вальмики. Перевод выполнен по изданию 1986 года и представляет избранные книги этого бессмертного памятника.</p>
+      </div>
+    </div>
+
+    <!-- Книга 1 -->
+    <div class="chapter-card">
+      <div class="card-image-wrap">
+        <span class="card-num">Книга I</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.png"
+          alt="Бала-канда" loading="lazy">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Бала-канда</p>
+        <h2 class="card-title">Книга о детстве</h2>
+        <p class="card-desc">Рождение царевича Рамы в солнечной Айодхье, его юность среди богатырей и мудрецов, первые подвиги и победа над демоническими силами, нарушавшими священные жертвоприношения.</p>
+        <div class="card-audio">
+          <div class="audio-row">
+            <audio controls preload="none"
+              src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3">
+            </audio>
+            <a class="dl-btn" title="Скачать MP3"
+              href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3"
+              download>↓</a>
+          </div>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Книга 2 -->
+    <div class="chapter-card">
+      <div class="card-image-wrap">
+        <span class="card-num">Книга II</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.png"
+          alt="Айодхья-канда" loading="lazy">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Айодхья-канда</p>
+        <h2 class="card-title">Книга об Айодхье</h2>
+        <p class="card-desc">Интриги дворца и изгнание Рамы в лес на четырнадцать лет. Верная Сита и преданный брат Лакшмана разделяют его участь. Горе царя Дашаратхи и смятение великого города.</p>
+        <div class="card-audio">
+          <div class="audio-row">
+            <audio controls preload="none"
+              src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3">
+            </audio>
+            <a class="dl-btn" title="Скачать MP3"
+              href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3"
+              download>↓</a>
+          </div>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Книга 3 -->
+    <div class="chapter-card">
+      <div class="card-image-wrap">
+        <span class="card-num">Книга III</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.png"
+          alt="Аранья-канда" loading="lazy">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Аранья-канда</p>
+        <h2 class="card-title">Лесная книга</h2>
+        <p class="card-desc">Скитания в дремучих лесах, встречи с отшельниками и чудовищами. Коварный Равана похищает Ситу, обернувшись золотым оленем. Начало великого похода за любовью и справедливостью.</p>
+        <div class="card-audio">
+          <div class="audio-row">
+            <audio controls preload="none"
+              src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3">
+            </audio>
+            <a class="dl-btn" title="Скачать MP3"
+              href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3"
+              download>↓</a>
+          </div>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Книга 4 -->
+    <div class="chapter-card">
+      <div class="card-image-wrap">
+        <span class="card-num">Книга IV</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.png"
+          alt="Кишкиндха-канда" loading="lazy">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Кишкиндха-канда</p>
+        <h2 class="card-title">Книга о Кишкиндхе</h2>
+        <p class="card-desc">Союз с царём обезьян Сугривой и великим Хануманом. Собирается несметное войско из лесных существ. Поиски Ситы на всех концах земли и ободряющая весть верного Ханумана.</p>
+        <div class="card-audio">
+          <div class="audio-row">
+            <audio controls preload="none"
+              src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3">
+            </audio>
+            <a class="dl-btn" title="Скачать MP3"
+              href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3"
+              download>↓</a>
+          </div>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Книга 5 -->
+    <div class="chapter-card">
+      <div class="card-image-wrap">
+        <span class="card-num">Книга V</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%205.%20%D0%9F%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F.png"
+          alt="Сундара-канда" loading="lazy">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Сундара-канда</p>
+        <h2 class="card-title">Прекрасная книга</h2>
+        <p class="card-desc">Перелёт Ханумана через океан на остров Ланку. Тайное свидание с пленной Ситой, разведка вражеской твердыни и огненное разрушение города. Возвращение с радостной вестью.</p>
+        <div class="card-audio">
+          <div class="audio-unavailable">
+            <span>Загрузите MP3 на сервер и замените этот блок тегом &lt;audio&gt;</span>
+            <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Книга 6 -->
+    <div class="chapter-card">
+      <div class="card-image-wrap">
+        <span class="card-num">Книга VI</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%206.%20%D0%91%D0%B8%D1%82%D0%B2%D0%B0.png"
+          alt="Юддха-канда" loading="lazy">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Юддха-канда</p>
+        <h2 class="card-title">Книга о битве</h2>
+        <p class="card-desc">Великий поход через океан, возведение моста из камней и деревьев. Грандиозная битва с ракшасами, гибель Раваны и торжество дхармы. Воссоединение Рамы и Ситы.</p>
+        <div class="card-audio">
+          <div class="audio-unavailable">
+            <span>Загрузите MP3 на сервер и замените этот блок тегом &lt;audio&gt;</span>
+            <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Книга 7 -->
+    <div class="chapter-card">
+      <div class="card-image-wrap">
+        <span class="card-num">Книга VII</span>
+        <img src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.png"
+          alt="Уттара-канда" loading="lazy">
+      </div>
+      <div class="card-body">
+        <p class="card-kanda">Уттара-канда</p>
+        <h2 class="card-title">Последняя книга</h2>
+        <p class="card-desc">Возвращение в Айодхью и торжественное воцарение. Правление Рамы — эпоха справедливости, покоя и процветания. Завершение земного пути героя и его уход в вечность.</p>
+        <div class="card-audio">
+          <div class="audio-row">
+            <audio controls preload="none"
+              src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3">
+            </audio>
+            <a class="dl-btn" title="Скачать MP3"
+              href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3"
+              download>↓</a>
+          </div>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section">
+  <div class="audiobook-header">
+    <div class="divider" style="margin: 0 auto 20px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <p class="audiobook-title">Хронология событий</p>
+    <p class="audiobook-meta">Путь Рамы от рождения до конца земного пути</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Бала-канда · Книга I</p>
+      <h3 class="tl-title">Рождение и юность Рамы</h3>
+      <p class="tl-desc">Царь Айодхьи Дашаратха совершает жертвоприношение и получает четырёх сыновей. Рама с братом Лакшманой уходит с мудрецом Вишвамитрой — истреблять демонов, нарушающих священные обряды. Первые подвиги, победа над Тарикой, знакомство с великим луком Шивы.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Бала-канда · Книга I</p>
+      <h3 class="tl-title">Свадьба Рамы и Ситы</h3>
+      <p class="tl-desc">В городе Митхила царь Джанака устраивает состязание: кто натянет лук Шивы — получит руку его дочери Ситы. Рама не только натягивает, но и переламывает лук. Четыре брата женятся на четырёх дочерях царского рода.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Айодхья-канда · Книга II</p>
+      <h3 class="tl-title">Изгнание из Айодхьи</h3>
+      <p class="tl-desc">Накануне коронации Рамы царица Кайкейи требует от Дашаратхи исполнить два давних обещания: возвести на трон её сына Бхарату, а Раму отправить в лес на четырнадцать лет. Рама принимает приговор без гнева. Дашаратха умирает от горя.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Аранья-канда · Книга III</p>
+      <h3 class="tl-title">Похищение Ситы</h3>
+      <p class="tl-desc">В лесу Дандака демон Шурпанакха влюбляется в Раму и получает отказ; Лакшмана отрезает ей нос. В отместку её брат Равана — десятиголовый владыка Ланки — похищает Ситу, обернувшись золотым оленем. Орёл Джатаюс пытается её защитить, но гибнет.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Кишкиндха-канда · Книга IV</p>
+      <h3 class="tl-title">Союз с царём обезьян</h3>
+      <p class="tl-desc">Рама помогает Сугриве вернуть трон обезьяньего царства Кишкиндхи, убив его брата-узурпатора Валина. В ответ Сугрива снаряжает несметное войско на поиски Ситы. Хануман переносится через океан на остров Ланку.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Сундара-канда · Книга V</p>
+      <h3 class="tl-title">Разведка Ланки</h3>
+      <p class="tl-desc">Хануман находит Ситу в саду Ашока, передаёт ей перстень Рамы и выслушивает ответное послание. Схваченный ракшасами, он поджигает хвостом полгорода и возвращается с вестью: Сита жива.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Юддха-канда · Книга VI</p>
+      <h3 class="tl-title">Война с Раваной</h3>
+      <p class="tl-desc">Войско обезьян возводит через океан мост из скал и деревьев. Начинается великая битва. Погибают лучшие ракшасы, сын Раваны Индраджит, наконец — сам Равана. Сита проходит испытание огнём, доказывая свою верность.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-book">Уттара-канда · Книга VII</p>
+      <h3 class="tl-title">Воцарение и конец земного пути</h3>
+      <p class="tl-desc">Рама и Сита возвращаются в Айодхью. Наступает эпоха Рама-раджья — царствование справедливости и благоденствия. Но клевета подданных вынуждает изгнать Ситу. Уже в старости Рама входит в воды Сарайю и уходит в вечность.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section" id="map-section">
+  <div class="audiobook-header">
+    <div class="divider" style="margin: 0 auto 20px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <p class="audiobook-title">Карта путешествия</p>
+    <p class="audiobook-meta">Маршрут Рамы — от Айодхьи до Ланки и обратно</p>
+  </div>
+
+  <div class="map-inner">
+    <svg id="rama-map" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+      <defs>
+        <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill="#B8913A" opacity="0.7"/>
+        </marker>
+      </defs>
+      <rect width="680" height="520" fill="transparent"/>
+      <text x="340" y="20" text-anchor="middle" font-size="11" fill="#B8913A" opacity="0.4" letter-spacing="3" font-family="serif">ИНДИЙСКИЙ ОКЕАН</text>
+      <text x="90"  y="460" text-anchor="middle" font-size="10" fill="#B8913A" opacity="0.35" letter-spacing="2" font-family="serif">АРАВИЙСКОЕ</text>
+      <text x="90"  y="472" text-anchor="middle" font-size="10" fill="#B8913A" opacity="0.35" letter-spacing="2" font-family="serif">МОРЕ</text>
+      <text x="590" y="460" text-anchor="middle" font-size="10" fill="#B8913A" opacity="0.35" letter-spacing="2" font-family="serif">БЕНГАЛЬСКИЙ</text>
+      <text x="590" y="472" text-anchor="middle" font-size="10" fill="#B8913A" opacity="0.35" letter-spacing="2" font-family="serif">ЗАЛИВ</text>
+      <path d="M200,55 L240,45 L290,40 L340,38 L390,42 L440,50 L480,60 L510,75 L530,95 L535,120 L528,145 L520,170 L510,195 L505,220 L498,245 L490,265 L480,280 L468,295 L455,310 L440,325 L425,338 L408,350 L392,362 L375,372 L358,382 L342,390 L328,382 L312,372 L296,360 L280,346 L265,330 L250,313 L238,295 L228,275 L220,255 L212,232 L206,208 L200,182 L196,155 L193,128 L192,100 L195,75 Z"
+        fill="#2a2218" fill-opacity="0.18" stroke="#B8913A" stroke-opacity="0.4" stroke-width="1"/>
+      <path d="M195,55 L180,50 L162,60 L150,80 L148,105 L155,130 L162,150 L155,165 L148,175 L152,185 L165,180 L178,168 L188,155 L196,145 L200,130 L198,105 L196,80 Z"
+        fill="#2a2218" fill-opacity="0.12" stroke="#B8913A" stroke-opacity="0.2" stroke-width="0.7"/>
+      <ellipse cx="355" cy="445" rx="52" ry="28" fill="#2a2218" fill-opacity="0.22" stroke="#B8913A" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="355" y="450" text-anchor="middle" font-size="11" fill="#d4a84b" opacity="0.8" font-family="serif" font-style="italic">Ланка</text>
+      <line x1="342" y1="393" x2="355" y2="418" stroke="#B8913A" stroke-opacity="0.2" stroke-width="0.7" stroke-dasharray="3,3"/>
+      <g opacity="0.05">
+        <line x1="0" y1="130" x2="680" y2="130" stroke="#B8913A" stroke-width="0.5"/>
+        <line x1="0" y1="260" x2="680" y2="260" stroke="#B8913A" stroke-width="0.5"/>
+        <line x1="0" y1="390" x2="680" y2="390" stroke="#B8913A" stroke-width="0.5"/>
+        <line x1="170" y1="0" x2="170" y2="520" stroke="#B8913A" stroke-width="0.5"/>
+        <line x1="340" y1="0" x2="340" y2="520" stroke="#B8913A" stroke-width="0.5"/>
+        <line x1="510" y1="0" x2="510" y2="520" stroke="#B8913A" stroke-width="0.5"/>
+      </g>
+      <path id="m-route" d="" fill="none" stroke="#B8913A" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.75" marker-end="url(#arr)"/>
+      <g id="m-pts"></g>
+    </svg>
+
+    <div class="map-panel" id="m-panel">
+      <p class="map-panel-book" id="m-book">&nbsp;</p>
+      <p class="map-panel-name" id="m-name">Путь Рамы</p>
+      <p class="map-panel-desc" id="m-desc">Маршрут охватывает север Индии, леса Декана и остров Ланку.</p>
+    </div>
+
+    <div class="map-dots" id="m-dots"></div>
+
+    <div class="map-controls">
+      <button class="map-btn" id="m-prev">← Назад</button>
+      <button class="map-btn" id="m-play">▶ Начать</button>
+      <button class="map-btn" id="m-next">Вперёд →</button>
+    </div>
+    <p class="map-counter" id="m-counter"></p>
+    <p style="text-align:center; margin-top:16px;">
+      <a href="ramayana-map-leaflet.html" target="_blank"
+        style="font-family:'Cormorant Garamond',serif; font-size:13px; font-style:italic; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--border-strong); letter-spacing:0.08em;">
+        Открыть географическую карту →
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- PARALLEL CORPUS -->
+<section class="corpus-section">
+  <div class="audiobook-header" style="margin-top: 0;">
+    <div class="divider" style="margin: 0 auto 20px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <p class="audiobook-title">Параллельный корпус · Читать текст</p>
+    <p class="audiobook-meta">Общество ревнителей санскрита · Санскрит и русский перевод</p>
+  </div>
+  <p class="corpus-intro">Тот же круг учёных, что создал аудиокнигу, готовит академические переводы Рамаяны с параллельным санскритским текстом. Три книги опубликованы, работа продолжается.</p>
+
+  <ul class="corpus-list">
+
+    <li class="corpus-item">
+      <span class="corpus-num">I</span>
+      <div class="corpus-info">
+        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/01_ramayana-balakanda.html" target="_blank">Бала-канда · Книга о детстве</a></p>
+        <p class="corpus-translator">Перевод П.А. Гринцера, 2006</p>
+      </div>
+      <span class="corpus-status status-done">Опубликована</span>
+    </li>
+
+    <li class="corpus-item">
+      <span class="corpus-num">II</span>
+      <div class="corpus-info">
+        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/02_ramayana-ayodhyakanda.html" target="_blank">Айодхья-канда · Книга об Айодхье</a></p>
+        <p class="corpus-translator">Перевод П.А. Гринцера, 2006</p>
+      </div>
+      <span class="corpus-status status-done">Опубликована</span>
+    </li>
+
+    <li class="corpus-item">
+      <span class="corpus-num">III</span>
+      <div class="corpus-info">
+        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/03_ramayana-aranyakanda.html" target="_blank">Аранья-канда · Книга о лесе</a></p>
+        <p class="corpus-translator">Перевод П.А. Гринцера, 2014</p>
+      </div>
+      <span class="corpus-status status-done">Опубликована</span>
+    </li>
+
+    <li class="corpus-item">
+      <span class="corpus-num">IV</span>
+      <div class="corpus-info">
+        <p class="corpus-name">Кишкиндха-канда · Книга о Кишкиндхе</p>
+        <p class="corpus-translator">Перевод С.Д. Серебряного (в печати, 2025)</p>
+      </div>
+      <span class="corpus-status status-wip">В печати</span>
+    </li>
+
+    <li class="corpus-item">
+      <span class="corpus-num">V</span>
+      <div class="corpus-info">
+        <p class="corpus-name">Сундара-канда · Книга о прекрасном</p>
+        <p class="corpus-translator">Подстрочник М.В. Леонова (черновик)</p>
+      </div>
+      <span class="corpus-status status-draft">Черновик</span>
+    </li>
+
+    <li class="corpus-item">
+      <span class="corpus-num">VI</span>
+      <div class="corpus-info">
+        <p class="corpus-name">Юддха-канда · Книга о битве</p>
+        <p class="corpus-translator">Перевод М.В. Леонова (продолжается)</p>
+      </div>
+      <span class="corpus-status status-wip">В работе</span>
+    </li>
+
+  </ul>
+
+  <p style="text-align:center; margin-top: 20px;">
+    <a href="https://samskrtam.ru/parallel-corpus/index_ramayana.html" target="_blank"
+      style="font-family:'Cormorant Garamond',serif; font-size:13px; font-style:italic; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--border-strong); letter-spacing:0.08em;">
+      Открыть весь корпус →
+    </a>
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-ornament">
+    <div class="divider-line"></div>
+    <div class="divider-diamond"></div>
+    <div class="divider-line"></div>
+  </div>
+  <p>Аудиокнига «Рамаяна 1986» · Читает Евгений Кривецкий</p>
+  <p>Общество ревнителей санскрита · <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Плейлист ВКонтакте</a></p>
+</footer>
+
+<script>
+(function(){
+  const STOPS = [
+    { x:342,y:110, label:"Айодхья",    book:"Бала-канда · Книга I",          name:"Айодхья — родина Рамы",         desc:"Царевич Рама рождается в солнечной Айодхье на берегу Сарайю. Здесь он взрослеет, совершает первые подвиги и женится на Ситe." },
+    { x:420,y:95,  label:"Митхила",    book:"Бала-канда · Книга I",          name:"Митхила — свадьба с Ситой",     desc:"В царстве Джанаки Рама переламывает лук Шивы и получает руку Ситы. Четыре брата женятся в один день." },
+    { x:338,y:175, label:"Читракут",   book:"Айодхья-канда · Книга II",      name:"Читракут — начало изгнания",    desc:"Изгнанный из Айодхьи, Рама с Ситой и Лакшманой уходит в леса. Брат Бхарата приходит умолять о возвращении — Рама непреклонен." },
+    { x:310,y:245, label:"Лес Дандака",book:"Аранья-канда · Книга III",      name:"Лес Дандака — скитания",        desc:"Четырнадцать лет Рама странствует по лесам, защищая отшельников от демонов. Здесь начинается цепь трагических событий." },
+    { x:288,y:285, label:"Панчавати",  book:"Аранья-канда · Книга III",      name:"Панчавати — похищение Ситы",    desc:"Равана, приняв облик золотого оленя, уводит внимание Рамы. Пока братья в погоне, владыка Ланки похищает Ситу. Орёл Джатаюс пытается её защитить, но погибает." },
+    { x:318,y:345, label:"Кишкиндха", book:"Кишкиндха-канда · Книга IV",    name:"Кишкиндха — союз с обезьянами", desc:"Рама помогает Сугриве вернуть трон, убив узурпатора Валина. Сугрива собирает несметное войско. Хануман отправляется на поиски Ситы." },
+    { x:345,y:400, label:"Рамешварам",book:"Юддха-канда · Книга VI",        name:"Рамешварам — мост в Ланку",     desc:"На южном краю Индии войско возводит через океан мост Налу из скал и деревьев. Армия переправляется на остров Ланку." },
+    { x:355,y:445, label:"Ланка",      book:"Сундара-канда / Юддха-канда",   name:"Ланка — битва и победа",        desc:"Хануман находит Ситу в саду Ашока. После великой битвы Рама убивает Равану. Сита проходит испытание огнём. Победители летят домой." },
+    { x:342,y:110, label:"Айодхья",   book:"Уттара-канда · Книга VII",      name:"Возвращение и воцарение",       desc:"Рама и Сита возвращаются в Айодхью. Наступает эпоха Рама-раджья — справедливости и благоденствия. Завершение земного пути героя." }
+  ];
+
+  const routeEl = document.getElementById('m-route');
+  const ptsEl   = document.getElementById('m-pts');
+  const dotsEl  = document.getElementById('m-dots');
+  let step = -1, timer = null, started = false;
+
+  STOPS.forEach((_,i)=>{
+    const d = document.createElement('span');
+    d.addEventListener('click',()=>{ stopAuto(); goTo(i); });
+    dotsEl.appendChild(d);
+  });
+
+  function updateDots(idx){
+    [...dotsEl.children].forEach((d,i)=> d.className = i<=idx?'active':'');
+  }
+
+  function buildRoute(idx){
+    if(idx<0){ routeEl.setAttribute('d',''); return; }
+    const pts = STOPS.slice(0,idx+1);
+    let d = `M${pts[0].x},${pts[0].y}`;
+    for(let i=1;i<pts.length;i++){
+      const p=pts[i-1],c=pts[i];
+      const mx=(p.x+c.x)/2, my=(p.y+c.y)/2-18;
+      d+=` Q${mx},${my} ${c.x},${c.y}`;
+    }
+    routeEl.setAttribute('d',d);
+  }
+
+  function renderPts(upto){
+    ptsEl.innerHTML='';
+    const NS='http://www.w3.org/2000/svg';
+    STOPS.slice(0,upto+1).forEach((s,i)=>{
+      const active=i===upto;
+      const g=document.createElementNS(NS,'g');
+      g.style.cursor='pointer';
+      g.addEventListener('click',()=>{ stopAuto(); goTo(i); });
+
+      if(active){
+        const pulse=document.createElementNS(NS,'circle');
+        pulse.setAttribute('cx',s.x); pulse.setAttribute('cy',s.y);
+        pulse.setAttribute('r','10'); pulse.setAttribute('fill','#B8913A'); pulse.setAttribute('opacity','0.2');
+        pulse.innerHTML=`<animate attributeName="r" values="8;15;8" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.25;0;0.25" dur="2s" repeatCount="indefinite"/>`;
+        g.appendChild(pulse);
+      }
+
+      const c=document.createElementNS(NS,'circle');
+      c.setAttribute('cx',s.x); c.setAttribute('cy',s.y);
+      c.setAttribute('r',active?'6':'4');
+      c.setAttribute('fill',active?'#d4a84b':'#B8913A');
+      c.setAttribute('stroke','#f5f0e8'); c.setAttribute('stroke-width','1.5');
+      c.setAttribute('opacity',active?'1':'0.7');
+
+      const right=s.x>340;
+      const tx=right?s.x+10:s.x-10;
+      const anchor=right?'start':'end';
+      const t=document.createElementNS(NS,'text');
+      t.setAttribute('x',tx); t.setAttribute('y',s.y-8);
+      t.setAttribute('text-anchor',anchor);
+      t.setAttribute('font-size',active?'11':'10');
+      t.setAttribute('fill',active?'#d4a84b':'#B8913A');
+      t.setAttribute('font-family','serif'); t.setAttribute('font-style','italic');
+      t.setAttribute('opacity',active?'1':'0.65');
+      t.textContent=s.label;
+
+      g.appendChild(c); g.appendChild(t);
+      ptsEl.appendChild(g);
+    });
+  }
+
+  function updatePanel(idx){
+    const s=STOPS[idx];
+    document.getElementById('m-book').textContent = s ? s.book : '';
+    document.getElementById('m-name').textContent = s ? s.name : 'Путь Рамы';
+    document.getElementById('m-desc').textContent = s ? s.desc : 'Маршрут охватывает север Индии, леса Декана и остров Ланку.';
+    document.getElementById('m-counter').textContent = s ? `${idx+1} / ${STOPS.length}` : '';
+    document.getElementById('m-play').textContent = idx>=STOPS.length-1 ? '↺ Сначала' : (timer ? '⏸ Пауза' : '▶ Продолжить');
+  }
+
+  function goTo(idx){
+    step=Math.max(-1,Math.min(STOPS.length-1,idx));
+    buildRoute(step);
+    if(step>=0){ renderPts(step); updateDots(step); updatePanel(step); }
+    else { ptsEl.innerHTML=''; updateDots(-1); updatePanel(-1); }
+    document.getElementById('m-play').textContent = step>=STOPS.length-1 ? '↺ Сначала' : '▶ Продолжить';
+  }
+
+  function advance(){
+    if(step>=STOPS.length-1){ stopAuto(); document.getElementById('m-play').textContent='↺ Сначала'; return; }
+    step++;
+    buildRoute(step); renderPts(step); updateDots(step); updatePanel(step);
+    if(step>=STOPS.length-1){ stopAuto(); document.getElementById('m-play').textContent='↺ Сначала'; }
+  }
+
+  function stopAuto(){ if(timer){ clearInterval(timer); timer=null; } }
+
+  function startAuto(){
+    document.getElementById('m-play').textContent='⏸ Пауза';
+    timer=setInterval(advance,9500);
+    advance();
+  }
+
+  document.getElementById('m-play').addEventListener('click',()=>{
+    if(step>=STOPS.length-1){ goTo(-1); setTimeout(startAuto,80); return; }
+    if(timer){ stopAuto(); document.getElementById('m-play').textContent='▶ Продолжить'; }
+    else startAuto();
+  });
+  document.getElementById('m-prev').addEventListener('click',()=>{ stopAuto(); if(step>0) goTo(step-1); });
+  document.getElementById('m-next').addEventListener('click',()=>{ stopAuto(); if(step<STOPS.length-1) goTo(step+1); });
+
+  /* auto-start on scroll */
+  const section = document.getElementById('map-section');
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting && !started){
+        started=true;
+        setTimeout(startAuto, 500);
+        observer.disconnect();
+      }
+    });
+  },{ threshold: 0.35 });
+  observer.observe(section);
+})();
+</script>
+</body>
+</html>
