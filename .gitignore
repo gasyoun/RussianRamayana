@@ -16,3 +16,7 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+# Oversized audiobook files: keep local, publish via external hosting/GitHub Releases/LFS.
+Рамаяна 1986. Книга 5. Прекрасная.MP3
+Рамаяна 1986. Книга 6. Битва.MP3
