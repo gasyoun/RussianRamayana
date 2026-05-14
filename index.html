@@ -4,51 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Русская Рамаяна</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <style>
-  :root {
-    --ink: #1a1410;
-    --ink-soft: #3d3428;
-    --ink-muted: #7a6e62;
-    --paper: #f5f0e8;
-    --paper-dark: #ede6d6;
-    --gold: #b8913a;
-    --gold-light: #d4a84b;
-    --gold-pale: #f0e0b0;
-    --border: rgba(184,145,58,0.25);
-    --border-strong: rgba(184,145,58,0.5);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
-  /* Subtle paper texture overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 28px,
-        rgba(184,145,58,0.03) 28px,
-        rgba(184,145,58,0.03) 29px
-      );
-    pointer-events: none;
-    z-index: 0;
-  }
+  body { overflow-x: hidden; }
 
   /* ── HEADER ── */
   header {
@@ -59,13 +17,7 @@
   }
 
   .header-ornament {
-    display: block;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 13px;
     font-weight: 300;
-    letter-spacing: 0.35em;
-    color: var(--gold);
-    text-transform: uppercase;
     margin-bottom: 20px;
     opacity: 0.8;
   }
@@ -87,21 +39,6 @@
     color: var(--ink-muted);
     letter-spacing: 0.1em;
     margin-bottom: 32px;
-  }
-
-  .divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin: 0 auto;
-    width: fit-content;
-  }
-  .divider-line { width: 60px; height: 1px; background: var(--border-strong); }
-  .divider-diamond {
-    width: 6px; height: 6px;
-    background: var(--gold);
-    transform: rotate(45deg);
   }
 
   /* ── AUDIOBOOK SECTION ── */
@@ -391,11 +328,6 @@
     line-height: 1.9;
   }
 
-  footer a {
-    color: var(--gold);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border);
-  }
   footer a:hover { color: var(--gold-light); }
 
   /* ── MAP ── */

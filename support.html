@@ -4,49 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Поддержать проект · Русская Рамаяна</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <style>
-  :root {
-    --ink: #1a1410;
-    --ink-soft: #3d3428;
-    --ink-muted: #7a6e62;
-    --paper: #f5f0e8;
-    --paper-dark: #ede6d6;
-    --gold: #b8913a;
-    --gold-light: #d4a84b;
-    --gold-pale: #f0e0b0;
-    --border: rgba(184,145,58,0.25);
-    --border-strong: rgba(184,145,58,0.5);
-    --success: #4a6741;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    line-height: 1.6;
-    min-height: 100vh;
-  }
-
-  /* Paper texture overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      repeating-linear-gradient(
-        0deg,
-        transparent, transparent 28px,
-        rgba(184,145,58,0.03) 28px, rgba(184,145,58,0.03) 29px
-      );
-    pointer-events: none;
-    z-index: 0;
-  }
-
   .container {
     max-width: 900px;
     margin: 0 auto;
@@ -60,16 +19,6 @@
     margin-bottom: 60px;
   }
 
-  .header-ornament {
-    display: block;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 13px;
-    letter-spacing: 0.35em;
-    color: var(--gold);
-    text-transform: uppercase;
-    margin-bottom: 16px;
-  }
-
   h1 {
     font-family: 'Cormorant SC', serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -78,21 +27,6 @@
     line-height: 1.1;
     margin-bottom: 24px;
   }
-
-  .nav-back {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: var(--gold);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    font-style: italic;
-    border-bottom: 1px solid var(--border);
-    transition: color 0.2s, border-color 0.2s;
-    margin-bottom: 40px;
-  }
-  .nav-back:hover { color: var(--gold-light); border-color: var(--gold-light); }
 
   /* ── FUNDRAISING BLOCKS ── */
   .fundraising-card {
@@ -269,14 +203,7 @@
     color: var(--ink-muted);
   }
 
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 1px solid var(--border);
-  }
-
-  footer p { font-size: 13px; color: var(--ink-muted); font-style: italic; }
+  footer { margin-top: 60px; }
 
   @media (max-width: 600px) {
     .fundraising-card { padding: 24px; }
