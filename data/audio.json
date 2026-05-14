@@ -3,7 +3,7 @@
     "id": "book-1",
     "title": "Книга первая. Бала-канда",
     "reader": "Евгений Кривецкий",
-    "duration": "01:28:45",
+    "duration": "00:25:46",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3",
     "status": "available"
   },
@@ -11,7 +11,7 @@
     "id": "book-2",
     "title": "Книга вторая. Айодхья-канда",
     "reader": "Евгений Кривецкий",
-    "duration": "02:15:30",
+    "duration": "01:06:44",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3",
     "status": "available"
   },
@@ -19,23 +19,39 @@
     "id": "book-3",
     "title": "Книга третья. Аранья-канда",
     "reader": "Евгений Кривецкий",
-    "duration": "01:50:20",
+    "duration": "00:50:21",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3",
     "status": "available"
   },
   {
     "id": "book-4",
-    "title": "Книга четвертая. Кишкиндха-канда",
+    "title": "Книга четвёртая. Кишкиндха-канда",
     "reader": "Евгений Кривецкий",
-    "duration": "01:45:10",
+    "duration": "00:40:18",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3",
+    "status": "available"
+  },
+  {
+    "id": "book-5",
+    "title": "Книга пятая. Сундара-канда",
+    "reader": "Евгений Кривецкий",
+    "duration": "01:23:52",
+    "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%205.%20%D0%9F%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F.MP3",
+    "status": "available"
+  },
+  {
+    "id": "book-6",
+    "title": "Книга шестая. Юддха-канда",
+    "reader": "Евгений Кривецкий",
+    "duration": "01:44:30",
+    "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%206.%20%D0%91%D0%B8%D1%82%D0%B2%D0%B0.MP3",
     "status": "available"
   },
   {
     "id": "book-7",
     "title": "Книга седьмая. Уттара-канда",
     "reader": "Евгений Кривецкий",
-    "duration": "01:10:05",
+    "duration": "00:04:54",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3",
     "status": "available"
   }
