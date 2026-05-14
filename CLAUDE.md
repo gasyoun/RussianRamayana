@@ -33,18 +33,22 @@ All pages load their content via `fetch()` from `data/*.json` at runtime — no 
 
 ## Design system
 
-All pages share a single CSS variable palette defined in `<style>` at the top of each file (not a shared stylesheet):
+Shared styles live in `style.css` (repo root), loaded by every page via `<link rel="stylesheet" href="style.css">` (`../style.css` for `compare/`). It contains:
+
+- CSS variables (palette + `--success`)
+- Reset, `body`, paper-texture overlay
+- `.nav-back`, `.header-ornament`, `.divider*`, `footer`
+- Google Fonts `@import`
 
 ```css
 --ink, --ink-soft, --ink-muted        /* text hierarchy */
 --paper, --paper-dark                  /* backgrounds */
 --gold, --gold-light, --gold-pale      /* accent color */
 --border, --border-strong              /* gold-tinted borders */
+--success                              /* green for status badges */
 ```
 
-Fonts: **Cormorant Garamond** (body serif), **Cormorant SC** (headings/small caps), **Jost** (UI sans). All loaded from Google Fonts in each page's `<head>`.
-
-CSS variables are duplicated across pages — when changing the palette, update each file.
+To change the palette or any shared element, edit `style.css` only. Each page's `<style>` block contains only its own component styles.
 
 ## Content rules (from roadmap.md)
 
