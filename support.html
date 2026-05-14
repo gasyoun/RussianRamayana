@@ -379,12 +379,13 @@ async function loadData() {
     const paymentGrid = document.getElementById('payment-methods');
     const typeLabels = { 'subscription': 'Ежемесячно', 'one-time': 'Разово' };
     payment.methods.forEach(m => {
-      const link = document.createElement('a');
-      link.href = m.url || '#';
-      link.className = 'payment-btn';
-      if(!m.url) link.style.opacity = '0.6';
-      link.innerHTML = `<span class="payment-label">${m.label}</span><span class="payment-type">${typeLabels[m.type]}</span>`;
-      paymentGrid.appendChild(link);
+      const el = document.createElement(m.url ? 'a' : 'div');
+      if (m.url) el.href = m.url;
+      el.className = 'payment-btn';
+      if (!m.url) el.style.opacity = '0.5';
+      if (!m.url) el.style.cursor = 'default';
+      el.innerHTML = `<span class="payment-label">${m.label}</span><span class="payment-type">${m.url ? typeLabels[m.type] : 'Скоро'}</span>`;
+      paymentGrid.appendChild(el);
     });
 
     // Status
