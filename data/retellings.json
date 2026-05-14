@@ -1,0 +1,27 @@
+[
+  {
+    "id": "erman-retelling",
+    "type": "retelling",
+    "author": "В.Г. Эрман",
+    "title": "Рамаяна",
+    "year": "1980",
+    "description": "Классический советский пересказ великого эпоса, ориентированный на широкого читателя.",
+    "status": "available"
+  },
+  {
+    "id": "bhaktivedanta-retelling",
+    "type": "adaptation",
+    "author": "Кришнаитские адаптации",
+    "title": "Рамаяна",
+    "description": "Религиозные и популярные адаптации сюжета Рамаяны в традиции гаудия-вайшнавизма.",
+    "status": "available"
+  },
+  {
+    "id": "narayan-retelling",
+    "type": "retelling",
+    "author": "Р.К. Нарайян",
+    "title": "Рамаяна (пересказ)",
+    "description": "Современный пересказ индийского классика Расипурама Кришнасвами Нарайяна.",
+    "status": "available"
+  }
+]

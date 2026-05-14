@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Поддержать проект · Русская Рамаяна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --ink-soft: #3d3428;
+    --ink-muted: #7a6e62;
+    --paper: #f5f0e8;
+    --paper-dark: #ede6d6;
+    --gold: #b8913a;
+    --gold-light: #d4a84b;
+    --gold-pale: #f0e0b0;
+    --border: rgba(184,145,58,0.25);
+    --border-strong: rgba(184,145,58,0.5);
+    --success: #4a6741;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* Paper texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent, transparent 28px,
+        rgba(184,145,58,0.03) 28px, rgba(184,145,58,0.03) 29px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 2rem 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .header-ornament {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: 40px;
+  }
+  .nav-back:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── FUNDRAISING BLOCKS ── */
+  .fundraising-card {
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  }
+
+  .goal-section {
+    margin-bottom: 40px;
+  }
+
+  .goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+
+  .goal-title {
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+  }
+
+  .goal-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--ink-soft);
+  }
+
+  .progress-container {
+    height: 6px;
+    background: rgba(184,145,58,0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background: var(--gold);
+    width: 0%; 
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .goal-meta {
+    font-size: 13px;
+    color: var(--ink-muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ── DONATION LEVELS ── */
+  .levels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+
+  .level-card {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+  }
+  .level-card:hover { transform: translateY(-5px); }
+
+  .level-name {
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .level-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .level-rewards {
+    list-style: none;
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .level-rewards li { margin-bottom: 8px; position: relative; padding-left: 15px; }
+  .level-rewards li::before { content: '·'; position: absolute; left: 0; color: var(--gold); }
+
+  /* ── PAYMENT METHODS ── */
+  .payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .payment-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--paper);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .payment-btn:hover {
+    background: white;
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(184,145,58,0.1);
+  }
+
+  .payment-label {
+    font-family: 'Cormorant SC', serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+
+  .payment-type {
+    font-size: 11px;
+    color: var(--ink-muted);
+    font-style: italic;
+  }
+
+  /* ── PROJECT STATUS ── */
+  .status-item {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .status-item:last-child { border-bottom: none; }
+
+  .status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .status-book {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+  }
+
+  .status-badge {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border: 1px solid;
+  }
+
+  .status-blocked { color: #8a3324; border-color: rgba(138,51,36,0.3); }
+  .status-in-progress { color: var(--gold); border-color: var(--border-strong); }
+  .status-draft-ready { color: var(--success); border-color: rgba(74,103,65,0.3); }
+
+  .status-note {
+    font-size: 14px;
+    color: var(--ink-muted);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer p { font-size: 13px; color: var(--ink-muted); font-style: italic; }
+
+  @media (max-width: 600px) {
+    .fundraising-card { padding: 24px; }
+    .payment-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a href="index.html" class="nav-back">← Вернуться на главную</a>
+
+  <header>
+    <span class="header-ornament">Поддержка перевода</span>
+    <h1>Рамаяна · Сбор средств</h1>
+    <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--ink-muted); font-size: 18px;">
+      Гринцер начал, Леонов продолжает. Ваш вклад ускоряет выход новых книг великого эпоса.
+    </p>
+  </header>
+
+  <div class="fundraising-card">
+    <div class="goal-section">
+      <div class="goal-header">
+        <span class="goal-title">Общая цель (Книги V-VI)</span>
+        <span class="goal-amount" id="total-amount">0 ₽</span>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="total-progress"></div>
+      </div>
+      <div class="goal-meta">
+        <span id="total-status">Собрано: 0 ₽</span>
+        <span id="total-goal-val">Цель: 1 000 000 ₽</span>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="font-family: 'Cormorant SC', serif; font-size: 22px; margin-bottom: 32px; text-align: center;">Уровни поддержки</h2>
+  <div class="levels-grid" id="levels-grid">
+    <!-- Will be populated from JSON -->
+  </div>
+
+  <h2 style="font-family: 'Cormorant SC', serif; font-size: 22px; margin-bottom: 32px; text-align: center;">Способы перевода</h2>
+  <div class="payment-grid" id="payment-methods">
+    <!-- Will be populated from JSON -->
+  </div>
+
+  <div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--border);">
+    <h2 style="font-family: 'Cormorant SC', serif; font-size: 22px; margin-bottom: 32px; text-align: center;">Статус будущих книг</h2>
+    <div id="project-status">
+      <!-- Will be populated from JSON -->
+    </div>
+  </div>
+
+  <footer>
+    <p>Все средства идут напрямую переводчику Максиму Леонову для обеспечения работы над проектом.</p>
+    <p style="margin-top: 10px;">Обновлено: <span id="last-update">—</span></p>
+  </footer>
+</div>
+
+<script>
+async function loadData() {
+  try {
+    const [summaryRes, levelsRes, paymentRes, statusRes] = await Promise.all([
+      fetch('data/fundraising/summary.json'),
+      fetch('data/fundraising/levels.json'),
+      fetch('data/payment-methods.json'),
+      fetch('data/project-status.json')
+    ]);
+
+    const summary = await summaryRes.json();
+    const levels = await levelsRes.json();
+    const payment = await paymentRes.json();
+    const status = await statusRes.json();
+
+    // Summary
+    document.getElementById('total-amount').textContent = summary.collected_rub.toLocaleString() + ' ₽';
+    document.getElementById('total-status').textContent = 'Собрано: ' + summary.collected_rub.toLocaleString() + ' ₽';
+    document.getElementById('total-goal-val').textContent = 'Цель: ' + summary.goal_rub.toLocaleString() + ' ₽';
+    const totalPercent = (summary.collected_rub / summary.goal_rub) * 100;
+    document.getElementById('total-progress').style.width = Math.min(totalPercent, 100) + '%';
+    document.getElementById('last-update').textContent = summary.updated_at;
+
+    // Levels
+    const levelsGrid = document.getElementById('levels-grid');
+    levels.forEach(level => {
+      const div = document.createElement('div');
+      div.className = 'level-card';
+      div.innerHTML = `
+        <div class="level-name">${level.name}</div>
+        <div class="level-amount">${level.amount.toLocaleString()} ₽ / мес.</div>
+        <p style="font-size: 13px; margin-bottom: 16px;">${level.description}</p>
+        <ul class="level-rewards">
+          ${level.rewards.map(r => `<li>${r}</li>`).join('')}
+        </ul>
+      `;
+      levelsGrid.appendChild(div);
+    });
+
+    // Payments
+    const paymentGrid = document.getElementById('payment-methods');
+    const typeLabels = { 'subscription': 'Ежемесячно', 'one-time': 'Разово' };
+    payment.methods.forEach(m => {
+      const link = document.createElement('a');
+      link.href = m.url || '#';
+      link.className = 'payment-btn';
+      if(!m.url) link.style.opacity = '0.6';
+      link.innerHTML = `<span class="payment-label">${m.label}</span><span class="payment-type">${typeLabels[m.type]}</span>`;
+      paymentGrid.appendChild(link);
+    });
+
+    // Status
+    const statusContainer = document.getElementById('project-status');
+    const bookLabels = { 'book-4': 'Книга IV · Кишкиндха', 'book-5': 'Книга V · Сундара', 'book-6': 'Книга VI · Юддха' };
+    const statusLabels = { 'blocked': 'Задерживается', 'in-progress': 'В работе', 'draft-ready': 'Черновик готов' };
+    status.books.forEach(book => {
+      const item = document.createElement('div');
+      item.className = 'status-item';
+      item.innerHTML = `
+        <div class="status-header">
+          <span class="status-book">${bookLabels[book.id] || book.id}</span>
+          <span class="status-badge status-${book.status}">${statusLabels[book.status] || book.status}</span>
+        </div>
+        <p class="status-note">${book.public_note}</p>
+      `;
+      statusContainer.appendChild(item);
+    });
+
+  } catch (e) {
+    console.error('Error loading support data:', e);
+  }
+}
+window.addEventListener('DOMContentLoaded', loadData);
+</script>
+
+</body>
+</html>

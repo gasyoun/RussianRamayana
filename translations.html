@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог переводов · Русская Рамаяна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --ink-soft: #3d3428;
+    --ink-muted: #7a6e62;
+    --paper: #f5f0e8;
+    --paper-dark: #ede6d6;
+    --gold: #b8913a;
+    --gold-light: #d4a84b;
+    --gold-pale: #f0e0b0;
+    --border: rgba(184,145,58,0.25);
+    --border-strong: rgba(184,145,58,0.5);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* Paper texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent, transparent 28px,
+        rgba(184,145,58,0.03) 28px, rgba(184,145,58,0.03) 29px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 2rem 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .header-ornament {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: 40px;
+  }
+  .nav-back:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── SECTION TABS (Visual only for now) ── */
+  .catalog-nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .catalog-nav-link {
+    text-decoration: none;
+    color: var(--ink-muted);
+    font-family: 'Cormorant SC', serif;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .catalog-nav-link:hover, .catalog-nav-link.active {
+    color: var(--gold);
+  }
+
+  .catalog-nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gold);
+  }
+
+  /* ── CATALOG LIST ── */
+  .section-title {
+    font-family: 'Cormorant SC', serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .section-title::before, .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .translation-grid {
+    display: grid;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  .translation-card {
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
+    padding: 32px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .translation-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold-pale);
+  }
+
+  .card-type-badge {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    border-right: 1px solid var(--border);
+    padding-right: 12px;
+    text-align: center;
+  }
+
+  .card-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .card-meta {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .card-meta span::after {
+    content: '·';
+    margin-left: 12px;
+    opacity: 0.5;
+  }
+  .card-meta span:last-child::after { content: ''; }
+
+  .card-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .card-link:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  .status-tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    color: var(--ink-muted);
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 60px auto;
+  }
+  .divider-line { width: 60px; height: 1px; background: var(--border-strong); }
+  .divider-diamond {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    transform: rotate(45deg);
+  }
+
+  @media (max-width: 700px) {
+    .translation-card { grid-template-columns: 1fr; }
+    .card-type-badge {
+      writing-mode: horizontal-tb;
+      transform: none;
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      padding-right: 0;
+      padding-bottom: 8px;
+      text-align: left;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a href="index.html" class="nav-back">← Вернуться на главную</a>
+
+  <header>
+    <span class="header-ornament">Корпус текстов</span>
+    <h1>Переводы и пересказы</h1>
+    <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--ink-muted); font-size: 18px; max-width: 600px; margin: 0 auto;">
+      От академических изданий «Литературных памятников» до популярных пересказов и адаптаций.
+    </p>
+  </header>
+
+  <nav class="catalog-nav">
+    <a href="#translations" class="catalog-nav-link active">Переводы</a>
+    <a href="#retellings" class="catalog-nav-link">Пересказы</a>
+    <a href="#adaptations" class="catalog-nav-link">Адаптации</a>
+  </nav>
+
+  <section id="translations-section">
+    <h2 class="section-title">Переводы с санскрита</h2>
+    <div class="translation-grid" id="translations-grid">
+      <!-- Will be populated from JSON -->
+    </div>
+  </section>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+    <div class="divider-diamond"></div>
+    <div class="divider-line"></div>
+  </div>
+
+  <section id="retellings-section">
+    <h2 class="section-title">Пересказы и адаптации</h2>
+    <div class="translation-grid" id="retellings-grid">
+      <!-- Will be populated from JSON -->
+    </div>
+  </section>
+
+</div>
+
+<script>
+async function loadCatalog() {
+  try {
+    // Load translations
+    const transRes = await fetch('data/translations.json');
+    const translations = await transRes.json();
+    const transGrid = document.getElementById('translations-grid');
+    
+    const typeLabels = {
+      'translation': 'Перевод',
+      'literal': 'Подстрочник',
+      'poetic': 'Поэтический',
+      'retelling': 'Пересказ',
+      'adaptation': 'Адаптация'
+    };
+
+    const statusLabels = {
+      'published': 'Опубликовано',
+      'in-press': 'В печати',
+      'in-progress': 'В работе',
+      'draft': 'Черновик'
+    };
+
+    translations.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'translation-card';
+      card.innerHTML = `
+        <div class="card-type-badge">${typeLabels[item.type] || item.type}</div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>${item.author}</span>
+            <span>${item.year}</span>
+            <span>${item.source_language}</span>
+          </div>
+          <h3>${item.title}</h3>
+          <div class="card-desc">
+            ${item.coverage ? `<b>Охват:</b> ${item.coverage}<br>` : ''}
+            ${item.edition ? `<b>Издание:</b> ${item.edition}` : ''}
+            ${item.series ? ` · ${item.series}` : ''}
+          </div>
+          <div class="card-footer">
+            ${item.url ? `<a href="${item.url}" class="card-link" target="_blank">Читать фрагмент →</a>` : '<span></span>'}
+            <span class="status-tag">${statusLabels[item.status] || item.status}</span>
+          </div>
+        </div>
+      `;
+      transGrid.appendChild(card);
+    });
+
+    // Load retellings
+    const retelRes = await fetch('data/retellings.json');
+    const retellings = await retelRes.json();
+    const retelGrid = document.getElementById('retellings-grid');
+
+    retellings.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'translation-card';
+      card.innerHTML = `
+        <div class="card-type-badge">${typeLabels[item.type] || item.type}</div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>${item.author}</span>
+            <span>${item.year || ''}</span>
+          </div>
+          <h3>${item.title}</h3>
+          <p class="card-desc">${item.description}</p>
+          <div class="card-footer">
+            ${item.url ? `<a href="${item.url}" class="card-link" target="_blank">Подробнее →</a>` : '<span></span>'}
+            <span class="status-tag">Доступно</span>
+          </div>
+        </div>
+      `;
+      retelGrid.appendChild(card);
+    });
+
+  } catch (e) {
+    console.error('Error loading catalog data:', e);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', loadCatalog);
+</script>
+
+</body>
+</html>

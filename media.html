@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Медиа-архив · Русская Рамаяна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --ink-soft: #3d3428;
+    --ink-muted: #7a6e62;
+    --paper: #f5f0e8;
+    --paper-dark: #ede6d6;
+    --gold: #b8913a;
+    --gold-light: #d4a84b;
+    --gold-pale: #f0e0b0;
+    --border: rgba(184,145,58,0.25);
+    --border-strong: rgba(184,145,58,0.5);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* Paper texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent, transparent 28px,
+        rgba(184,145,58,0.03) 28px, rgba(184,145,58,0.03) 29px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 2rem 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .header-ornament {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: 40px;
+  }
+  .nav-back:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── MEDIA SECTIONS ── */
+  section { margin-bottom: 100px; }
+
+  h2 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  h2::before, h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* ── VIDEO GRID ── */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+  }
+
+  .video-card {
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
+    padding: 24px;
+  }
+
+  .video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .video-info p {
+    font-size: 14px;
+    color: var(--ink-muted);
+  }
+
+  /* ── AUDIO LIST ── */
+  .audio-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .audio-item {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .audio-info { flex: 1; }
+
+  .audio-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .audio-meta {
+    font-size: 12px;
+    color: var(--ink-muted);
+  }
+
+  audio {
+    width: 250px;
+    height: 32px;
+  }
+
+  @media (max-width: 800px) {
+    .video-grid { grid-template-columns: 1fr; }
+    .audio-item { flex-direction: column; align-items: flex-start; gap: 16px; }
+    audio { width: 100%; }
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a href="index.html" class="nav-back">← Вернуться на главную</a>
+
+  <header>
+    <span class="header-ornament">Архив материалов</span>
+    <h1>Медиа-галерея</h1>
+    <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--ink-muted); font-size: 18px;">
+      Видеозаписи выступлений, аудиокниги и интервью участников проекта.
+    </p>
+  </header>
+
+  <section id="video-section">
+    <h2>Видеоматериалы</h2>
+    <div class="video-grid" id="video-grid">
+      <!-- Will be populated from JSON -->
+    </div>
+  </section>
+
+  <section id="audio-section">
+    <h2>Аудиокнига (1986)</h2>
+    <div class="audio-list" id="audio-list">
+      <!-- Will be populated from JSON -->
+    </div>
+  </section>
+
+  <footer>
+    <p>Все материалы предоставлены для ознакомления в рамках проекта «Русская Рамаяна».</p>
+  </footer>
+</div>
+
+<script>
+async function loadMedia() {
+  try {
+    // Load videos
+    const videoRes = await fetch('data/videos.json');
+    const videos = await videoRes.json();
+    const videoGrid = document.getElementById('video-grid');
+    
+    videos.forEach(v => {
+      const div = document.createElement('div');
+      div.className = 'video-card';
+      div.innerHTML = `
+        <div class="video-wrap">
+          <iframe src="${v.url}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+          <h3>${v.title}</h3>
+          <p>${v.description}</p>
+        </div>
+      `;
+      videoGrid.appendChild(div);
+    });
+
+    // Load audio
+    const audioRes = await fetch('data/audio.json');
+    const audioData = await audioRes.json();
+    const audioList = document.getElementById('audio-list');
+
+    audioData.forEach(a => {
+      const div = document.createElement('div');
+      div.className = 'audio-item';
+      div.innerHTML = `
+        <div class="audio-info">
+          <h3>${a.title}</h3>
+          <div class="audio-meta">Читает: ${a.reader} · Длительность: ${a.duration}</div>
+        </div>
+        <audio controls src="${a.url}"></audio>
+      `;
+      audioList.appendChild(div);
+    });
+
+  } catch (e) {
+    console.error('Error loading media data:', e);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', loadMedia);
+</script>
+
+</body>
+</html>

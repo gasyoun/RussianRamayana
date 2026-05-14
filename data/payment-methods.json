@@ -1,0 +1,9 @@
+{
+  "methods": [
+    { "id": "boosty", "label": "Boosty", "type": "subscription", "url": "" },
+    { "id": "sber", "label": "Сбер", "type": "one-time", "url": "" },
+    { "id": "patreon", "label": "Patreon", "type": "subscription", "url": "" },
+    { "id": "paypal-proxy", "label": "PayPal через посредника", "type": "one-time", "url": "" },
+    { "id": "bank-transfer", "label": "Банковский перевод", "type": "one-time", "url": "" }
+  ]
+}

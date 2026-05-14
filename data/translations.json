@@ -1,0 +1,71 @@
+[
+  {
+    "id": "grintser-1-2",
+    "type": "translation",
+    "author": "П.А. Гринцер",
+    "title": "Рамаяна. Книги I–II: Балаканда (Книга о детстве), Айодхьяканда (Книга об Айодхье)",
+    "year": "2006",
+    "source_language": "санскрит",
+    "coverage": "Книги I–II",
+    "edition": "Ладомир : Наука",
+    "series": "Литературные памятники",
+    "url": "https://samskrtam.ru/parallel-corpus/index_ramayana.html",
+    "status": "published"
+  },
+  {
+    "id": "grintser-3",
+    "type": "translation",
+    "author": "П.А. Гринцер",
+    "title": "Рамаяна. Книга III: Араньяканда (Книга о лесе)",
+    "year": "2014",
+    "source_language": "санскрит",
+    "coverage": "Книга III",
+    "edition": "Ладомир : Наука",
+    "series": "Литературные памятники",
+    "url": "https://samskrtam.ru/parallel-corpus/03_ramayana-aranyakanda.html",
+    "status": "published"
+  },
+  {
+    "id": "serebryany-4",
+    "type": "translation",
+    "author": "С.Д. Серебряный",
+    "title": "Рамаяна. Книга IV: Кишкиндха-канда (Книга о Кишкиндхе)",
+    "year": "2025",
+    "source_language": "санскрит",
+    "coverage": "Книга IV",
+    "edition": "В печати",
+    "series": "Литературные памятники",
+    "status": "in-press"
+  },
+  {
+    "id": "leonov-5",
+    "type": "literal",
+    "author": "М.В. Леонов",
+    "title": "Рамаяна. Книга V: Сундара-канда (Прекрасная книга)",
+    "year": "черновик",
+    "source_language": "санскрит",
+    "coverage": "Книга V",
+    "status": "draft"
+  },
+  {
+    "id": "leonov-6",
+    "type": "translation",
+    "author": "М.В. Леонов",
+    "title": "Рамаяна. Книга VI: Юддха-канда (Книга о битве)",
+    "year": "в работе",
+    "source_language": "санскрит",
+    "coverage": "Книга VI",
+    "status": "in-progress"
+  },
+  {
+    "id": "potapova-full",
+    "type": "poetic",
+    "author": "В. Потапова",
+    "title": "Рамаяна (полный поэтический перевод)",
+    "year": "1986",
+    "source_language": "санскрит (через подстрочник)",
+    "coverage": "Полный текст",
+    "url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html",
+    "status": "published"
+  }
+]

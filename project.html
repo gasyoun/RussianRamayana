@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О проекте · Русская Рамаяна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --ink-soft: #3d3428;
+    --ink-muted: #7a6e62;
+    --paper: #f5f0e8;
+    --paper-dark: #ede6d6;
+    --gold: #b8913a;
+    --gold-light: #d4a84b;
+    --gold-pale: #f0e0b0;
+    --border: rgba(184,145,58,0.25);
+    --border-strong: rgba(184,145,58,0.5);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* Paper texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent, transparent 28px,
+        rgba(184,145,58,0.03) 28px, rgba(184,145,58,0.03) 29px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 2rem 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .header-ornament {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: 40px;
+  }
+  .nav-back:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── STORY SECTIONS ── */
+  section { margin-bottom: 80px; }
+
+  h2 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 26px;
+    margin-bottom: 32px;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .story-block {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    color: var(--ink-soft);
+    margin-bottom: 32px;
+  }
+
+  .quote-box {
+    margin: 40px 0;
+    padding: 32px;
+    background: var(--paper-dark);
+    border-left: 2px solid var(--gold);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--ink-muted);
+  }
+
+  /* ── TEAM GRID ── */
+  .team-grid {
+    display: grid;
+    gap: 40px;
+  }
+
+  .team-member h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--gold);
+  }
+
+  .member-role {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-muted);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .member-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
+  /* ── STATUS BLOCK ── */
+  .status-highlight {
+    background: white;
+    border: 1px solid var(--border-strong);
+    padding: 32px;
+    margin-top: 40px;
+  }
+
+  .status-highlight h4 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  .status-list {
+    list-style: none;
+    font-size: 15px;
+  }
+
+  .status-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .status-list li:last-child { border-bottom: none; }
+
+  .status-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    text-align: right;
+  }
+
+  /* ── CTA ── */
+  .cta-block {
+    text-align: center;
+    padding: 60px 40px;
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .cta-block h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    padding: 14px 40px;
+    text-decoration: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    transition: background 0.3s;
+  }
+  .cta-btn:hover { background: var(--gold-light); }
+
+  /* ── VIDEO ── */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 40px 0;
+    border: 1px solid var(--border);
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    text-align: center;
+    padding-top: 60px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a href="index.html" class="nav-back">← Вернуться на главную</a>
+
+  <header>
+    <span class="header-ornament">История проекта</span>
+    <h1>От Гринцера к Леонову</h1>
+    <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--ink-muted); font-size: 18px;">
+      Завершение первого полного академического перевода Рамаяны на русский язык.
+    </p>
+  </header>
+
+  <section>
+    <h2>Начало пути</h2>
+    <div class="story-block">
+      <p>Проект полного перевода великого эпоса Вальмики «Рамаяна» был начат выдающимся индологом <b>Павлом Александровичем Гринцером</b>. Под его руководством и в его переводе в серии «Литературные памятники» вышли первые три книги: «Балаканда», «Айодхьяканда» и «Араньяканда».</p>
+      <p style="margin-top: 1.5rem;">Это издание стало вехой в русской индологии, впервые представив санскритский подлинник с академической точностью и поэтическим достоинством. Однако после ухода Павла Александровича проект столкнулся с серьезными вызовами.</p>
+    </div>
+    
+    <div class="quote-box">
+      «Рамаяна — это не просто текст, это архитектура духа, запечатленная в слове. Каждый стих требует не только филологического разбора, но и поэтического сопереживания».
+    </div>
+  </section>
+
+  <section>
+    <h2>Проблема Книги IV</h2>
+    <div class="story-block">
+      <p>Четвертая книга («Кишкиндха-канда») была переведена С.Д. Серебряным, однако её выход в свет задерживается уже много лет из-за незавершенности вступительной статьи. Текущий краудфандинговый проект не может повлиять на этот этап, но мы продолжаем работу над последующими книгами, чтобы не прерывать общую нить перевода.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Эстафета перевода</h2>
+    <div class="story-block">
+      <p>Сегодня работу над проектом продолжает <b>Максим Викторович Леонов</b>. Он взял на себя труд по переводу Пятой («Сундара-канда») и Шестой («Юддха-канда») книг. Максим Викторович — признанный мастер передачи санскритских размеров средствами русского стиха, что позволяет сохранить не только содержание, но и музыку оригинала.</p>
+      <p style="margin-top: 1.5rem;">Проект <b>готовится для серии «Литературные памятники»</b>, соблюдая все строгие требования академического книгоиздания.</p>
+    </div>
+
+    <div id="video-placeholder"></div>
+
+    <div class="status-highlight">
+      <h4>Текущее состояние работ:</h4>
+      <ul class="status-list" id="project-status-list">
+        <!-- Will be populated from JSON -->
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Команда проекта</h2>
+    <div class="team-grid" id="team-grid">
+      <!-- Will be populated from JSON -->
+    </div>
+  </section>
+
+  <div class="cta-block">
+    <h3>Поддержите продолжение перевода</h3>
+    <p style="margin-bottom: 30px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px;">Ваш вклад помогает оплатить работу переводчика и редактора.</p>
+    <a href="support.html" class="cta-btn">Внести вклад</a>
+  </div>
+
+  <footer>
+    <p>Проект осуществляется Обществом ревнителей санскрита.</p>
+  </footer>
+</div>
+
+<script>
+async function loadProjectData() {
+  try {
+    // Load people
+    const peopleRes = await fetch('data/people.json');
+    const people = await peopleRes.json();
+    const teamGrid = document.getElementById('team-grid');
+    
+    people.forEach(person => {
+      const div = document.createElement('div');
+      div.className = 'team-member';
+      div.innerHTML = `
+        <h3>${person.name}</h3>
+        <span class="member-role">${person.role}</span>
+        <p class="member-desc">${person.description}</p>
+      `;
+      teamGrid.appendChild(div);
+    });
+
+    // Load status
+    const statusRes = await fetch('data/project-status.json');
+    const statusData = await statusRes.json();
+    const statusList = document.getElementById('project-status-list');
+    
+    const bookLabels = {
+      'book-4': 'Книга IV (Кишкиндха)',
+      'book-5': 'Книга V (Сундара)',
+      'book-6': 'Книга VI (Юддха)'
+    };
+
+    statusData.books.forEach(book => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <span>${bookLabels[book.id] || book.id}</span>
+        <span class="status-val">${book.public_note.split(';')[0]}</span>
+      `;
+      statusList.appendChild(li);
+    });
+
+    // Load video
+    const videoRes = await fetch('data/videos.json');
+    const videos = await videoRes.json();
+    if(videos.length > 0) {
+      const v = videos[0];
+      const videoPlaceholder = document.getElementById('video-placeholder');
+      videoPlaceholder.innerHTML = `
+        <div class="video-container">
+          <iframe src="${v.url}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p style="font-size: 13px; color: var(--ink-muted); text-align: center; margin-top: -30px; margin-bottom: 40px;">${v.description}</p>
+      `;
+    }
+
+  } catch (e) {
+    console.error('Error loading project page data:', e);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', loadProjectData);
+</script>
+
+</body>
+</html>

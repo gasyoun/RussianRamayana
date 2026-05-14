@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сравнительное чтение · Русская Рамаяна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --ink-soft: #3d3428;
+    --ink-muted: #7a6e62;
+    --paper: #f5f0e8;
+    --paper-dark: #ede6d6;
+    --gold: #b8913a;
+    --gold-light: #d4a84b;
+    --gold-pale: #f0e0b0;
+    --border: rgba(184,145,58,0.25);
+    --border-strong: rgba(184,145,58,0.5);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* Paper texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent, transparent 28px,
+        rgba(184,145,58,0.03) 28px, rgba(184,145,58,0.03) 29px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 2rem 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: 40px;
+  }
+  .nav-back:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+
+  .intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--ink-muted);
+    margin-bottom: 40px;
+  }
+
+  /* ── COMPARISON TABLE ── */
+  .comparison-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .comparison-block {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 32px;
+  }
+
+  .block-label {
+    font-family: 'Cormorant SC', serif;
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 8px;
+  }
+
+  .block-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--ink-soft);
+    white-space: pre-wrap;
+  }
+
+  .commentary-box {
+    margin-top: 40px;
+    padding: 32px;
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
+  }
+
+  .commentary-box h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  .commentary-text {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.8;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a href="../index.html" class="nav-back">← Вернуться на главную</a>
+
+  <header id="episode-header">
+    <h1>Загрузка эпизода...</h1>
+  </header>
+
+  <div class="comparison-container" id="comparison-content">
+    <!-- Will be populated from JSON -->
+  </div>
+
+  <div class="commentary-box" id="commentary-box" style="display: none;">
+    <h3>Комментарий филолога</h3>
+    <div class="commentary-text" id="commentary-text"></div>
+  </div>
+
+  <footer>
+    <p>Больше параллельных текстов доступно в <a href="https://samskrtam.ru/parallel-corpus/index_ramayana.html" target="_blank">основном корпусе →</a></p>
+  </footer>
+</div>
+
+<script>
+async function loadEpisode() {
+  try {
+    const res = await fetch('../data/comparison-episodes.json');
+    const data = await res.json();
+    const episode = data.find(e => e.id === 'sundarakanda-start');
+    
+    if(!episode) return;
+
+    document.getElementById('episode-header').innerHTML = `
+      <h1>${episode.title}</h1>
+      <p class="intro">${episode.description}</p>
+    `;
+
+    const container = document.getElementById('comparison-content');
+    episode.sections.forEach(sec => {
+      const div = document.createElement('div');
+      div.className = 'comparison-block';
+      div.innerHTML = `
+        <span class="block-label">${sec.label}</span>
+        <div class="block-text">${sec.content}</div>
+      `;
+      container.appendChild(div);
+    });
+
+    if(episode.commentary) {
+      document.getElementById('commentary-box').style.display = 'block';
+      document.getElementById('commentary-text').textContent = episode.commentary;
+    }
+
+  } catch (e) {
+    console.error('Error loading episode:', e);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', loadEpisode);
+</script>
+
+</body>
+</html>
