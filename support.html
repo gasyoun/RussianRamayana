@@ -264,6 +264,9 @@
 </div>
 
 <script>
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const safeUrl = u => { try { return new URL(u).protocol === 'https:' ? u : ''; } catch { return ''; } };
+
 async function loadData() {
   try {
     const [summaryRes, levelsRes, paymentRes, statusRes] = await Promise.all([
@@ -292,11 +295,11 @@ async function loadData() {
       const div = document.createElement('div');
       div.className = 'level-card';
       div.innerHTML = `
-        <div class="level-name">${level.name}</div>
+        <div class="level-name">${esc(level.name)}</div>
         <div class="level-amount">${level.amount.toLocaleString()} ₽ / мес.</div>
-        <p style="font-size: 13px; margin-bottom: 16px;">${level.description}</p>
+        <p style="font-size: 13px; margin-bottom: 16px;">${esc(level.description)}</p>
         <ul class="level-rewards">
-          ${level.rewards.map(r => `<li>${r}</li>`).join('')}
+          ${level.rewards.map(r => `<li>${esc(r)}</li>`).join('')}
         </ul>
       `;
       levelsGrid.appendChild(div);
@@ -306,12 +309,13 @@ async function loadData() {
     const paymentGrid = document.getElementById('payment-methods');
     const typeLabels = { 'subscription': 'Ежемесячно', 'one-time': 'Разово' };
     payment.methods.forEach(m => {
-      const el = document.createElement(m.url ? 'a' : 'div');
-      if (m.url) el.href = m.url;
+      const url = safeUrl(m.url);
+      const el = document.createElement(url ? 'a' : 'div');
+      if (url) el.href = url;
       el.className = 'payment-btn';
-      if (!m.url) el.style.opacity = '0.5';
-      if (!m.url) el.style.cursor = 'default';
-      el.innerHTML = `<span class="payment-label">${m.label}</span><span class="payment-type">${m.url ? typeLabels[m.type] : 'Скоро'}</span>`;
+      if (!url) el.style.opacity = '0.5';
+      if (!url) el.style.cursor = 'default';
+      el.innerHTML = `<span class="payment-label">${esc(m.label)}</span><span class="payment-type">${url ? typeLabels[m.type] : 'Скоро'}</span>`;
       paymentGrid.appendChild(el);
     });
 
@@ -324,10 +328,10 @@ async function loadData() {
       item.className = 'status-item';
       item.innerHTML = `
         <div class="status-header">
-          <span class="status-book">${bookLabels[book.id] || book.id}</span>
-          <span class="status-badge status-${book.status}">${statusLabels[book.status] || book.status}</span>
+          <span class="status-book">${esc(bookLabels[book.id] || book.id)}</span>
+          <span class="status-badge status-${esc(book.status)}">${esc(statusLabels[book.status] || book.status)}</span>
         </div>
-        <p class="status-note">${book.public_note}</p>
+        <p class="status-note">${esc(book.public_note)}</p>
       `;
       statusContainer.appendChild(item);
     });

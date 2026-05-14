@@ -241,20 +241,23 @@
 </div>
 
 <script>
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const safeUrl = u => { try { return new URL(u).protocol === 'https:' ? u : ''; } catch { return ''; } };
+
 async function loadProjectData() {
   try {
     // Load people
     const peopleRes = await fetch('data/people.json');
     const people = await peopleRes.json();
     const teamGrid = document.getElementById('team-grid');
-    
+
     people.forEach(person => {
       const div = document.createElement('div');
       div.className = 'team-member';
       div.innerHTML = `
-        <h3>${person.name}</h3>
-        <span class="member-role">${person.role}</span>
-        <p class="member-desc">${person.description}</p>
+        <h3>${esc(person.name)}</h3>
+        <span class="member-role">${esc(person.role)}</span>
+        <p class="member-desc">${esc(person.description)}</p>
       `;
       teamGrid.appendChild(div);
     });
@@ -263,7 +266,7 @@ async function loadProjectData() {
     const statusRes = await fetch('data/project-status.json');
     const statusData = await statusRes.json();
     const statusList = document.getElementById('project-status-list');
-    
+
     const bookLabels = {
       'book-4': 'Книга IV (Кишкиндха)',
       'book-5': 'Книга V (Сундара)',
@@ -273,8 +276,8 @@ async function loadProjectData() {
     statusData.books.forEach(book => {
       const li = document.createElement('li');
       li.innerHTML = `
-        <span>${bookLabels[book.id] || book.id}</span>
-        <span class="status-val">${book.public_note.split(';')[0]}</span>
+        <span>${esc(bookLabels[book.id] || book.id)}</span>
+        <span class="status-val">${esc(book.public_note.split(';')[0])}</span>
       `;
       statusList.appendChild(li);
     });
@@ -284,13 +287,16 @@ async function loadProjectData() {
     const videos = await videoRes.json();
     if(videos.length > 0) {
       const v = videos[0];
+      const url = safeUrl(v.url);
       const videoPlaceholder = document.getElementById('video-placeholder');
-      videoPlaceholder.innerHTML = `
-        <div class="video-container">
-          <iframe src="${v.url}" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p style="font-size: 13px; color: var(--ink-muted); text-align: center; margin-top: -30px; margin-bottom: 40px;">${v.description}</p>
-      `;
+      if (url) {
+        videoPlaceholder.innerHTML = `
+          <div class="video-container">
+            <iframe src="${url}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p style="font-size: 13px; color: var(--ink-muted); text-align: center; margin-top: -30px; margin-bottom: 40px;">${esc(v.description)}</p>
+        `;
+      }
     }
 
   } catch (e) {

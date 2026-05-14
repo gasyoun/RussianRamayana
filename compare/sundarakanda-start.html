@@ -113,17 +113,19 @@
 </div>
 
 <script>
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
 async function loadEpisode() {
   try {
     const res = await fetch('../data/comparison-episodes.json');
     const data = await res.json();
     const episode = data.find(e => e.id === 'sundarakanda-start');
-    
+
     if(!episode) return;
 
     document.getElementById('episode-header').innerHTML = `
-      <h1>${episode.title}</h1>
-      <p class="intro">${episode.description}</p>
+      <h1>${esc(episode.title)}</h1>
+      <p class="intro">${esc(episode.description)}</p>
     `;
 
     const container = document.getElementById('comparison-content');
@@ -131,8 +133,8 @@ async function loadEpisode() {
       const div = document.createElement('div');
       div.className = 'comparison-block';
       div.innerHTML = `
-        <span class="block-label">${sec.label}</span>
-        <div class="block-text">${sec.content}</div>
+        <span class="block-label">${esc(sec.label)}</span>
+        <div class="block-text">${esc(sec.content)}</div>
       `;
       container.appendChild(div);
     });

@@ -167,15 +167,17 @@ async function loadMedia() {
     const videoGrid = document.getElementById('video-grid');
     
     videos.forEach(v => {
+      const url = safeUrl(v.url);
+      if (!url) return;
       const div = document.createElement('div');
       div.className = 'video-card';
       div.innerHTML = `
         <div class="video-wrap">
-          <iframe src="${v.url}" frameborder="0" allowfullscreen></iframe>
+          <iframe src="${url}" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-info">
-          <h3>${v.title}</h3>
-          <p>${v.description}</p>
+          <h3>${esc(v.title)}</h3>
+          <p>${esc(v.description)}</p>
         </div>
       `;
       videoGrid.appendChild(div);
@@ -187,14 +189,15 @@ async function loadMedia() {
     const audioList = document.getElementById('audio-list');
 
     audioData.forEach(a => {
+      const url = safeUrl(a.url);
       const div = document.createElement('div');
       div.className = 'audio-item';
       div.innerHTML = `
         <div class="audio-info">
-          <h3>${a.title}</h3>
-          <div class="audio-meta">Читает: ${a.reader} · Длительность: ${a.duration}</div>
+          <h3>${esc(a.title)}</h3>
+          <div class="audio-meta">Читает: ${esc(a.reader)} · Длительность: ${esc(a.duration)}</div>
         </div>
-        <audio controls src="${a.url}"></audio>
+        ${url ? `<audio controls src="${url}"></audio>` : ''}
       `;
       audioList.appendChild(div);
     });
