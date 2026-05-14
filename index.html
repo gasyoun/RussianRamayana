@@ -756,8 +756,8 @@ async function loadHomeFundraising() {
   try {
     const res = await fetch('data/fundraising/summary.json');
     const data = await res.json();
-    document.getElementById('home-collected').textContent = data.collected.toLocaleString('ru-RU');
-    document.getElementById('home-goal').textContent = data.goal.toLocaleString('ru-RU');
+    document.getElementById('home-collected').textContent = data.collected_rub.toLocaleString('ru-RU');
+    document.getElementById('home-goal').textContent = data.goal_rub.toLocaleString('ru-RU');
   } catch (e) {
     console.error('Error loading home fundraising data:', e);
   }
