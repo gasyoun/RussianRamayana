@@ -370,6 +370,7 @@ async function loadProjectData() {
 
   } catch (e) {
     console.error('Error loading project page data:', e);
+    document.getElementById('team-grid').innerHTML = '<p style="color:var(--ink-muted);font-style:italic;text-align:center;padding:24px;">Не удалось загрузить данные. Попробуйте обновить страницу.</p>';
   }
 }
 

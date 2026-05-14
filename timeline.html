@@ -233,6 +233,7 @@ async function loadTimeline() {
     });
   } catch (e) {
     console.error('Error loading timeline:', e);
+    document.getElementById('timeline-container').innerHTML = '<p style="color:var(--ink-muted);font-style:italic;text-align:center;padding:24px;">Не удалось загрузить данные. Попробуйте обновить страницу.</p>';
   }
 }
 

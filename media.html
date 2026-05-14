@@ -277,6 +277,8 @@ async function loadMedia() {
 
   } catch (e) {
     console.error('Error loading media data:', e);
+    document.getElementById('video-grid').innerHTML = '<p style="color:var(--ink-muted);font-style:italic;text-align:center;padding:24px;">Не удалось загрузить данные. Попробуйте обновить страницу.</p>';
+    document.getElementById('audio-list').innerHTML = '<p style="color:var(--ink-muted);font-style:italic;text-align:center;padding:24px;">Не удалось загрузить данные. Попробуйте обновить страницу.</p>';
   }
 }
 

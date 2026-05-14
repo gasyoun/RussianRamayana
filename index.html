@@ -760,6 +760,8 @@ async function loadHomeFundraising() {
     document.getElementById('home-goal').textContent = data.goal_rub.toLocaleString('ru-RU');
   } catch (e) {
     console.error('Error loading home fundraising data:', e);
+    document.getElementById('home-collected').textContent = '—';
+    document.getElementById('home-goal').textContent = '—';
   }
 }
 window.addEventListener('DOMContentLoaded', loadHomeFundraising);

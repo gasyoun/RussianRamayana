@@ -210,6 +210,7 @@ async function loadEpisode() {
 
   } catch (e) {
     console.error('Error loading episode:', e);
+    document.getElementById('episode-header').innerHTML = '<p style="color:var(--ink-muted);font-style:italic;text-align:center;padding:24px;">Не удалось загрузить данные. Попробуйте обновить страницу.</p>';
   }
 }
 
