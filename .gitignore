@@ -20,3 +20,7 @@ bin-release/
 # Oversized audiobook files: keep local, publish via external hosting/GitHub Releases/LFS.
 Рамаяна 1986. Книга 5. Прекрасная.MP3
 Рамаяна 1986. Книга 6. Битва.MP3
+
+# audit sidecars
+.contributing_old.md
+.contributing_audit.txt
