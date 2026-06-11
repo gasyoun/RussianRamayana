@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Сравнительное чтение начала Сундараканды: санскрит, подстрочник Максима Леонова и поэтический перевод Веры Потаповой.">
+<meta property="og:title" content="Сравнительное чтение · Русская Рамаяна">
+<meta property="og:description" content="Сравнительное чтение начала Сундараканды: санскрит, подстрочник Максима Леонова и поэтический перевод Веры Потаповой.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gasyoun.github.io/RussianRamayana/compare/sundarakanda-start.html">
+<meta property="og:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Сравнительное чтение · Русская Рамаяна">
+<meta name="twitter:description" content="Сравнительное чтение начала Сундараканды: санскрит, подстрочник Максима Леонова и поэтический перевод Веры Потаповой.">
+<meta name="twitter:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
 <title>Сравнительное чтение · Русская Рамаяна</title>
+<link rel="canonical" href="https://gasyoun.github.io/RussianRamayana/compare/sundarakanda-start.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><polygon points=%2750,10 61,35 90,35 68,55 77,90 50,70 23,90 32,55 10,35 39,35%27 fill=%27%23b8913a%27/></svg>">
 <link rel="stylesheet" href="../style.css">
 <style>
   .container {
@@ -88,11 +100,21 @@
 
 
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Сравнительное чтение: начало Сундараканды",
+  "description": "Санскрит, подстрочник Максима Леонова и поэтический перевод Веры Потаповой — параллельное чтение начала пятой книги Рамаяны.",
+  "url": "https://gasyoun.github.io/RussianRamayana/compare/sundarakanda-start.html"
+}
+</script>
 </head>
 <body>
+<noscript><div style="max-width:680px;margin:40px auto;padding:2rem;background:var(--paper-dark);border:1px solid var(--border);text-align:center;font-size:14px;color:var(--ink-muted);">Для работы этой страницы требуется JavaScript. Пожалуйста, включите его в настройках браузера.</div></noscript>
 
 <div class="container">
-  <a href="../index.html" class="nav-back">← Вернуться на главную</a>
+  <a href="index.html" class="nav-back">← Все эпизоды</a>
 
   <header id="episode-header">
     <h1>Загрузка эпизода...</h1>
@@ -108,18 +130,18 @@
   </div>
 
   <footer>
-    <p>Больше параллельных текстов доступно в <a href="https://samskrtam.ru/parallel-corpus/index_ramayana.html" target="_blank">основном корпусе →</a></p>
+    <p>Больше параллельных текстов доступно в <a href="https://samskrtam.ru/parallel-corpus/index_ramayana.html" target="_blank" rel="noopener noreferrer">основном корпусе →</a></p>
   </footer>
 </div>
 
+<script src="../js/utils.js"></script>
 <script>
-const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-
 async function loadEpisode() {
   try {
     const res = await fetch('../data/comparison-episodes.json');
     const data = await res.json();
-    const episode = data.find(e => e.id === 'sundarakanda-start');
+    const episodeId = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : 'sundarakanda-start';
+    const episode = data.find(e => e.id === episodeId);
 
     if(!episode) return;
 

@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Архив русских переводов и проект завершения первого полного поэтического академического перевода Валмики-Рамаяны с санскрита. Гринцер начал, Леонов продолжает.">
+<meta property="og:title" content="Русская Рамаяна">
+<meta property="og:description" content="Архив русских переводов и проект завершения первого полного поэтического академического перевода Валмики-Рамаяны с санскрита. Гринцер начал, Леонов продолжает.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gasyoun.github.io/RussianRamayana/">
+<meta property="og:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Русская Рамаяна">
+<meta name="twitter:description" content="Архив русских переводов и проект завершения первого полного поэтического академического перевода Валмики-Рамаяны с санскрита. Гринцер начал, Леонов продолжает.">
+<meta name="twitter:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
 <title>Русская Рамаяна</title>
+<link rel="canonical" href="https://gasyoun.github.io/RussianRamayana/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><polygon points=%2750,10 61,35 90,35 68,55 77,90 50,70 23,90 32,55 10,35 39,35%27 fill=%27%23b8913a%27/></svg>">
 <link rel="stylesheet" href="style.css">
 <style>
   body { overflow-x: hidden; }
@@ -576,8 +588,23 @@
     h1 { font-size: 3rem; }
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Русская Рамаяна",
+  "url": "https://gasyoun.github.io/RussianRamayana/",
+  "description": "Архив русских переводов и проект завершения первого полного поэтического академического перевода Валмики-Рамаяны с санскрита.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Русская Рамаяна",
+    "url": "https://gasyoun.github.io/RussianRamayana/"
+  }
+}
+</script>
 </head>
 <body>
+<noscript><div style="max-width:680px;margin:40px auto;padding:2rem;background:var(--paper-dark);border:1px solid var(--border);text-align:center;font-size:14px;color:var(--ink-muted);">Для работы этой страницы требуется JavaScript. Пожалуйста, включите его в настройках браузера.</div></noscript>
 
 <!-- HEADER -->
 <header>
@@ -585,7 +612,7 @@
   <h1>Русская Рамаяна</h1>
   <p class="subtitle">Избранные книги великого эпоса</p>
   <div style="margin: 10px 0 30px;">
-    <a href="https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html" target="_blank" 
+    <a href="https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html" target="_blank" rel="noopener noreferrer" 
        style="font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border-strong); transition: color 0.2s; letter-spacing: 0.05em;">
       Полный поэтический текст (пер. В. Потаповой) →
     </a>
@@ -617,6 +644,9 @@
         <p style="font-size: 12px; color: var(--ink-muted); font-style: italic;">
           <span id="home-collected">Загрузка...</span> ₽ из <span id="home-goal">...</span> ₽
           &nbsp;·&nbsp; В месяц: 166 000 ₽
+        </p>
+        <p style="font-size: 11px; color: var(--ink-muted); font-style: italic; margin-top: 2px;">
+          <span id="home-donors"></span>
         </p>
       </div>
     </div>
@@ -665,8 +695,8 @@
     <p style="font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: var(--ink-muted); margin-bottom: 24px;">
       Как звучит Рамаяна? Сравните санскрит, подстрочник и поэтический перевод.
     </p>
-    <a href="compare/sundarakanda-start.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--gold); text-decoration: none; font-family: 'Cormorant SC', serif; font-size: 16px; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px; transition: color 0.2s;">
-      Начать чтение: Сундараканда →
+    <a href="compare/" style="display: inline-flex; align-items: center; gap: 10px; color: var(--gold); text-decoration: none; font-family: 'Cormorant SC', serif; font-size: 16px; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px; transition: color 0.2s;">
+      Все эпизоды →
     </a>
   </section>
 
@@ -681,8 +711,57 @@
       Открыть медиа-галерею →
     </a>
   </section>
+
+  <!-- DRAFTS ENTRY POINT -->
+  <section style="max-width: 680px; margin: 60px auto 0; padding: 0 2rem; text-align: center;">
+    <div class="divider" style="margin: 0 auto 30px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <h2 style="font-family: 'Cormorant SC', serif; font-size: 28px; font-weight: 300; margin-bottom: 12px; color: var(--ink);">Закрытые черновики</h2>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: var(--ink-muted); margin-bottom: 24px;">
+      Рабочие материалы Книг V и VI: подстрочники и черновые переводы для подписчиков.
+    </p>
+    <a href="drafts.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--gold); text-decoration: none; font-family: 'Cormorant SC', serif; font-size: 16px; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px; transition: color 0.2s;">
+      Открыть черновики (подписчикам) →
+    </a>
+  </section>
+
+  <!-- REPORTS ENTRY POINT -->
+  <section style="max-width: 680px; margin: 60px auto 0; padding: 0 2rem; text-align: center;">
+    <div class="divider" style="margin: 0 auto 30px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <h2 style="font-family: 'Cormorant SC', serif; font-size: 28px; font-weight: 300; margin-bottom: 12px; color: var(--ink);">Отчёты о сборе</h2>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: var(--ink-muted); margin-bottom: 24px;">
+      Прозрачность превыше всего: ежемесячные отчёты о поступлениях и расходах.
+    </p>
+    <a href="reports.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--gold); text-decoration: none; font-family: 'Cormorant SC', serif; font-size: 16px; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px; transition: color 0.2s;">
+      Смотреть отчёты →
+    </a>
+  </section>
+
+  <!-- BIBLIOGRAPHY ENTRY POINT -->
+  <section style="max-width: 680px; margin: 60px auto 0; padding: 0 2rem; text-align: center;">
+    <div class="divider" style="margin: 0 auto 30px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <h2 style="font-family: 'Cormorant SC', serif; font-size: 28px; font-weight: 300; margin-bottom: 12px; color: var(--ink);">Библиография</h2>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: var(--ink-muted); margin-bottom: 24px;">
+      Полный список русских изданий Рамаяны: от опубликованных книг до готовящихся томов.
+    </p>
+    <a href="bibliography.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--gold); text-decoration: none; font-family: 'Cormorant SC', serif; font-size: 16px; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px; transition: color 0.2s;">
+      Открыть библиографию →
+    </a>
+  </section>
+
+  <!-- AUDIO ENTRY POINT -->
+  <section style="max-width: 680px; margin: 60px auto 0; padding: 0 2rem; text-align: center;">
+    <div class="divider" style="margin: 0 auto 30px;"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+    <h2 style="font-family: 'Cormorant SC', serif; font-size: 28px; font-weight: 300; margin-bottom: 12px; color: var(--ink);">Аудиотека</h2>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: var(--ink-muted); margin-bottom: 24px;">
+      Полная аудиокнига «Рамаяна» 1986 года: все семь книг в исполнении Евгения Кривецкого.
+    </p>
+    <a href="audio.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--gold); text-decoration: none; font-family: 'Cormorant SC', serif; font-size: 16px; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px; transition: color 0.2s;">
+      Слушать аудиокнигу →
+    </a>
+  </section>
 </header>
 
+<script src="js/utils.js"></script>
 <script>
 async function loadHomeFundraising() {
   try {
@@ -690,13 +769,47 @@ async function loadHomeFundraising() {
     const data = await res.json();
     document.getElementById('home-collected').textContent = data.collected_rub.toLocaleString('ru-RU');
     document.getElementById('home-goal').textContent = data.goal_rub.toLocaleString('ru-RU');
+    document.getElementById('home-donors').textContent = data.donor_count > 0 ? data.donor_count.toLocaleString('ru-RU') + ' доноров' : '';
   } catch (e) {
     console.error('Error loading home fundraising data:', e);
     document.getElementById('home-collected').textContent = '—';
     document.getElementById('home-goal').textContent = '—';
+    document.getElementById('home-donors').textContent = '';
+  }
+}
+async function loadAudiobook() {
+  try {
+    const res = await fetch('data/audio.json');
+    const audioData = await res.json();
+    const list = document.getElementById('audio-playlist');
+    if (!list) return;
+    const roman = ['','I','II','III','IV','V','VI','VII'];
+
+    audioData.forEach((a, i) => {
+      const num = i + 1;
+      const li = document.createElement('li');
+      li.className = 'audio-item';
+
+      const titleParts = a.title.split('. ');
+      const namePart = titleParts[0];
+      const kandaPart = titleParts[1] || '';
+
+      let playerHTML;
+      if (a.status === 'available' && a.url && safeUrl(a.url)) {
+        playerHTML = '<div class="audio-row"><audio controls preload="metadata" src="' + safeUrl(a.url) + '"></audio><a class="dl-btn" title="Скачать MP3" href="' + safeUrl(a.url) + '" download>↓</a></div><a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>';
+      } else {
+        playerHTML = '<div class="audio-unavailable"><span>Файл не загружен — добавьте MP3 на сервер.</span><a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a></div>';
+      }
+
+      li.innerHTML = '<div class="audio-item-label"><span class="audio-num">' + esc(roman[num]) + '</span><span class="audio-name">' + esc(namePart) + ' <span class="kanda">' + esc(kandaPart) + '</span></span></div>' + playerHTML;
+      list.appendChild(li);
+    });
+  } catch (e) {
+    console.error('Error loading audio data:', e);
   }
 }
 window.addEventListener('DOMContentLoaded', loadHomeFundraising);
+window.addEventListener('DOMContentLoaded', loadAudiobook);
 </script>
 
 <!-- AUDIOBOOK -->
@@ -707,110 +820,8 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
     <p class="audiobook-meta">Читает Евгений Кривецкий &nbsp;·&nbsp; Общество ревнителей санскрита</p>
   </div>
 
-  <ul class="audio-list">
-
-    <li class="audio-item">
-      <div class="audio-item-label">
-        <span class="audio-num">I</span>
-        <span class="audio-name">Книга первая <span class="kanda">Бала-канда</span></span>
-      </div>
-      <div class="audio-row">
-        <audio controls preload="metadata"
-          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3">
-        </audio>
-        <a class="dl-btn" title="Скачать MP3"
-          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3"
-          download>↓</a>
-      </div>
-      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
-    </li>
-
-    <li class="audio-item">
-      <div class="audio-item-label">
-        <span class="audio-num">II</span>
-        <span class="audio-name">Книга вторая <span class="kanda">Айодхья-канда</span></span>
-      </div>
-      <div class="audio-row">
-        <audio controls preload="metadata"
-          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3">
-        </audio>
-        <a class="dl-btn" title="Скачать MP3"
-          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3"
-          download>↓</a>
-      </div>
-      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
-    </li>
-
-    <li class="audio-item">
-      <div class="audio-item-label">
-        <span class="audio-num">III</span>
-        <span class="audio-name">Книга третья <span class="kanda">Аранья-канда</span></span>
-      </div>
-      <div class="audio-row">
-        <audio controls preload="metadata"
-          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3">
-        </audio>
-        <a class="dl-btn" title="Скачать MP3"
-          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3"
-          download>↓</a>
-      </div>
-      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
-    </li>
-
-    <li class="audio-item">
-      <div class="audio-item-label">
-        <span class="audio-num">IV</span>
-        <span class="audio-name">Книга четвёртая <span class="kanda">Кишкиндха-канда</span></span>
-      </div>
-      <div class="audio-row">
-        <audio controls preload="metadata"
-          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3">
-        </audio>
-        <a class="dl-btn" title="Скачать MP3"
-          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3"
-          download>↓</a>
-      </div>
-      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
-    </li>
-
-    <li class="audio-item">
-      <div class="audio-item-label">
-        <span class="audio-num">V</span>
-        <span class="audio-name">Книга пятая <span class="kanda">Сундара-канда</span></span>
-      </div>
-      <div class="audio-unavailable">
-        <span>Файл не загружен — добавьте MP3 на сервер.</span>
-        <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
-      </div>
-    </li>
-
-    <li class="audio-item">
-      <div class="audio-item-label">
-        <span class="audio-num">VI</span>
-        <span class="audio-name">Книга шестая <span class="kanda">Юддха-канда</span></span>
-      </div>
-      <div class="audio-unavailable">
-        <span>Файл не загружен — добавьте MP3 на сервер.</span>
-        <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
-      </div>
-    </li>
-
-    <li class="audio-item">
-      <div class="audio-item-label">
-        <span class="audio-num">VII</span>
-        <span class="audio-name">Книга седьмая <span class="kanda">Уттара-канда</span></span>
-      </div>
-      <div class="audio-row">
-        <audio controls preload="metadata"
-          src="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3">
-        </audio>
-        <a class="dl-btn" title="Скачать MP3"
-          href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3"
-          download>↓</a>
-      </div>
-      <a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
-    </li>
-
+  <ul class="audio-list" id="audio-playlist">
+    <!-- Populated from data/audio.json -->
   </ul>
 </section>
 
@@ -858,7 +869,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
               href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3"
               download>↓</a>
           </div>
-          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>
         </div>
       </div>
     </div>
@@ -883,7 +894,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
               href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3"
               download>↓</a>
           </div>
-          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>
         </div>
       </div>
     </div>
@@ -908,7 +919,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
               href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3"
               download>↓</a>
           </div>
-          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>
         </div>
       </div>
     </div>
@@ -933,7 +944,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
               href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3"
               download>↓</a>
           </div>
-          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>
         </div>
       </div>
     </div>
@@ -952,7 +963,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
         <div class="card-audio">
           <div class="audio-unavailable">
             <span>Загрузите MP3 на сервер и замените этот блок тегом &lt;audio&gt;</span>
-            <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+            <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>
           </div>
         </div>
       </div>
@@ -972,7 +983,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
         <div class="card-audio">
           <div class="audio-unavailable">
             <span>Загрузите MP3 на сервер и замените этот блок тегом &lt;audio&gt;</span>
-            <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+            <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>
           </div>
         </div>
       </div>
@@ -998,7 +1009,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
               href="https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3"
               download>↓</a>
           </div>
-          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Слушать на VK →</a>
+          <a class="card-audio-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>
         </div>
       </div>
     </div>
@@ -1130,7 +1141,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
     </div>
     <p class="map-counter" id="m-counter"></p>
     <p style="text-align:center; margin-top:16px;">
-      <a href="ramayana-map-leaflet.html" target="_blank"
+      <a href="ramayana-map-leaflet.html" target="_blank" rel="noopener noreferrer"
         style="font-family:'Cormorant Garamond',serif; font-size:13px; font-style:italic; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--border-strong); letter-spacing:0.08em;">
         Открыть географическую карту →
       </a>
@@ -1145,14 +1156,14 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
     <p class="audiobook-title">Параллельный корпус · Читать текст</p>
     <p class="audiobook-meta">Общество ревнителей санскрита · Санскрит и русский перевод</p>
   </div>
-  <p class="corpus-intro">Тот же круг учёных, что создал аудиокнигу, готовит академические переводы Рамаяны с параллельным санскритским текстом. <br> Также в нашем корпусе доступен <a href="https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border);">полный поэтический перевод Веры Потаповой</a>.</p>
+  <p class="corpus-intro">Тот же круг учёных, что создал аудиокнигу, готовит академические переводы Рамаяны с параллельным санскритским текстом. <br> Также в нашем корпусе доступен <a href="https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html" target="_blank" rel="noopener noreferrer" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border);">полный поэтический перевод Веры Потаповой</a>.</p>
 
   <ul class="corpus-list">
 
     <li class="corpus-item">
       <span class="corpus-num">I</span>
       <div class="corpus-info">
-        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/01_ramayana-balakanda.html" target="_blank">Бала-канда · Книга о детстве</a></p>
+        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/01_ramayana-balakanda.html" target="_blank" rel="noopener noreferrer">Бала-канда · Книга о детстве</a></p>
         <p class="corpus-translator">Перевод П.А. Гринцера, 2006</p>
       </div>
       <span class="corpus-status status-done">Опубликована</span>
@@ -1161,7 +1172,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
     <li class="corpus-item">
       <span class="corpus-num">II</span>
       <div class="corpus-info">
-        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/02_ramayana-ayodhyakanda.html" target="_blank">Айодхья-канда · Книга об Айодхье</a></p>
+        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/02_ramayana-ayodhyakanda.html" target="_blank" rel="noopener noreferrer">Айодхья-канда · Книга об Айодхье</a></p>
         <p class="corpus-translator">Перевод П.А. Гринцера, 2006</p>
       </div>
       <span class="corpus-status status-done">Опубликована</span>
@@ -1170,7 +1181,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
     <li class="corpus-item">
       <span class="corpus-num">III</span>
       <div class="corpus-info">
-        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/03_ramayana-aranyakanda.html" target="_blank">Аранья-канда · Книга о лесе</a></p>
+        <p class="corpus-name"><a href="https://samskrtam.ru/parallel-corpus/03_ramayana-aranyakanda.html" target="_blank" rel="noopener noreferrer">Аранья-канда · Книга о лесе</a></p>
         <p class="corpus-translator">Перевод П.А. Гринцера, 2014</p>
       </div>
       <span class="corpus-status status-done">Опубликована</span>
@@ -1206,7 +1217,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
   </ul>
 
   <p style="text-align:center; margin-top: 20px;">
-    <a href="https://samskrtam.ru/parallel-corpus/index_ramayana.html" target="_blank"
+    <a href="https://samskrtam.ru/parallel-corpus/index_ramayana.html" target="_blank" rel="noopener noreferrer"
       style="font-family:'Cormorant Garamond',serif; font-size:13px; font-style:italic; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--border-strong); letter-spacing:0.08em;">
       Открыть весь корпус →
     </a>
@@ -1221,7 +1232,7 @@ window.addEventListener('DOMContentLoaded', loadHomeFundraising);
     <div class="divider-line"></div>
   </div>
   <p>Аудиокнига «Рамаяна 1986» · Читает Евгений Кривецкий</p>
-  <p>Общество ревнителей санскрита · <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank">Плейлист ВКонтакте</a></p>
+  <p>Общество ревнителей санскрита · <a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Плейлист ВКонтакте</a></p>
   <p style="opacity: 0.4; font-size: 10px; margin-top: 16px; letter-spacing: 0.1em;">v0.1</p>
 </footer>
 

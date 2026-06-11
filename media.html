@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Медиа-архив Русской Рамаяны: аудиокниги, видеоинтервью с переводчиком, доклады о санскритском эпосе.">
+<meta property="og:title" content="Медиа-архив · Русская Рамаяна">
+<meta property="og:description" content="Медиа-архив Русской Рамаяны: аудиокниги, видеоинтервью с переводчиком, доклады о санскритском эпосе.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gasyoun.github.io/RussianRamayana/media.html">
+<meta property="og:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Медиа-архив · Русская Рамаяна">
+<meta name="twitter:description" content="Медиа-архив Русской Рамаяны: аудиокниги, видеоинтервью с переводчиком, доклады о санскритском эпосе.">
+<meta name="twitter:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
 <title>Медиа-архив · Русская Рамаяна</title>
+<link rel="canonical" href="https://gasyoun.github.io/RussianRamayana/media.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><polygon points=%2750,10 61,35 90,35 68,55 77,90 50,70 23,90 32,55 10,35 39,35%27 fill=%27%23b8913a%27/></svg>">
 <link rel="stylesheet" href="style.css">
 <style>
   .container {
@@ -125,8 +137,18 @@
 
 
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Медиа-архив Русской Рамаяны",
+  "description": "Аудиокниги, видеоинтервью с переводчиком, доклады о санскритском эпосе.",
+  "url": "https://gasyoun.github.io/RussianRamayana/media.html"
+}
+</script>
 </head>
 <body>
+<noscript><div style="max-width:680px;margin:40px auto;padding:2rem;background:var(--paper-dark);border:1px solid var(--border);text-align:center;font-size:14px;color:var(--ink-muted);">Для работы этой страницы требуется JavaScript. Пожалуйста, включите его в настройках браузера.</div></noscript>
 
 <div class="container">
   <a href="index.html" class="nav-back">← Вернуться на главную</a>
@@ -151,6 +173,9 @@
     <div class="audio-list" id="audio-list">
       <!-- Will be populated from JSON -->
     </div>
+    <p style="text-align: center; margin-top: 16px;">
+      <a href="audio.html" style="color: var(--gold); text-decoration: none; font-family: 'Cormorant SC', serif; font-size: 14px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-strong); transition: color 0.2s;">Полный плейлист с длительностью →</a>
+    </p>
   </section>
 
   <footer>
@@ -158,6 +183,7 @@
   </footer>
 </div>
 
+<script src="js/utils.js"></script>
 <script>
 async function loadMedia() {
   try {

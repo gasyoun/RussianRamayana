@@ -89,3 +89,24 @@ footer {
 }
 footer p { font-size: 13px; color: var(--ink-muted); font-style: italic; }
 footer a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border); }
+
+@media print {
+  .nav-back, header, footer, audio, .audio-row, .dl-btn, .vk-link,
+  .card-audio-link, .password-gate, .fallback-note, iframe,
+  .payment-btn, .progress-container, .map-wrap, #map,
+  .back-link, .leaflet-container, .rama-marker, .controls-panel,
+  noscript, .nav-back {
+    display: none !important;
+  }
+  body { background: white; font-size: 13pt; line-height: 1.7; }
+  body::before { display: none; }
+  .container { max-width: 100%; padding: 0; }
+  h1 { font-size: 20pt; }
+  a { color: #1a1410; text-decoration: underline; }
+  .chapter-card, .draft-section, .report-card, .fundraising-card,
+  .status-item, .timeline-item, .level-card {
+    break-inside: avoid; border: 1px solid #ccc;
+  }
+  img { max-width: 100%; filter: none; }
+  .fragment-lines p::before { color: #999; }
+}

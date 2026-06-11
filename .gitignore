@@ -21,6 +21,10 @@ bin-release/
 Рамаяна 1986. Книга 5. Прекрасная.MP3
 Рамаяна 1986. Книга 6. Битва.MP3
 
+# Private donation ledger — never commit donor data
+donations_private.csv
+_private/
+
 # audit sidecars
 .contributing_old.md
 .contributing_audit.txt

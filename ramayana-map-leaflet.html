@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Интерактивная карта путешествия Рамы по историческим местам Рамаяны Вальмики.">
+<meta property="og:title" content="Путешествие Рамы · Карта">
+<meta property="og:description" content="Интерактивная карта путешествия Рамы по историческим местам Рамаяны Вальмики.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gasyoun.github.io/RussianRamayana/ramayana-map-leaflet.html">
+<meta property="og:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Путешествие Рамы · Карта">
+<meta name="twitter:description" content="Интерактивная карта путешествия Рамы по историческим местам Рамаяны Вальмики.">
+<meta name="twitter:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
 <title>Путешествие Рамы · Карта</title>
+<link rel="canonical" href="https://gasyoun.github.io/RussianRamayana/ramayana-map-leaflet.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><polygon points=%2750,10 61,35 90,35 68,55 77,90 50,70 23,90 32,55 10,35 39,35%27 fill=%27%23b8913a%27/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cormorant+SC:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
@@ -52,11 +64,21 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
 .leaflet-tile{filter:sepia(0.45) brightness(0.88) contrast(0.95);}
 @media(max-width:680px){.layout{flex-direction:column;}#map{height:55vw;min-height:260px;}.sidebar{width:100%;border-left:none;border-top:1px solid var(--border-strong);}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Путешествие Рамы — интерактивная карта",
+  "description": "Интерактивная карта путешествия Рамы по историческим местам Рамаяны Вальмики.",
+  "url": "https://gasyoun.github.io/RussianRamayana/ramayana-map-leaflet.html"
+}
+</script>
 </head>
 <body>
+<noscript><div style="max-width:680px;margin:40px auto;padding:2rem;background:var(--paper-dark);border:1px solid var(--border);text-align:center;font-size:14px;color:var(--ink-muted);">Для работы этой страницы требуется JavaScript. Пожалуйста, включите его в настройках браузера.</div></noscript>
 
 <header>
-  <a class="back-link" href="ramayana.html">← Русская Рамаяна</a>
+  <a class="back-link" href="index.html">← Русская Рамаяна</a>
   <h1>Путешествие Рамы</h1>
   <p class="subtitle">Исторический маршрут · Рамаяна Вальмики</p>
 </header>
@@ -86,28 +108,19 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
 <!-- Leaflet JS в самом конце body — гарантированно после DOM -->
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-const STOPS=[
-  {lat:26.80,lng:82.20,label:"Айодхья",   num:"I",   book:"Бала-канда · I",        name:"Айодхья — родина Рамы",         desc:"Царевич Рама рождается в солнечной Айодхье на берегу Сарайю. Здесь он взрослеет, совершает первые подвиги и женится на Сите."},
-  {lat:26.67,lng:85.90,label:"Митхила",   num:"II",  book:"Бала-канда · I",        name:"Митхила — свадьба с Ситой",     desc:"В царстве Джанаки Рама переламывает лук Шивы и получает руку Ситы. Четыре брата женятся в один день."},
-  {lat:25.20,lng:81.00,label:"Читракут",  num:"III", book:"Айодхья-канда · II",    name:"Читракут — начало изгнания",    desc:"Изгнанный из Айодхьи, Рама с Ситой и Лакшманой уходит в леса. Брат Бхарата приходит умолять о возвращении."},
-  {lat:20.50,lng:77.80,label:"Дандака",   num:"IV",  book:"Аранья-канда · III",    name:"Лес Дандака — скитания",        desc:"Четырнадцать лет Рама странствует по лесам Декана через горы Виндхья, защищая отшельников от демонов."},
-  {lat:19.90,lng:73.70,label:"Панчавати", num:"V",   book:"Аранья-канда · III",    name:"Панчавати — похищение Ситы",    desc:"На берегу Годавари Равана похищает Ситу. Орёл Джатаюс погибает, защищая её. Начало великого похода."},
-  {lat:15.35,lng:76.45,label:"Кишкиндха",num:"VI",  book:"Кишкиндха-канда · IV",  name:"Кишкиндха — союз с обезьянами", desc:"У реки Тунгабхадра (совр. Хампи) Рама помогает Сугриве вернуть трон. Хануман отправляется на поиски Ситы."},
-  {lat:9.30, lng:79.30,label:"Рамешварам",num:"VII", book:"Юддха-канда · VI",      name:"Рамешварам — мост в Ланку",     desc:"На южной оконечности Индии войско возводит мост через пролив. Цепь островов Адамова моста указывает путь."},
-  {lat:7.90, lng:80.70,label:"Ланка",     num:"VIII",book:"Сундара/Юддха-канда",   name:"Ланка — битва и победа",        desc:"Хануман находит Ситу в саду Ашока. После великой битвы Рама убивает Равану. Сита проходит испытание огнём."},
-  {lat:26.80,lng:82.20,label:"Айодхья",  num:"IX",  book:"Уттара-канда · VII",    name:"Возвращение и воцарение",       desc:"Рама и Сита возвращаются в Айодхью на небесной колеснице Пушпака. Наступает эпоха Рама-раджья."}
-];
+let STOPS = [];
+let SEGS = [];
 
-const SEGS=[
-  [[26.80,82.20],[26.82,82.65],[26.87,83.10],[26.92,83.60],[26.97,84.10],[27.02,84.60],[26.95,85.10],[26.82,85.55],[26.67,85.90]],
-  [[26.67,85.90],[26.48,85.20],[26.25,84.45],[26.00,83.70],[25.75,83.00],[25.50,82.40],[25.35,81.90],[25.25,81.45],[25.20,81.00]],
-  [[25.20,81.00],[24.75,80.45],[24.10,79.70],[23.40,78.95],[22.65,78.40],[21.85,78.05],[21.10,77.90],[20.75,77.85],[20.50,77.80]],
-  [[20.50,77.80],[20.20,77.35],[19.95,76.75],[19.85,76.15],[19.80,75.50],[19.78,74.80],[19.82,74.20],[19.87,73.90],[19.90,73.70]],
-  [[19.90,73.70],[19.48,73.85],[18.85,74.05],[18.20,74.30],[17.55,74.55],[16.90,74.85],[16.30,75.05],[15.88,75.55],[15.55,76.00],[15.35,76.45]],
-  [[15.35,76.45],[14.75,77.05],[14.10,77.65],[13.40,78.20],[12.70,78.75],[12.00,79.15],[11.30,79.40],[10.60,79.50],[10.00,79.42],[9.60,79.35],[9.30,79.30]],
-  [[9.30,79.30],[9.18,79.52],[9.05,79.72],[8.88,79.92],[8.68,80.10],[8.48,80.24],[8.28,80.38],[8.08,80.54],[7.90,80.70]],
-  [[7.90,80.70],[8.80,79.60],[10.20,78.60],[12.00,77.85],[14.10,77.10],[16.20,76.55],[18.10,77.40],[20.00,78.40],[22.00,79.50],[23.60,80.50],[24.90,81.10],[26.10,81.60],[26.80,82.20]]
-];
+(async function() {
+  try {
+    const res = await fetch('data/rama-route.json');
+    const data = await res.json();
+    STOPS = data.stops;
+    SEGS = data.segments;
+  } catch(e) {
+    console.error('Error loading map data:', e);
+    return;
+  }
 
 // Инициализация карты
 const map = L.map('map', {center:[18,80], zoom:5, zoomControl:true});
@@ -225,6 +238,7 @@ function buildList(){
 buildList();
 updatePanel(-1);
 setTimeout(startAuto, 800);
+})();
 </script>
 </body>
 </html>
