@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: >-
+  Если вы используете материалы этого ресурса, просьба ссылаться на него
+  следующим образом. / If you use this resource, please cite it as below.
+type: dataset
+title: "Русская Рамаяна: архив русских переводов Валмики-Рамаяны"
+abstract: >-
+  Цифровой портал о русских переводах и пересказах Валмики-Рамаяны:
+  каталог переводов и изданий, аудиоархив 1986 г., сравнительное чтение,
+  хронология и проект завершения первого полного поэтического
+  академического перевода (линия П.А. Гринцера — М.В. Леонова,
+  серия «Литературные памятники»).
+authors:
+  - family-names: "Гасунс"
+    given-names: "Марцис Юрьевич"
+    email: gasyoun@gmail.com
+contact:
+  - email: gasyoun@gmail.com
+    family-names: "Гасунс"
+    given-names: "Марцис Юрьевич"
+repository-code: "https://github.com/gasyoun/RussianRamayana"
+url: "https://gasyoun.github.io/RussianRamayana/"
+license: Apache-2.0
+keywords:
+  - Ramayana
+  - Valmiki
+  - Рамаяна
+  - русский перевод
+  - санскрит
+  - digital humanities
+date-released: "2026-06-12"
+version: "0.2.0"
