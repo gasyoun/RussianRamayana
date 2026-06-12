@@ -21,6 +21,9 @@ bin-release/
 Рамаяна 1986. Книга 5. Прекрасная.MP3
 Рамаяна 1986. Книга 6. Битва.MP3
 
+# Internal scraps and unrelated working files (RuWritingStyles etc.) — keep local only
+_meta/
+
 # Private donation ledger — never commit donor data
 donations_private.csv
 _private/

@@ -4,6 +4,10 @@
     "title": "Книга первая. Бала-канда",
     "reader": "Евгений Кривецкий",
     "duration": "00:25:46",
+    "file": "Рамаяна 1986. Книга 1. Бала-канда.mp3",
+    "size_bytes": 52944415,
+    "sha256": "1329f151f4243afffde9a097f01bc842a23e3b733b87f54d187cd36e8bfb8607",
+    "ia_identifier": "ramayana-russian-1986",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%201.%20%D0%91%D0%B0%D0%BB%D0%B0-%D0%BA%D0%B0%D0%BD%D0%B4%D0%B0.mp3",
     "status": "available"
   },
@@ -11,7 +15,11 @@
     "id": "book-2",
     "title": "Книга вторая. Айодхья-канда",
     "reader": "Евгений Кривецкий",
-    "duration": "01:06:44",
+    "duration": "01:06:45",
+    "file": "Рамаяна 1986. Книга 2. Айодхья.MP3",
+    "size_bytes": 99678856,
+    "sha256": "79c4b6935d0d0094f76a7af18b480b0e100278c3e9f10a54d53a97b4b029f3b2",
+    "ia_identifier": "ramayana-russian-1986",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%202.%20%D0%90%D0%B9%D0%BE%D0%B4%D1%85%D1%8C%D1%8F.MP3",
     "status": "available"
   },
@@ -20,6 +28,10 @@
     "title": "Книга третья. Аранья-канда",
     "reader": "Евгений Кривецкий",
     "duration": "00:50:21",
+    "file": "Рамаяна 1986. Книга 3. Лесная.MP3",
+    "size_bytes": 76167823,
+    "sha256": "b5405f46ba88f5bda4bd178b0e4e6e12a1d843bdc25dee9285541cdf586be6cf",
+    "ia_identifier": "ramayana-russian-1986",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%203.%20%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F.MP3",
     "status": "available"
   },
@@ -28,6 +40,10 @@
     "title": "Книга четвёртая. Кишкиндха-канда",
     "reader": "Евгений Кривецкий",
     "duration": "00:40:18",
+    "file": "Рамаяна 1986. Книга 4. Кишкиндха.mp3",
+    "size_bytes": 81152153,
+    "sha256": "54ed43d578bc18a76b656b6850ec01889d6fed58e4c5fd092dc09a030a10674b",
+    "ia_identifier": "ramayana-russian-1986",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%204.%20%D0%9A%D0%B8%D1%88%D0%BA%D0%B8%D0%BD%D0%B4%D1%85%D0%B0.mp3",
     "status": "available"
   },
@@ -36,7 +52,11 @@
     "title": "Книга пятая. Сундара-канда",
     "reader": "Евгений Кривецкий",
     "duration": "01:23:52",
-    "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%205.%20%D0%9F%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F.MP3",
+    "file": "Рамаяна 1986. Книга 5. Прекрасная.MP3",
+    "size_bytes": 124533146,
+    "sha256": "4f2518ccce42ec3b3b4d8161a0d2ac8cad7c9bba1812a67cbfa3cdaad2a32c8a",
+    "ia_identifier": "ramayana-russian-1986",
+    "url": "",
     "status": "unavailable"
   },
   {
@@ -44,14 +64,22 @@
     "title": "Книга шестая. Юддха-канда",
     "reader": "Евгений Кривецкий",
     "duration": "01:44:30",
-    "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%206.%20%D0%91%D0%B8%D1%82%D0%B2%D0%B0.MP3",
+    "file": "Рамаяна 1986. Книга 6. Битва.MP3",
+    "size_bytes": 154025889,
+    "sha256": "c00b8869ceb3a29ef21f619f06dc267b443e2d4925b8b9e6d16fa136e03b7341",
+    "ia_identifier": "ramayana-russian-1986",
+    "url": "",
     "status": "unavailable"
   },
   {
     "id": "book-7",
     "title": "Книга седьмая. Уттара-канда",
     "reader": "Евгений Кривецкий",
-    "duration": "00:04:54",
+    "duration": "00:04:55",
+    "file": "Рамаяна 1986. Книга 7. Последняя.MP3",
+    "size_bytes": 11120844,
+    "sha256": "15e1f0ae2d972c84734e433f5c56ee138b6b372d73783ac7db8f51a3d6969777",
+    "ia_identifier": "ramayana-russian-1986",
     "url": "https://raw.githubusercontent.com/gasyoun/RussianRamayana/main/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0%201986.%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%207.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F.MP3",
     "status": "available"
   }
