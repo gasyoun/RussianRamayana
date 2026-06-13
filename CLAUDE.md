@@ -6,7 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Русская Рамаяна** is a data-driven static site: a digital corpus, translation archive, and crowdfunding platform supporting completion of the first full poetic academic Russian translation of Valmiki's Ramayana (Гринцер → Леонов line, series "Литературные памятники").
 
-No build system, no package manager, no framework. Pure HTML5/CSS3/ES6+. To develop: open any `.html` file in a browser, or serve locally with `python -m http.server`.
+No framework, no package manager. Pure HTML5/CSS3/ES6+. **Development is build-free**: open any `.html` file in a browser, or serve locally with `python -m http.server` — pages fetch their JSON at runtime.
+
+There is **one optional build, used only for deployment**: `scripts/prerender.py` (headless Chromium) bakes the data-driven pages to static HTML in `dist/` for SEO/archivability, run by `.github/workflows/deploy.yml` which deploys to GitHub Pages (Pages source = GitHub Actions). Renders are idempotent (each clears its container before populating), so baked pages still hydrate live from JSON. You never need to run the build for local development.
 
 ## Architecture
 

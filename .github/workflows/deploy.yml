@@ -7,6 +7,15 @@ name: Deploy to Pages
 on:
   push:
     branches: [main]
+    # Skip the (slow) prerender+deploy for changes that don't affect the site.
+    paths-ignore:
+      - '.ai_state.md'
+      - 'docs/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'CLAUDE.md'
+      - '**/*.md'
   workflow_dispatch:
 
 permissions:
