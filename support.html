@@ -50,7 +50,30 @@
   }
 
   .goal-section {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  .goal-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-muted);
+    margin: 0 0 16px;
+  }
+
+  .goal-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 32px 0;
+  }
+
+  /* Empty state: invite the first contribution instead of showing 0 ₽ */
+  .goal-section.is-empty .progress-container { display: none; }
+  .goal-invite {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: var(--gold);
+    margin: 0;
   }
 
   .goal-header {
@@ -251,18 +274,39 @@
   </header>
 
   <div class="fundraising-card">
-    <div class="goal-section">
+    <!-- Block 1: one-time milestone -->
+    <div class="goal-section" id="onetime-section">
       <div class="goal-header">
-        <span class="goal-title">Общая цель (Книги V-VI)</span>
-        <span class="goal-amount" id="total-amount">0 ₽</span>
+        <span class="goal-title">Разовые пожертвования</span>
+        <span class="goal-amount" id="onetime-amount">—</span>
       </div>
+      <p class="goal-subtitle">Общая цель на завершение Книг V–VI</p>
       <div class="progress-container">
-        <div class="progress-bar" id="total-progress"></div>
+        <div class="progress-bar" id="onetime-progress"></div>
       </div>
       <div class="goal-meta">
-        <span id="total-status">Собрано: 0 ₽</span>
-        <span id="total-goal-val">Цель: 1 000 000 ₽</span>
-        <span id="total-donors">Доноров: 0</span>
+        <span id="onetime-status"></span>
+        <span id="onetime-goal-val"></span>
+        <span id="onetime-donors"></span>
+      </div>
+    </div>
+
+    <div class="goal-divider"></div>
+
+    <!-- Block 2: monthly recurring runway -->
+    <div class="goal-section" id="monthly-section">
+      <div class="goal-header">
+        <span class="goal-title">Ежемесячная поддержка</span>
+        <span class="goal-amount" id="monthly-amount">—</span>
+      </div>
+      <p class="goal-subtitle">Регулярная «подушка» — обеспечивает непрерывную работу переводчика</p>
+      <div class="progress-container">
+        <div class="progress-bar" id="monthly-progress"></div>
+      </div>
+      <div class="goal-meta">
+        <span id="monthly-status"></span>
+        <span id="monthly-goal-val"></span>
+        <span id="monthly-supporters"></span>
       </div>
     </div>
   </div>
@@ -307,6 +351,27 @@
 
 <script src="js/utils.js"></script>
 <script>
+function renderGoal(o) {
+  const sel = id => document.getElementById(o.section + '-' + id);
+  const suffix = o.perMonth ? '/мес' : '';
+  const rub = n => n.toLocaleString('ru-RU') + ' ₽' + suffix;
+  const section = document.getElementById(o.section + '-section');
+  if (!o.collected) {
+    // Zero state: invite the first contribution rather than show a dead "0 ₽".
+    section.classList.add('is-empty');
+    sel('amount').textContent = 'Цель: ' + rub(o.goal);
+    sel('status').innerHTML = '<span class="goal-invite">' + esc(o.invite) + '</span>';
+    sel('goal-val').textContent = '';
+    sel('progress').style.width = '0%';
+    return;
+  }
+  sel('amount').textContent = rub(o.collected);
+  sel('status').textContent = 'Собрано: ' + rub(o.collected);
+  sel('goal-val').textContent = 'Цель: ' + rub(o.goal);
+  sel('progress').style.width = Math.min((o.collected / o.goal) * 100, 100) + '%';
+  sel(o.countId).textContent = o.countLabel + ': ' + o.count.toLocaleString('ru-RU');
+}
+
 async function loadData() {
   try {
     const [summaryRes, levelsRes, paymentRes, statusRes] = await Promise.all([
@@ -321,13 +386,19 @@ async function loadData() {
     const payment = await paymentRes.json();
     const status = await statusRes.json();
 
-    // Summary
-    document.getElementById('total-amount').textContent = summary.collected_rub.toLocaleString() + ' ₽';
-    document.getElementById('total-status').textContent = 'Собрано: ' + summary.collected_rub.toLocaleString() + ' ₽';
-    document.getElementById('total-goal-val').textContent = 'Цель: ' + summary.goal_rub.toLocaleString() + ' ₽';
-    const totalPercent = (summary.collected_rub / summary.goal_rub) * 100;
-    document.getElementById('total-progress').style.width = Math.min(totalPercent, 100) + '%';
-    document.getElementById('total-donors').textContent = 'Доноров: ' + summary.donor_count.toLocaleString('ru-RU');
+    // Two independent fundraising models, rendered as separate blocks.
+    renderGoal({
+      section: 'onetime', collected: summary.onetime.collected_rub,
+      goal: summary.onetime.goal_rub, count: summary.onetime.donor_count,
+      countId: 'donors', countLabel: 'Жертвователей',
+      invite: 'Сбор открыт — станьте первым, кто поддержит завершение эпоса.'
+    });
+    renderGoal({
+      section: 'monthly', collected: summary.monthly.pledged_rub,
+      goal: summary.monthly.goal_rub, count: summary.monthly.supporter_count,
+      countId: 'supporters', countLabel: 'Подписчиков', perMonth: true,
+      invite: 'Пока нет постоянных подписчиков — оформите первую ежемесячную поддержку.'
+    });
     document.getElementById('last-update').textContent = summary.updated_at;
 
     // Levels
