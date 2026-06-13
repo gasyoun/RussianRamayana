@@ -26,6 +26,24 @@ pip install jsonschema
 python scripts/validate_data.py
 ```
 
+## Каталоги: единый источник истины
+
+`editions.json` и `translations.json` описывают одни и те же академические
+тома, но с разной целью:
+
+- **`editions.json`** — каноническая **библиографическая запись** (ISBN,
+  Wikidata/VIAF, рецензия, издатель). Источник истины по идентичности и фактам.
+- **`translations.json`** — **витрина** для `translations.html` (охват,
+  язык-источник, статус для карточек).
+
+Записи связаны **общим `id`** (`grintser-1-2`, `potapova` и т. д.). При
+правке держите согласованными: `status` (общий словарь — см. ниже),
+имя автора и год. Факты (рецензия, ISBN) ведутся только в `editions.json`.
+
+Общий словарь статусов (в обоих каталогах и `project-status.json`):
+`published` · `in-progress` · `draft-ready` · `blocked` (· `in-press`, `draft`
+оставлены в карте подписей `translations.html` на всякий случай).
+
 ## Правила
 
 - Схемы намеренно нестрогие к лишним полям (`additionalProperties: true`):

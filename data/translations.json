@@ -2,7 +2,7 @@
   {
     "id": "grintser-1-2",
     "type": "translation",
-    "author": "П.А. Гринцер",
+    "author": "П. А. Гринцер",
     "title": "Рамаяна. Книги I–II: Балаканда (Книга о детстве), Айодхьяканда (Книга об Айодхье)",
     "year": "2006",
     "source_language": "санскрит",
@@ -15,7 +15,7 @@
   {
     "id": "grintser-3",
     "type": "translation",
-    "author": "П.А. Гринцер",
+    "author": "П. А. Гринцер",
     "title": "Рамаяна. Книга III: Араньяканда (Книга о лесе)",
     "year": "2014",
     "source_language": "санскрит",
@@ -28,43 +28,46 @@
   {
     "id": "serebryany-4",
     "type": "translation",
-    "author": "С.Д. Серебряный",
+    "author": "С. Д. Серебряный",
     "title": "Рамаяна. Книга IV: Кишкиндха-канда (Книга о Кишкиндхе)",
-    "year": "2025",
+    "year": "готовится",
     "source_language": "санскрит",
     "coverage": "Книга IV",
-    "edition": "В печати",
+    "edition": "Ладомир : Наука",
     "series": "Литературные памятники",
-    "status": "in-press"
+    "status": "blocked"
   },
   {
     "id": "leonov-5",
     "type": "translation",
-    "author": "М.В. Леонов",
+    "author": "М. В. Леонов",
     "title": "Рамаяна. Книга V: Сундара-канда (Прекрасная книга)",
-    "year": "черновик",
+    "year": "ожидается ~2027",
     "source_language": "санскрит",
     "coverage": "Книга V",
-    "status": "draft"
+    "series": "Литературные памятники",
+    "status": "in-progress"
   },
   {
     "id": "leonov-6",
     "type": "translation",
-    "author": "М.В. Леонов",
+    "author": "М. В. Леонов",
     "title": "Рамаяна. Книга VI: Юддха-канда (Книга о битве)",
-    "year": "в работе",
+    "year": "ожидается ~2029",
     "source_language": "санскрит",
     "coverage": "Книга VI",
-    "status": "in-progress"
+    "series": "Литературные памятники",
+    "status": "draft-ready"
   },
   {
-    "id": "potapova-full",
+    "id": "potapova",
     "type": "poetic",
-    "author": "В. Потапова",
-    "title": "Рамаяна (полный поэтический перевод)",
+    "author": "В. А. Потапова",
+    "title": "Рамаяна (поэтический перевод)",
     "year": "1986",
-    "source_language": "санскрит (через подстрочник)",
-    "coverage": "Полный текст",
+    "source_language": "санскрит (через подстрочник Б. А. Захарьина)",
+    "coverage": "Избранные эпизоды всех книг (~6000 строк из ~48000)",
+    "edition": "Художественная литература",
     "url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html",
     "status": "published"
   }
