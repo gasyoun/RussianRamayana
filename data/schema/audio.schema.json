@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Аудиокнига — список книг (кāṇḍ)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "reader", "duration", "status"],
+    "properties": {
+      "id": {"type": "string"},
+      "title": {"type": "string"},
+      "reader": {"type": "string"},
+      "translator": {"type": "string"},
+      "duration": {"type": "string", "pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+      "file": {"type": "string"},
+      "size_bytes": {"type": "integer", "minimum": 0},
+      "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+      "ia_identifier": {"type": "string"},
+      "rights": {"type": "string"},
+      "url": {"type": "string"},
+      "status": {"enum": ["available", "unavailable"]}
+    },
+    "additionalProperties": true
+  }
+}

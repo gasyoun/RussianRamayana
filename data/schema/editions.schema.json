@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Каталог изданий (библиография)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "translator", "publisher", "type", "status"],
+    "properties": {
+      "id": {"type": "string"},
+      "title": {"type": "string"},
+      "translator": {"type": "string"},
+      "translator_wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
+      "translator_viaf": {"type": "string", "pattern": "^[0-9]+$"},
+      "year": {"type": ["integer", "null"]},
+      "publisher": {"type": "string"},
+      "series": {"type": "string"},
+      "series_wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
+      "isbn": {"type": "string"},
+      "books": {"type": "string"},
+      "type": {"type": "string"},
+      "recension": {"type": "string"},
+      "description": {"type": "string"},
+      "status": {"type": "string"},
+      "url": {"type": "string"}
+    },
+    "additionalProperties": true
+  }
+}

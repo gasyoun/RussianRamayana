@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Черновики и подстрочники (для подписчиков)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "book", "title", "type", "status", "fragments"],
+    "properties": {
+      "id": {"type": "string"},
+      "book": {"type": "integer"},
+      "title": {"type": "string"},
+      "type": {"type": "string"},
+      "rights": {"type": "string"},
+      "description": {"type": "string"},
+      "status": {"type": "string"},
+      "fragments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["label", "lines"],
+          "properties": {
+            "label": {"type": "string"},
+            "lines": {"type": "array", "items": {"type": "string"}}
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "additionalProperties": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Сбор средств — уровни подписки",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "amount", "period", "description", "rewards"],
+    "properties": {
+      "id": {"type": "string"},
+      "name": {"type": "string"},
+      "amount": {"type": "integer", "minimum": 0},
+      "period": {"type": "string"},
+      "description": {"type": "string"},
+      "rewards": {"type": "array", "items": {"type": "string"}}
+    },
+    "additionalProperties": true
+  }
+}

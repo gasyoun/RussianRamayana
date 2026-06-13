@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Каталог переводов (translations.html)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "type", "author", "title", "year", "status"],
+    "properties": {
+      "id": {"type": "string"},
+      "type": {"type": "string"},
+      "author": {"type": "string"},
+      "title": {"type": "string"},
+      "year": {"type": "string"},
+      "source_language": {"type": "string"},
+      "coverage": {"type": "string"},
+      "edition": {"type": "string"},
+      "series": {"type": "string"},
+      "url": {"type": "string"},
+      "status": {"type": "string"}
+    },
+    "additionalProperties": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Способы оплаты",
+  "type": "object",
+  "required": ["methods"],
+  "properties": {
+    "methods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "type", "url"],
+        "properties": {
+          "id": {"type": "string"},
+          "label": {"type": "string"},
+          "type": {"enum": ["subscription", "one-time"]},
+          "url": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

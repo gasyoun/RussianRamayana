@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Хронология проекта",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "year", "event", "description"],
+    "properties": {
+      "id": {"type": "string"},
+      "year": {"type": "string"},
+      "event": {"type": "string"},
+      "description": {"type": "string"},
+      "source": {"type": "string"}
+    },
+    "additionalProperties": true
+  }
+}

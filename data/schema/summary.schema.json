@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Сбор средств — сводка (два блока)",
+  "type": "object",
+  "required": ["onetime", "monthly", "updated_at"],
+  "properties": {
+    "onetime": {
+      "type": "object",
+      "required": ["goal_rub", "collected_rub", "donor_count"],
+      "properties": {
+        "goal_rub": {"type": "integer", "minimum": 0},
+        "collected_rub": {"type": "integer", "minimum": 0},
+        "donor_count": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "monthly": {
+      "type": "object",
+      "required": ["goal_rub", "pledged_rub", "supporter_count"],
+      "properties": {
+        "goal_rub": {"type": "integer", "minimum": 0},
+        "pledged_rub": {"type": "integer", "minimum": 0},
+        "supporter_count": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "updated_at": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
+  },
+  "additionalProperties": true
+}

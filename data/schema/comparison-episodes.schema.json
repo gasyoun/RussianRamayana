@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Сравнительное чтение — эпизоды",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "description", "sections", "commentary"],
+    "properties": {
+      "id": {"type": "string"},
+      "title": {"type": "string"},
+      "description": {"type": "string"},
+      "canonical_ref": {"type": "string"},
+      "recension": {"type": "string"},
+      "canonical_url": {"type": "string", "pattern": "^https?://"},
+      "corpus_url": {"type": "string", "pattern": "^https?://"},
+      "sections": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["label", "content"],
+          "properties": {
+            "label": {"type": "string"},
+            "content": {"type": "string"}
+          },
+          "additionalProperties": true
+        }
+      },
+      "commentary": {"type": "string"}
+    },
+    "additionalProperties": true
+  }
+}
