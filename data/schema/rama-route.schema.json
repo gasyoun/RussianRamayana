@@ -18,7 +18,15 @@
           "book": {"type": "string"},
           "name": {"type": "string"},
           "desc": {"type": "string"},
-          "source": {"type": "string"}
+          "source": {"type": "string"},
+          "name_iast": {"type": "string"},
+          "name_devanagari": {"type": "string"},
+          "wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
+          "modern_place": {"type": "string"},
+          "modern_wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
+          "canonical_ref": {"type": "string"},
+          "alt_identification": {"type": "string"},
+          "alt_source": {"type": "string"}
         },
         "additionalProperties": true
       }

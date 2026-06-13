@@ -52,10 +52,18 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
 .sb2{font-size:10.5px;color:var(--ink-muted);}
 .detail{flex-shrink:0;padding:13px 16px 16px;border-top:1px solid var(--border-strong);background:var(--paper);min-height:115px;}
 .d-book{font-family:'Cormorant Garamond',serif;font-size:10.5px;font-style:italic;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;}
-.d-name{font-family:'Cormorant SC',serif;font-size:14px;color:var(--ink);margin-bottom:5px;}
+.d-name{font-family:'Cormorant SC',serif;font-size:14px;color:var(--ink);margin-bottom:3px;}
+.d-sanskrit{font-size:12px;color:var(--ink-soft);margin-bottom:6px;}
+.d-sanskrit .iast{font-style:italic;}
+.d-sanskrit .deva{margin-left:6px;color:var(--ink-muted);}
 .d-desc{font-size:11.5px;line-height:1.75;color:var(--ink-muted);}
+.d-meta{font-size:10.5px;line-height:1.6;color:var(--ink-muted);margin-top:6px;}
+.d-meta .ref{font-family:'Cormorant SC',serif;letter-spacing:.05em;}
+.d-meta a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--border-strong);margin-left:8px;}
 .d-source{font-size:10px;font-style:italic;line-height:1.6;color:var(--ink-muted);opacity:.8;margin-top:6px;}
 .d-source.is-loc:not(:empty)::before{content:'Локализация: ';font-style:normal;}
+.d-alt{font-size:10px;line-height:1.6;color:var(--gold);margin-top:6px;}
+.d-alt:not(:empty)::before{content:'⚠ Спорно: ';font-style:normal;color:var(--gold);}
 .rama-marker{width:28px;height:28px;border-radius:50%;background:var(--paper-dark);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:11px;color:var(--gold);font-style:italic;box-shadow:0 0 0 4px rgba(184,145,58,0.15);}
 .rama-marker.active-marker{background:var(--gold);color:var(--paper);box-shadow:0 0 0 6px rgba(184,145,58,0.25);}
 .leaflet-popup-content-wrapper{background:var(--paper);border:1px solid var(--border-strong);border-radius:0;box-shadow:none;font-family:'Jost',sans-serif;font-weight:300;}
@@ -89,7 +97,7 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
   <div id="map"></div>
   <aside class="sidebar">
     <div class="sb-head">
-      <p class="sb-title">Маршрут · 9 остановок</p>
+      <p class="sb-title" id="sb-title">Маршрут</p>
       <div class="controls">
         <button class="ctrl" id="btn-prev">← Назад</button>
         <button class="ctrl" id="btn-play">▶ Начать</button>
@@ -102,8 +110,11 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
     <div class="detail">
       <p class="d-book" id="d-book">&nbsp;</p>
       <p class="d-name" id="d-name">Выберите остановку</p>
+      <p class="d-sanskrit" id="d-sanskrit"></p>
       <p class="d-desc" id="d-desc">Нажмите «Начать» — маршрут разворачивается шаг за шагом по историческим дорогам.</p>
+      <p class="d-meta" id="d-meta"></p>
       <p class="d-source" id="d-source"></p>
+      <p class="d-alt" id="d-alt"></p>
     </div>
   </aside>
 </div>
@@ -183,10 +194,26 @@ function updatePanel(idx){
   const s=STOPS[idx];
   document.getElementById('d-book').textContent=s?s.book:'';
   document.getElementById('d-name').textContent=s?s.name:'Выберите остановку';
+
+  const dSan=document.getElementById('d-sanskrit');
+  dSan.innerHTML = (s&&s.name_iast)
+    ? `<span class="iast">${s.name_iast}</span>${s.name_devanagari?`<span class="deva">${s.name_devanagari}</span>`:''}`
+    : '';
+
   document.getElementById('d-desc').textContent=s?s.desc:'Нажмите «Начать» для запуска анимации.';
+
+  const qid = s && (s.modern_wikidata || s.wikidata);
+  const qidOk = qid && /^Q\d+$/.test(qid);
+  document.getElementById('d-meta').innerHTML = s
+    ? ((s.canonical_ref?`<span class="ref">Рамаяна ${s.canonical_ref}</span>`:'')
+       + (qidOk?`<a href="https://www.wikidata.org/wiki/${qid}" target="_blank" rel="noopener noreferrer">Викиданные</a>`:''))
+    : '';
+
   const dSrc=document.getElementById('d-source');
   dSrc.textContent=s?(s.source||''):NOTE;
   dSrc.classList.toggle('is-loc', !!(s&&s.source));
+
+  document.getElementById('d-alt').textContent = (s&&s.alt_identification)?s.alt_identification:'';
   document.getElementById('counter').textContent=idx>=0?`${idx+1} / ${STOPS.length}`:'';
   document.getElementById('prog').style.width=idx>=0?`${(idx+1)/STOPS.length*100}%`:'0%';
   document.getElementById('btn-play').textContent=idx>=STOPS.length-1?'↺ Сначала':(timer?'⏸ Пауза':'▶ Продолжить');
@@ -234,6 +261,7 @@ document.getElementById('btn-prev').addEventListener('click',()=>{stopAuto();if(
 document.getElementById('btn-next').addEventListener('click',()=>{stopAuto();if(step<STOPS.length-1)goTo(step+1);});
 
 function buildList(){
+  document.getElementById('sb-title').textContent=`Маршрут · ${STOPS.length} остановок`;
   const ul=document.getElementById('stops-list');
   STOPS.forEach((s,i)=>{
     const li=document.createElement('li');li.className='stop-item locked';
