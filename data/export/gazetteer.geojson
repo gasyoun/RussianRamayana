@@ -1,0 +1,262 @@
+{
+  "type": "FeatureCollection",
+  "name": "ramayana-gazetteer",
+  "note": "Газетир мест, названных в проекте «Русская Рамаяна». Координаты — современные традиционные отождествления, не археологически установленные точки.",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2,
+          26.8
+        ]
+      },
+      "properties": {
+        "label": "Айодхья",
+        "name_iast": "Ayodhyā",
+        "name_devanagari": "अयोध्या",
+        "wikidata": "Q55604583",
+        "modern_place": "Айодхья, Уттар-Прадеш",
+        "modern_wikidata": "Q186040",
+        "canonical_ref": "R.1.5–6, 18",
+        "source": "Традиционное отождествление с г. Айодхья (совр. Уттар-Прадеш, р. Сараю)",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.92,
+          26.71
+        ]
+      },
+      "properties": {
+        "label": "Митхила",
+        "name_iast": "Mithilā",
+        "name_devanagari": "मिथिला",
+        "modern_place": "Джанакпур, Непал",
+        "modern_wikidata": "Q378649",
+        "canonical_ref": "R.1.48–49, 73",
+        "source": "Традиционное отождествление с Митхилой (Джанакпур, совр. Непал)",
+        "alt_identification": "Митхилу также связывают с Ситамархи (сев. Бихар) и др. местами Тирхута",
+        "alt_source": "традиционные локализации, единого мнения нет",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.64,
+          25.59
+        ]
+      },
+      "properties": {
+        "label": "Шрингаверапура",
+        "name_iast": "Śṛṅgaverapura",
+        "name_devanagari": "शृङ्गवेरपुर",
+        "modern_place": "Шрингверпур, окр. Праяградж",
+        "modern_wikidata": "Q7504117",
+        "canonical_ref": "R.2.50",
+        "source": "Отождествление с раскопанным городищем Шрингверпур (ASI), хорошо обосновано",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.85,
+          25.45
+        ]
+      },
+      "properties": {
+        "label": "Праяга",
+        "name_iast": "Prayāga / Bharadvājāśrama",
+        "name_devanagari": "प्रयाग / भरद्वाजाश्रम",
+        "modern_place": "Праяградж (Аллахабад)",
+        "modern_wikidata": "Q162442",
+        "canonical_ref": "R.2.54–55",
+        "source": "Слияние Ганги и Ямуны (саṅгама), совр. Праяградж; отождествление устойчиво",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.87,
+          25.18
+        ]
+      },
+      "properties": {
+        "label": "Читракут",
+        "name_iast": "Citrakūṭa",
+        "name_devanagari": "चित्रकूट",
+        "wikidata": "Q130709794",
+        "modern_place": "Читракут, Мадхья-Прадеш / Уттар-Прадеш",
+        "modern_wikidata": "Q1192410",
+        "canonical_ref": "R.2.56",
+        "source": "Традиционное отождествление с Читракутом (граница Уттар-Прадеша и Мадхья-Прадеша)",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.8,
+          20.5
+        ]
+      },
+      "properties": {
+        "label": "Дандака",
+        "name_iast": "Daṇḍakāraṇya",
+        "name_devanagari": "दण्डकारण्य",
+        "wikidata": "Q3595545",
+        "modern_place": "Дандакаранья (обл. Декана: Чхаттисгарх–Одиша–Телангана)",
+        "modern_wikidata": "Q3595545",
+        "canonical_ref": "R.3.11+",
+        "source": "Дандакаранья — обширная лесная область Декана; точные границы условны",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8,
+          20.01
+        ]
+      },
+      "properties": {
+        "label": "Панчавати",
+        "name_iast": "Pañcavaṭī",
+        "name_devanagari": "पञ्चवटी",
+        "wikidata": "Q3763833",
+        "modern_place": "Панчавати, Насик (Махараштра)",
+        "modern_wikidata": "Q200235",
+        "canonical_ref": "R.3.15, 44, 49",
+        "source": "Традиционное отождествление с Панчавати близ Насика (р. Годавари)",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.46,
+          15.33
+        ]
+      },
+      "properties": {
+        "label": "Кишкиндха",
+        "name_iast": "Kiṣkindhā",
+        "name_devanagari": "किष्किन्धा",
+        "wikidata": "Q3269148",
+        "modern_place": "Хампи / Анегунди, Карнатака",
+        "modern_wikidata": "Q26732",
+        "canonical_ref": "R.4.5–12, 16",
+        "source": "Традиционное отождествление с Анегунди/Хампи на р. Тунгабхадра (совр. Карнатака)",
+        "alt_identification": "Отождествление с Хампи/Анегунди — наиболее принятое, но не доказано археологически; выдвигались и сев.-индийские гипотезы",
+        "alt_source": "Anegundi (Wikipedia); karnataka.com — традиция + ландшафтное соответствие",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3,
+          9.28
+        ]
+      },
+      "properties": {
+        "label": "Рамешварам",
+        "name_iast": "Setubandha / Rāmeśvaram",
+        "name_devanagari": "सेतुबन्ध / रामेश्वरम्",
+        "wikidata": "Q201743",
+        "modern_place": "Рамешварам, Тамилнад",
+        "modern_wikidata": "Q1435144",
+        "canonical_ref": "R.6.22",
+        "source": "Традиционное отождествление с Рамешварамом и грядой Адамова моста (Рама-Сету)",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.77,
+          7.87
+        ]
+      },
+      "properties": {
+        "label": "Ланка",
+        "name_iast": "Laṅkā",
+        "name_devanagari": "लङ्का",
+        "wikidata": "Q721272",
+        "modern_place": "Традиционно — о. Шри-Ланка",
+        "modern_wikidata": "Q854",
+        "canonical_ref": "R.5.1, 14; R.6",
+        "source": "Традиционное отождествление с о. Шри-Ланка",
+        "alt_identification": "Локализация дискуссионна. Помимо традиц. Шри-Ланки выдвигались гипотезы о центральной Индии: С. М. Кибе (1928) — к северу от Виндхья; Р. Л. Гупта — долина Нармады; С. Агаше — близ Амаркантака (Мадхья-Прадеш). Основной аргумент — «100 йоджан от Виндхья».",
+        "alt_source": "«Lanka of the Ramayana: The Problem of Location» (academia.edu); С. Агаше, «The Search for Ravana's Lanka»",
+        "on_route": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.36,
+          18.97
+        ]
+      },
+      "properties": {
+        "label": "Махендра",
+        "name_iast": "Mahendragiri",
+        "name_devanagari": "महेन्द्रगिरि",
+        "modern_place": "Махендрагири, Одиша",
+        "modern_wikidata": "Q6733785",
+        "canonical_ref": "R.5.1",
+        "source": "Гора, с которой Хануман прыгнул на Ланку",
+        "alt_identification": "Точный пик спорен: помимо Махендрагири в Одише (Вост. Гхаты) предлагается и одноимённая гора в Тамилнаде (Q6733787)",
+        "alt_source": "обзор в литературе; единого мнения нет",
+        "on_route": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.48,
+          15.35
+        ]
+      },
+      "properties": {
+        "label": "Пампа / ашрам Шабари",
+        "name_iast": "Pampā / Śabarī-āśrama",
+        "name_devanagari": "पम्पा / शबरी आश्रम",
+        "modern_place": "Пампа-Саровар, Карнатака",
+        "modern_wikidata": "Q2763469",
+        "canonical_ref": "R.3.74; R.4.1",
+        "source": "Озеро Пампа и ашрам Шабари; рядом с Кишкиндхой (Хампи/Анегунди)",
+        "on_route": false
+      }
+    }
+  ]
+}

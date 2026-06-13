@@ -64,6 +64,23 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
 .d-source.is-loc:not(:empty)::before{content:'Локализация: ';font-style:normal;}
 .d-alt{font-size:10px;line-height:1.6;color:var(--gold);margin-top:6px;}
 .d-alt:not(:empty)::before{content:'⚠ Спорно: ';font-style:normal;color:var(--gold);}
+.about-btn{margin-top:8px;background:none;border:none;cursor:pointer;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--gold);padding:0;}
+.about-btn:hover{text-decoration:underline;}
+.about-overlay{position:fixed;inset:0;background:rgba(40,30,15,0.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px;}
+.about-overlay[hidden]{display:none;}
+.about-card{position:relative;background:var(--paper);border:1px solid var(--border-strong);max-width:560px;max-height:82vh;overflow-y:auto;padding:32px 34px;box-shadow:0 20px 60px rgba(0,0,0,0.25);}
+.about-card h2{font-family:'Cormorant SC',serif;font-size:20px;font-weight:300;letter-spacing:.04em;margin:0 0 14px;color:var(--ink);}
+.about-card h3{font-family:'Cormorant SC',serif;font-size:14px;letter-spacing:.06em;color:var(--gold);margin:22px 0 10px;}
+.about-note{font-size:13px;line-height:1.7;color:var(--ink-soft);margin:0;}
+.about-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;line-height:1;color:var(--ink-muted);cursor:pointer;}
+.about-close:hover{color:var(--ink);}
+.about-item{padding:12px 0;border-bottom:1px solid var(--border);}
+.about-item:last-child{border-bottom:none;}
+.about-item .ai-place{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--ink);}
+.about-item .ai-place .iast{font-style:italic;color:var(--ink-soft);margin-left:6px;font-size:13px;}
+.about-item .ai-text{font-size:12.5px;line-height:1.65;color:var(--ink-muted);margin-top:4px;}
+.about-item .ai-src{font-size:11px;font-style:italic;color:var(--ink-muted);opacity:.8;margin-top:3px;}
+.about-foot{font-size:11px;font-style:italic;line-height:1.6;color:var(--ink-muted);margin-top:20px;padding-top:14px;border-top:1px solid var(--border);}
 .geojson-dl{flex-shrink:0;display:block;padding:10px 16px;font-family:'Cormorant SC',serif;font-size:11px;letter-spacing:.06em;color:var(--gold);text-decoration:none;border-top:1px solid var(--border);text-align:center;}
 .geojson-dl:hover{background:var(--paper-dark);}
 .leaflet-tooltip.region-label{background:transparent;border:none;box-shadow:none;color:#4A6741;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:12px;}
@@ -108,6 +125,7 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
         <button class="ctrl" id="btn-next">Вперёд →</button>
       </div>
       <p class="counter" id="counter"></p>
+      <button class="about-btn" id="btn-about">ⓘ Об отождествлениях и источниках</button>
     </div>
     <div class="prog-bar"><div class="prog-fill" id="prog"></div></div>
     <ul class="stops-list" id="stops-list"></ul>
@@ -121,7 +139,19 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
       <p class="d-alt" id="d-alt"></p>
     </div>
     <a class="geojson-dl" href="data/export/rama-route.geojson" download>Скачать маршрут (GeoJSON) ↓</a>
+    <a class="geojson-dl" href="data/export/gazetteer.geojson" download>Газетир мест (GeoJSON) ↓</a>
   </aside>
+</div>
+
+<div class="about-overlay" id="about-overlay" hidden>
+  <div class="about-card">
+    <button class="about-close" id="about-close" aria-label="Закрыть">×</button>
+    <h2>Об отождествлениях и источниках</h2>
+    <p class="about-note" id="about-note"></p>
+    <h3>Спорные отождествления</h3>
+    <div id="about-contested"></div>
+    <p class="about-foot">Канонические ссылки даны по южной рецензии (valmikiramayan.net). Маршрут и точки — традиционные отождествления, не археологическая реконструкция.</p>
+  </div>
 </div>
 
 <!-- Leaflet JS в самом конце body — гарантированно после DOM -->
@@ -285,7 +315,25 @@ function buildList(){
   });
 }
 
+function buildAbout(){
+  document.getElementById('about-note').textContent = NOTE;
+  const box = document.getElementById('about-contested');
+  const contested = STOPS.filter(s=>s.alt_identification);
+  box.innerHTML = contested.map(s=>`
+    <div class="about-item">
+      <p class="ai-place">${s.label}${s.name_iast?`<span class="iast">${s.name_iast}</span>`:''}</p>
+      <p class="ai-text">${s.alt_identification}</p>
+      ${s.alt_source?`<p class="ai-src">Источник: ${s.alt_source}</p>`:''}
+    </div>`).join('');
+}
+const aboutOverlay=document.getElementById('about-overlay');
+document.getElementById('btn-about').addEventListener('click',()=>aboutOverlay.hidden=false);
+document.getElementById('about-close').addEventListener('click',()=>aboutOverlay.hidden=true);
+aboutOverlay.addEventListener('click',e=>{if(e.target===aboutOverlay)aboutOverlay.hidden=true;});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')aboutOverlay.hidden=true;});
+
 buildList();
+buildAbout();
 updatePanel(-1);
 setTimeout(startAuto, 800);
 })();

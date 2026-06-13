@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Газетир — места вне нарисованного маршрута",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "label", "lat", "lng"],
+    "properties": {
+      "id": {"type": "string"},
+      "label": {"type": "string"},
+      "name_iast": {"type": "string"},
+      "name_devanagari": {"type": "string"},
+      "wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
+      "modern_place": {"type": "string"},
+      "modern_wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
+      "lat": {"type": "number", "minimum": -90, "maximum": 90},
+      "lng": {"type": "number", "minimum": -180, "maximum": 180},
+      "canonical_ref": {"type": "string"},
+      "source": {"type": "string"},
+      "alt_identification": {"type": "string"},
+      "alt_source": {"type": "string"}
+    },
+    "additionalProperties": true
+  }
+}
