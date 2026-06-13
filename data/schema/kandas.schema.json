@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Семь книг (кāṇḍ) Рамаяны",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "num", "name_ru", "iast", "devanagari", "sargas", "later_addition", "summary"],
+    "properties": {
+      "id": {"type": "string"},
+      "num": {"type": "string"},
+      "name_ru": {"type": "string"},
+      "iast": {"type": "string"},
+      "devanagari": {"type": "string"},
+      "title_ru": {"type": "string"},
+      "sargas": {"type": "integer", "minimum": 1},
+      "sargas_note": {"type": "string"},
+      "later_addition": {"type": "boolean"},
+      "summary": {"type": "string"}
+    },
+    "additionalProperties": true
+  }
+}

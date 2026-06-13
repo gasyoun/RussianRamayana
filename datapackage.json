@@ -1,0 +1,40 @@
+{
+  "profile": "data-package",
+  "name": "russian-ramayana",
+  "title": "Русская Рамаяна — наборы данных",
+  "description": "Структурированные данные портала «Русская Рамаяна»: каталоги переводов и изданий, аудиоархив, действующие лица, структура эпоса по кāṇḍам, маршрут странствий Рамы и газетир мест, хронология проекта, сравнительные эпизоды. Все идентичности по возможности связаны с Викиданными/VIAF; канонические ссылки даны по южной рецензии.",
+  "homepage": "https://gasyoun.github.io/RussianRamayana/",
+  "id": "https://github.com/gasyoun/RussianRamayana",
+  "keywords": ["Ramayana", "Valmiki", "Рамаяна", "Sanskrit", "Russian translation", "digital humanities", "linked open data"],
+  "licenses": [
+    {"name": "CC-BY-4.0", "path": "https://creativecommons.org/licenses/by/4.0/", "title": "Creative Commons Attribution 4.0 International"}
+  ],
+  "sources": [
+    {"title": "Valmiki Ramayana (южная рецензия)", "path": "https://www.valmikiramayan.net/"},
+    {"title": "Параллельный корпус (перевод В. Потаповой)", "path": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html"},
+    {"title": "Wikidata", "path": "https://www.wikidata.org/"}
+  ],
+  "resources": [
+    {"name": "editions", "path": "data/editions.json", "format": "json", "mediatype": "application/json", "title": "Каталог изданий (библиография)", "description": "Каноническая библиографическая запись академических изданий: ISBN, Wikidata/VIAF, рецензия, серия."},
+    {"name": "translations", "path": "data/translations.json", "format": "json", "mediatype": "application/json", "title": "Каталог переводов (витрина)", "description": "Витрина переводов для translations.html; связана с editions по общему id."},
+    {"name": "retellings", "path": "data/retellings.json", "format": "json", "mediatype": "application/json", "title": "Пересказы и адаптации"},
+    {"name": "characters", "path": "data/characters.json", "format": "json", "mediatype": "application/json", "title": "Действующие лица и связи", "description": "20 героев эпоса с QID Викиданных и рёбрами связей (родство, брак, союз, вражда)."},
+    {"name": "kandas", "path": "data/kandas.json", "format": "json", "mediatype": "application/json", "title": "Семь книг (кāṇḍ)", "description": "Структура эпоса: число глав, краткое содержание, статус древнего ядра."},
+    {"name": "comparison-episodes", "path": "data/comparison-episodes.json", "format": "json", "mediatype": "application/json", "title": "Сравнительные эпизоды", "description": "Ключевые сцены: санскрит (IAST/деванагари), канонические ссылки (южная рецензия), ссылки на источник и корпус."},
+    {"name": "rama-route", "path": "data/rama-route.json", "format": "json", "mediatype": "application/json", "title": "Маршрут Рамы (остановки и сегменты)", "description": "Точки странствий с IAST/деванагари, Wikidata, каноническими ссылками и спорными отождествлениями; Дандака — область (полигон)."},
+    {"name": "gazetteer-extra", "path": "data/gazetteer-extra.json", "format": "json", "mediatype": "application/json", "title": "Газетир: места вне маршрута"},
+    {"name": "timeline", "path": "data/timeline.json", "format": "json", "mediatype": "application/json", "title": "Хронология проекта", "description": "События с устойчивыми id и атрибуцией источника."},
+    {"name": "audio", "path": "data/audio.json", "format": "json", "mediatype": "application/json", "title": "Аудиокнига 1986 г.", "description": "7 книг: длительность, размер, SHA-256, права."},
+    {"name": "videos", "path": "data/videos.json", "format": "json", "mediatype": "application/json", "title": "Видеоматериалы"},
+    {"name": "drafts", "path": "data/drafts.json", "format": "json", "mediatype": "application/json", "title": "Черновики (для подписчиков)"},
+    {"name": "people", "path": "data/people.json", "format": "json", "mediatype": "application/json", "title": "Команда проекта"},
+    {"name": "project-status", "path": "data/project-status.json", "format": "json", "mediatype": "application/json", "title": "Статус книг IV–VI"},
+    {"name": "fundraising-summary", "path": "data/fundraising/summary.json", "format": "json", "mediatype": "application/json", "title": "Сбор средств — сводка"},
+    {"name": "fundraising-levels", "path": "data/fundraising/levels.json", "format": "json", "mediatype": "application/json", "title": "Сбор средств — уровни подписки"},
+    {"name": "payment-methods", "path": "data/payment-methods.json", "format": "json", "mediatype": "application/json", "title": "Способы оплаты"},
+    {"name": "route-geojson", "path": "data/export/rama-route.geojson", "format": "geojson", "mediatype": "application/geo+json", "title": "Маршрут Рамы (GeoJSON)", "description": "Экспорт маршрута: точки-остановки, полигон Дандаки, линия маршрута. Генерируется scripts/export_geojson.py."},
+    {"name": "gazetteer-geojson", "path": "data/export/gazetteer.geojson", "format": "geojson", "mediatype": "application/geo+json", "title": "Газетир мест (GeoJSON)", "description": "Точечный слой всех названных мест. Генерируется scripts/export_gazetteer.py."},
+    {"name": "bibliography-csl", "path": "data/export/bibliography.csl.json", "format": "json", "mediatype": "application/json", "title": "Библиография (CSL-JSON)", "description": "Для менеджеров цитирования. Генерируется scripts/export_bibliography.py."},
+    {"name": "bibliography-bibtex", "path": "data/export/bibliography.bib", "format": "bibtex", "mediatype": "application/x-bibtex", "title": "Библиография (BibTeX)"}
+  ]
+}

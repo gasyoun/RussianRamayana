@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Действующие лица и связи",
+  "type": "object",
+  "required": ["characters", "relations"],
+  "properties": {
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name_ru", "iast", "devanagari", "group", "role"],
+        "properties": {
+          "id": {"type": "string"},
+          "name_ru": {"type": "string"},
+          "iast": {"type": "string"},
+          "devanagari": {"type": "string"},
+          "wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
+          "group": {"enum": ["royal", "vanara", "rakshasa", "other"]},
+          "role": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "type"],
+        "properties": {
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "type": {"enum": ["father-of", "mother-of", "married-to", "brother-of", "ally-of", "enemy-of"]}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
