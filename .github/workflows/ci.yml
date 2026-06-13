@@ -79,6 +79,18 @@ jobs:
       - name: Validate data/*.json (parse + schema)
         run: python scripts/validate_data.py
 
+  link-check:
+    name: Link health (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check outbound links resolve
+        run: python scripts/check_links.py
+
   yaml-lint:
     name: YAML lint
     runs-on: ubuntu-latest
