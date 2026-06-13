@@ -27,77 +27,196 @@
     "id": "rama-birth",
     "title": "Рождение Рамы",
     "description": "Рождение царевича Рамы в солнечной Айодхье и его божественное происхождение.",
-    "canonical_ref": "R.1.18.8–11",
+    "canonical_ref": "R.1.18.10",
     "recension": "южная (вульгата)",
-    "canonical_url": "https://www.valmikiramayan.net/utf8/baala/sarga18/bala_18_prose.htm",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/baala/sarga18/balaroman18.htm",
     "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#1",
-    "sections": [],
+    "sections": [
+      {
+        "label": "Санскрит (IAST)",
+        "content": "prodyamāne jagannāthaṃ sarvalokanamaskṛtam |\nkausalyājanayadrāmaṃ sarvalakṣaṇasaṃyutam ||"
+      },
+      {
+        "label": "Деванагари",
+        "content": "प्रोद्यमाने जगन्नाथं सर्वलोकनमस्कृतम् ।\nकौसल्याजनयद्रामं सर्वलक्षणसंयुतम् ॥"
+      },
+      {
+        "label": "Дословно",
+        "content": "Каусалья родила Раму, наделённого всеми (благими) признаками, — владыку мира, чтимого всеми мирами."
+      },
+      {
+        "label": "Литературный перевод",
+        "content": "Поэтический перевод В. Потаповой доступен в параллельном корпусе (ссылка выше); подстрочник и комментарий М. Леонова — для подписчиков."
+      }
+    ],
     "commentary": ""
   },
   {
     "id": "rama-exile",
     "title": "Изгнание Рамы",
     "description": "Изгнание Рамы, Ситы и Лакшманы в лес на четырнадцать лет и горе царя Дашаратхи.",
-    "canonical_ref": "R.2.11, 2.40",
+    "canonical_ref": "R.2.40.17",
     "recension": "южная (вульгата)",
     "canonical_url": "https://www.valmikiramayan.net/utf8/ayodhya/sarga40/ayodhyaroman40.htm",
     "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#2",
-    "sections": [],
+    "sections": [
+      {
+        "label": "Санскрит (IAST)",
+        "content": "sītā tṛtīyān ārūḍhān dṛṣṭvā dhṛṣṭam acodayat |\nsumantraḥ sammatān aśvān vāyuvegasamān jave ||"
+      },
+      {
+        "label": "Деванагари",
+        "content": "सीता तृतीयान् आरूढान् दृष्ट्वा धृष्टम् अचोदयत् ।\nसुमन्त्रः सम्मतान् अश्वान् वायुवेगसमान् जवे ॥"
+      },
+      {
+        "label": "Дословно",
+        "content": "Видя их взошедшими [на колесницу], с Ситой третьей, Сумантра смело погнал добрых коней, в скорости подобных ветру."
+      },
+      {
+        "label": "Литературный перевод",
+        "content": "Поэтический перевод В. Потаповой доступен в параллельном корпусе (ссылка выше); подстрочник и комментарий М. Леонова — для подписчиков."
+      }
+    ],
     "commentary": ""
   },
   {
     "id": "sita-abduction",
     "title": "Похищение Ситы",
     "description": "Коварный Равана похищает Ситу, обернувшись золотым оленем в лесу Панчавати.",
-    "canonical_ref": "R.3.42–49",
+    "canonical_ref": "R.3.49.17",
     "recension": "южная (вульгата)",
-    "canonical_url": "https://www.valmikiramayan.net/utf8/aranya/sarga42/aranyaroman42.htm",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/aranya/sarga49/aranyaroman49.htm",
     "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#3",
-    "sections": [],
+    "sections": [
+      {
+        "label": "Санскрит (IAST)",
+        "content": "vāmena sītāṃ padmākṣīṃ mūrdhajeṣu kareṇa saḥ |\nūrvostu dakṣiṇenaiva parijagrāha pāṇinā ||"
+      },
+      {
+        "label": "Деванагари",
+        "content": "वामेन सीतां पद्माक्षीं मूर्धजेषु करेण सः ।\nऊर्वोस्तु दक्षिणेनैव परिजग्राह पाणिना ॥"
+      },
+      {
+        "label": "Дословно",
+        "content": "Левой рукой он схватил лотосоокую Ситу за волосы, а правой рукой обхватил её за бёдра."
+      },
+      {
+        "label": "Литературный перевод",
+        "content": "Поэтический перевод В. Потаповой доступен в параллельном корпусе (ссылка выше); подстрочник и комментарий М. Леонова — для подписчиков."
+      }
+    ],
     "commentary": ""
   },
   {
     "id": "hanuman-meeting",
     "title": "Встреча с Хануманом",
     "description": "Встреча Рамы и Лакшманы с Хануманом на горе Ришьямука и заключение союза.",
-    "canonical_ref": "R.4.3–5",
+    "canonical_ref": "R.4.3.2",
     "recension": "южная (вульгата)",
-    "canonical_url": "https://www.valmikiramayan.net/utf8/kish/sarga3/kishkindhaitrans3.htm",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/kish/sarga3/kishkindharoman3.htm",
     "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#4",
-    "sections": [],
+    "sections": [
+      {
+        "label": "Санскрит (IAST)",
+        "content": "kapirūpaṃ parityajya hanumān mārutātmajaḥ |\nbhikṣurūpaṃ tato bheje śaṭhabuddhitayā kapiḥ ||"
+      },
+      {
+        "label": "Деванагари",
+        "content": "कपिरूपं परित्यज्य हनुमान् मारुतात्मजः ।\nभिक्षुरूपं ततो भेजे शठबुद्धितया कपिः ॥"
+      },
+      {
+        "label": "Дословно",
+        "content": "Оставив обезьяний облик, Хануман, сын Ветра, принял облик странника-нищего [чтобы приблизиться к Раме]."
+      },
+      {
+        "label": "Литературный перевод",
+        "content": "Поэтический перевод В. Потаповой доступен в параллельном корпусе (ссылка выше); подстрочник и комментарий М. Леонова — для подписчиков."
+      }
+    ],
     "commentary": ""
   },
   {
     "id": "lanka",
     "title": "Ланка",
     "description": "Хануман находит Ситу в саду Ашока на острове Ланка и передаёт ей весть от Рамы.",
-    "canonical_ref": "R.5.15",
+    "canonical_ref": "R.5.15.26",
     "recension": "южная (вульгата)",
     "canonical_url": "https://www.valmikiramayan.net/utf8/sundara/sarga15/sundararoman15.htm",
     "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#5",
-    "sections": [],
+    "sections": [
+      {
+        "label": "Санскрит (IAST)",
+        "content": "tāṃ samīkṣya viśālākṣīm adhikaṃ malināṃ kṛśām |\ntarkayāmāsa sīteti kāraṇair upapādibhiḥ ||"
+      },
+      {
+        "label": "Деванагари",
+        "content": "तां समीक्ष्य विशालाक्षीम् अधिकं मलिनां कृशाम् ।\nतर्कयामास सीतेति कारणैः उपपादिभिः ॥"
+      },
+      {
+        "label": "Дословно",
+        "content": "Глядя на ту большеокую [женщину], сильно загрязнённую и исхудавшую, он по веским признакам заключил: «Это Сита»."
+      },
+      {
+        "label": "Литературный перевод",
+        "content": "Поэтический перевод В. Потаповой доступен в параллельном корпусе (ссылка выше); подстрочник и комментарий М. Леонова — для подписчиков."
+      }
+    ],
     "commentary": ""
   },
   {
     "id": "ravana-battle",
     "title": "Битва с Раваной",
     "description": "Грандиозная битва между войском Рамы и ракшасами Раваны; гибель десятиглавого царя.",
-    "canonical_ref": "R.6.108",
+    "canonical_ref": "R.6.108.18",
     "recension": "южная (вульгата)",
-    "canonical_url": "https://www.valmikiramayan.net/utf8/yuddha/sarga108/yuddhaitrans108.htm",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/yuddha/sarga108/yuddharoman108.htm",
     "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#6",
-    "sections": [],
+    "sections": [
+      {
+        "label": "Санскрит (IAST)",
+        "content": "sa visṛṣṭo mahāvegaḥ śarīrāntakaraḥ śaraḥ |\nciccheda hṛdayaṃ tasya rāvaṇasya durātmanaḥ ||"
+      },
+      {
+        "label": "Деванагари",
+        "content": "स विसृष्टो महावेगः शरीरान्तकरः शरः ।\nचिच्छेद हृदयं तस्य रावणस्य दुरात्मनः ॥"
+      },
+      {
+        "label": "Дословно",
+        "content": "Та стрела, выпущенная с великой силой, несущая гибель телу, рассекла сердце злодушного Раваны."
+      },
+      {
+        "label": "Литературный перевод",
+        "content": "Поэтический перевод В. Потаповой доступен в параллельном корпусе (ссылка выше); подстрочник и комментарий М. Леонова — для подписчиков."
+      }
+    ],
     "commentary": ""
   },
   {
     "id": "return-ayodhya",
     "title": "Возвращение в Айодхью",
     "description": "Торжественное возвращение Рамы и Ситы в Айодхью на небесной колеснице и воцарение.",
-    "canonical_ref": "R.6.123–128",
+    "canonical_ref": "R.6.128.61–62",
     "recension": "южная (вульгата)",
-    "canonical_url": "https://www.valmikiramayan.net/utf8/yuddha/sarga123/yuddha_123_prose.htm",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/yuddha/sarga128/yuddharoman128.htm",
     "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#6",
-    "sections": [],
+    "sections": [
+      {
+        "label": "Санскрит (IAST)",
+        "content": "vasiṣṭho vāmadevaśca jābālir atha kāśyapaḥ |\nkātyāyanaḥ suyajñaśca gautamo vijayas tathā ||\nabhyaṣiñcan naravyāghraṃ prasannena sugandhinā |\nsalilena sahasrākṣaṃ vasavo vāsavaṃ yathā ||"
+      },
+      {
+        "label": "Деванагари",
+        "content": "वसिष्ठो वामदेवश्च जाबालिरथ काश्यपः ।\nकात्यायनः सुयज्ञश्च गौतमो विजयस्तथा ॥\nअभ्यषिञ्चन्नरव्याघ्रं प्रसन्नेन सुगन्धिना ।\nसलिलेन सहस्राक्षं वसवो वासवं यथा ॥"
+      },
+      {
+        "label": "Дословно",
+        "content": "Васиштха, Вамадева, Джабали, Кашьяпа, Катьяяна, Суяджня, Гаутама и Виджая окропили тигра-среди-людей чистой благоуханной водой, как Васу [окропили] тысячеокого Индру."
+      },
+      {
+        "label": "Литературный перевод",
+        "content": "Поэтический перевод В. Потаповой доступен в параллельном корпусе (ссылка выше); подстрочник и комментарий М. Леонова — для подписчиков."
+      }
+    ],
     "commentary": ""
   }
 ]
