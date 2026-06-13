@@ -26,7 +26,18 @@
           "modern_wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
           "canonical_ref": {"type": "string"},
           "alt_identification": {"type": "string"},
-          "alt_source": {"type": "string"}
+          "alt_source": {"type": "string"},
+          "is_region": {"type": "boolean"},
+          "polygon": {
+            "type": "array",
+            "minItems": 3,
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {"type": "number"}
+            }
+          }
         },
         "additionalProperties": true
       }

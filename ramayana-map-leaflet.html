@@ -64,6 +64,10 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
 .d-source.is-loc:not(:empty)::before{content:'Локализация: ';font-style:normal;}
 .d-alt{font-size:10px;line-height:1.6;color:var(--gold);margin-top:6px;}
 .d-alt:not(:empty)::before{content:'⚠ Спорно: ';font-style:normal;color:var(--gold);}
+.geojson-dl{flex-shrink:0;display:block;padding:10px 16px;font-family:'Cormorant SC',serif;font-size:11px;letter-spacing:.06em;color:var(--gold);text-decoration:none;border-top:1px solid var(--border);text-align:center;}
+.geojson-dl:hover{background:var(--paper-dark);}
+.leaflet-tooltip.region-label{background:transparent;border:none;box-shadow:none;color:#4A6741;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:12px;}
+.leaflet-tooltip.region-label::before{display:none;}
 .rama-marker{width:28px;height:28px;border-radius:50%;background:var(--paper-dark);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:11px;color:var(--gold);font-style:italic;box-shadow:0 0 0 4px rgba(184,145,58,0.15);}
 .rama-marker.active-marker{background:var(--gold);color:var(--paper);box-shadow:0 0 0 6px rgba(184,145,58,0.25);}
 .leaflet-popup-content-wrapper{background:var(--paper);border:1px solid var(--border-strong);border-radius:0;box-shadow:none;font-family:'Jost',sans-serif;font-weight:300;}
@@ -116,6 +120,7 @@ h1{font-family:'Cormorant SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weig
       <p class="d-source" id="d-source"></p>
       <p class="d-alt" id="d-alt"></p>
     </div>
+    <a class="geojson-dl" href="data/export/rama-route.geojson" download>Скачать маршрут (GeoJSON) ↓</a>
   </aside>
 </div>
 
@@ -178,14 +183,23 @@ function buildMarkers(idx){
   markers=[];
   STOPS.slice(0,idx+1).forEach((s,i)=>{
     const active=i===idx;
-    const m=L.marker([s.lat,s.lng],{icon:makeIcon(s,active)})
-      .addTo(map)
-      .bindPopup(`<div class="popup-name">${s.label}</div><div class="popup-text">${s.desc}</div>`);
-    m.on('click',()=>{stopAuto();goTo(i);});
-    markers.push(m);
+    let layer;
+    if(s.is_region && s.polygon){
+      // Дандака — область, а не точка: рисуем полигон вместо булавки
+      layer=L.polygon(s.polygon,{
+        color:'#4A6741', weight:1.5, opacity:0.7,
+        fillColor:'#4A6741', fillOpacity:active?0.22:0.12, dashArray:'5,5'
+      }).addTo(map)
+        .bindTooltip(`${s.num} · ${s.label}`,{permanent:true,direction:'center',className:'region-label'});
+    } else {
+      layer=L.marker([s.lat,s.lng],{icon:makeIcon(s,active)}).addTo(map);
+    }
+    layer.bindPopup(`<div class="popup-name">${s.label}</div><div class="popup-text">${s.desc}</div>`);
+    layer.on('click',()=>{stopAuto();goTo(i);});
+    markers.push(layer);
     if(active){
       map.flyTo([s.lat,s.lng],Math.max(map.getZoom(),6),{animate:true,duration:1.4});
-      setTimeout(()=>m.openPopup(),1500);
+      setTimeout(()=>layer.openPopup(),1500);
     }
   });
 }

@@ -1,0 +1,375 @@
+{
+  "type": "FeatureCollection",
+  "name": "rama-route",
+  "note": "Точки на карте — традиционные отождествления мест Рамаяны с современной географией; они общеприняты в литературе об эпосе, но не являются результатом археологической реконструкции. Мифические места на Викиданных типизированы как легендарные и обычно не имеют координат — координаты здесь принадлежат современным отождествлениям. Маршрут стилизован.",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2,
+          26.8
+        ]
+      },
+      "properties": {
+        "label": "Айодхья",
+        "name": "Айодхья — родина Рамы",
+        "name_iast": "Ayodhyā",
+        "name_devanagari": "अयोध्या",
+        "num": "I",
+        "book": "Бала-канда · I",
+        "canonical_ref": "R.1.5–6, 18",
+        "wikidata": "Q55604583",
+        "modern_place": "Айодхья, Уттар-Прадеш",
+        "modern_wikidata": "Q186040",
+        "source": "Традиционное отождествление с г. Айодхья (совр. Уттар-Прадеш, р. Сараю)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.92,
+          26.71
+        ]
+      },
+      "properties": {
+        "label": "Митхила",
+        "name": "Митхила — свадьба с Ситой",
+        "name_iast": "Mithilā",
+        "name_devanagari": "मिथिला",
+        "num": "II",
+        "book": "Бала-канда · I",
+        "canonical_ref": "R.1.48–49, 73",
+        "modern_place": "Джанакпур, Непал",
+        "modern_wikidata": "Q378649",
+        "source": "Традиционное отождествление с Митхилой (Джанакпур, совр. Непал)",
+        "alt_identification": "Митхилу также связывают с Ситамархи (сев. Бихар) и др. местами Тирхута",
+        "alt_source": "традиционные локализации, единого мнения нет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.64,
+          25.59
+        ]
+      },
+      "properties": {
+        "label": "Шрингаверапура",
+        "name": "Шрингаверапура — переправа через Гангу",
+        "name_iast": "Śṛṅgaverapura",
+        "name_devanagari": "शृङ्गवेरपुर",
+        "num": "III",
+        "book": "Айодхья-канда · II",
+        "canonical_ref": "R.2.50",
+        "modern_place": "Шрингверпур, окр. Праяградж",
+        "modern_wikidata": "Q7504117",
+        "source": "Отождествление с раскопанным городищем Шрингверпур (ASI), хорошо обосновано"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.85,
+          25.45
+        ]
+      },
+      "properties": {
+        "label": "Праяга",
+        "name": "Праяга — ашрам Бхарадваджи",
+        "name_iast": "Prayāga / Bharadvājāśrama",
+        "name_devanagari": "प्रयाग / भरद्वाजाश्रम",
+        "num": "IV",
+        "book": "Айодхья-канда · II",
+        "canonical_ref": "R.2.54–55",
+        "modern_place": "Праяградж (Аллахабад)",
+        "modern_wikidata": "Q162442",
+        "source": "Слияние Ганги и Ямуны (саṅгама), совр. Праяградж; отождествление устойчиво"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.87,
+          25.18
+        ]
+      },
+      "properties": {
+        "label": "Читракут",
+        "name": "Читракут — годы изгнания",
+        "name_iast": "Citrakūṭa",
+        "name_devanagari": "चित्रकूट",
+        "num": "V",
+        "book": "Айодхья-канда · II",
+        "canonical_ref": "R.2.56",
+        "wikidata": "Q130709794",
+        "modern_place": "Читракут, Мадхья-Прадеш / Уттар-Прадеш",
+        "modern_wikidata": "Q1192410",
+        "source": "Традиционное отождествление с Читракутом (граница Уттар-Прадеша и Мадхья-Прадеша)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.8,
+          20.5
+        ]
+      },
+      "properties": {
+        "label": "Дандака",
+        "name": "Лес Дандака — скитания",
+        "name_iast": "Daṇḍakāraṇya",
+        "name_devanagari": "दण्डकारण्य",
+        "num": "VI",
+        "book": "Аранья-канда · III",
+        "canonical_ref": "R.3.11+",
+        "wikidata": "Q3595545",
+        "modern_place": "Дандакаранья (обл. Декана: Чхаттисгарх–Одиша–Телангана)",
+        "modern_wikidata": "Q3595545",
+        "source": "Дандакаранья — обширная лесная область Декана; точные границы условны"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2,
+              21.0
+            ],
+            [
+              78.1,
+              21.8
+            ],
+            [
+              81.5,
+              21.2
+            ],
+            [
+              83.3,
+              19.8
+            ],
+            [
+              82.5,
+              18.2
+            ],
+            [
+              79.5,
+              17.9
+            ],
+            [
+              77.2,
+              18.6
+            ],
+            [
+              77.2,
+              21.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "label": "Дандака",
+        "name": "Лес Дандака — скитания",
+        "name_iast": "Daṇḍakāraṇya",
+        "name_devanagari": "दण्डकारण्य",
+        "num": "VI",
+        "book": "Аранья-канда · III",
+        "canonical_ref": "R.3.11+",
+        "wikidata": "Q3595545",
+        "modern_place": "Дандакаранья (обл. Декана: Чхаттисгарх–Одиша–Телангана)",
+        "modern_wikidata": "Q3595545",
+        "source": "Дандакаранья — обширная лесная область Декана; точные границы условны",
+        "feature_role": "region"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8,
+          20.01
+        ]
+      },
+      "properties": {
+        "label": "Панчавати",
+        "name": "Панчавати — похищение Ситы",
+        "name_iast": "Pañcavaṭī",
+        "name_devanagari": "पञ्चवटी",
+        "num": "VII",
+        "book": "Аранья-канда · III",
+        "canonical_ref": "R.3.15, 44, 49",
+        "wikidata": "Q3763833",
+        "modern_place": "Панчавати, Насик (Махараштра)",
+        "modern_wikidata": "Q200235",
+        "source": "Традиционное отождествление с Панчавати близ Насика (р. Годавари)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.46,
+          15.33
+        ]
+      },
+      "properties": {
+        "label": "Кишкиндха",
+        "name": "Кишкиндха — союз с обезьянами",
+        "name_iast": "Kiṣkindhā",
+        "name_devanagari": "किष्किन्धा",
+        "num": "VIII",
+        "book": "Кишкиндха-канда · IV",
+        "canonical_ref": "R.4.5–12, 16",
+        "wikidata": "Q3269148",
+        "modern_place": "Хампи / Анегунди, Карнатака",
+        "modern_wikidata": "Q26732",
+        "source": "Традиционное отождествление с Анегунди/Хампи на р. Тунгабхадра (совр. Карнатака)",
+        "alt_identification": "Отождествление с Хампи/Анегунди — наиболее принятое, но не доказано археологически; выдвигались и сев.-индийские гипотезы",
+        "alt_source": "Anegundi (Wikipedia); karnataka.com — традиция + ландшафтное соответствие"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3,
+          9.28
+        ]
+      },
+      "properties": {
+        "label": "Рамешварам",
+        "name": "Рамешварам — мост в Ланку",
+        "name_iast": "Setubandha / Rāmeśvaram",
+        "name_devanagari": "सेतुबन्ध / रामेश्वरम्",
+        "num": "IX",
+        "book": "Юддха-канда · VI",
+        "canonical_ref": "R.6.22",
+        "wikidata": "Q201743",
+        "modern_place": "Рамешварам, Тамилнад",
+        "modern_wikidata": "Q1435144",
+        "source": "Традиционное отождествление с Рамешварамом и грядой Адамова моста (Рама-Сету)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.77,
+          7.87
+        ]
+      },
+      "properties": {
+        "label": "Ланка",
+        "name": "Ланка — битва и победа",
+        "name_iast": "Laṅkā",
+        "name_devanagari": "लङ्का",
+        "num": "X",
+        "book": "Сундара/Юддха-канда · V–VI",
+        "canonical_ref": "R.5.1, 14; R.6",
+        "wikidata": "Q721272",
+        "modern_place": "Традиционно — о. Шри-Ланка",
+        "modern_wikidata": "Q854",
+        "source": "Традиционное отождествление с о. Шри-Ланка",
+        "alt_identification": "Локализация дискуссионна. Помимо традиц. Шри-Ланки выдвигались гипотезы о центральной Индии: С. М. Кибе (1928) — к северу от Виндхья; Р. Л. Гупта — долина Нармады; С. Агаше — близ Амаркантака (Мадхья-Прадеш). Основной аргумент — «100 йоджан от Виндхья».",
+        "alt_source": "«Lanka of the Ramayana: The Problem of Location» (academia.edu); С. Агаше, «The Search for Ravana's Lanka»"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2,
+          26.8
+        ]
+      },
+      "properties": {
+        "label": "Айодхья",
+        "name": "Возвращение и воцарение",
+        "name_iast": "Ayodhyā",
+        "name_devanagari": "अयोध्या",
+        "num": "XI",
+        "book": "Уттара-канда · VII",
+        "canonical_ref": "R.6.123–128",
+        "wikidata": "Q55604583",
+        "modern_place": "Айодхья, Уттар-Прадеш",
+        "modern_wikidata": "Q186040",
+        "source": "Возвращение в Айодхью (см. остановку I)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            82.2,
+            26.8
+          ],
+          [
+            85.92,
+            26.71
+          ],
+          [
+            81.64,
+            25.59
+          ],
+          [
+            81.85,
+            25.45
+          ],
+          [
+            80.87,
+            25.18
+          ],
+          [
+            77.8,
+            20.5
+          ],
+          [
+            73.8,
+            20.01
+          ],
+          [
+            76.46,
+            15.33
+          ],
+          [
+            79.3,
+            9.28
+          ],
+          [
+            80.77,
+            7.87
+          ],
+          [
+            82.2,
+            26.8
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Путешествие Рамы",
+        "feature_role": "route"
+      }
+    }
+  ]
+}
