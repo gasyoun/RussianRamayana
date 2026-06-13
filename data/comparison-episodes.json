@@ -3,10 +3,14 @@
     "id": "sundarakanda-start",
     "title": "Начало Сундараканды",
     "description": "Первые стихи пятой книги, описывающие величие Ханумана и его готовность к прыжку через океан.",
+    "canonical_ref": "R.5.1.1",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/sundara/sarga1/sundararoman1.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#5",
     "sections": [
       {
         "label": "Санскрит (IAST)",
-        "content": "tato rāvaṇanītāyāḥ sītāyāḥ śatrukarśanaḥ |\niyeṣa padamanveṣṭuṃ cāraṇacariate pathi ||"
+        "content": "tato rāvaṇanītāyāḥ sītāyāḥ śatrukarśanaḥ |\niyeṣa padamanveṣṭuṃ cāraṇacarite pathi ||"
       },
       {
         "label": "Подстрочник (М. Леонов)",
@@ -23,6 +27,10 @@
     "id": "rama-birth",
     "title": "Рождение Рамы",
     "description": "Рождение царевича Рамы в солнечной Айодхье и его божественное происхождение.",
+    "canonical_ref": "R.1.18.8–11",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/baala/sarga18/bala_18_prose.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#1",
     "sections": [],
     "commentary": ""
   },
@@ -30,6 +38,10 @@
     "id": "rama-exile",
     "title": "Изгнание Рамы",
     "description": "Изгнание Рамы, Ситы и Лакшманы в лес на четырнадцать лет и горе царя Дашаратхи.",
+    "canonical_ref": "R.2.11, 2.40",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/ayodhya/sarga40/ayodhyaroman40.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#2",
     "sections": [],
     "commentary": ""
   },
@@ -37,6 +49,10 @@
     "id": "sita-abduction",
     "title": "Похищение Ситы",
     "description": "Коварный Равана похищает Ситу, обернувшись золотым оленем в лесу Панчавати.",
+    "canonical_ref": "R.3.42–49",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/aranya/sarga42/aranyaroman42.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#3",
     "sections": [],
     "commentary": ""
   },
@@ -44,6 +60,10 @@
     "id": "hanuman-meeting",
     "title": "Встреча с Хануманом",
     "description": "Встреча Рамы и Лакшманы с Хануманом на горе Ришьямука и заключение союза.",
+    "canonical_ref": "R.4.3–5",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/kish/sarga3/kishkindhaitrans3.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#4",
     "sections": [],
     "commentary": ""
   },
@@ -51,6 +71,10 @@
     "id": "lanka",
     "title": "Ланка",
     "description": "Хануман находит Ситу в саду Ашока на острове Ланка и передаёт ей весть от Рамы.",
+    "canonical_ref": "R.5.15",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/sundara/sarga15/sundararoman15.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#5",
     "sections": [],
     "commentary": ""
   },
@@ -58,6 +82,10 @@
     "id": "ravana-battle",
     "title": "Битва с Раваной",
     "description": "Грандиозная битва между войском Рамы и ракшасами Раваны; гибель десятиглавого царя.",
+    "canonical_ref": "R.6.108",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/yuddha/sarga108/yuddhaitrans108.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#6",
     "sections": [],
     "commentary": ""
   },
@@ -65,6 +93,10 @@
     "id": "return-ayodhya",
     "title": "Возвращение в Айодхью",
     "description": "Торжественное возвращение Рамы и Ситы в Айодхью на небесной колеснице и воцарение.",
+    "canonical_ref": "R.6.123–128",
+    "recension": "южная (вульгата)",
+    "canonical_url": "https://www.valmikiramayan.net/utf8/yuddha/sarga123/yuddha_123_prose.htm",
+    "corpus_url": "https://samskrtam.ru/parallel-corpus/ramayana-potapovoy.html#6",
     "sections": [],
     "commentary": ""
   }

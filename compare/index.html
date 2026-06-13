@@ -143,6 +143,15 @@
     letter-spacing: 0.08em;
   }
 
+  .episode-ref {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+  }
+
   footer {
     margin-top: 60px;
     text-align: center;
@@ -205,6 +214,7 @@ async function loadEpisodes() {
       '<span class="episode-badge ' + (isReady ? 'badge-ready' : 'badge-pending') + '">' + (isReady ? 'Готов' : 'В работе') + '</span>' +
       '</div>' +
       '<p class="episode-desc">' + esc(ep.description) + '</p>' +
+      (ep.canonical_ref ? '<span class="episode-ref">Рамаяна ' + esc(ep.canonical_ref) + '</span>' : '') +
       (isReady ? '<span class="episode-arrow">Читать →</span>' : '');
 
     grid.appendChild(el);

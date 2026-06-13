@@ -112,6 +112,14 @@
     border: 1px solid var(--border);
   }
 
+  .event-source {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--ink-muted);
+    margin-top: 8px;
+  }
+  .event-source::before { content: 'Источник: '; font-style: normal; }
+
   @media (max-width: 600px) {
     .timeline::before { left: 20px; }
     .timeline-item {
@@ -175,6 +183,7 @@ async function loadTimeline() {
         <span class="year-label">${esc(item.year)}</span>
         <h3 class="event-title">${esc(item.event)}</h3>
         <div class="event-desc">${esc(item.description)}</div>
+        ${item.source ? `<div class="event-source">${esc(item.source)}</div>` : ''}
       `;
       container.appendChild(div);
     });
