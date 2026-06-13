@@ -102,22 +102,34 @@ footer p { font-size: 13px; color: var(--ink-muted); font-style: italic; }
 footer a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border); }
 
 @media print {
-  .nav-back, header, footer, audio, .audio-row, .dl-btn, .vk-link,
-  .card-audio-link, .password-gate, .fallback-note, iframe,
-  .payment-btn, .progress-container, .map-wrap, #map,
-  .back-link, .leaflet-container, .rama-marker, .controls-panel,
-  noscript, .nav-back {
+  /* Hide interactive chrome and non-printable media (NOT <header> — it holds the title). */
+  .nav-back, footer, audio, .audio-row, .dl-btn, .vk-link, .card-audio-link,
+  .password-gate, .fallback-note, iframe, .payment-grid, .payment-btn,
+  .map-wrap, #map, .leaflet-container, .rama-marker, .controls, .ctrl,
+  .about-btn, .about-overlay, .geojson-dl, .catalog-nav, .prog-bar,
+  .progress-container, noscript {
     display: none !important;
   }
-  body { background: white; font-size: 13pt; line-height: 1.7; }
-  body::before { display: none; }
+  body { background: white; color: #1a1410; font-size: 12pt; line-height: 1.6; }
+  body::before, body::after { display: none !important; }
   .container { max-width: 100%; padding: 0; }
-  h1 { font-size: 20pt; }
+  header { margin-bottom: 18px; }
+  h1 { font-size: 22pt; }
+  h2 { font-size: 15pt; }
   a { color: #1a1410; text-decoration: underline; }
-  .chapter-card, .draft-section, .report-card, .fundraising-card,
-  .status-item, .timeline-item, .level-card {
-    break-inside: avoid; border: 1px solid #ccc;
+  /* Show source URLs in bibliographies/citations for offline citability. */
+  .sources a[href^="http"]::after {
+    content: " — " attr(href);
+    font-size: 9pt; color: #555; word-break: break-all;
   }
+  /* Keep logical blocks intact across page breaks. */
+  .char-card, .kanda, .edition-card, .comparison-block, .canonical-ref,
+  .timeline-item, .level-card, .status-item, .about-item, .chrono li {
+    break-inside: avoid;
+  }
+  .char-grid { display: block; }
+  .char-card, .edition-card { border: 1px solid #ccc; margin-bottom: 8px; }
+  #graph { max-width: 100%; height: auto; }
   img { max-width: 100%; filter: none; }
-  .fragment-lines p::before { color: #999; }
+  @page { margin: 1.8cm; }
 }
