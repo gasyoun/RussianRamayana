@@ -241,7 +241,7 @@ function updatePanel(idx){
 
   const dSan=document.getElementById('d-sanskrit');
   dSan.innerHTML = (s&&s.name_iast)
-    ? `<span class="iast">${s.name_iast}</span>${s.name_devanagari?`<span class="deva">${s.name_devanagari}</span>`:''}`
+    ? `<span class="iast" lang="sa-Latn">${s.name_iast}</span>${s.name_devanagari?`<span class="deva" lang="sa">${s.name_devanagari}</span>`:''}`
     : '';
 
   document.getElementById('d-desc').textContent=s?s.desc:'Нажмите «Начать» для запуска анимации.';

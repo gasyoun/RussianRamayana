@@ -136,7 +136,7 @@ async function load() {
       const wd = /^Q\d+$/.test(c.wikidata || '') ? c.wikidata : '';
       card.innerHTML =
         '<div class="char-name">' + esc(c.name_ru) + '</div>' +
-        '<div class="char-skt"><span class="iast">' + esc(c.iast) + '</span><span class="deva">' + esc(c.devanagari) + '</span></div>' +
+        '<div class="char-skt"><span class="iast" lang="sa-Latn">' + esc(c.iast) + '</span><span class="deva" lang="sa">' + esc(c.devanagari) + '</span></div>' +
         '<p class="char-role">' + esc(c.role) + '</p>' +
         (wd ? '<a class="char-wd" href="https://www.wikidata.org/wiki/' + wd + '" target="_blank" rel="noopener noreferrer">Викиданные</a>' : '');
       grid.appendChild(card);

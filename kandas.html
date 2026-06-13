@@ -86,7 +86,7 @@ async function load() {
       '<div class="kanda-head"><span class="kanda-num">Книга ' + esc(k.num) + '</span>' +
       '<span class="kanda-name">' + esc(k.name_ru) + '</span>' +
       (k.title_ru ? '<span class="kanda-title">' + esc(k.title_ru) + '</span>' : '') + '</div>' +
-      '<div class="kanda-skt"><span class="iast" style="font-style:italic;">' + esc(k.iast) + '</span><span class="deva">' + esc(k.devanagari) + '</span></div>' +
+      '<div class="kanda-skt"><span class="iast" lang="sa-Latn" style="font-style:italic;">' + esc(k.iast) + '</span><span class="deva" lang="sa">' + esc(k.devanagari) + '</span></div>' +
       '<div class="kanda-meta">' +
         '<span class="badge badge-sargas">' + k.sargas + ' глав (сарг)</span>' +
         (k.later_addition ? '<span class="badge badge-late">позднее добавление</span>' : '<span class="badge badge-core">древнее ядро</span>') +
