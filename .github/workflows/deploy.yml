@@ -1,0 +1,57 @@
+name: Deploy to Pages
+
+# Pre-renders the data-driven pages to static HTML (scripts/prerender.py) and
+# deploys the baked site to GitHub Pages. Source of truth stays on main as
+# templates + JSON; this workflow bakes content for SEO / archivability.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; don't cancel an in-progress one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Pre-render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Playwright + Chromium
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Pre-render pages
+        run: python scripts/prerender.py
+      - name: Sanity-check baked output
+        run: |
+          test -s dist/index.html
+          grep -q 'translation-card' dist/translations.html
+          grep -q 'kanda' dist/kandas.html
+          echo "baked content present"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

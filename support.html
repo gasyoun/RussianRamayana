@@ -403,6 +403,7 @@ async function loadData() {
 
     // Levels
     const levelsGrid = document.getElementById('levels-grid');
+    levelsGrid.innerHTML = '';
     levels.forEach(level => {
       const div = document.createElement('div');
       div.className = 'level-card';
@@ -419,6 +420,7 @@ async function loadData() {
 
     // Payments
     const paymentGrid = document.getElementById('payment-methods');
+    paymentGrid.innerHTML = '';
     const typeLabels = { 'subscription': 'Ежемесячно', 'one-time': 'Разово' };
     payment.methods.forEach(m => {
       const url = safeUrl(m.url);
@@ -433,6 +435,7 @@ async function loadData() {
 
     // Status
     const statusContainer = document.getElementById('project-status');
+    statusContainer.innerHTML = '';
     const bookLabels = { 'book-4': 'Книга IV · Кишкиндха', 'book-5': 'Книга V · Сундара', 'book-6': 'Книга VI · Юддха' };
     const statusLabels = { 'blocked': 'Задерживается', 'in-progress': 'В работе', 'draft-ready': 'Черновик готов' };
     status.books.forEach(book => {

@@ -186,6 +186,7 @@ async function loadReports() {
   if (!data) return;
 
   const container = document.getElementById('reports-list');
+  container.innerHTML = '';
 
   data.forEach(report => {
     const card = document.createElement('div');

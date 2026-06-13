@@ -96,6 +96,7 @@ async function load() {
   if (!data) return;
   const byId = Object.fromEntries(data.characters.map(c => [c.id, c]));
   const svg = document.getElementById('graph');
+  svg.innerHTML = '';
 
   // Рёбра
   data.relations.forEach(r => {
@@ -123,6 +124,7 @@ async function load() {
     { key:'other', title:'Прочие' }
   ];
   const wrap = document.getElementById('cards');
+  wrap.innerHTML = '';
   groups.forEach(g => {
     const members = data.characters.filter(c => c.group === g.key);
     if (!members.length) return;

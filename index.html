@@ -840,6 +840,7 @@ async function loadAudiobook() {
     const res = await fetch('data/audio.json');
     const audioData = await res.json();
     const list = document.getElementById('audio-playlist');
+    list.innerHTML = '';
     if (!list) return;
     const roman = ['','I','II','III','IV','V','VI','VII'];
 

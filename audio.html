@@ -257,6 +257,7 @@ async function loadAudio() {
   if (!data) return;
 
   const list = document.getElementById('track-list');
+  list.innerHTML = '';
 
   data.forEach((track, i) => {
     const num = i + 1;

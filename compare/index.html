@@ -196,6 +196,7 @@ async function loadEpisodes() {
   if (!data) return;
 
   const grid = document.getElementById('episode-grid');
+  grid.innerHTML = '';
 
   data.forEach((ep, i) => {
     const num = i + 1;

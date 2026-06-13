@@ -315,6 +315,7 @@ async function loadCatalog() {
     const transRes = await fetch('data/translations.json');
     const translations = await transRes.json();
     const transGrid = document.getElementById('translations-grid');
+    transGrid.innerHTML = '';
 
     const typeLabels = {
       'translation': 'Перевод',
@@ -364,6 +365,7 @@ async function loadCatalog() {
     const retelRes = await fetch('data/retellings.json');
     const retellings = await retelRes.json();
     const retelGrid = document.getElementById('retellings-grid');
+    retelGrid.innerHTML = '';
 
     retellings.forEach(item => {
       const url = safeUrl(item.url);

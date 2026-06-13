@@ -184,6 +184,7 @@ async function loadEditions() {
   if (!data) return;
 
   const container = document.getElementById('editions-list');
+  container.innerHTML = '';
 
   data.forEach(ed => {
     const card = document.createElement('div');

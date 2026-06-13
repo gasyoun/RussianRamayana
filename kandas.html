@@ -78,6 +78,7 @@ async function load() {
   const data = await loadJSON('data/kandas.json', 'kandas');
   if (!data) return;
   const wrap = document.getElementById('kandas');
+  wrap.innerHTML = '';
   data.forEach(k => {
     const div = document.createElement('div');
     div.className = 'kanda';
