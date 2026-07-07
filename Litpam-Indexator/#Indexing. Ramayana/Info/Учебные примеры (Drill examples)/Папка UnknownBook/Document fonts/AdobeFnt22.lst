@@ -1,0 +1,211 @@
+%!Adobe-FontList 1.22
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BookAntiqua-Italic
+FamilyName:Book Antiqua
+StyleName:Italic
+FullName:Book Antiqua Italic
+MenuName:Book Antiqua
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\ANTQUAI.TTF
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:149092
+FileModTime:910847920
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Book Antiqua Italic
+NameArray:0,Win,1,Book Antiqua
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:1363352956
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Bold
+FamilyName:Myriad Pro
+StyleName:Bold
+FullName:Myriad Pro Bold
+MenuName:Myriad Pro
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\MyriadPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:97124
+FileModTime:1363352958
+WeightClass:700
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Myriad Pro Bold
+NameArray:0,Win,1,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Regular
+FamilyName:Myriad Pro
+StyleName:Regular
+FullName:Myriad Pro
+MenuName:Myriad Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\MyriadPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:97072
+FileModTime:1363352958
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Myriad Pro
+NameArray:0,Win,1,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:NewBaskervilleC-Roman
+FamilyName:NewBaskervilleC
+StyleName:Regular
+FullName:NewBaskervilleC
+MenuName:NewBaskervilleC
+StyleBits:0
+FamilyNameNative:NewBaskervilleC
+StyleNameNative:Regular
+FullNameNative:NewBaskervilleC Regular
+WritingScript:Cyrillic
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\NewBaskervilleC-Roman.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:29292
+FileModTime:1634493764
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,NewBaskervilleC
+NameArray:0,Win,1,NewBaskervilleC
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SchoolBookC-Bold
+FamilyName:SchoolBookC
+StyleName:Bold
+FullName:SchoolBookC Bold
+MenuName:SchoolBookC
+StyleBits:2
+FamilyNameNative:SchoolBookC
+StyleNameNative:Bold
+FullNameNative:SchoolBookC Bold
+WritingScript:Cyrillic
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\SchoolBookC-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:23288
+FileModTime:1522617000
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,SchoolBookC Bold
+NameArray:0,Win,1,SchoolBookC
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SchoolBookC
+FamilyName:SchoolBookC
+StyleName:Regular
+FullName:SchoolBookC
+MenuName:SchoolBookC
+StyleBits:0
+FamilyNameNative:SchoolBookC
+StyleNameNative:Regular
+FullNameNative:SchoolBookC Regular
+WritingScript:Cyrillic
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\SchoolBookC.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:23448
+FileModTime:1522616970
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,SchoolBookC
+NameArray:0,Win,1,SchoolBookC
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Cambria-Bold
+FamilyName:Cambria
+StyleName:Bold
+FullName:Cambria Bold
+MenuName:Cambria
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:F:\~Golden Fish.2022\Unknown_Book\Папка UnknownBook\Document fonts\cambriab.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:796512
+FileModTime:1461811670
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Cambria Bold
+NameArray:0,Win,1,Cambria
+%EndFont
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="teg_exp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="23" Y="13"/>
+        <UsageCount Value="138"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="fmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fMain"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="549"/>
+        <CursorPos X="115" Y="563"/>
+        <UsageCount Value="138"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uexcel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uExcel"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24" Y="5"/>
+        <UsageCount Value="138"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\Applicat\lazarus\lcl\include\statuspanels.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
+        <CursorPos Y="29"/>
+        <UsageCount Value="4"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\Applicat\lazarus\fpc\3.2.0\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1212"/>
+        <CursorPos X="11" Y="1228"/>
+        <UsageCount Value="39"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\Applicat\lazarus\fpc\3.2.0\source\rtl\inc\astrings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="980"/>
+        <CursorPos X="3" Y="991"/>
+        <UsageCount Value="4"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="490" TopLine="474"/>
+      </Position1>
+      <Position2>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="491" TopLine="474"/>
+      </Position2>
+      <Position3>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="487" TopLine="474"/>
+      </Position3>
+      <Position4>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="488" TopLine="474"/>
+      </Position4>
+      <Position5>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="489" TopLine="474"/>
+      </Position5>
+      <Position6>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="490" TopLine="474"/>
+      </Position6>
+      <Position7>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="491" TopLine="474"/>
+      </Position7>
+      <Position8>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="487" TopLine="474"/>
+      </Position8>
+      <Position9>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="488" TopLine="474"/>
+      </Position9>
+      <Position10>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="489" TopLine="474"/>
+      </Position10>
+      <Position11>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="493" TopLine="474"/>
+      </Position11>
+      <Position12>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="494" TopLine="474"/>
+      </Position12>
+      <Position13>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="495" TopLine="474"/>
+      </Position13>
+      <Position14>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="496" TopLine="474"/>
+      </Position14>
+      <Position15>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="484" TopLine="474"/>
+      </Position15>
+      <Position16>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="485" TopLine="474"/>
+      </Position16>
+      <Position17>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="487" TopLine="474"/>
+      </Position17>
+      <Position18>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="488" TopLine="474"/>
+      </Position18>
+      <Position19>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="489" TopLine="474"/>
+      </Position19>
+      <Position20>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="487" Column="9" TopLine="474"/>
+      </Position20>
+      <Position21>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="490" Column="27" TopLine="474"/>
+      </Position21>
+      <Position22>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="491" TopLine="474"/>
+      </Position22>
+      <Position23>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="487" TopLine="474"/>
+      </Position23>
+      <Position24>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="488" TopLine="474"/>
+      </Position24>
+      <Position25>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="489" TopLine="474"/>
+      </Position25>
+      <Position26>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="490" Column="50" TopLine="474"/>
+      </Position26>
+      <Position27>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="260" Column="36" TopLine="242"/>
+      </Position27>
+      <Position28>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="261" Column="36" TopLine="243"/>
+      </Position28>
+      <Position29>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="260" Column="36" TopLine="242"/>
+      </Position29>
+      <Position30>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="248" Column="19" TopLine="243"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

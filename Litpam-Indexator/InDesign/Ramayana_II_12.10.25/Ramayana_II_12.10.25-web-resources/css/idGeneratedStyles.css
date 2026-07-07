@@ -1,0 +1,1161 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+body {
+	-epub-hyphens:auto;
+}
+a._idGenColorInherit {
+	color:inherit;
+}
+div.Графический-фрейм {
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+}
+div.Текстовый-фрейм {
+	border-style:solid;
+}
+p._IndexStyles_-Level1 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:34px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:-34px;
+	text-transform:none;
+	widows:1;
+}
+p._IndexStyles_-Level2-Index {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:40px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:-23px;
+	text-transform:none;
+	widows:1;
+}
+p._StikhLine {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:105px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p._StikhLine-кавычки {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:101px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.__Песнь-в-Примечаниях-copy {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:13px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:0.954;
+	margin-bottom:9px;
+	margin-left:0;
+	margin-right:11px;
+	margin-top:20px;
+	orphans:1;
+	page-break-after:avoid;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.__Раздел {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:18px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.667;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:14px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Basic-Paragraph-1 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Basic-Paragraph-1-кавычки {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:88px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Basic-Paragraph-3-цифры {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.основной-абзац {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:105px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.SongTitle {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:italic;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:11px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.TabAndQuote {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:88px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Title-1-2 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:16px;
+	font-style:italic;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:14px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Title1 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:14px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.end {
+	color:#000000;
+	font-family:"Charter Indologique", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.176;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Конец-песни {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.216;
+	margin-bottom:0;
+	margin-left:162px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Конец-песни-без-оступа {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:italic;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.118;
+	margin-bottom:28px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Название-указателя {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:12px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:7px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Общее-название-указателя {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:2;
+	margin-bottom:57px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:43px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:uppercase;
+	widows:1;
+}
+p.Песнь1 {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:13px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:0.954;
+	margin-bottom:9px;
+	margin-left:105px;
+	margin-right:11px;
+	margin-top:51px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Приложения {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.176;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:2;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:14px;
+	text-transform:none;
+	widows:2;
+}
+p.Приложения-центр {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:italic;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.176;
+	margin-bottom:6px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:6px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.СОД_Подраздел-1 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:2.4;
+	margin-bottom:3px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.СОД_Раздел-1 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:12px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:2;
+	margin-bottom:9px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:uppercase;
+	widows:1;
+}
+p.Содержание {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.765;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:2;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:2;
+}
+p.Содержание-copy {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:2;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:2;
+}
+p.Список-сокращений {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.176;
+	margin-bottom:0;
+	margin-left:14px;
+	margin-right:0;
+	margin-top:0;
+	orphans:2;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:-14px;
+	text-transform:none;
+	widows:2;
+}
+p.Титул1 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:42px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Титул2 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Титул3 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:24px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Титул4 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:12px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.Титул5 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.страница {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+span.Index-styles_d-Аламбуша_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Аламбуша_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Бхарадваджа_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Бхарата_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Бхарата_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Вамана_3 {
+	color:#ff0000;
+}
+span.Index-styles_d-Вечный_1_d-Вишну {
+	color:#ff0000;
+}
+span.Index-styles_d-Владыка-людей_1_d-Дашаратха {
+	color:#ff0000;
+}
+span.Index-styles_d-Владыка-людей_4_d-Сагара {
+	color:#ff0000;
+}
+span.Index-styles_d-Гая_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Джамадагнья_Рама {
+	color:#ff0000;
+}
+span.Index-styles_d-Джанака_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Дочь-Джанаки_d-Сита_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Какутстха_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Калинди_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Кашьяпа_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Кашьяпа_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Мантхара_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Мару_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Мару_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Податель-даров_1_d-Кубера {
+	color:#ff0000;
+}
+span.Index-styles_d-Податель-даров_2_d-Рама_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Рагхава_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Рама_1 {
+	color:#000000;
+}
+span.Index-styles_d-Сатьяван_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Сита_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Сома_1 {
+	color:#ff0000;
+}
+span.Index-styles_d-Сома_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Судханван_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Таркшья_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Урмила_2 {
+	color:#ff0000;
+}
+span.Index-styles_d-Читраратха_2 {
+	color:#ff0000;
+}
+span.Index-styles_f-Агнея_1 {
+	color:#ff0000;
+}
+span.Index-styles_f-Гандхамадана_2 {
+	color:#ff0000;
+}
+span.Index-styles_f-Гая_2 {
+	color:#ff0000;
+}
+span.Index-styles_f-Калинди_2 {
+	color:#ff0000;
+}
+span.Index-styles_f-Каши_1 {
+	color:#ff0000;
+}
+span.Index-styles_f-Судаман_1 {
+	color:#ff0000;
+}
+span.Index-styles_h-Тилака_1 {
+	color:#ff0000;
+}
+span.Index-styles_h-ракшаси {
+	color:#ff0000;
+}
+span.Index-styles_j-Каша_1 {
+	color:#ff0000;
+}
+span.Index-styles_j-Краунча_2 {
+	color:#ff0000;
+}
+span.Index-styles_j-Куша_3 {
+	color:#ff0000;
+}
+span.Index-styles_j-Макара_2 {
+	color:#ff0000;
+}
+span.Index-styles_j-Тилака_2 {
+	color:#ff0000;
+}
+span.ListLetter {
+	font-size:10px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.regular {
+	font-style:normal;
+	font-weight:normal;
+}
+span.Ссылка-См- {
+	color:#000000;
+	font-style:normal;
+	font-weight:normal;
+}
+span.Страница-в-комментарии {
+	font-family:"New Baskerville ITC", serif;
+	font-style:normal;
+	font-weight:bold;
+}
+span.курсив {
+	font-style:italic;
+	font-weight:normal;
+}
+span.термин {
+	color:#000000;
+}
+span.цифра {
+	font-family:"New Baskerville ITC", serif;
+	font-size:8px;
+	font-style:normal;
+	font-weight:normal;
+}
+p.ParaOverride-1 {
+	text-align:center;
+}
+p.ParaOverride-2 {
+	text-align:center;
+	text-indent:0px;
+}
+p.ParaOverride-3 {
+	margin-left:88px;
+}
+p.ParaOverride-4 {
+	page-break-after:always;
+}
+p.ParaOverride-5 {
+	margin-bottom:34px;
+}
+p.ParaOverride-6 {
+	margin-bottom:26px;
+}
+p.ParaOverride-7 {
+	margin-bottom:3px;
+}
+p.ParaOverride-8 {
+	margin-bottom:11px;
+}
+p.ParaOverride-9 {
+	margin-bottom:9px;
+}
+p.ParaOverride-10 {
+	margin-left:162px;
+}
+p.ParaOverride-11 {
+	margin-bottom:74px;
+}
+p.ParaOverride-12 {
+	margin-bottom:54px;
+}
+p.ParaOverride-13 {
+	margin-bottom:77px;
+}
+p.ParaOverride-14 {
+	margin-bottom:48px;
+}
+p.ParaOverride-15 {
+	margin-bottom:28px;
+}
+p.ParaOverride-16 {
+	margin-top:9px;
+}
+p.ParaOverride-17 {
+	margin-left:102px;
+}
+p.ParaOverride-18 {
+	margin-bottom:51px;
+}
+p.ParaOverride-19 {
+	margin-bottom:31px;
+}
+p.ParaOverride-20 {
+	margin-bottom:79px;
+}
+p.ParaOverride-21 {
+	margin-bottom:74px;
+	margin-top:6px;
+}
+p.ParaOverride-22 {
+	margin-bottom:6px;
+}
+p.ParaOverride-23 {
+	margin-bottom:14px;
+}
+p.ParaOverride-24 {
+	text-align:justify;
+	text-align-last:justify;
+}
+p.ParaOverride-25 {
+	text-indent:0px;
+}
+p.ParaOverride-26 {
+	margin-top:26px;
+}
+p.ParaOverride-27 {
+	margin-top:40px;
+}
+p.ParaOverride-28 {
+	margin-bottom:108px;
+}
+p.ParaOverride-29 {
+	margin-top:3px;
+}
+p.ParaOverride-30 {
+	page-break-before:always;
+}
+p.ParaOverride-31 {
+	margin-left:3px;
+	margin-right:3px;
+}
+p.ParaOverride-32 {
+	margin-left:0px;
+	text-align:justify;
+	text-align-last:left;
+}
+p.ParaOverride-33 {
+	text-align:justify;
+	text-align-last:center;
+}
+span.CharOverride-1 {
+	font-size:16px;
+}
+span.CharOverride-2 {
+	color:#d51317;
+	font-size:36px;
+}
+span.CharOverride-3 {
+	color:#d51317;
+	font-size:20px;
+}
+span.CharOverride-4 {
+	color:#d51317;
+	font-family:Santipur2014, serif;
+	font-size:24px;
+	font-style:normal;
+	font-weight:500;
+}
+span.CharOverride-5 {
+	font-family:Santipur2014, serif;
+	font-style:normal;
+	font-weight:500;
+}
+span.CharOverride-6 {
+	color:#d51317;
+}
+span.CharOverride-7 {
+	font-style:italic;
+	font-weight:normal;
+}
+span.CharOverride-8 {
+	font-size:9px;
+}
+span.CharOverride-9 {
+	font-size:9px;
+	font-style:italic;
+	font-weight:normal;
+}
+span.CharOverride-10 {
+	font-size:18px;
+}
+span.CharOverride-11 {
+	font-size:12px;
+}
+span.CharOverride-12 {
+	color:#000000;
+}
+span.CharOverride-13 {
+	color:#000000;
+	font-family:"New Baskerville ITC", serif;
+	font-size:10px;
+	font-style:normal;
+	font-weight:normal;
+}
+span.CharOverride-14 {
+	color:#000000;
+	font-size:0px;
+}
+span.CharOverride-15 {
+	font-size:0px;
+}
+span.CharOverride-16 {
+	font-style:normal;
+	font-weight:normal;
+}
+span.CharOverride-17 {
+	color:#000000;
+	font-style:italic;
+	font-weight:normal;
+}
+span.CharOverride-18 {
+	font-size:10px;
+}
+span.CharOverride-19 {
+	font-size:10px;
+	font-style:italic;
+	font-weight:normal;
+}
+span.CharOverride-20 {
+	font-family:"Charter Indologique", serif;
+	font-style:normal;
+	font-weight:normal;
+}
+span.CharOverride-21 {
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-22 {
+	font-variant:normal;
+	text-transform:none;
+}
+span.CharOverride-23 {
+	font-family:"New Baskerville ITC", serif;
+	font-size:9px;
+	font-style:italic;
+	font-weight:normal;
+}
+span.CharOverride-24 {
+	font-family:"New Baskerville ITC", serif;
+	font-size:9px;
+	font-style:normal;
+	font-weight:normal;
+}
+span.CharOverride-25 {
+	font-family:"New Baskerville ITC", serif;
+	font-style:normal;
+	font-weight:normal;
+}
+p._idGenParaOverride-1 {
+	page-break-after:always;
+}
+#_idContainer001 {
+	display:inline-block;
+	height:61px;
+	width:241px;
+}
+#_idContainer006 {
+	display:inline-block;
+	height:499px;
+	width:241px;
+}
+#_idContainer012 {
+	display:inline-block;
+	height:74px;
+	width:69px;
+}
+#_idContainer014 {
+	display:inline-block;
+	height:0px;
+	position:relative;
+	width:369px;
+}
+#_idContainer016 {
+	display:inline-block;
+	height:39px;
+	width:468px;
+}
+img._idGenObjectAttribute-1 {
+	height:100.00%;
+	min-width:100%;
+	width:100.00%;
+}
+img._idGenObjectAttribute-2 {
+	height:74px;
+	width:45px;
+}
+img._idGenObjectAttribute-3 {
+	height:76px;
+	width:76px;
+}
+div._idGenObjectStyleOverride-1 {
+	border-width:0px;
+}
+div._idGenObjectStyleOverride-2 {
+	border-style:double;
+	border-width:2px;
+}
+hr.HorizontalRule-1 {
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:solid #000000 1px;
+}
+div._idGenObjectLayout-1 {
+	text-align:center;
+}

@@ -1,0 +1,615 @@
+﻿// ForIndex.jsxinc
+
+var logUsage = false; // true - при каждом запуске лог-файл создается заново;  false - информация пишется в имеющийся лог-файл. Если его нет, он будет создан.
+
+var sepSpace = "\\h"; // \\h - для CS6 и дальше. Для предыдущих: [[:blank:]]
+//var sepSpace = "[[:blank:]]"; // \\h - для CS6 и дальше. Для предыдущих: [[:blank:]]
+
+var groupForIndexStyles = "Index styles"; // 08.07.2022.  Группа для символьных стилей, имена которых будут в четвёртой колонке файла IndexList.
+var usedColor = "IndexStylesColor"; // этим цветом можно отмечать добавленные слова
+var nilColorSample = [255, 0, 255]; // цвет слов, совпадающих стерминами; эти слова надо пропустить, не относить к терминам, с которыми они совпадают. 
+                                                      // Цвет с этим оттенком называется SkipTheWord. Он создаётся при переносе разметки текста.
+var usedColorSample = [255, 0, 0];                                            
+var indStyleName = "#Level";
+var indStyle1 = "#Level1";
+var indStyle2 = "#Level2";
+var indStyle3 = "#Level3";
+var indStyle4 = "#Level4";
+var indStyleGroup = "#IndexStyles"; // группа служебных абзацных стилей для идентификации уровней индекса
+
+// это названия абзацных стилей для оформления собранного указателя. В них надо сделать правильные отступы
+var indStyle1_Index = "#Level1=Index";
+var indStyle2_Index = "#Level2=Index";
+var indStyle3_Index = "#Level3=Index";
+var indStyle4_Index = "#Level4=Index";
+
+var noLevel = "—"; // SpecialCharacters.emDash - маркер несуществующего уровня. Используется в UseReadyTable.jsx и AddSeeTopic.jsx
+var indLineSep = "  "; // два пробела -- разделитель между термином и последовательностью номеров страниц. Используется в AddSeeTopic.jsx для отделения термина от последовательности номеров страниц.
+
+/*
+Девять цветов для терминов разных указателей, по числу букв маркировки терминов разных указателей, массив markLetters.
+Тут нет красного цвета, этот оттенок занят цветом IndrxStylesColor.
+в поле 'letter' каждой строки находится одна из букв из массива markLetters.
+Так по цвету можно узнать, к какому указателю он относится, и по букве указателя узнать его цвет.
+Важно понимать, что в списке цветов работы не будет названий, указанных в полях 'name', они для понимания, что за цвет.
+А реально эти цвета используются так: находится буква указателя, по букве находятся r-g-b компоненты цвета,
+создаётся цвет с этими компонентами, и названием IndexColor-letter-colorIndex.
+(переменная colorIndex определяется в функции getDataAction().
+И дальше этот цвет помещается в строки заданий обработки терминов, начинающихся с этой буквы.
+*/
+var colorsRGB = [
+//~ {name:"Синий 0-107-187", r:0, g:107, b:187, letter:"d"},
+//~ {name:"Зелёный 0-170-0", r:0, g:170,b:0, letter:"f"}, 
+//~ {name:"Бордовый 196-29-27", r:196, g:29, b:27, letter:"h"},
+//~ {name:"Коричневый 177-92-26", r:177, g:92, b:26, letter:"j"},
+//~ {name:"Сиреневый 153-26-145", r:153, g:26, b:145, letter:"m"},
+//~ {name:"Пурпурный 230-0-126", r:230, g:0, b:126, letter:"s"},
+//~ {name:"Оранжевый 255-79-0", r:255, g:79, b:0, letter:"t"},
+//~ {name:"Фиолетовый 255-0-255", r:255, g:0, b:255, letter:"w"},
+//~ {name:"Золотой 220-170-30", r:220, g:170, b:30, letter:"z"}
+//~ ];
+{name:"Синий 0-107-187", r:0, g:107, b:187, letter:"a"},
+{name:"Зелёный 0-170-0", r:0, g:170,b:0, letter:"b"}, 
+{name:"Бордовый 196-29-27", r:196, g:29, b:27, letter:"c"},
+{name:"Коричневый 177-92-26", r:177, g:92, b:26, letter:"d"},
+{name:"Сиреневый 153-26-145", r:153, g:26, b:145, letter:"e"},
+{name:"Пурпурный 230-0-126", r:230, g:0, b:126, letter:"f"},
+{name:"Оранжевый 255-79-0", r:255, g:79, b:0, letter:"g"},
+{name:"Фиолетовый 255-0-255", r:255, g:0, b:255, letter:"h"},
+{name:"Золотой 220-170-30", r:220, g:170, b:30, letter:"i"}
+];
+// буквы для маркировки терминов разных указателей
+//var markLetters = ["d", "f", "h", "j", "m", "s", "t", "w", "z"];
+var markLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+
+var showUnsupportedWords = false;  // true: если встретится фамилия, прошедшая все фильтры, но оставшаяся необработанной, она будет выведена на экран. Работа именно с фамилиями, слова леко проходят фильтры отбора фамилий. Поэтому эта переменная, после долгого тестирования всяких фамилий теперь в состоянии false: чтобы не смущать ползователей сообщениями, когда они обычное слово пропустят через фильтр поиска фамилии, и оно будут выведено как неучтённая фамилия. Хотя, если работа именно с фамилиями, то можно включить этот флажок, вдруг какой неучтённый вариант обнаружится. Но я просто уже устал искать варианты фамилий, и поставил значение false
+
+var we = "\\b"; // we = word edge (  ну типа край слова :))  )
+var vowel = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"; // перечень гласных для поиска по варианту simpleSearch = true  В этом варианте поиска буквы 'й' и 'Й' обрабатываются отдельно, они в переменной 'shоrtI'
+var _vowel = "аеёийоуыэюяАЕЁИйОУЫЭЮЯ"; //  это для поиска по варианту simpleSearch = false  Тут буквы  'й' и 'Й' входят в список гласных букв
+var consonant = "цкнгшщзхфвпрлджчсмтбЦКНГШЩЗХФВПРЛДЖЧСМТБ";
+var shоrtI = "йЙ"; // для поиска буквы й в конце слова по варианту поиска simpleSearch = true  
+
+var afterWord = ["\\.", ",", "!", "\\?", ":", ";", "…", "\\\"", "»", "/", "\\)", "\\]"]; // символы, не являющиеся буквами, которые могут оказаться последним знаком слова при делениии строки по пробелам.
+// при определении, что это за слово, неважно по какому варианту simpleSearch, эти знаки надо из рассмотрения исключить, т.е. сделать слово на один знак (или несколько знаков) короче прежде чем его анализировать
+
+var useFamily = false; // сосотояние флажка выбора - как понимать первое слово -- просто текст, или это фамилия
+
+var simpleSearch = false;
+// если simpleSearch равно true, то используется простой вариант создания grep-запроса, он сильно избыточный из-за того что используются все строчные буквы [а-я]
+// Избыточность проявляется, например, в том, что можно искать по тексту фамилии Петров, это делается так \bПетров[а-я]{1,2}\b а будут найдены и отмечены Петрович, Петровна.
+// Эта проблема и с Петров, Корнилов, Никитов, Титов, Александров, Андреев и пр.
+// Есть более изощрённый вариант получения набора букв, которые могут быть в окончаниях падежных форм слова. Он запускается, когда simpleSearch равна false.
+// Буквенный разбор словника не требует заметно больше времени, всё обрабатывается быстро, 
+// и при этом неожиданных случаев -- Семенович при поиске Семенов, Андреевич при поиске Андреев, Толпа при поиске Толь, и др. -- уже не будет
+///
+var vowelSample = "[а-я]{1,2}";
+var short_I_Sample = "[а-я]{2,3}"; // для слов, оканчивающихся на -й
+var consonantSample = "[а-я]{0,2}";
+
+///////// буквенный разбор слов //////////////
+// варианты окончаний слов: s - согласная буква,  g - гласная буква  m - мягкий знак   t - твёрдый знак.
+// и строка букв для каждого варианта, которые могут быть в окончании.
+// Анализируются слова, в которых четыре и более букв.
+// Буквы собственно окончания слова, по которым слова делятся на группы, могут быть добавлены к строке букв своей группы.
+// Например, для слова 'мечта' полный набор букв, которые могут быть в падежных окончаниях, будет 'а' + ssg
+// Для группы msg в строку букв добавляются три последних буквы слова. Предполагается, что это именительный падеж, хотя с другими тоже верно работает.
+// Если при поиске группа слова не найдена, например, слово 'своею', это отсутствующий тут вариант ggg, 
+// оно помещается в запрос как есть, без уточнения возможных падежных окончаний.
+//
+// Поиск слов, оканчивающихся на согласную, оптимизирован: сразу добавляется [мыаоуе]*\b
+// не исследуя, какая это группа: gss,  sgs,  sss,   ggs,  tgs,  sms,  mgs.
+
+var mz = "ьЬ"; 
+var tz = "ъЪ"; 
+var rezWord = "";
+// 24.05.2021  -- во всех сочетаниях букв, где есть 'е' ,  добавлена буква 'ё'. Где-то она уже была, но сейчас для полноты эта буква добавлена везде.
+var ssg = "йоувамыихеёяю"; // мечта   кровля   рикша   вопли   мосты  ступня ||  мечтА:  \bмечт[айоувамыихеяю]+\b
+
+// Существительные, оканчивающиеся на 'че'  (отче, старче), не имеют падежных форм. Формально это ssg, но эти слова только в именительном падеже. 
+// Если быть точным, то это звательный падеж.
+//>> 30.08.2022 -- если слово оканчивается на 'у', оно не обрабатывается, а сразу возвращается, это  проверяется в функции getWord
+
+var ssm = "июяеём";  // честь   Ярославль  || честЬ:  \bчест[ьиюяем]+\b
+var gsm = "июяеёмьр";  //   тень   июнь   день пень  ||  тЕНЬ:  \bт[еньиюяеём]+\b     мать дочь [ьерию]  появляется буква р, и надо учесть мягкий знак
+var msg = "аыеёуовмийх"; // кольцо   ходьба   деньги   Ванька  ||  колЬЦО:  \bкол[ьцоаыеуовмийх]+\b
+var smg = "иеюёйявмх"; // ладья   листья    друзья ||  ладЬЯ:   \bлад[ьяиеюёйявмх]+\b  
+                                // ||  друзья - друзей :  мягкий знак исчезает, значит, его надо включить внабор букв
+var sgg = "аяойгюемуивхёы"; // милая   светлый   толстый каравай   караваи   края ||  милАЯ:   \bмил[аяйяогюемуивхё]+\b
+var gsg = "еёйямихаыуов";  // вода   воевода   олово   поля   вдовы  || воДА:  \bво[даейямихаыуо]+\b ; 
+
+// Существительные, оканчивающиеся на 'у'  (гуру, кенгуру, иглу (жилище эскимосов)), одинаковы во всех падежах. Формально это gsg, но все падежные формы одинаковые.
+//>> 30.08.2022 -- если слово оканчивается на 'у', оно не обрабатывается, а сразу возвращается, это  проверяется в функции getWord
+
+var sgs = "аоыумеё"; // позитив || \bпозитив[аоуме]*\b      24.05.2021   Павел осёл   Павла осла  Пвлом ослом   Надо учесть такой переход sgs в ssg и sgs для слов, оканчивающихся на 'л' :
+                             // если в sgs есть 'л', то для этого слова вариант theGroups["sgs"] = "[мауое]*"   надо менять на theGroups["sgs"] = "[лмауое]+" , те. добавить в буквы букву 'л' 
+                             // и определить, что две последние буквы слова заменяются на новый вариант theGroups["sgs"]
+                             // Из-а странного правила русского языка (в школе спрашивал, толком объяснить никто не мог. Но раз правило есть, его надо выполнять) 
+                             // Пушкин (Пришвин)  и Чаплин (Дарвин)  в творительном падеже русские и иностранные фамилиии пишутся по-разному: Пушкиным (Пришвиным),  но Чаплином (Дарвином).
+                             // Хотя они созвучны. Этот текст к тому, чтобы объяснить, почему в наборе sgs есть 'о' и 'ы'.
+var sms = "ауомеё"; // кобальт  ||   \bкобальт[ауоме]*\b
+var mgs =  "ауомеё"; // батальон  ||   \bбатальон[ауоме]*\b
+var gss = "ауомеё";  //   торт  пациент  ||   \bторт[аоуме]*\b
+var sss = "аоумеё" ; // текст  контекст  ||   \bтекст[аоуме]*\b
+var ggs = "аоумеё"; // район  ||   \bрайон[аоуме]*\b
+var tgs = "ауомеё"; //  объём   подъём  ||  \bобъём[ауоме]*\b
+
+/////////// эти варианты окончаний для фамилий
+
+var fssg1 = "иеёуыой"; // СтринжА : а + [иеуй]+\b   ГордА : а+[ыеой]+\b  = >  [иеуыой]+\b
+var fssg2 = "иеёюй"; // СаблЯ : я+[иеюй]+\b 
+var fssm = "ияюеём";  // КостЬ : ь+[иею]+\b      КондрусЬ :  ь+[яюем]  =>  [ияюем]
+var fgsm = "яюеём";  //  ОленЬ : ь+[яюем]+\b 
+var fmsg = "иеёуой"; // ВанькА : а+[иеуой]+\b
+var fsmg = "иеюёй"; // ЛадьЯ:  я+[иеюёй]+\b
+var fsgg1 = "ойую"; // МилАЯ : ая+[ойую]+\b
+var fsgg2 = "огомуы"; // МилЫЙ : ый+[огомуы]+\b     
+var fsgg5 = "гомуы"; // БлагОЙ : ой+[гому]+\b    буква ы:  Толстой -> Толстым
+var fsgg6 = "яюеём"; // БугаЙ : ой+[яюем]+\b    МикчеЙ   КукуЙ   ГуляЙ   ПаладиЙ
+var fsgg7 = "июеёй"; // БериЯ  ДанелиЯ : я+[ию]+\b    Статуя
+var fgsg1 = "ыеёуойи";  // ВоеводА :  а+[ыеуой] +\b   ||  05.05.2022
+var fgsg2 = "иеёюй";  // ВолЯ :  я+[иеюй]+\b
+
+var fsgs = "ауеёоым"; //  Петров : [ауеоылм]*\b  
+var ksgs = "ауеёом" //  РебенОК :  к+[ауеом]+\b       ЗамочЕК  :  к+ [ауеом]+\b    ОтЕЦ :  ц+[ауеом]+\b     
+                                        // Это случай, когда последняя К или Ц, а предпоследняя О или Е
+var fsms = "ауоеём"; // Гарольд : [ауоем]*\b
+var fmgs =  "ауеёомы"; // Бульон :  [ауеом]*\b  Васильев : [ауеым]  => [ауеомы]*\b
+var fgss = "ауеёом";  //   Доцент : [ауеом]*\b
+var fsss = "ауеёом" ; // Текст : [ауеом]*\b
+var fggs = "ауеёоым"; //  Малеев : [ауеоым]*\b   ||   Малеев   Николаев 
+            // (Николаевым, если это фамилия, и Николаевом, если это город) ||  \bМалеев[мыауое]*\b
+var ftgs = "ауомеё"; //  Подъём : [ауоме]*\b
+
+var fsss = "ауеёом"; // Буркхардт  Горшц
+
+////////////// ====   фамилии =====
+
+var theGroups = {};
+// число после верт. черты -- сколько последних букв слова надо поместить в набор букв
+//theGroups["ssg"] = "йоувамыихеёя]*|1"; //  вгруппе ssg возможны слова без окончаний — мачты - мачт, места - мест —
+                                                            // это обусловило, что используется квантификатор звёздочка, а не плюс
+                                                            // 30.05.2021  хотелКИ - хотелОК -- надо отделять не одну, а две буквы. И уже квантификатор не звёздочка, а плюс
+theGroups["ssg"] = "йоувамыихеёяю]+|2";
+theGroups["ssg1"] = "аиеуой]+|1"; // если в "ssg" последние буквы "ка". то "аиеуой"+|1
+
+theGroups["ssm"] = "июяеём]+|1";
+theGroups["gsm"] = "июяеёмьр]+|3"; // тут 3 обусловлено тем, что в падежных формах гласная может исчезать — день, дня  пень, пня — 
+    // поэтому важно оставить для поиска хотя бы первую букву. Слова меньше четырех букв помещаются в grep-запрос как есть, 
+    // только добавляются \b до и после слова.
+theGroups["msg"] = "аыеёуовмийх]+|3"; // в словах этой группы мягкий знак может исчезать — кольца, колец — 
+    // поэтому в набор помещаются три последних буквы
+theGroups["sgg"] = "айяогюемуивхёы]+|2"; 
+theGroups["gsg"] =  "еёйямихаыуов]*|1"; // в группе gsg возможны слова без окончаний — воды, вод — это обусловило, 
+    // что используется квантификатор звёздочка, а не плюс   ейямихаыуо;  добавлена в  --  отцы  -- отцов
+//theGroups["smg"] = "ейиюё]+|2"; // тут 2 обусловлено пропаданием мягкого знака в падежных формах — друзья, друзей — 
+theGroups["smg"] = "иеюёйявмх]+|2"; // тут 2 обусловлено пропаданием мягкого знака в падежных формах — друзья, друзей — 
+        // поэтому мягкий знак надо отсоединять от слова и включать в набор  |  17.12.2022  --  падежные формы smg-слов сильно различаются, поэтому набор букв расширен.
+
+// если слово оканчивается на согласную букву, то буквы из слова в набор не добавляются
+theGroups["sms"] = "[ауомеё]*";  
+theGroups["mgs"] = "[ауомеё]*";
+theGroups["gss"] = "[ауомеё]*";
+theGroups["sgs"] = "[мауоыеё]*"; // <<< всегда будет использоваться этот вариант [ случай слов, оканчивающихся на '-ел': орёл, осел, имя Павел -- обрабытывается отдельно ]
+theGroups["sss"] = "[аоумеё]*";
+theGroups["ggs"] = "[мыауоеё]*"; 
+theGroups["tgs"] = "[ауомеё]*";
+/////////////////////////////////////////////////////////////////////
+/// это для работы с фамилиями
+theGroups["fssg1"] = "иеёуыой]+|1"; // СтринжА : а + [иеуй]+\b   ГордА : а+[ыеой]+\b "] = >  [иеуыой]+\b
+theGroups["fssg2"] = "иеёюй]+|1"; // СаблЯ : я+[иеюй]+\b 
+theGroups["fssm"] = "ияюеём]+|1";  // КостЬ : ь+[иею]+\b      КондрусЬ :  ь+[яюем]  =>  [ияюем]
+theGroups["fgsm"] = "яюеём]+|1";  //  ОленЬ : ь+[яюем]+\b 
+theGroups["fmsg"] = "иеёуой]+|1"; // ВанькА : а+[иеуой]+\b
+theGroups["fsmg"] = "иеёюёй]+|1"; // ЛадьЯ:  я+[иеюёй]+\b
+theGroups["fsgg1"] = "ойую]+|2"; // МилАЯ : ая+[ойую]+\b
+theGroups["fsgg2"] = "огомуы]+|2"; // МилЫЙ : ый+[огомуы]+\b    
+theGroups["fsgg3"] = "еёйю]+|2"; // СинЯЯ : яя+[ейю]+\b 
+theGroups["fsgg4"] = "еёгомуия]+|2"; // СинИЙ : ий+[егомуи]+\b   Винцентий
+//theGroups["fsgg5"] = "гомуы]+|1"; // БлагоЙ : й+[гому]+\b
+theGroups["fsgg5"] = "гомуы]+|2"; // БлагоЙ : й+[гому]+\b   ТолстОЙ  Толст[ым ]   КорчнОЙ  Корчн[ым]
+theGroups["fsgg6"] = "яюеёмы]+|1"; // БугаЙ : й+[яюем]+\b 
+theGroups["fsgg7"] = "июеёй]+|1"; // ДанелиЯ : я+[июей]+\b  СтатуЯ   МедеЯ
+theGroups["fgsg1"] = "ыеёуойи]+|1";  // ВоеводА :  а+[ыеёуойи] +\b   Вожа
+theGroups["fgsg2"] = "иеёюй]+|1";  // ВолЯ :  я+[иеюй]+\b
+theGroups["fgsg3"] = "хми]+|1";  // ЛеонтьевЫ :  ы+[хми]+\b
+     
+theGroups["fsgs"] = "[ауеёоым]*"; //  Петров :  [ауеоым]*\b
+theGroups["Fsgs"] = "ауеёоымл]+|2"; //  25.05.2021   Гавел - Гавела    Павел - Павела (Павла)    Орел - Орела (Орла)
+theGroups["ksgs"] = "ауеёом]+"; //  РебенОК :  [ауеомк]+\b       ЗамочЕК  :  [ауеомк]+\b  
+        // ( в случае когда последняя К, а предпоследняя О или Е, всегда две буквы удаляются)
+theGroups["fsms"] = "[ауоеём]*"; // Гарольд :  [ауоем]*\b
+theGroups["fmgs"] = "[ауеёомы]*"; // Бульон :  [ауеом]*\b    Васильев : [ауеым]*\b
+theGroups["fgss"] = "[ауеёом]*";  //  Доцент : [ауеом]*\b  
+theGroups["fsss"] = "[ауеёом]*"; // Текст : [ауеом]*\b
+theGroups["fggs"] = "[ауеёоым]*"; //  Малеев : [ауеоым]*\b
+theGroups["ftgs"] = "[ауомеё]*"; //  Подъём : [ауоме]*\b
+
+theGroups["fsss"] = "[ауеёом]*"; // БуркхардТ : т+[ауеом]*\b
+
+var noEnds = "оОеЕуУиИэЭюЮ";
+// несклоняемые фамилии, оканчивающиеся на -о, -е, -у, -и, -э, -ю, 
+// не имеют падежных форм:  Лещенко, Гаридзе, Рытхэу, Иоселиани,  Друцэ, Цзю
+///
+var shortWordEnds = "ьЬйЙ"; // окончания трёхбуквенных фамилий типа Уль, Рай и пр.
+var ShortWordLetters1 = "[ауеёом]{0,2}"; // это после трёхбуквенных фамилий, оканчивающихся на согласную :  Тим Сыч :   [ауеом]{0,2}\b  
+var ShortWordLetters2 = "яюеём]{1,2}"; // это два варианта трёхбуквенных фамилий :  УлЬ :  ь+[яуеом]{1,3}\b    Рай :  й+[яюем]{1,2}\b
+var ShortWordLetters3 = "ыеёуойюи]{1,2}"; // это для трёхбуквенных фамилий, где вторая буква согласная, 
+                // а последняя гласная 'а' или 'я': Ара :а+[ыеуой]{1,2}\b    Тля, Оля  Юра:  а+[еюиой]{1,2}\b  => +[ыеуойюи]     
+///////////////////////////////
+var caseSens = "\(?i\)"; // "\(?-i\)" --  с учётом регистра:  
+//  запрос '(?-i)Белый' в "Белый снег и белый мел, белый заяц тоже бел" найдёт только одно слово "Белый";  запрос '(?-i)белый' в той же строке найдёт два слова "белый"
+// "\(?i\)" --  без учёта регистра: 
+// любой из запросов '(?i)Белый' или '(?i)белый', и даже '(?i)БЕЛЫЙ' найдёт и Белый, и белый.  (Тут символ ' для обозначения начала и конца запроса. В поле запроса этот знак помещать не надо.)
+///// >>>  по умолчанию в программе данный флажок сброшен, поэтому стартовое значение переменной caseSens равно "\(?i\)"
+
+var specSep = '[!@#$%^&]';
+//~ var searchMask1 = 'IndexList-???.indd';
+//~ var searchMask2 = 'IndexList[?]???.indd'; // 28.05.2022  -- для того, чтобы учитывать маркеры перед номерами. 
+        // Дефис -- для случая, когда в одном файле один указатель. Когда их надо иметь несколько, то вместo дефиса будет один из девяти маркеров dfhjmstwz в квадратных скобках
+var searchMaskN = 'IndexList*.indd';
+      
+var colorIndex = "001";
+
+var showTime = true; // по умолчанию false. Если true, то в конце работы программы преобразования текста в таблицу будет отображаться время обработки файла.
+
+var taskIsDone = false;
+var dataLines = []; // массив задания на работу с текстом
+
+var nameSample = "@MarkSameQueries.indd";
+
+//var sortChBxValue = false; // стандартное состояние флажка слева от кнопки 'Обработать выбранный текст в соответствии с заданием'   |   25.09.2022 во второй версии сортировка терминов по длине стала стандартной операцией, поэтому этот флажок убран
+//////////////////////
+var ProgressBar = function(title) {
+var w = new Window('palette', title, {x:0, y:0, width:840, height:80},{closeButton: true}),
+st = w.add('statictext', {x:20, y:10, width:800, height:20}),
+pb = w.add('progressbar', {x:20, y:34, width:800, height:12}),
+em = w.add('statictext', {x:20, y:50, width:800, height:20});
+st.justify = 'left';
+w.center();
+this.reset = function(msg,maxValue) {
+st.text = msg;
+pb.value = 0;
+pb.maxvalue = maxValue;
+w.show();
+w.update();
+}
+this.info = function(msg) {
+  st.text = msg;
+  w.show();
+  w.update();
+}
+this.error = function(msg) {
+  em.text = msg;
+  w.show();
+  w.update();
+}
+this.hit = function() {++pb.value; w.update();}
+this.hide = function() {w.hide();}
+this.close = function() {w.close();}
+} // ProgressBar
+/////////////////////////////
+function myFile(myFileName) {
+var myScriptFile = myGetScriptPath();
+var myScriptFolder = decodeURI(myScriptFile.path);
+var myFilePath = decodeURI(myScriptFolder + "/" +myFileName);
+return myFilePath;
+} //myFile
+//////////////////
+function myGetScriptPath() {
+	try{
+		return app.activeScript;
+	}
+	catch(myError){
+		return File(myError.fileName);
+	}
+} //myGetScriptPath()
+/////
+function getWord (words, imPad, usePunctuation, w, theAction) { // getWord
+//  imPad - только именительный падеж
+// usePunctuation - сохранить знаки пунктуации
+theWord = "";    
+var partOfWord = "";
+var znakSpace = 0;
+var rez;
+var usedPunctSharAr = [];
+while (usedPunctSharAr.length > 0) usedPunctSharAr.shift();
+var usedPunctShar = "";
+for (var i = 0; i < afterWord.length; i++) { // i++
+    rez = words[w].match(afterWord[i]);
+   if (rez != null) { //  != null
+       znakSpace++;   
+       usedPunctSharAr.unshift(rez); // знаков пунктуации может быть несколько
+       }  // != null
+    } // i++
+if ((usedPunctSharAr.length > 0) && usePunctuation) usedPunctShar = usedPunctSharAr.join("");  // знак(и) пунктуации запоминается только если установлен флажок справа от кнопки "Изменить в grep-запросе вариант учёта падежа"
+//>> 30.08.2022 -- если слово оканчивается на 'у', оно не обрабатывается, а сразу возвращается (гуру, кенгуру, иглу (жилище эскимосов))
+// words.constructor.name == Array
+if (words[0][words[0].length-1] == "у" || words[0][words[0].length-1] == "У") return we + words[0]+ we + usedPunctShar;
+// слова, оканчивающиеся на "че" (старче, отче), не изменяются по падежам.
+if (words[0][words[0].length-1] == "е" && words[0][words[0].length-2] == "ч") return we + words[0]+ we + usedPunctShar;
+///>>
+if ((words[w].length-znakSpace) == 3) { //  == 3
+    a=0;
+   // if ((theAction == 1) && useFamily) { // && useFamily      
+  // if (useFamily) { // && useFamily       
+   if (!imPad) { // && useFamily            
+        // короткая фамилия       
+        if (noEnds.match(words[w][2]) != null) { theWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar; return theWord; } ;  // Рье  Цзю
+        if (shortWordEnds.match(words[w][2]) != null) { theWord = we + words[w].substring(0,words[w].length-znakSpace-1) + "[" + words[w][2] + ShortWordLetters2 + we + usedPunctShar; } ;  //  Уль    Иль    Юнь    Рай   
+        else if (consonant.match(words[w][2]) != null) { theWord = we + words[w].substring(0,words[w].length-znakSpace) + ShortWordLetters1 + we + usedPunctShar; }; // Сыч   Кох  Кир   Кац
+        else if (_vowel.match(words[w][2]) != null)  { theWord = we + words[w].substring(0,words[w].length-znakSpace-1) +  "[" + words[w][2] + ShortWordLetters3 + we + usedPunctShar; }; // Ара
+        else  theWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar; // Например, там фамилия латиницей
+        return theWord;  
+        } // && useFamily
+    else {
+        theWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar;        
+        return theWord;
+        }
+    } //  == 3
+if ((words[w].length-znakSpace) < 3) { theWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar; return theWord; } ;
+//////
+if (simpleSearch) { // simpleSearch == true
+    var lastChar = words[w][words[w].length-1-znakSpace];
+    if (shоrtI.match(lastChar) != null) { // йЙ
+        partOfWord = words[w].substring(0,words[w].length-2-znakSpace);
+        if (!imPad) theWord = we + partOfWord + short_I_Sample + we + usedPunctShar;
+        else theWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar;        
+        return theWord;
+        }  // йЙ
+    else if (vowel.match(lastChar) != null) { //  != null  ||  последняя буква в слове -- гласная
+        lastChar = words[w][words[w].length-2-znakSpace]; // проверяем случай, что в конце две гласных буквы
+        if (vowel.match(lastChar) != null) { // это тоже гласная
+            partOfWord = words[w].substring(0,words[w].length-2-znakSpace);
+            if (!imPad) theWord = we + partOfWord + short_I_Sample + we + usedPunctShar;
+            else theWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar;            
+            return theWord;        
+            }  // это тоже гласная
+        else { // предпоследняя буква -- согласная
+            partOfWord = words[w].substring(0,words[w].length-1-znakSpace);
+            if (!imPad) theWord = we + partOfWord + vowelSample + we + usedPunctShar;
+            else theWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar;            
+            return theWord;
+           } // предпоследняя буква -- согласная
+        } //  != null
+    else if (consonant.match(lastChar) != null) {
+        partOfWord = words[w].substring(0,words[w].length-znakSpace);
+        if (!imPad) theWord = we + partOfWord + consonantSample + we + usedPunctShar; // это в случае, когда последняя буква в слове -- согласная
+        else theWord = we + partOfWord + we + usedPunctShar;        
+        return theWord;    
+        }
+    else  {
+        theWord = we + words[w] + we; // если кончается на цифру, мягкий знак или латинскую букву. В этом случае ничего не добавляется.
+        return theWord;    
+        }
+    }  // simpleSearch == true
+////////////////////////////////////////////////////
+else {  // simpleSearch == false
+    var curWord = words[w];
+    var curWordLength = curWord.length;
+    ////==== это точка этапа отладки. Сюда мы попадать не должны. 
+    if  (curWordLength < 4) {
+        rezWord = we + curWord + we;
+        return rezWord;
+        }    
+    /////=====
+    /*
+     var defis = "-";
+     // Скрипт DoTextOK в одной из настроек может добавлять после дефиса дискреционный пробел, его код 0xAD, 
+     //  чтобы составные слова 'Каменка-на-Днепре', 'военно-промышленный' и пр. переносились по дефису.
+     // В словнике этого пробела, естественно, нет. Но поиск будет по тексту, обработанному скриптом, поэтому надо учесть, что там этот пробел может быть.
+     // Может и не быть, поэтому после переменной sepPage поставлен квантификатор звёздочка: defis + sepSpace + "*"
+    regExp = new RegExp(defis,"g");
+    curWord = curWord.replace(regExp, defis + sepSpace + "*");
+    curWordLength = curWord.length; // длина слова могла измениться, уточним значение
+    */  // 11.11.2020 -- grep-поиск пропускает дискреционный перенос после дефиса, поэтому этот код исключён.
+//    if (useFamily == false) { // !useFamily
+    if ((useFamily == false) || ((useFamily == true) && (w != 0)) ) { // !useFamily  ||  (useFamily == true) && (w != 0) - даже если опеределено, что первое слово - это фамилия, имя после фамилии должно обрабатываться как обычное слово
+        var chL = curWord[curWordLength-3-znakSpace]; // первая буква, левая
+        var chM = curWord[curWordLength-2-znakSpace]; // вторая буква, средняя
+        var chR = curWord[curWordLength-1-znakSpace]; // третья буква, правая 
+        var grIndex = getGroup(chL, chM, chR);
+        if ((grIndex == null) || (theGroups[grIndex] == undefined)) { // == null
+            //rezWord = we + curWord + we;
+            rezWord = we + words[w].substring(0,words[w].length-znakSpace) + we + usedPunctShar;
+            return rezWord;
+            } // == null
+        if (grIndex[2] == "s") { // == "s"
+            partOfWord = words[w].substring(0,words[w].length-znakSpace);
+            if (!imPad) { // !imPad
+                if ((chM == "е" || chM == "Е" || chM == "ё" || chM == "Ё") && (chR == "л" || chR == "Л")) {
+                    // если в sgs есть 'ел', то для этого слова вариант theGroups["sgs"] = "[мауое]*"  надо менять на theGroups["sgs"] = "[лмауое]+" , те. добавить в буквы букву 'л' и определить, что две последние буквы слова заменяются на новый вариант theGroups["sgs"]
+                    partOfWord = words[w].substring(0,words[w].length-znakSpace-2);
+                    rezWord = we + partOfWord + "[лмауоеё]+" + we + usedPunctShar;
+                    return rezWord;
+                    }
+                else {
+                    rezWord = we + partOfWord + theGroups["sgs"] + we + usedPunctShar;
+                    return rezWord;
+                    }
+                } // !imPad
+            else /* только именительный падеж */ rezWord = we + partOfWord + we + usedPunctShar;            
+            return rezWord;
+            } // == "s"
+        else { // != s
+            if ((chM == "к" || chM == "К") && (chR == "а" || chR == "А")) { // ,,,ка
+                grIndex = "ssg1";
+                }  // ,,,ка
+            var splitNum = Number(theGroups[grIndex].split("|")[1]); // сколько последних букв слова надо поместить в набор букв
+            var partOfWord1 = curWord.substring(0, curWordLength-splitNum-znakSpace);
+            var partOfWord2 = curWord.substring(curWordLength-splitNum-znakSpace, curWordLength-znakSpace);
+            if (!imPad) rezWord = we + partOfWord1 + "[" + partOfWord2 + theGroups[grIndex].split("|")[0] + we + usedPunctShar;
+            else rezWord = we + curWord.substring(0, curWordLength-znakSpace) + we + usedPunctShar;                  
+            return rezWord;
+            } // != s
+        }  // !useFamily
+    else { // useFamily = true
+        // исследуем окончание слова
+        var famWord = procFamily (curWord, curWordLength, znakSpace, imPad);
+        var splitAr = [];
+        while (splitAr.length > 0) splitAr.shift();
+        var splitAr2 = [];
+        while (splitAr2.length > 0) splitAr2.shift();
+        splitAr = famWord.split("-"); // обычный дефис 0x2D
+        splitAr2 = famWord.split("‑"); // неразрывный дефис 0x2011    
+        if (splitAr.length == 1 && splitAr2.length == 1) {
+            rezWord = we + famWord + we + usedPunctShar;
+            return rezWord;
+            }
+         // фамилия из двух частей. 
+         var tD = "[-‑]"; // два варианта дефиса.  Для поиска замена обычного дефиса на вариант из двух нужна для того, чтобы обойти случай, что в тексте в какой-то момент обычный дефис был заменён на неразделяемый, а в тексте словника стоит обычный дефис
+        if (splitAr.length != 1) { // splitAr 
+            var firstFam = procFamily (splitAr[0], splitAr[0].length, 0, imPad);
+            rezWord = we + firstFam + tD + splitAr[1] + we + usedPunctShar;
+            return rezWord;
+            } // splitAr
+        else { // splitAr2
+            var firstFam = procFamily (splitAr2[0], splitAr2[0].length, 0, imPad);
+            rezWord = we + firstFam + tD + splitAr2[1] + we + usedPunctShar;
+            return rezWord;
+            } // splitAr2        
+        } // useFamily = true
+    }  // simpleSearch == false
+} // getWord
+////////////////
+function  procFamily (curWord, curWordLength, znakSpace, imPad) { // procFamily
+var rezWord = "";    
+var chL = curWord[curWordLength-3-znakSpace]; // первая буква, левая
+var chM = curWord[curWordLength-2-znakSpace]; // вторая буква, средняя
+var chR = curWord[curWordLength-1-znakSpace]; // третья буква, правая 
+var rez = noEnds.match(chR);
+if (rez != null) { // фамилия оканчивается на -о, -е, -и ...
+    rezWord = curWord.substring(0, curWordLength-znakSpace);
+    return rezWord;           
+    }
+var grIndex = getGroup(chL, chM, chR);
+if ((grIndex == null) || (theGroups[grIndex] == undefined)) { // == null
+    rezWord = curWord.substring(0, curWordLength-znakSpace);
+    return rezWord;
+    } // == null
+var sample = "";
+if (grIndex == "ssg") { //  == "ssg"     
+    if ((chR == "а") || (chR == "А")) sample = "f" + grIndex + "1";
+    else if ((chR == "я") || (chR == "Я")) sample = "f" + grIndex + "2";
+    else {
+        if (showUnsupportedWords) alert("ssg : " + curWord);
+        return (curWord.substring(0, curWordLength-znakSpace)); // неизвестный вариант
+        }
+    } //  == "ssg"
+else if (grIndex == "ssm") sample = "f" + grIndex;  
+else if (grIndex == "gsm") sample = "f" + grIndex;
+else if (grIndex == "msg") sample = "f" + grIndex;     
+else if (grIndex == "smg") sample = "f" + grIndex;            
+else if (grIndex == "sgg") { // == "sgg"
+    var lastVowels = "аАеЕуУяЯ";
+    if (((chM == "а") || (chM == "А"))  && ((chR == "я") || (chR == "Я")))  sample = "f" + grIndex + "1";
+    else if (((chM == "ы") || (chM == "Ы"))  && ((chR == "й") || (chR == "Й")))  sample = "f" + grIndex + "2";            
+    else if (((chM == "я") || (chM == "Я"))  && ((chR == "я") || (chR == "Я")))  sample = "f" + grIndex + "3";   
+    else if (((chM == "и") || (chM == "И"))  && ((chR == "я") || (chR == "Я")))  sample = "f" + grIndex + "7";    
+    else if ((chM == "у") || (chM == "У"))  sample = "f" + grIndex + "7"; // 05.05.2022    
+    else if ((chM == "е") || (chM == "Е"))  sample = "f" + grIndex + "7"; // 05.05.2022    
+    else if ((chM == "э") || (chM == "Э"))  sample = "f" + grIndex + "7"; // 05.05.2022        
+    else if (((chM == "и") || (chM == "И"))  && ((chR == "й") || (chR == "Й")))  sample = "f" + grIndex + "4";     
+    else if (((chM == "о") || (chM == "О"))  && ((chR == "й") || (chR == "Й")))  sample = "f" + grIndex + "5";  
+    else if ((lastVowels.match(chM) != null )  && ((chR == "й") || (chR == "Й")))  sample = "f" + grIndex + "6";  
+    else {
+        if (showUnsupportedWords) alert("sgg : " + curWord);
+        return (curWord.substring(0, curWordLength-znakSpace)); // неизвестный вариант
+        } 
+    }  // == "sgg"
+else if (grIndex == "gsg") { // == "gsg"
+    if ((chR == "а") || (chR == "А")) sample = "f" + grIndex + "1";
+    else if ((chR == "я") || (chR == "Я")) sample = "f" + grIndex + "2";
+    else if ((chR == "ы") || (chR == "Ы")) sample = "f" + grIndex + "3";    
+    else {
+       if (showUnsupportedWords) alert("gsg : " + curWord);
+        return (curWord.substring(0, curWordLength-znakSpace)); // неизвестный вариант
+        }            
+    } // == "gsg"
+else if (grIndex == "sgs") { // x == "sgs"
+    if ((chM == "е" || chM == "Е" || chM == "ё" || chM == "Ё") && (chR == "л" || chR == "Л"))  sample = "F" + grIndex;
+    else if ((chR != "к") && (chR != "К") && (chR != "ц") && (chR != "Ц")) sample = "f" + grIndex; 
+    else if ((chM != "о") && (chM != "О") && (chM != "е") && (chM != "Е") && (chM != "ё") && (chM != "Ё"))  sample = "f" + grIndex;  // возможно для случая chR == "Ц" надо бы проверять только chM == "Е".  Но пусть уж останется эта избыточность.
+    else sample = "k" + grIndex;
+    } // x == "sgs"    
+else if (grIndex == "sms") sample = "f" + grIndex;
+else if (grIndex == "mgs") sample = "f" + grIndex;
+else if (grIndex == "gss") sample = "f" + grIndex;
+else if (grIndex == "ggs") sample = "f" + grIndex;
+else if (grIndex == "tgs") sample = "f" + grIndex;
+else if (grIndex == "sss") sample = "f" + grIndex;        
+else {
+    if (showUnsupportedWords) alert("??? : " + curWord);
+    return (curWord.substring(0, curWordLength-znakSpace)); // неизвестный вариант
+    }
+// готов шаблон выбора информации из ассоциативного массива 
+if (grIndex[2] != "s") { //  != "s" ||  слово оканчивается на гласную, надо убрать буквы окончания
+    var splitNum = Number(theGroups[sample].split("|")[1]); // сколько последних букв слова надо поместить в набор букв
+    var partOfWord1 = curWord.substring(0, curWordLength-splitNum-znakSpace);
+    var partOfWord2 = curWord.substring(curWordLength-splitNum-znakSpace, curWordLength-znakSpace);
+    if (!imPad) rezWord = partOfWord1 + "[" + partOfWord2 + theGroups[sample].split("|")[0];
+    else rezWord = curWord.substring(0, curWordLength-znakSpace);
+    return rezWord;
+    } // != "s"
+else { // grIndex[2] == "s" || слово оканчивается на согласную
+    if (sample[0] == "F") { // == "F"
+        var splitNum = Number(theGroups[sample].split("|")[1]); // сколько последних букв слова надо поместить в набор букв
+        var partOfWord1 = curWord.substring(0, curWordLength-splitNum-znakSpace);
+        var partOfWord2 = curWord.substring(curWordLength-splitNum-znakSpace, curWordLength-znakSpace);
+        if (!imPad) rezWord = partOfWord1 + "[" + partOfWord2 + theGroups[sample].split("|")[0];
+        else rezWord = curWord.substring(0, curWordLength-znakSpace);
+        return rezWord;        
+        } // == "F"
+    else if (sample[0] == "f") { // == "f"
+            var partOfWord = curWord.substring(0, curWordLength-znakSpace);
+            if (!imPad) rezWord = partOfWord + theGroups[sample];
+            else rezWord = curWord.substring(0, curWordLength-znakSpace);                
+            return rezWord;
+            } // == "f"
+    else { // sample[0] == "k"
+         var splitNum = 2; // в этих фамилиях всегда две буквы отбрасываются
+        var partOfWord = curWord.substring(0, curWordLength-splitNum-znakSpace);
+        if (!imPad) rezWord = partOfWord + "[" + chR + theGroups[sample];
+        else rezWord = curWord.substring(0, curWordLength-znakSpace);                
+        return rezWord; 
+        }  // sample[0] == "k"         
+    } // grIndex[2] == "s
+}  // procFamily
+///////////////
+function getGroup(chL, chM, chR) { // getGroup
+var ch1, ch2, ch3;
+ch3 = testChar(chR);
+if (ch3 == null) return null;
+if (!useFamily && (ch3 == "s")) return "sgs"; // если последняя буква согласная, дальше можно не исследовать. Вариант sgs совпадает с другими вариантами слов, оканчивающихся на согласную. Такое завершение проверки возможно только при сброшенном флажке работы с фамилиями
+ch1 = testChar(chL);
+if (ch1 == null) return null;
+ch2 =  testChar(chM);
+if (ch2 == null) return null;
+var index = ch1+ch2+ch3;
+return index;
+} // getGroup
+//////
+function testChar (ch) { // testChar
+var rez;
+try { rez = consonant.match(ch); } catch (e) { rez = null; } if (rez != null) return "s";
+try { rez = _vowel.match(ch); }  catch (e) { rez = null; } if (rez != null) return "g";
+try { rez = mz.match(ch); }  catch (e) { rez = null; } if (rez != null) return "m";
+try { rez = tz.match(ch); }  catch (e) { rez = null; } if (rez != null) return "t";
+return null;
+} // testCharr
+////////////////////
+// общие переменные скриптов AddSeeTopic.jsx и NameAndNick.jsx
+//var folderName = "AddedLinesToIndex"; // название папки, в которой собираются строки терминов нижних уровней. Эта папка ддолжна быть в том же каталоге, где скрипт
+//var textPointer = "см."; // только слово. Пробелы добавляются по месту, там, где надо. Пробел -- это переменная sp
+var textPointer = "see"; // только слово. Пробелы добавляются по месту, там, где надо. Пробел -- это переменная sp
+var seeTopicArray = ["см.", "См.", "— см.", "— См.", "– см.", "– См."]; // массив используется в скрипте AlsoSeeTopic.jsx
+var sp = " ";
+var sepChar = "#";
+
+/*
+    
+Окончания сербского языка
+[ioveczsa]
+    
+*/    
+

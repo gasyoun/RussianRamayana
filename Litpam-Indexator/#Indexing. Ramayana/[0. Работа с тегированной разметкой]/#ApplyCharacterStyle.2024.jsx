@@ -1,0 +1,408 @@
+﻿// #ApplyCharacterStyle.jsx
+
+/*
+После завершения работы скрипта FindTags.jsx 
+обычно появляется файл 'TagFileProblems.txt' с информацией о тегах , не попавших в разметку.
+В этом файле каждый блок о проблемах размещения начинается со строки с необработанной разметкой, например, так:
+Разметка тегами: #сын Сумитры{Лакшмана\сын Сумитры}
+Когда время поджимает, проще не разбираться, в чем была проблема, а быстро перенести необработанную разметку в верстку.
+Сделать это надо так:
+1) перенести содержимое файла 'TagFileProblems.txt' в indd-файл.
+    Сразу сохранить с понятным именем, а не 'Безымянный.indd'
+2) должно быть открыто два файла: этот indd-файл с необработанной разметкой и файл вёрстки.
+3) работа скрипта:
+= флажками указать, в каком файле вёрстка, в каком теги.
+= поставить курсор файл с тегами нажать кнопку [>]. Будет выделена очередная строка с тегами.
+=  поставить курсор в эту строку и установить флажок "Курсор в строке тегов".
+   - Из этой строки будут извлечены текст и символьный стиль.
+      Поскольку эта информация из файла, подготовленного скриптом FindTags.jsx, то предполагается, что указанный в фигурных скобках символьный стиль уже есть в файле вёрстки.
+   - скрипт настроит поиск и переключится в текст верстки.
+=  нажатием кнопки поиска [И] найти нужный текст. 
+    Поиск от текущей позиции курсора до конца материала. 
+    В текстовых полях текущий номер первого найденного образца и число таких образцов в материале.
+= кнопкой присвоения стиля [C] оформить его запомненным стилем.
+   Если тег был {nil}, то найденный текст будет окрашен цветом пропуска при обработке.
+   Если это термин отмеченный своим символьным стилем термин, то его цвет будет 'IndexStylesColor'.
+   После этого на экране снова будет indd-файл с непопавшими в разметку тегами. 
+   Обработанная строка с тегом окрашивается цветом C=100 M=0 Y=0 K=0.
+   
+
+// © Михаил Иванюшин, 2023-2024  |  dotextok@gmail.com  |  dotextok.ru
+*/
+
+#targetengine "ApplyCharacterStyleZ"
+#include "../ForIndex.jsxinc"
+
+app.scriptPreferences.userInteractionLevel = UserInteractionLevels.interactWithAll; // см. http://adobeindesign.ru/2008/10/24/restore-ui/
+
+var programTitul = "Перенос разметки";
+if (app.documents.length == 0) {
+    alert("Нет открытых документов.", programTitul);
+    exit();
+    }
+if (app.documents.length != 2) {
+   alert("Для работы скрипта должны быть открыты два файла — файл с информацией о небработанной разметке, и файл вёрстки.", programTitul);  
+    exit();
+    }
+//var TagsColor = "TagsColor";
+var nilColor = "SkipTheWord";
+var jobFileID, jobStoryID, jobPath, jobIPoffset;
+var tagFileID, tagStoryID, tagPath, tagIPoffset;
+var styleName = "";
+var searchText = "";
+var textForBuffer;
+var indx = 0;
+var rz = [];
+while (rz.length > 0) rz.pop();
+var pn = 0;
+var selPara;
+///
+var win = new Window ("palette", programTitul);
+app.toolBoxTools.currentTool = UITools.TYPE_TOOL;
+win.alignChildren = ["left", "fill"];
+var files = win.add("group");
+files.orientation = "row";
+var job = files.add("checkbox", undefined, "Вёрстка"); 
+job.value = false;
+var tags = files.add("checkbox", undefined, "Теги");
+tags.value = false;
+tags.enabled = false;
+///
+var actionGroup = win.add("group");
+actionGroup.orientation = "row";
+var selTag = actionGroup.add("checkbox", undefined, "Курсор в строке тегов");
+selTag.enabled = false;
+var buttonSize = [0,0,28,28];
+var buttons = actionGroup.add("group");
+buttons.orientation = "row";
+buttons.alignChildren = ["center", "fill"];
+var find  = buttons.add("button", buttonSize, "И"); // И искать
+var findHelpText = "И — искать текст";  
+find.helpTip = findHelpText;
+var apply  = buttons.add("button", buttonSize, "С"); // С - стиль
+var applyHelpText = "С — Стилевое оформление найденного текста";
+apply.helpTip = applyHelpText;
+find.enabled = false;
+apply.enabled = false;
+var inform = win.add("group");
+inform.orientation = "row";
+var infoSpace = [0,0,50,28];
+var curNum = inform.add("edittext {justify: 'center'}", infoSpace);
+curNum.text = "?";
+//inform.add("statictext", undefined, "|");
+var all = inform.add("edittext {justify: 'center'}", infoSpace);
+all.text = "?";
+var searchButton = inform.add("button", buttonSize, ">");
+searchButton.enabled = false;
+//inform.enabled = false;
+var info = inform.add("button", buttonSize, "?");
+////
+job.onClick = function() { // job.onClick  
+if (app.activeDocument.characterStyleGroups.itemByName(groupForIndexStyles).isValid == false) { // == false
+            alert("В файле вёрстки должна быть группа символьных стилей '" + groupForIndexStyles + "'.", programTitul);
+           return;                     
+       }  // == false    
+///   
+if (app.selection.length == 0 || app.selection[0].constructor.name != "InsertionPoint") {
+    alert("Курсор должен быть в материале.", programTitul);  
+    job.value = false;
+    return;
+    }
+if (app.selection[0].parentStory.overflows) {
+    alert("В файле вёрстки не должно быть вытесненного текста.", programTitul);
+    job.value = false;
+    return;    
+    }
+jobPath = app.activeDocument.filePath;
+jobFileID = app.activeDocument.id;
+jobStoryID = app.selection[0].parent.id;
+jobIPoffset = app.selection[0].index;
+job.enabled = false;
+tags.enabled = true;
+app.activeDocument = app.documents[1];
+} // job.onClick 
+////
+tags.onClick = function () { // tags.onClick    
+if (app.activeDocument.id == jobFileID) {
+       alert("Сейчас выбран тот же файл, что только что был указан как файл вёрстки.", programTitul);
+       tags.value = false;       
+       return;
+       }
+var noName = false;
+try { var myDocPath = app.activeDocument.filePath; } // если документ не сохранён, маршрут не сообщается
+catch(e) {
+   alert("Это только что созданный и ещё ни разу не сохранённый файл.\nДайте ему имя.",programTitul); 
+   noName = true;
+    }
+if (noName) { // noName
+    try { app.documents[0].save(); }
+    catch (e) {
+         alert("Файл не был сохранён с новым именем");
+        win.close(); 
+        }
+    } // noName
+if (decodeURI(myDocPath) != decodeURI(jobPath)) {
+       alert("Файл вёрстки и файл с тегированной разметкой должны быть в одной папке.", programTitul);
+       tags.value = false;       
+       return;    
+    }
+var tagsName = decodeURI(app.activeDocument.name);
+if (app.selection.length == 0 || app.selection[0].constructor.name != "InsertionPoint") {  
+    alert("Поставьте курсор в строку с тегами.", programTitul);    
+    tags.value = false;
+    return;
+    }
+if (app.selection[0].parentStory.overflows) {
+    alert("В файле тегированной разметки не должно быть вытесненного текста.", programTitul);
+    tags.value = false;
+    return;    
+    }
+tags.value = true;
+tags.enabled = false;
+tagFileID = app.activeDocument.id; 
+tagStoryID = app.selection[0].parentStory.id;
+tagIPoffset = app.selection[0].index;
+selTag.enabled = true;
+searchButton.enabled = true;
+return;
+///
+} // tags.onClick
+///
+searchButton.onClick = function() { // searchButton.onClick 
+if (app.documents.length == 0) win.close();   
+if (app.activeDocument.id == jobFileID) {
+       alert("Эта кнопка для поиска тегов, а сейчас активен файл вёрстки.", programTitul);
+       tags.value = false;       
+       return;
+       }
+var sel = app.selection[0];
+if ((sel == null) || (sel.hasOwnProperty("pointSize") != true)) { // == null    
+    alert("Поставьте курсор в текст.",programTitul);
+    return;    
+    } // == nul
+var selLength = sel.length;
+var sindx = sel.index;
+sel.parentStory.insertionPoints[sindx + selLength+3].select();
+sel = app.selection[0];
+var story = sel.parentStory;
+var insPosition = sel.index;
+var storyEnd = story.length-1;
+story.characters.itemByRange(insPosition, storyEnd).select();
+app.findGrepPreferences.findWhat = "#[^\}]+\}";
+var rz = app.selection[0].findGrep(); 
+if (rz.length == 0) {
+   alert("Тег не найден");
+    return;
+    }
+var prevParaIndex = rz[0].index;
+prevParaIndex = prevParaIndex-2;
+story.characters[prevParaIndex].paragraphs[0].select();
+app.copy();
+app.activeWindow.activePage = app.selection[0].parentTextFrames[0].parentPage; 
+app.activeWindow.zoomPercentage = 100;
+} // searchButton.onClick
+////
+selTag.onClick = function() { // selTag.onClick
+if (app.activeDocument.id != tagFileID) {
+    alert("Это не тот файл тегированной разметки, что был указан при запуске файла. Может быть, это файл вёрстки?", programTitul);
+    selTag.value = false;
+    return;      
+    }
+var sel = app.selection[0];
+if (app.selection.length == 0 || sel.constructor.name != "InsertionPoint") {  
+    alert("Поставьте курсор в строку с тегами.", programTitul);    
+    selTag.value = false;
+    return;
+    }
+var textLine = sel.paragraphs[0];
+app.findGrepPreferences = null; 
+app.changeGrepPreferences = null;
+app.findGrepPreferences.findWhat = "#";
+var found1 = textLine.findGrep();
+if (found1.length == 0) {
+    alert("В строке, где курсор, должен быть один знак '#', а тут нет ничего.", programTitul);  
+    selTag.value = false;    
+    return;
+    }
+if (found1.length > 1) {
+    alert("В строке, где курсор, должен быть один знак '#', а тут их несколько. Надо сделать строку, в которой только нужная информация о разметке: #текст{стиль}", programTitul);  
+    selTag.value = false;    
+    return;
+    }
+app.findGrepPreferences.findWhat = "\{";
+var found2 = textLine.findGrep();
+if (found2.length == 0) {
+    alert("В строке, где курсор, не найдена открывающая фигурная скобка тегированной разметки.", programTitul);  
+    selTag.value = false;    
+    return;
+    }
+app.findGrepPreferences.findWhat = "\}";
+var found3 = textLine.findGrep();
+if (found3.length == 0) {
+    alert("В строке, где курсор, не найдена закрывающая фигурная скобка тегированной разметки.", programTitul);  
+    selTag.value = false;    
+    return;
+    }
+if (found2[0].index > found3[0].index || found1[0].index > found2[0].index) {
+    alert("В строке, где курсор, неверная очерёдность следования знаков '#', '{' и '}.", programTitul);  
+    selTag.value = false;    
+    return;    
+    }
+var story = sel.parentStory;
+searchText = story.characters.itemByRange(found1[0].index+1, found2[0].index-1).contents;
+story.characters.itemByRange(found1[0].index+1, found2[0].index-1).select();
+find.helpTip = findHelpText + " | " + app.selection[0].contents;
+app.copy();
+styleName = story.characters.itemByRange(found2[0].index+1, found3[0].index-1).contents;
+apply.helpTip = applyHelpText + " | " + styleName;
+app.activeDocument = app.documents[1];
+var doc = app.activeDocument;
+var stories = doc.stories;
+var theStory = stories.itemByID(jobStoryID);
+theStory.insertionPoints[jobIPoffset].select();
+//buttons.enabled = true;
+find.enabled = true;
+apply.enabled = true;
+return;
+} // selTag.onClick
+///////
+info.onClick = function () { // info.onClick 
+var textInfo = "\nПосле завершения работы скрипта FindTags.jsx обычно появляется файл 'TagFileProblems.txt' с информацией о тегах , не попавших в разметку.\nВ этом файле каждый блок о проблемах размещения начинается со строки с необработанной разметкой, например, так:\nРазметка тегами: #сын Сумитры{Лакшмана\сын Сумитры}\nМежду # и { помещён искомый текст, между { и } указано название символьного стиля, которым надо оформить этот текст.\nУказанный в фигурных скобках символьный стиль есть в файле вёрстки, он создан во время работы скрипта FindTags.jsx.\n\nКогда время поджимает, проще не разбираться, в чем была проблема, а быстро перенести необработанную разметку в верстку.\nСделать это надо так:\n1) перенести содержимое файла 'TagFileProblems.txt' в indd-файл.\n    Сразу сохранить с понятным именем, а не 'Безымянный.indd'\n2) должно быть открыто два файла: этот indd-файл с необработанной разметкой и файл вёрстки.\n3) работа скрипта:\n= флажками указать, в каком файле вёрстка, в каком теги.\n= поставить курсор в файл с тегами и нажать кнопку [>]. Будет выделена очередная строка с тегами.\n=  поставить курсор в эту строку и установить флажок \"Курсор в строке тегов\".\n   - Из этой строки будут извлечены текст и символьный стиль.\n   - скрипт настроит поиск и переключится в текст верстки.\n=  нажатием кнопки поиска [И] найти нужный текст. \n    Поиск от текущей позиции курсора до конца материала. \n    В текстовых полях текущий номер первого найденного образца и число таких образцов в материале.\n= кнопкой присвоения стиля [C] оформить его запомненным стилем.\n   Если тег был {nil}, то найденный текст будет окрашен цветом пропуска при обработке. \n   По умолчанию это ' SkipTheWord'.\n   Если это термин, отмеченный своим символьным стилем, то его цвет будет 'IndexStylesColor'.\n= после этого на экране снова будет indd-файл с непопавшими в разметку тегами. \n   Обработанная строка с тегом окрашивается цветом C=100 M=0 Y=0 K=0.\n   \n\n© Михаил Иванюшин, 2023-2024  |  dotextok@gmail.com  |  https://dotextok.ru";
+var wn = new Window ("dialog", programTitul);
+var data = wn.add("edittext", [0, 0, 850, 470], textInfo, {multiline: true});
+wn.layout.layout();
+wn.show();
+return;
+} // info.onClick
+///
+find.onClick = function () { // find.onClick 
+var _story; // материал созданного фрейма
+if (app.documents.length == 0) win.close();   
+var sel = app.selection[0];
+if ((sel == null) || (sel.hasOwnProperty("pointSize") != true) || sel.parent.id != jobStoryID) { // == null  
+    alert("Поставьте курсор в текст.",programTitul);
+    return;    
+    } // == nul
+selTag.value = false;
+sel.insertionPoints[0].select();
+sel = app.selection[0];
+var story = sel.parentStory;
+var insPosition = sel.index;
+var storyEnd = story.length-1;
+//$.writeln("insPosition = " + insPosition + " | storyEnd = " + storyEnd);
+var numFrame = sel.parentTextFrames[0].parentPage.textFrames.add({strokeWeight:0});
+numFrame.strokeColor = app.activeDocument.swatches[0]; // это должен быть цвет [None]                
+numFrame.geometricBounds = [-30,0,-10,100];
+numFrame.label = "FindClipboard";
+numFrame.texts[0].insertionPoints[0].appliedCharacterStyle = app.activeDocument.characterStyles[0];
+numFrame.texts[0].contents = "";
+_story = numFrame.texts[0].parentStory;
+numFrame.texts[0].insertionPoints[-1].select();
+app.paste();
+if (numFrame.texts[0].characters[0].contents != "(" && numFrame.texts[0].characters[0].contents != "«") _story.insertionPoints[0].contents = "\\b"; 
+if (numFrame.texts[0].characters[-1].contents != ")" && numFrame.texts[0].characters[-1].contents != "-" && numFrame.texts[0].characters[-1].contents != "»") _story.insertionPoints[-1].contents = "\\b"; 
+var frameStory = numFrame.texts[0].parentStory;
+app.findGrepPreferences = null; 
+app.changeGrepPreferences = null;
+app.findGrepPreferences.findWhat = numFrame.texts[0].contents;
+app.findGrepPreferences.findWhat = "\\h"; // если обычном тексте между словами пробелы, а в вёрстке на этом месте стоят шпации, то текст найден не будет.
+app.changeGrepPreferences.changeTo = "\\h"; // Чтобы найти, надо в образце поиска пробелы заменить на обобщённый код шпации
+frameStory.changeGrep();
+
+app.findGrepPreferences = null; 
+app.changeGrepPreferences = null;
+app.findGrepPreferences.findWhat = numFrame.texts[0].contents;
+app.findGrepPreferences.findWhat = "\\(";
+app.changeGrepPreferences.changeTo = "\\(";
+frameStory.changeGrep();
+
+app.findGrepPreferences = null; 
+app.changeGrepPreferences = null;
+app.findGrepPreferences.findWhat = numFrame.texts[0].contents;
+app.findGrepPreferences.findWhat = "\\)";
+app.changeGrepPreferences.changeTo = "\\)";
+frameStory.changeGrep();
+
+find.helpTip = findHelpText + " | " + numFrame.texts[0].contents;
+if (textForBuffer == numFrame.texts[0].contents && rz.length > 1) { // > 1
+    all.text = String(rz.length);
+    if (indx < rz.length) { indx = indx+1; pn = pn+1; }
+    numFrame.remove();
+    curNum.text = String(pn);
+    if (indx >= rz.length) { indx = 0; curNum.text = 1; pn = 1; }
+    rz[indx].select();
+    app.activeWindow.activePage = app.selection[0].parentTextFrames[0].parentPage; 
+    app.activeWindow.zoomPercentage = 100; 
+    return;
+    } // > 1
+textForBuffer = numFrame.texts[0].contents;
+app.findGrepPreferences = null; 
+app.changeGrepPreferences = null;
+app.findGrepPreferences.findWhat = numFrame.texts[0].contents;
+app.findGrepPreferences.fillColor = "Black";  // ищем окрашенные чёрным цветом словаы
+indx = 0;
+story.characters.itemByRange(insPosition, storyEnd).select();
+rz = app.selection[0].findGrep(); 
+all.text = String(rz.length);
+numFrame.remove();
+if (rz.length == 0) {
+    curNum.text = "?";  
+    all.text = "?"; 
+    alert("Ничего не найдено.");
+    return;
+    }
+rz[indx].select();
+curNum.text = "1";
+all.text = rz.length;
+pn = 1;
+app.activeWindow.activePage = app.selection[0].parentTextFrames[0].parentPage; 
+app.activeWindow.zoomPercentage = 100;
+return;
+}  // find.onClick 
+////
+apply.onClick = function() { // apply.onClick 
+if (app.selection.length == 0) {
+    alert("Текст не выделен", programTitul);
+    return;
+    }
+var sel = app.selection[0];
+var useColor;
+if (String(styleName) == "nil") useColor = 1; else useColor = 0;
+//if (String(styleName) == "nil") {
+if (useColor == 1) {    
+    app.selection[0].fillColor = nilColor;
+    }
+else { // style
+    var start = sel.index;
+    var end = Number(start) + Number(sel.length) - 1;
+    var _appliedFont = sel.characters[0].appliedFont;
+    var _pointSize = sel.characters[0].pointSize;
+    var _fontStyle = sel.characters[0].fontStyle;
+    var _leading = sel.characters[0].leading;
+    var _alignToBaseline = sel.characters[0].alignToBaseline;
+    var _justification = sel.characters[0].justification;
+    if (app.activeDocument.characterStyleGroups.itemByName(groupForIndexStyles).characterStyles.item(String(styleName)).isValid == false) {
+        alert("Почему-то не найден символьный стиль '" + String(styleName) + "', хотя он должен был быть создан во время работы скрипта FindTags.jsx.", programTitul);
+        return;
+        }
+    sel.texts[0].parent.characters.itemByRange(start, end).appliedCharacterStyle = app.activeDocument.characterStyleGroups.itemByName(groupForIndexStyles).characterStyles.item(String(styleName));
+    // если прикладывать символьный стиль, в котором определён только цвет, к тексту, ранее оформленному другим символьным стилем, то в этом тексте может потеряться часть оформления.
+    // Поэтому перед приложением стиля с цветом сперва были сохранены основные параметры текста - шрифт, кегль, начертание и пр., и после приложения символьного стиля запомненные параметры восстановлены.
+    sel.texts[0].parent.characters.itemByRange(start, end).appliedFont = _appliedFont;
+    sel.texts[0].parent.characters.itemByRange(start, end).pointSize = _pointSize;
+    sel.texts[0].parent.characters.itemByRange(start, end).leading = _leading;
+    sel.texts[0].parent.characters.itemByRange(start, end).alignToBaseline = _alignToBaseline;
+    sel.texts[0].parent.characters.itemByRange(start, end).justification = _justification;   
+    } // style   
+app.activeDocument = app.documents[1];
+try { app.selection[0].fillColor = "C=100 M=0 Y=0 K=0";  } catch (e) { }    
+find.enabled = false;
+apply.enabled = false;
+find.helpTip = findHelpText;
+apply.helpTip = applyHelpText;
+return;
+} // apply.onClick 
+///
+win.show();
+/////
+////////////////////
