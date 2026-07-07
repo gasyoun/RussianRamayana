@@ -21,6 +21,10 @@ bin-release/
 Рамаяна 1986. Книга 5. Прекрасная.MP3
 Рамаяна 1986. Книга 6. Битва.MP3
 
+# Oversized Word source (109 MB, over GitHub's 100 MiB push limit): keep local,
+# only the converted .md (Leitan-Sundarakanda/_Перевод сундараканды.md) is tracked.
+Leitan-Sundarakanda/_Перевод сундараканды.docx
+
 # Internal scraps and unrelated working files (RuWritingStyles etc.) — keep local only
 _meta/
 
@@ -34,3 +38,6 @@ _private/
 # audit sidecars
 .contributing_old.md
 .contributing_audit.txt
+
+# Claude Code local settings/permissions — personal, not shared
+.claude/
