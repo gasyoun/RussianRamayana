@@ -34,6 +34,14 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Попутно всплывают **ошибки разметки** (например, в тексте «жертвенный конь», а в разметке было «жертвенного коня») — это ничего страшного, просто пропускаем и идём дальше. Пройдя весь текст, закрываем скрипт. Так мы доразметили первый материал; так же обработаем остальные, а потом возьмёмся за таблицы.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/03-ZU7xelhtWnI.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/03-ZU7xelhtWnI.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=ZU7xelhtWnI&t=1s) — Файл необработанных тегов — назначение
+- [1:02](https://www.youtube.com/watch?v=ZU7xelhtWnI&t=62s) — Как строится grep-запрос: пробелы → любой пробельный символ, кавычки и дефисы взаимозаменяемы
+- [10:49](https://www.youtube.com/watch?v=ZU7xelhtWnI&t=649s) — Ошибка самой разметки (форма в тексте ≠ форма в теге) — пропускаем
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

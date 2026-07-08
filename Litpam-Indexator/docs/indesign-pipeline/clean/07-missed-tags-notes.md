@@ -16,6 +16,15 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Для каждого тега ставим курсор, клавишей поиска находим нужный случай в вёрстке (по вертикальной черте видно, что попало в поиск), применяем стиль, переходим к следующему. Попутно встречаются **ошибки разметки** (в тексте «потомок», а в теге «внук», и т. п.) — их просто оставляем, это неважно. Пройдя все теги, заканчиваем: в первом томе остаётся только материал словаря имён и географических названий.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/07-i7mkyTAJMB0.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/07-i7mkyTAJMB0.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=1s) — Новый файл с необработанными тегами Примечаний
+- [3:06](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=186s) — Работа с чёрным текстом и дефисами
+- [7:30](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=450s) — Проход по тегам, ручная отметка (примеры)
+- [9:32](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=572s) — Второй материал закончен — идём дальше
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

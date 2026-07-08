@@ -25,6 +25,17 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Смысл всего — не гнаться за идеалом, а показать весь путь: как добавлять и убирать записи. Указатель уже можно собирать в текущем виде и затем адресно править конкретные места, не переделывая всё с нуля каждый раз. И это важно, чтобы работу мог вести не только автор, но и кто-то ещё.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/15-wK60yNgeEqA.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/15-wK60yNgeEqA.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=wK60yNgeEqA&t=1s) — Файл log.txt — необработанные термины
+- [3:33](https://www.youtube.com/watch?v=wK60yNgeEqA&t=213s) — Запись «ними» — дефект «одной формы» UseReadyTable
+- [5:48](https://www.youtube.com/watch?v=wK60yNgeEqA&t=348s) — Точечная правка: находим и выделяем строку
+- [6:49](https://www.youtube.com/watch?v=wK60yNgeEqA&t=409s) — Обработать выбранный текст: удалить запись из индекса
+- [10:36](https://www.youtube.com/watch?v=wK60yNgeEqA&t=636s) — Частотное имя «Рама» через символьный стиль — добавляем строкой без стиля
+- [13:05](https://www.youtube.com/watch?v=wK60yNgeEqA&t=785s) — 632 записи добавлено с «Рамой»
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

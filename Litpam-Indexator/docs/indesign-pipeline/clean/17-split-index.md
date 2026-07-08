@@ -19,6 +19,16 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Готово — четыре отдельных указателя, соответствующих листам `.xlsx`. Дальше с ними можно работать и переходить к собственно вёрстке; правя `IndexList`, вносить адресные изменения.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/17-WmCJ7GdJjzQ.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/17-WmCJ7GdJjzQ.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=1s) — Из сводного указателя делаем четыре
+- [0:29](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=29s) — Сноска — одна на все указатели; идём по тексту
+- [2:36](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=156s) — До буквы C — маркеры указателей
+- [4:09](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=249s) — Исправления; предметы и термины
+- [6:52](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=412s) — Смена двух-/одноколоночного вида (объектный стиль)
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

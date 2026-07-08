@@ -21,6 +21,17 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Итого четыре таблицы (`IndexList-001`…`004`). Дальше — как объединить их в одну сводную таблицу, с которой уже работает основной скрипт индексирования.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/10-wC62L0XMGSk.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/10-wC62L0XMGSk.ru.json3)):
+
+- [0:00](https://www.youtube.com/watch?v=wC62L0XMGSk&t=0s) — Скрипт сам сохраняет файл с номером (IndexList-001…)
+- [2:25](https://www.youtube.com/watch?v=wC62L0XMGSk&t=145s) — Готовим 002
+- [4:13](https://www.youtube.com/watch?v=wC62L0XMGSk&t=253s) — Готовим 003
+- [4:34](https://www.youtube.com/watch?v=wC62L0XMGSk&t=274s) — Готовим 004 (флора и фауна)
+- [6:05](https://www.youtube.com/watch?v=wC62L0XMGSk&t=365s) — Четыре таблицы готовы — сохраняем
+- [6:31](https://www.youtube.com/watch?v=wC62L0XMGSk&t=391s) — Дальше — объединение в сводную таблицу
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

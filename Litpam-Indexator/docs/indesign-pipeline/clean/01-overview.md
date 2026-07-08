@@ -19,6 +19,14 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Теперь исходник чистый — всю разметку заново построит наш конвейер. Приступаем.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/01-Q6BrE-l4DTg.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/01-Q6BrE-l4DTg.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=Q6BrE-l4DTg&t=1s) — Обзор папки: скрипты всех стадий конвейера
+- [1:49](https://www.youtube.com/watch?v=Q6BrE-l4DTg&t=109s) — Очистка исходника перед новым прогоном: снять старую разметку и цвет
+- [3:00](https://www.youtube.com/watch?v=Q6BrE-l4DTg&t=180s) — Чистый исходник — всю разметку сделает конвейер
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

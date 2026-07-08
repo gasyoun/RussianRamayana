@@ -14,6 +14,13 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Решение: этот кусок текста в колонке `C` нужно просто убрать. После этого всё работает.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/12-azj_saSPq-c.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/12-azj_saSPq-c.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=azj_saSPq-c&t=1s) — Проблема: комментарий в колонке C «завесил» обработку
+- [1:05](https://www.youtube.com/watch?v=azj_saSPq-c&t=65s) — Комментарий убран — теперь работает
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

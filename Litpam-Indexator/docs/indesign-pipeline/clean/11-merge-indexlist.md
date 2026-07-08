@@ -25,6 +25,16 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 В итоге получаем сводную таблицу `IndexList[@]-001` — большую, со всеми терминами из `.xlsx`. С ней и будем собирать весь указатель целиком.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/11-eryYnZBrEPs.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/11-eryYnZBrEPs.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=eryYnZBrEPs&t=1s) — Четыре файла созданы — что дальше
+- [3:52](https://www.youtube.com/watch?v=eryYnZBrEPs&t=232s) — AddMarker: буквы-маркеры указателей a/b/c/d
+- [4:16](https://www.youtube.com/watch?v=eryYnZBrEPs&t=256s) — Объединение: файл-приёмник, имя начинается с @
+- [4:45](https://www.youtube.com/watch?v=eryYnZBrEPs&t=285s) — MergeTwoIndexListTables: прицепляем таблицы по очереди
+- [7:33](https://www.youtube.com/watch?v=eryYnZBrEPs&t=453s) — Итог — сводная таблица IndexList[@]-001
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

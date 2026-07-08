@@ -15,6 +15,13 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Прежде чем смотреть ошибки, оценим саму разметку по цветам: **красным** отмечено найденное (появились, например, топонимы), **сиреневым** — «заниленные» термины (`SkipTheWord`), которые индексировать не нужно. Таких немного. В целом перенос отработал — дальше смотрим ошибки.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/04-Bj3MIcu3jsM.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/04-Bj3MIcu3jsM.ru.json3)):
+
+- [0:03](https://www.youtube.com/watch?v=Bj3MIcu3jsM&t=3s) — Тегированный текст Гринцера в первой книге
+- [1:12](https://www.youtube.com/watch?v=Bj3MIcu3jsM&t=72s) — Результат переноса разметки — проверяем
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

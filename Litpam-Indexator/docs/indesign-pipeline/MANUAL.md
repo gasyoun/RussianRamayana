@@ -46,10 +46,13 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 | 17 | [Деление на 4 части](https://www.youtube.com/watch?v=WmCJ7GdJjzQ) | `[4]` | `SplitStory` (Useful Support Tools) | [17-split-index.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/17-split-index.md) |
 | 18 | [Исправлен UseReadyTable v7](https://www.youtube.com/watch?v=dtuew2WHt64) | `[1]` | `UseReadyTable.v.7.jsx` | [18-usereadytable-fix.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/18-usereadytable-fix.md) |
 
-> **О тайм-кодах.** У исходных ASR-расшифровок нет таймкодов внутри тела (в первой
-> строке каждого файла — только URL ролика), поэтому видео привязаны к шагам на
-> уровне ролика целиком, а не посекундно. Посекундная привязка потребовала бы
-> отдельного прохода по видео и в объём этой работы не входит.
+> **О тайм-кодах.** Тайминговые субтитры роликов скачаны заново по `videoId`
+> (в первой строке каждого сырого файла) и сохранены как провенанс в
+> [`timed/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/docs/indesign-pipeline/timed).
+> На их основе каждый значимый шаг получил посекундную ссылку `…&t=<N>s`,
+> открывающую ролик на нужном моменте. Полный перечень — в разделе
+> [«Тайм-коды по роликам»](#тайм-коды-по-роликам) ниже; те же ссылки продублированы
+> в очищенных расшифровках в [`clean/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/docs/indesign-pipeline/clean).
 
 ---
 
@@ -178,6 +181,66 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 ---
 
+## Тайм-коды по роликам
+
+Собрано из авто-субтитров YouTube (файлы-провенанс — в [`timed/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/docs/indesign-pipeline/timed)); секунды взяты из субтитров, ссылки открывают ролик на нужном моменте. Те же ссылки продублированы в каждой очищенной расшифровке в [`clean/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/docs/indesign-pipeline/clean).
+
+**01. Обзор папки со скриптами** — [ролик](https://www.youtube.com/watch?v=Q6BrE-l4DTg)  
+[0:01](https://www.youtube.com/watch?v=Q6BrE-l4DTg&t=1s) Обзор папки: скрипты всех стадий конвейера · [1:49](https://www.youtube.com/watch?v=Q6BrE-l4DTg&t=109s) Очистка исходника перед новым прогоном: снять старую разметку и цвет · [3:00](https://www.youtube.com/watch?v=Q6BrE-l4DTg&t=180s) Чистый исходник — всю разметку сделает конвейер
+
+**02. Разметка тегами, книга 1 · [0] FindTags** — [ролик](https://www.youtube.com/watch?v=tm0v-VHYRSw)  
+[0:01](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=1s) Что подготовить: вёрстка и файл разметки в одной папке · [0:18](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=18s) Структура файлов тома (деление на части) · [3:05](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=185s) Два прохода: извлечение информации, затем поиск и оформление · [3:26](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=206s) Замер времени прогона второго прохода
+
+**03. Как устроен поиск · [0]** — [ролик](https://www.youtube.com/watch?v=ZU7xelhtWnI)  
+[0:01](https://www.youtube.com/watch?v=ZU7xelhtWnI&t=1s) Файл необработанных тегов — назначение · [1:02](https://www.youtube.com/watch?v=ZU7xelhtWnI&t=62s) Как строится grep-запрос: пробелы → любой пробельный символ, кавычки и дефисы взаимозаменяемы · [10:49](https://www.youtube.com/watch?v=ZU7xelhtWnI&t=649s) Ошибка самой разметки (форма в тексте ≠ форма в теге) — пропускаем
+
+**04. Пример: текст Гринцера · [0] FindTags** — [ролик](https://www.youtube.com/watch?v=Bj3MIcu3jsM)  
+[0:03](https://www.youtube.com/watch?v=Bj3MIcu3jsM&t=3s) Тегированный текст Гринцера в первой книге · [1:12](https://www.youtube.com/watch?v=Bj3MIcu3jsM&t=72s) Результат переноса разметки — проверяем
+
+**05. Пропущенные теги · [0] #ApplyCharacterStyle** — [ролик](https://www.youtube.com/watch?v=wP6xXKiEX5E)  
+[0:01](https://www.youtube.com/watch?v=wP6xXKiEX5E&t=1s) Новый файл для необработанных тегов (страницы без разворота) · [2:11](https://www.youtube.com/watch?v=wP6xXKiEX5E&t=131s) Проход по тегам горячими клавишами (пример)
+
+**06. Разметка Примечаний · [0] FindTags** — [ролик](https://www.youtube.com/watch?v=EsXjzu09SA4)  
+[0:01](https://www.youtube.com/watch?v=EsXjzu09SA4&t=1s) Третий материал тома — Примечания; открыты два файла · [1:01](https://www.youtube.com/watch?v=EsXjzu09SA4&t=61s) Результат разметки Примечаний
+
+**07. Пропуски в Примечаниях · [0] #ApplyCharacterStyle** — [ролик](https://www.youtube.com/watch?v=i7mkyTAJMB0)  
+[0:01](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=1s) Новый файл с необработанными тегами Примечаний · [3:06](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=186s) Работа с чёрным текстом и дефисами · [7:30](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=450s) Проход по тегам, ручная отметка (примеры) · [9:32](https://www.youtube.com/watch?v=i7mkyTAJMB0&t=572s) Второй материал закончен — идём дальше
+
+**08. Словарь имён и географических названий · [0]** — [ролик](https://www.youtube.com/watch?v=lmoNXBchKRE)  
+[0:00](https://www.youtube.com/watch?v=lmoNXBchKRE&t=0s) Последний материал — словарь имён и географических названий · [0:57](https://www.youtube.com/watch?v=lmoNXBchKRE&t=57s) Готово: красным отмечены найденные термины
+
+**09. IndexList 001 · [1] UseReadyTable.v.7** — [ролик](https://www.youtube.com/watch?v=tYQBLu9WNyM)  
+[0:00](https://www.youtube.com/watch?v=tYQBLu9WNyM&t=0s) Стартовый набор стилей «Index styles» (папка Info) · [1:17](https://www.youtube.com/watch?v=tYQBLu9WNyM&t=77s) Именной указатель: берём нужные колонки листа .xlsx · [2:38](https://www.youtube.com/watch?v=tYQBLu9WNyM&t=158s) Удалить пустые строки — иначе скрипт не отработает · [3:39](https://www.youtube.com/watch?v=tYQBLu9WNyM&t=219s) Шесть проходов UseReadyTable.v.7 · [4:49](https://www.youtube.com/watch?v=tYQBLu9WNyM&t=289s) Разбор результата: флаги, регистр, служебные колонки
+
+**10. IndexList 002–004 · [1] UseReadyTable.v.7** — [ролик](https://www.youtube.com/watch?v=wC62L0XMGSk)  
+[0:00](https://www.youtube.com/watch?v=wC62L0XMGSk&t=0s) Скрипт сам сохраняет файл с номером (IndexList-001…) · [2:25](https://www.youtube.com/watch?v=wC62L0XMGSk&t=145s) Готовим 002 · [4:13](https://www.youtube.com/watch?v=wC62L0XMGSk&t=253s) Готовим 003 · [4:34](https://www.youtube.com/watch?v=wC62L0XMGSk&t=274s) Готовим 004 (флора и фауна) · [6:05](https://www.youtube.com/watch?v=wC62L0XMGSk&t=365s) Четыре таблицы готовы — сохраняем · [6:31](https://www.youtube.com/watch?v=wC62L0XMGSk&t=391s) Дальше — объединение в сводную таблицу
+
+**11. Сводный IndexList · [1] AddMarker + Merge** — [ролик](https://www.youtube.com/watch?v=eryYnZBrEPs)  
+[0:01](https://www.youtube.com/watch?v=eryYnZBrEPs&t=1s) Четыре файла созданы — что дальше · [3:52](https://www.youtube.com/watch?v=eryYnZBrEPs&t=232s) AddMarker: буквы-маркеры указателей a/b/c/d · [4:16](https://www.youtube.com/watch?v=eryYnZBrEPs&t=256s) Объединение: файл-приёмник, имя начинается с @ · [4:45](https://www.youtube.com/watch?v=eryYnZBrEPs&t=285s) MergeTwoIndexListTables: прицепляем таблицы по очереди · [7:33](https://www.youtube.com/watch?v=eryYnZBrEPs&t=453s) Итог — сводная таблица IndexList[@]-001
+
+**12. Ошибка в xlsx · [1]** — [ролик](https://www.youtube.com/watch?v=azj_saSPq-c)  
+[0:01](https://www.youtube.com/watch?v=azj_saSPq-c&t=1s) Проблема: комментарий в колонке C «завесил» обработку · [1:05](https://www.youtube.com/watch?v=azj_saSPq-c&t=65s) Комментарий убран — теперь работает
+
+**13. Перенос символьных стилей · [0]/[1] #GatherStyleNames** — [ролик](https://www.youtube.com/watch?v=XTIfFdqQyeE)  
+[0:01](https://www.youtube.com/watch?v=XTIfFdqQyeE&t=1s) Два файла готовы; заводим папку save · [1:53](https://www.youtube.com/watch?v=XTIfFdqQyeE&t=113s) Символьные стили перенесены в IndexList
+
+**14. Индексирование · [3] ProcStoryOrDoс** — [ролик](https://www.youtube.com/watch?v=8pBSRDVAAZU)  
+[0:00](https://www.youtube.com/watch?v=8pBSRDVAAZU&t=0s) Строим индексный указатель по строкам IndexList · [1:07](https://www.youtube.com/watch?v=8pBSRDVAAZU&t=67s) Запуск процесса (≈1–1,5 часа) · [2:50](https://www.youtube.com/watch?v=8pBSRDVAAZU&t=170s) Замер времени; log.txt с необработанными терминами
+
+**15. Исправление ошибок индексирования · [3]** — [ролик](https://www.youtube.com/watch?v=wK60yNgeEqA)  
+[0:01](https://www.youtube.com/watch?v=wK60yNgeEqA&t=1s) Файл log.txt — необработанные термины · [3:33](https://www.youtube.com/watch?v=wK60yNgeEqA&t=213s) Запись «ними» — дефект «одной формы» UseReadyTable · [5:48](https://www.youtube.com/watch?v=wK60yNgeEqA&t=348s) Точечная правка: находим и выделяем строку · [6:49](https://www.youtube.com/watch?v=wK60yNgeEqA&t=409s) Обработать выбранный текст: удалить запись из индекса · [10:36](https://www.youtube.com/watch?v=wK60yNgeEqA&t=636s) Частотное имя «Рама» через символьный стиль — добавляем строкой без стиля · [13:05](https://www.youtube.com/watch?v=wK60yNgeEqA&t=785s) 632 записи добавлено с «Рамой»
+
+**16. Подготовка указателя · [4]** — [ролик](https://www.youtube.com/watch?v=pVO9qKyE_a4)  
+[0:01](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=1s) Пора собрать указатель · [0:43](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=43s) Через ≈4 минуты указатель готов (буквы-рубрики) · [2:35](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=155s) Символьный стиль «термин» · [3:40](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=220s) Готово — оформление применено
+
+**17. Деление на четыре указателя · [4] SplitStory** — [ролик](https://www.youtube.com/watch?v=WmCJ7GdJjzQ)  
+[0:01](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=1s) Из сводного указателя делаем четыре · [0:29](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=29s) Сноска — одна на все указатели; идём по тексту · [2:36](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=156s) До буквы C — маркеры указателей · [4:09](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=249s) Исправления; предметы и термины · [6:52](https://www.youtube.com/watch?v=WmCJ7GdJjzQ&t=412s) Смена двух-/одноколоночного вида (объектный стиль)
+
+**18. Исправлен UseReadyTable v7 · [1]** — [ролик](https://www.youtube.com/watch?v=dtuew2WHt64)  
+[0:01](https://www.youtube.com/watch?v=dtuew2WHt64&t=1s) Причина ошибки «ними» из 15-го видео · [0:38](https://www.youtube.com/watch?v=dtuew2WHt64&t=38s) Исправлено — прогон без ошибок
+
+---
+
 # Часть II. Техническое приложение для мейнтейнера
 
 ## Инварианты имён (из `ForIndex.jsxinc`)
@@ -275,7 +338,11 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 - Руководство синтезировано из авто-субтитровых расшифровок; формулировки и порядок
   действий автора сохранены, исправлены только ошибки распознавания (имена скриптов,
   стилей и цветов — строго по `ForIndex.jsxinc` / `CLAUDE.md`).
-- Тайм-коды на уровне отдельных шагов отсутствуют (см. оговорку выше).
+- Тайм-коды шагов добыты заново из тайминговых авто-субтитров YouTube (по `videoId`
+  из первой строки каждого сырого файла), сохранённых как провенанс в
+  [`timed/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/docs/indesign-pipeline/timed);
+  секунды взяты из субтитров, не выдуманы. Полный перечень — раздел
+  [«Тайм-коды по роликам»](#тайм-коды-по-роликам).
 - Часть имён собственных в роликах звучит искажённо (ASR); в очищенных расшифровках они
   оставлены осторожно, без домысливания «правильного» написания там, где источник
   неоднозначен.

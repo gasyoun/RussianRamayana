@@ -15,6 +15,13 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Так по очереди отмечаем оставшиеся термины (имена, отсылки к легендам и т. п.). Пройдя все, закрываем — второй материал первого тома обработан.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/05-wP6xXKiEX5E.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/05-wP6xXKiEX5E.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=wP6xXKiEX5E&t=1s) — Новый файл для необработанных тегов (страницы без разворота)
+- [2:11](https://www.youtube.com/watch?v=wP6xXKiEX5E&t=131s) — Проход по тегам горячими клавишами (пример)
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._
