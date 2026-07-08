@@ -23,6 +23,15 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Получаем указанный диапазон полужирным и схлопнутые номера. В следующем видео делим большой сводный указатель на четыре части.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/16-pVO9qKyE_a4.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/16-pVO9qKyE_a4.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=1s) — Пора собрать указатель
+- [0:43](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=43s) — Через ≈4 минуты указатель готов (буквы-рубрики)
+- [2:35](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=155s) — Символьный стиль «термин»
+- [3:40](https://www.youtube.com/watch?v=pVO9qKyE_a4&t=220s) — Готово — оформление применено
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

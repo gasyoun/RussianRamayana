@@ -15,6 +15,13 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Файл небольшой, размечается быстро. Проверяем по цветам: **красный** присутствует — значит перенос сработал, есть и «заниленные» (сиреневые, `SkipTheWord`). Закрываем.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/06-EsXjzu09SA4.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/06-EsXjzu09SA4.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=EsXjzu09SA4&t=1s) — Третий материал тома — Примечания; открыты два файла
+- [1:01](https://www.youtube.com/watch?v=EsXjzu09SA4&t=61s) — Результат разметки Примечаний
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

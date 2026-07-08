@@ -21,6 +21,15 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Не всё разметилось: всё, что не удалось обработать, скрипт собирает в отдельный файл необработанных тегов. Разметка видна по цветам: **красным** отмечено то, что скрипт обработал (теговая разметка), а средним (сиреневым) цветом — «заниленные» термины (`SkipTheWord`), которые не должны попасть в указатель. Заглянув в группу стилей «Index styles», видим, что там уже появилось много стилей. Дальше разбираемся с тегами, которые не обработались.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/02-tm0v-VHYRSw.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/02-tm0v-VHYRSw.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=1s) — Что подготовить: вёрстка и файл разметки в одной папке
+- [0:18](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=18s) — Структура файлов тома (деление на части)
+- [3:05](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=185s) — Два прохода: извлечение информации, затем поиск и оформление
+- [3:26](https://www.youtube.com/watch?v=tm0v-VHYRSw&t=206s) — Замер времени прогона второго прохода
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

@@ -18,6 +18,13 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 В колонке стилей появляются имена (например, «Мир Брахмы») — не в каждой ячейке, местами, там, где были стили в разметке. Всё, что было в разметке, попало сюда. Теперь можно готовить указатель.
 
+## Тайм-коды (по субтитрам ролика)
+
+Посекундные ссылки открывают ролик на нужном моменте (собрано из авто-субтитров, файл-провенанс [`timed/13-XTIfFdqQyeE.ru.json3`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/timed/13-XTIfFdqQyeE.ru.json3)):
+
+- [0:01](https://www.youtube.com/watch?v=XTIfFdqQyeE&t=1s) — Два файла готовы; заводим папку save
+- [1:53](https://www.youtube.com/watch?v=XTIfFdqQyeE&t=113s) — Символьные стили перенесены в IndexList
+
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._

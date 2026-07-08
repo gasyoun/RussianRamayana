@@ -139,6 +139,9 @@
     line-height: 1.6;
     margin: 22px 0;
   }
+  .timecodes { list-style: none; margin-left: 0; }
+  .timecodes li { margin-bottom: 10px; line-height: 1.7; }
+  .timecodes a { white-space: nowrap; font-family: 'Jost', sans-serif; font-size: 13px; }
 </style>
 <script type="application/ld+json">
 {
@@ -275,9 +278,38 @@
   </div>
 
   <div class="callout">
-    У авто-субтитровых расшифровок нет таймкодов внутри тела, поэтому видео привязаны к
-    шагам на уровне ролика целиком, а не посекундно. Ролики открываются на YouTube в новой
-    вкладке — автоматического встраивания на страницу нет.
+    Ролики открываются на YouTube в новой вкладке — автоматического встраивания плеера на
+    страницу нет, сайт остаётся самодостаточным. Тайминговые субтитры скачаны заново по
+    <code>videoId</code> и разложены на шаги; посекундные ссылки ниже открывают ролик ровно
+    на нужном моменте.
+  </div>
+
+  <h2>Ключевые моменты по роликам</h2>
+  <p>Посекундные ссылки на конкретные шаги (секунды взяты из тайминговых субтитров;
+    те же тайм-коды — в
+    <a href="https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md#%D1%82%D0%B0%D0%B9%D0%BC-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BF%D0%BE-%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0%D0%BC" target="_blank" rel="noopener">MANUAL.md</a>
+    и в очищенных расшифровках):</p>
+  <div class="table-wrap">
+    <ul class="timecodes">
+      <li><strong>01.</strong> Обзор папки со скриптами — <a href="https://www.youtube.com/watch?v=Q6BrE-l4DTg&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=Q6BrE-l4DTg&amp;t=109s">1:49</a> · <a href="https://www.youtube.com/watch?v=Q6BrE-l4DTg&amp;t=180s">3:00</a></li>
+      <li><strong>02.</strong> Разметка тегами, книга 1 · [0] FindTags — <a href="https://www.youtube.com/watch?v=tm0v-VHYRSw&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=tm0v-VHYRSw&amp;t=18s">0:18</a> · <a href="https://www.youtube.com/watch?v=tm0v-VHYRSw&amp;t=185s">3:05</a> · <a href="https://www.youtube.com/watch?v=tm0v-VHYRSw&amp;t=206s">3:26</a></li>
+      <li><strong>03.</strong> Как устроен поиск · [0] — <a href="https://www.youtube.com/watch?v=ZU7xelhtWnI&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=ZU7xelhtWnI&amp;t=62s">1:02</a> · <a href="https://www.youtube.com/watch?v=ZU7xelhtWnI&amp;t=649s">10:49</a></li>
+      <li><strong>04.</strong> Пример: текст Гринцера · [0] FindTags — <a href="https://www.youtube.com/watch?v=Bj3MIcu3jsM&amp;t=3s">0:03</a> · <a href="https://www.youtube.com/watch?v=Bj3MIcu3jsM&amp;t=72s">1:12</a></li>
+      <li><strong>05.</strong> Пропущенные теги · [0] #ApplyCharacterStyle — <a href="https://www.youtube.com/watch?v=wP6xXKiEX5E&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=wP6xXKiEX5E&amp;t=131s">2:11</a></li>
+      <li><strong>06.</strong> Разметка Примечаний · [0] FindTags — <a href="https://www.youtube.com/watch?v=EsXjzu09SA4&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=EsXjzu09SA4&amp;t=61s">1:01</a></li>
+      <li><strong>07.</strong> Пропуски в Примечаниях · [0] #ApplyCharacterStyle — <a href="https://www.youtube.com/watch?v=i7mkyTAJMB0&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=i7mkyTAJMB0&amp;t=186s">3:06</a> · <a href="https://www.youtube.com/watch?v=i7mkyTAJMB0&amp;t=450s">7:30</a> · <a href="https://www.youtube.com/watch?v=i7mkyTAJMB0&amp;t=572s">9:32</a></li>
+      <li><strong>08.</strong> Словарь имён и географических названий · [0] — <a href="https://www.youtube.com/watch?v=lmoNXBchKRE&amp;t=0s">0:00</a> · <a href="https://www.youtube.com/watch?v=lmoNXBchKRE&amp;t=57s">0:57</a></li>
+      <li><strong>09.</strong> IndexList 001 · [1] UseReadyTable.v.7 — <a href="https://www.youtube.com/watch?v=tYQBLu9WNyM&amp;t=0s">0:00</a> · <a href="https://www.youtube.com/watch?v=tYQBLu9WNyM&amp;t=77s">1:17</a> · <a href="https://www.youtube.com/watch?v=tYQBLu9WNyM&amp;t=158s">2:38</a> · <a href="https://www.youtube.com/watch?v=tYQBLu9WNyM&amp;t=219s">3:39</a> · <a href="https://www.youtube.com/watch?v=tYQBLu9WNyM&amp;t=289s">4:49</a></li>
+      <li><strong>10.</strong> IndexList 002–004 · [1] UseReadyTable.v.7 — <a href="https://www.youtube.com/watch?v=wC62L0XMGSk&amp;t=0s">0:00</a> · <a href="https://www.youtube.com/watch?v=wC62L0XMGSk&amp;t=145s">2:25</a> · <a href="https://www.youtube.com/watch?v=wC62L0XMGSk&amp;t=253s">4:13</a> · <a href="https://www.youtube.com/watch?v=wC62L0XMGSk&amp;t=274s">4:34</a> · <a href="https://www.youtube.com/watch?v=wC62L0XMGSk&amp;t=365s">6:05</a> · <a href="https://www.youtube.com/watch?v=wC62L0XMGSk&amp;t=391s">6:31</a></li>
+      <li><strong>11.</strong> Сводный IndexList · [1] AddMarker + Merge — <a href="https://www.youtube.com/watch?v=eryYnZBrEPs&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=eryYnZBrEPs&amp;t=232s">3:52</a> · <a href="https://www.youtube.com/watch?v=eryYnZBrEPs&amp;t=256s">4:16</a> · <a href="https://www.youtube.com/watch?v=eryYnZBrEPs&amp;t=285s">4:45</a> · <a href="https://www.youtube.com/watch?v=eryYnZBrEPs&amp;t=453s">7:33</a></li>
+      <li><strong>12.</strong> Ошибка в xlsx · [1] — <a href="https://www.youtube.com/watch?v=azj_saSPq-c&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=azj_saSPq-c&amp;t=65s">1:05</a></li>
+      <li><strong>13.</strong> Перенос символьных стилей · [0]/[1] #GatherStyleNames — <a href="https://www.youtube.com/watch?v=XTIfFdqQyeE&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=XTIfFdqQyeE&amp;t=113s">1:53</a></li>
+      <li><strong>14.</strong> Индексирование · [3] ProcStoryOrDoс — <a href="https://www.youtube.com/watch?v=8pBSRDVAAZU&amp;t=0s">0:00</a> · <a href="https://www.youtube.com/watch?v=8pBSRDVAAZU&amp;t=67s">1:07</a> · <a href="https://www.youtube.com/watch?v=8pBSRDVAAZU&amp;t=170s">2:50</a></li>
+      <li><strong>15.</strong> Исправление ошибок индексирования · [3] — <a href="https://www.youtube.com/watch?v=wK60yNgeEqA&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=wK60yNgeEqA&amp;t=213s">3:33</a> · <a href="https://www.youtube.com/watch?v=wK60yNgeEqA&amp;t=348s">5:48</a> · <a href="https://www.youtube.com/watch?v=wK60yNgeEqA&amp;t=409s">6:49</a> · <a href="https://www.youtube.com/watch?v=wK60yNgeEqA&amp;t=636s">10:36</a> · <a href="https://www.youtube.com/watch?v=wK60yNgeEqA&amp;t=785s">13:05</a></li>
+      <li><strong>16.</strong> Подготовка указателя · [4] — <a href="https://www.youtube.com/watch?v=pVO9qKyE_a4&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=pVO9qKyE_a4&amp;t=43s">0:43</a> · <a href="https://www.youtube.com/watch?v=pVO9qKyE_a4&amp;t=155s">2:35</a> · <a href="https://www.youtube.com/watch?v=pVO9qKyE_a4&amp;t=220s">3:40</a></li>
+      <li><strong>17.</strong> Деление на четыре указателя · [4] SplitStory — <a href="https://www.youtube.com/watch?v=WmCJ7GdJjzQ&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=WmCJ7GdJjzQ&amp;t=29s">0:29</a> · <a href="https://www.youtube.com/watch?v=WmCJ7GdJjzQ&amp;t=156s">2:36</a> · <a href="https://www.youtube.com/watch?v=WmCJ7GdJjzQ&amp;t=249s">4:09</a> · <a href="https://www.youtube.com/watch?v=WmCJ7GdJjzQ&amp;t=412s">6:52</a></li>
+      <li><strong>18.</strong> Исправлен UseReadyTable v7 · [1] — <a href="https://www.youtube.com/watch?v=dtuew2WHt64&amp;t=1s">0:01</a> · <a href="https://www.youtube.com/watch?v=dtuew2WHt64&amp;t=38s">0:38</a></li>
+    </ul>
   </div>
 
   <div class="divider"><span class="divider-line"></span><span class="divider-diamond"></span><span class="divider-line"></span></div>

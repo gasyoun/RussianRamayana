@@ -190,6 +190,13 @@ Litpam-Indexator/
   [`indexing-pipeline.html`](https://github.com/gasyoun/RussianRamayana/blob/main/indexing-pipeline.html)
   ([gasyoun.github.io/RussianRamayana/indexing-pipeline.html](https://gasyoun.github.io/RussianRamayana/indexing-pipeline.html)).
   Сырые `.txt` сохранены как провенанс.
+- **Тайм-коды шагов добавлены (08-07-2026).** Тайминговые авто-субтитры всех 18
+  роликов скачаны заново по `videoId` и сохранены как провенанс в
+  [`docs/indesign-pipeline/timed/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/docs/indesign-pipeline/timed);
+  на их основе каждый значимый шаг получил посекундную ссылку `…&t=<N>s` — сводно в
+  разделе [«Тайм-коды по роликам»](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md#%D1%82%D0%B0%D0%B9%D0%BC-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BF%D0%BE-%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0%D0%BC)
+  руководства, продублировано в каждой очищенной расшифровке и на странице сайта
+  (секции «Ключевые моменты по роликам»).
 - Скрипты и документация — зрелые и завершённые (авторский инструментарий,
   подробные `info.txt` по каждой стадии, полный учебный пример «Golden Fish
   Story»); `TODO`/`FIXME` в коде не найдено.
