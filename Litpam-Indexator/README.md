@@ -58,6 +58,14 @@ Pascal/Lazarus-утилита и рабочие данные (тегирован
   и [`xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx),
   чтобы отловить расхождения (тег есть в тексте, но нет в словаре, и наоборот)
   до запуска дорогих стадий в InDesign.
+- **Пре-флайт-валидация словаря перед стадией `[1]`** — прогон
+  [`tools/validate_dictionary.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/validate_dictionary.py)
+  по `.xlsx`: read-only отчёт по **внутренним** дефектам рабочих листов (проза/комментарий
+  в колонке форм — «вешает» обработку, видео 12; пустые строки; хвостовые `;`; дубли форм;
+  разрывы уровней; служебные/формульные строки). Кроссплатформенно (Python + `openpyxl`,
+  без Excel/OLE) — дополняет `teg_exp.exe`, который сверяет файлы **между** собой и требует
+  Windows+Excel. Отчёт по текущему словарю —
+  [`docs/indesign-pipeline/dictionary-validation-report.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/dictionary-validation-report.md).
 - **Обучение новой стадии/скрипту на игрушечном примере** — перед прогоном
   на реальном тексте отработать конкретный скрипт на
   `#Indexing. Ramayana/Info/Учебные примеры (Drill examples)/` (Golden Fish
@@ -77,8 +85,8 @@ Pascal/Lazarus-утилита и рабочие данные (тегирован
 
 ```
 Tags/ram_tags.txt  ─┐
-                     ├──▶  _Ram_Tag_explorer/teg_exp.exe  (сверка тегов ↔ словаря, через OLE в Excel)
-xls/Указатель_*.xlsx ┘
+                     ├──▶  _Ram_Tag_explorer/teg_exp.exe   (сверка тег ↔ словарь между файлами, OLE+Excel)
+xls/Указатель_*.xlsx ┘──▶  tools/validate_dictionary.py    (внутренние дефекты листа, кроссплатформенно)
                                       │
                                       ▼
         «#Indexing. Ramayana»/  — пять стадий обработки внутри Adobe InDesign:
@@ -104,6 +112,8 @@ Litpam-Indexator/
 ├── xls/
 │   └── Указатель_к_Рамаяне_1_2_*.xlsx     — рабочий словарь, 17 листов (4 рабочих указателя + служебные)
 ├── _Ram_Tag_explorer/                     — Free Pascal/Lazarus-утилита сверки тегов (teg_exp.exe)
+├── tools/
+│   └── validate_dictionary.py            — аддитивный read-only пре-флайт-валидатор словаря (openpyxl)
 ├── #Indexing. Ramayana/
 │   ├── ForIndex.jsxinc                    — общий include: имена стилей/цветов, нельзя переименовывать
 │   ├── [0. Работа с тегированной разметкой]/
@@ -143,8 +153,13 @@ Litpam-Indexator/
   — ES3, конструкции вроде `};` перед `else` — не баги, не «чинить».
 - **`teg_exp.exe`**: собрать через `lazbuild teg_exp.lpi` (Lazarus,
   Windows + Excel обязательны).
+- **Пре-флайт-валидатор словаря** (кроссплатформенно, без InDesign/Excel):
+  `python tools/validate_dictionary.py "xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx"`
+  (в отчёт-файл — `--report <файл.md>`; один лист — `--sheet "Именной"`). Требует
+  `openpyxl` (`pip install openpyxl`). Код возврата 1, если найдены дефекты.
 - Полный порядок действий по стадиям — в
-  [`Roadmap_Ramayana_Index-Vol.1.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/Roadmap_Ramayana_Index-Vol.1.md).
+  [`Roadmap_Ramayana_Index-Vol.1.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/Roadmap_Ramayana_Index-Vol.1.md);
+  сводное руководство оператора — [`docs/indesign-pipeline/MANUAL.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md).
 
 ## Инварианты — не переименовывать / не «чинить» без явного запроса
 
@@ -197,6 +212,18 @@ Litpam-Indexator/
   разделе [«Тайм-коды по роликам»](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md#%D1%82%D0%B0%D0%B9%D0%BC-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BF%D0%BE-%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0%D0%BC)
   руководства, продублировано в каждой очищенной расшифровке и на странице сайта
   (секции «Ключевые моменты по роликам»).
+- **Руководство закалено + процесс усилен (08-07-2026, H363).** В
+  [`MANUAL.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md)
+  добавлены шпаргалка, диаграмма потока данных, таблица «Симптом → Причина → Лечение»,
+  глоссарий, раздел «Окружение», бюджет времени и **Розеттская таблица** маркеров; три
+  документа (MANUAL / Roadmap / CLAUDE) сведены к канону букв-маркеров `a/b/c/d` из
+  `ForIndex.jsxinc`. Добавлен аддитивный
+  [`tools/validate_dictionary.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/validate_dictionary.py)
+  (43 находки на текущем словаре, отчёт в
+  [`dictionary-validation-report.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/dictionary-validation-report.md))
+  и регрессионный дрилл дефекта «одной формы»
+  ([`regression_expected.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/Info/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B%20(Drill%20examples)/Golden%20Fish%20Story/regression_expected.md)).
+  Авторские `.jsx`/`.xlsx` не менялись (guardrail).
 - Скрипты и документация — зрелые и завершённые (авторский инструментарий,
   подробные `info.txt` по каждой стадии, полный учебный пример «Golden Fish
   Story»); `TODO`/`FIXME` в коде не найдено.
