@@ -1,5 +1,11 @@
 # Leitan — Sundarakanda (Parab 1888)
 
+Part of the [Русская Рамаяна](https://gasyoun.github.io/RussianRamayana/) project —
+Sanskrit source-text preparation ("сверка санскрита") supporting the
+[Гринцер → Леонов](https://gasyoun.github.io/RussianRamayana/project.html) translation
+of Book V (*Сундара-канда*), whose translation is complete and currently in the
+commentary-preparation stage (see [`roadmap.md`](https://github.com/gasyoun/RussianRamayana/blob/main/roadmap.md)).
+
 Working drafts of the Sanskrit text of the *Sundarakāṇḍa* (Book V of the
 Rāmāyaṇa), Parab's 1888 edition with the *Tilakā* commentary, prepared as
 `.docx` source files and mirrored here as Markdown for easier diffing,

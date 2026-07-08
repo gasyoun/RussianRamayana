@@ -108,7 +108,7 @@
 
 Дополнительные этапы, которые можно упоминать в дорожной карте, но не делать центральными статьями сметы:
 
-- сверка санскрита;
+- [сверка санскрита](https://github.com/gasyoun/RussianRamayana/tree/main/Leitan-Sundarakanda) (рабочие черновики санскритского текста Сундара-канды, изд. Parab 1888, с комментарием Тика);
 - [указатели](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator);
 - корректура;
 - подготовка к печати;
@@ -304,6 +304,11 @@ Boosty подходит для рублёвой подписки, но туда 
 За подготовку указателей отвечает к.ф.н. М.Ю. Гасунс. Инструментарий
 построения указателей (ExtendScript-скрипты для InDesign + рабочие данные) —
 [`Litpam-Indexator/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator).
+
+Санскритский источник книги V (Сундара-канда, изд. Parab 1888 с комментарием
+Тика), по которому идёт сверка при подготовке комментариев, — рабочие
+черновики по сарге в
+[`Leitan-Sundarakanda/`](https://github.com/gasyoun/RussianRamayana/tree/main/Leitan-Sundarakanda).
 
 После завершения перевода и комментариев нужен отдельный сбор на печатную подготовку.
 

@@ -18,6 +18,7 @@
 | Книги I-III (Гринцер) | samskrtam.ru | `publish-now` | Ссылки в каталоге. |
 | Книга IV (Серебряный) | Локально | `internal` | До завершения статьи Серебряного. |
 | Книга V (Леонов, подстрочник) | Яндекс Диск | `needs-proofreading` | Для подписчиков. |
+| Книга V, санскритский источник (Parab 1888, сарги 23-33 + Тика) | [`Leitan-Sundarakanda/`](https://github.com/gasyoun/RussianRamayana/tree/main/Leitan-Sundarakanda) | `internal` | Рабочие черновики для сверки санскрита при подготовке комментариев; не для публикации как есть. |
 | Книга VI (Леонов, черновик) | Яндекс Диск | `subscriber-only` | Только фрагменты. |
 | Библиография Рамаяны | samskrtam.ru | `publish-now` | Нужно структурировать в JSON. |
 
