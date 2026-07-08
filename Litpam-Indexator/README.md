@@ -1,6 +1,6 @@
 # Litpam-Indexator
 
-_Created: 07-07-2026 · Last updated: 07-07-2026_
+_Created: 07-07-2026 · Last updated: 08-07-2026_
 
 🔗 Живой сайт проекта:
 [https://gasyoun.github.io/RussianRamayana/project.html](https://gasyoun.github.io/RussianRamayana/project.html)
@@ -178,8 +178,18 @@ Litpam-Indexator/
   текстового фрейма или на несохранённом документе — это ожидаемое
   поведение, не баг.
 
-## Текущее состояние (07-07-2026)
+## Текущее состояние (08-07-2026)
 
+- **Документация конвейера выверена и опубликована (08-07-2026).** 18 сырых
+  авто-субтитровых расшифровок видео-скринкастов приведены в связную документацию:
+  почищенные пофайловые расшифровки —
+  [`docs/indesign-pipeline/clean/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/docs/indesign-pipeline/clean),
+  сводное руководство (операторский разбор + приложение для мейнтейнера) —
+  [`docs/indesign-pipeline/MANUAL.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md),
+  живая страница на сайте —
+  [`indexing-pipeline.html`](https://github.com/gasyoun/RussianRamayana/blob/main/indexing-pipeline.html)
+  ([gasyoun.github.io/RussianRamayana/indexing-pipeline.html](https://gasyoun.github.io/RussianRamayana/indexing-pipeline.html)).
+  Сырые `.txt` сохранены как провенанс.
 - Скрипты и документация — зрелые и завершённые (авторский инструментарий,
   подробные `info.txt` по каждой стадии, полный учебный пример «Golden Fish
   Story»); `TODO`/`FIXME` в коде не найдено.
