@@ -34,10 +34,10 @@ Pascal/Lazarus-утилита и рабочие данные (тегирован
 4. **Флора и фауна**
 
 Источник — вручную тегированный текст перевода
-([`Tags/ram_tags.txt`](Tags/ram_tags.txt)), где индексируемые термины
+([`Tags/ram_tags.txt`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/Tags/ram_tags.txt)), где индексируемые термины
 помечены инлайн-тегами вида `#термин{Тег\уровень}`. Тег и уровень
 сверяются с рабочим словарём в Excel
-([`xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx`](xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx)),
+([`xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx)),
 после чего последовательность `.jsx`-скриптов внутри Adobe InDesign
 переносит разметку в вёрстку, строит таблицы указателя (`IndexList`),
 расставляет маркеры индекса в тексте и форматирует итоговый указатель
@@ -47,15 +47,15 @@ Pascal/Lazarus-утилита и рабочие данные (тегирован
 ## Сценарии использования (use cases)
 
 - **Построение указателей Тома I** — основной активный сценарий, пошагово
-  расписан в [`Roadmap_Ramayana_Index-Vol.1.md`](Roadmap_Ramayana_Index-Vol.1.md):
+  расписан в [`Roadmap_Ramayana_Index-Vol.1.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/Roadmap_Ramayana_Index-Vol.1.md):
   от снятия lock-файла и тренировочного прогона на «Golden Fish Story» до
   финальной вычитки и PDF-экспорта с гиперссылками/закладками.
 - **Построение указателей Тома II** — тот же пайплайн (стадии 1–4) с нуля,
   так как таблицы `IndexList` для Тома II ещё не построены; общий с Томом I
   только Excel-словарь. Пока не начато.
 - **Сверка тегов ↔ словаря перед индексацией** — прогон
-  `_Ram_Tag_explorer/teg_exp.exe` над [`Tags/ram_tags.txt`](Tags/ram_tags.txt)
-  и [`xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx`](xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx),
+  `_Ram_Tag_explorer/teg_exp.exe` над [`Tags/ram_tags.txt`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/Tags/ram_tags.txt)
+  и [`xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx),
   чтобы отловить расхождения (тег есть в тексте, но нет в словаре, и наоборот)
   до запуска дорогих стадий в InDesign.
 - **Обучение новой стадии/скрипту на игрушечном примере** — перед прогоном
@@ -144,11 +144,11 @@ Litpam-Indexator/
 - **`teg_exp.exe`**: собрать через `lazbuild teg_exp.lpi` (Lazarus,
   Windows + Excel обязательны).
 - Полный порядок действий по стадиям — в
-  [`Roadmap_Ramayana_Index-Vol.1.md`](Roadmap_Ramayana_Index-Vol.1.md).
+  [`Roadmap_Ramayana_Index-Vol.1.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/Roadmap_Ramayana_Index-Vol.1.md).
 
 ## Инварианты — не переименовывать / не «чинить» без явного запроса
 
-Из [`CLAUDE.md`](CLAUDE.md) и `ForIndex.jsxinc` — жёсткий контракт имён,
+Из [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md) и `ForIndex.jsxinc` — жёсткий контракт имён,
 на которые опираются все скрипты:
 
 - Стили абзаца `#Level1`…`#Level4` (группа `#IndexStyles`), стили отображения
@@ -184,7 +184,7 @@ Litpam-Indexator/
   подробные `info.txt` по каждой стадии, полный учебный пример «Golden Fish
   Story»); `TODO`/`FIXME` в коде не найдено.
 - Применение пайплайна к реальному тексту — только в начале: чек-лист
-  [`Roadmap_Ramayana_Index-Vol.1.md`](Roadmap_Ramayana_Index-Vol.1.md) для
+  [`Roadmap_Ramayana_Index-Vol.1.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/Roadmap_Ramayana_Index-Vol.1.md) для
   Тома I пока не пройден (пункты `☐` не отмечены), включая необходимость
   вручную удалить lock-файл `~ramayana_i_12.10.2~f5jd0f.idlk` перед началом
   работы.
@@ -203,7 +203,7 @@ Litpam-Indexator/
 
 Автор скриптов и методики: Михаил Иванюшин, dotextok@gmail.com,
 [dotextok.ru](https://dotextok.ru). Методичка (PDF) и ссылки на видео —
-в [`#Indexing. Ramayana/Info/`](%23Indexing.%20Ramayana/Info/).
+в [`#Indexing. Ramayana/Info/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/%23Indexing.%20Ramayana/Info).
 
 ---
 
