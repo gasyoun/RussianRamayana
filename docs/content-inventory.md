@@ -20,7 +20,7 @@
 | Книга V (Леонов, подстрочник) | Яндекс Диск | `needs-proofreading` | Для подписчиков. |
 | Книга V, санскритский источник (Parab 1888, сарги 23-33 + Тика) | [`Leitan-Sundarakanda/`](https://github.com/gasyoun/RussianRamayana/tree/main/Leitan-Sundarakanda) | `internal` | Рабочие черновики для сверки санскрита при подготовке комментариев; не для публикации как есть. |
 | Книга VI (Леонов, черновик) | Яндекс Диск | `subscriber-only` | Только фрагменты. |
-| Библиография Рамаяны | samskrtam.ru | `publish-now` | Нужно структурировать в JSON. |
+| Библиография Рамаяны | `data/editions.json` | `published` | Структурирована и опубликована — [`bibliography.html`](https://gasyoun.github.io/RussianRamayana/bibliography.html), BibTeX/CSL-JSON экспорт. |
 
 ## Видеоматериалы
 
@@ -39,5 +39,5 @@
 ## Планы по инвентаризации
 
 1.  **Q3 2026**: Расшифровка всех видео Леонова.
-2.  **Q4 2026**: Перенос библиографии в `data/editions.json`.
+2.  ~~**Q4 2026**: Перенос библиографии в `data/editions.json`.~~ Готово (08-07-2026) — см. таблицу выше.
 3.  **Q1 2027**: Создание страницы `audio.html` с полным плейлистом и таймкодами.
