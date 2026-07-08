@@ -41,3 +41,6 @@ _private/
 
 # Claude Code local settings/permissions — personal, not shared
 .claude/
+
+# secrets
+.env
