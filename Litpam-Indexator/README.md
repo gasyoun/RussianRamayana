@@ -203,7 +203,7 @@ Litpam-Indexator/
 
 Автор скриптов и методики: Михаил Иванюшин, dotextok@gmail.com,
 [dotextok.ru](https://dotextok.ru). Методичка (PDF) и ссылки на видео —
-в [`#Indexing. Ramayana/Info/`](#Indexing.%20Ramayana/Info/).
+в [`#Indexing. Ramayana/Info/`](%23Indexing.%20Ramayana/Info/).
 
 ---
 
