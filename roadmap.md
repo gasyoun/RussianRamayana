@@ -1,5 +1,7 @@
 # Roadmap: Русская Рамаяна
 
+_Revival audit 10-07-2026 ([H371](https://github.com/gasyoun/Uprava/blob/main/handoffs/H371-Sonnet_RussianRamayana_revival_audit_roadmap_08.07.26.md)): this file already **is** the audit-derived roadmap — waves in "Следующие шаги", decisions in "Следующие вопросы", risks below. Full disposition: [`docs/H371_REVIVAL_AUDIT_2026-07-10.md`](docs/H371_REVIVAL_AUDIT_2026-07-10.md)._
+
 ## Миссия проекта
 
 `RussianRamayana` должен стать главным русскоязычным ресурсом о русских переводах и пересказах Валмики-Рамаяны: местом, где широкая публика может читать, слушать, сравнивать версии, видеть историю изданий и поддержать завершение первого полного русского поэтического академического перевода Валмики-Рамаяны с санскрита.
