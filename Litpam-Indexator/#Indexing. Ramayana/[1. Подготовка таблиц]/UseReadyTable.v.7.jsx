@@ -594,8 +594,9 @@ rowIndexesOfThisTerm = null;
 nextIndexForTerm = null;
 ///
 pBar.info("Сохранение созданной таблицы IndexList, на это требуется некоторое время");
-/*
-var fileList = Folder (myDocPath).getFiles(searchMaskN); 
+// Автонумерация имени восстановлена 10.07.2026 (H377): жёсткое "IndexList-000.indd"
+// от 26.11.2024 затирало предыдущий результат при каждом прогоне.
+var fileList = Folder (myDocPath).getFiles(searchMaskN);
 var f_List = [];
 while (f_List.length > 0) f_List.pop();
 if (fileList.length == 0) rez = "001";
@@ -607,10 +608,10 @@ else { /// > 0
        if (splitRez[0] == "[") nutUsed = 3;
         rez = Number(splitRez.substring(nutUsed, splitRez.length));
         // не все файлы в этой папке, имя которых начинается с IndexList, являются рабочими таблицами, в имени которых есть номер. Поэтому нужна проверка isNaN()
-        if (isNaN(rez) == false) f_List.push(rez);         
+        if (isNaN(rez) == false) f_List.push(rez);
         } // f++
     if (f_List.length > 0) { // f_List.length > 0
-        f_List.sort (function (a,b) { return a < b } );
+        f_List.sort (function (a,b) { return b - a } ); // 10.07.2026: числовой компаратор (был булев return a < b — ненадёжен), максимум в [0]
         rez = f_List[0];
         rez++;
         if (rez < 10) rez = "00" + String(rez);
@@ -619,9 +620,8 @@ else { /// > 0
         } // f_List.length > 0
     else rez = "001";
     } /// > 0
-*/
-//var tblFile = "IndexList-" + rez + ".indd";
-var tblFile = "IndexList-000" + ".indd"; // 26.11.2024
+var tblFile = "IndexList-" + rez + ".indd";
+//var tblFile = "IndexList-000" + ".indd"; // 26.11.2024 — жёсткое имя, отключено 10.07.2026 (H377)
 doc.save(File(myDocPath + "/" + tblFile));
 pBar.close();
 
