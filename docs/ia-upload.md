@@ -71,7 +71,7 @@ ia upload ramayana-russian-1986 \
 
 ## После загрузки
 
-1. Сверить SHA-256 (IA отдаёт md5/sha1 в `_files.xml`; при необходимости скачать и пересчитать).
+1. Сверить SHA-256 (IA отдает md5/sha1 в `_files.xml`; при необходимости скачать и пересчитать).
 2. В [data/audio.json](../data/audio.json) заменить `url` на
    `https://archive.org/download/ramayana-russian-1986/<файл>` для всех 7 книг;
    книги 5–6 перевести в `status: "available"`.

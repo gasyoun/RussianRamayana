@@ -4,7 +4,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Эта папка содержит документацию по конвейеру построения предметных указателей к
 двухтомнику «Рамаяна» в Adobe InDesign — набор скринкастов Михаила Иванюшина
-([dotextok.ru](https://dotextok.ru)), приведённый из авто-субтитров в связную,
+([dotextok.ru](https://dotextok.ru)), приведенный из авто-субтитров в связную,
 выверенную по коду документацию.
 
 ## Что здесь лежит
@@ -18,7 +18,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 ## Как это устроено
 
 - **Сырые `.txt`** — прямой вывод авто-распознавания речи YouTube. Изобилуют ошибками
-  распознавания (искажённые имена скриптов, стилей, имён собственных), без структуры.
+  распознавания (искаженные имена скриптов, стилей, имен собственных), без структуры.
   Первая строка каждого файла — URL ролика на YouTube. Оставлены как есть (провенанс).
 - **`clean/NN-<slug>.md`** — та же расшифровка, но с исправленными ошибками распознавания
   (имена скриптов/стилей/цветов — строго по
@@ -43,7 +43,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 | 05 | Пропущенные теги | `[0]` | [05-missed-tags.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/05-missed-tags.md) |
 | 06 | Разметка Примечаний | `[0]` | [06-tagging-notes.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/06-tagging-notes.md) |
 | 07 | Пропуски в Примечаниях | `[0]` | [07-missed-tags-notes.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/07-missed-tags-notes.md) |
-| 08 | Словарь имён и названий | `[0]` | [08-transfer-names-geo.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/08-transfer-names-geo.md) |
+| 08 | Словарь имен и названий | `[0]` | [08-transfer-names-geo.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/08-transfer-names-geo.md) |
 | 09 | IndexList 001 | `[1]` | [09-indexlist-001.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/09-indexlist-001.md) |
 | 10 | IndexList 002–004 | `[1]` | [10-indexlist-002-004.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/10-indexlist-002-004.md) |
 | 11 | Сводный IndexList | `[1]` | [11-merge-indexlist.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/clean/11-merge-indexlist.md) |

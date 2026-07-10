@@ -31,13 +31,13 @@
 | `ramayana-map-leaflet.html` | Карта странствий Рамы (Leaflet) + газетир |
 | `media.html`, `audio.html` | Аудио- и видео-архив, аудиокнига 1986 г. |
 | `drafts.html` | Черновики Книг V–VI (для подписчиков) |
-| `reports.html` | Отчёты о сборе средств |
+| `reports.html` | Отчеты о сборе средств |
 
 ## Данные (`data/`)
 
 **Каталоги.** `editions.json` — каноническая библиографическая запись (ISBN, Wikidata/VIAF, рецензия); `translations.json` — витрина для `translations.html` (связана с `editions.json` общим `id`); `retellings.json` — пересказы.
 
-**Эпос.** `characters.json` — 20 героев с QID Викиданных и рёбрами связей; `kandas.json` — семь книг (число глав, краткое содержание); `comparison-episodes.json` — ключевые сцены с санскритом и каноническими ссылками.
+**Эпос.** `characters.json` — 20 героев с QID Викиданных и ребрами связей; `kandas.json` — семь книг (число глав, краткое содержание); `comparison-episodes.json` — ключевые сцены с санскритом и каноническими ссылками.
 
 **География.** `rama-route.json` — маршрут (точки, сегменты, область Дандаки); `gazetteer-extra.json` — места вне маршрута.
 

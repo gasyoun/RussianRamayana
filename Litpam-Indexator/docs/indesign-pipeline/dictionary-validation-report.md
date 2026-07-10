@@ -1,4 +1,4 @@
-# Отчёт валидатора словаря
+# Отчет валидатора словаря
 
 _Автосгенерировано_ `Litpam-Indexator/tools/validate_dictionary.py` _(H363). Перегенерировать:_ `python tools/validate_dictionary.py <xlsx> --report <файл>`_._
 
