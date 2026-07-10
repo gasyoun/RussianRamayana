@@ -67,14 +67,16 @@ if (rez.length == 0) {
     return;     
     }
 var pos, blackFound;
+var lastStoryIndex = story.characters.length - 1; // 10.07.2026 (H377): ограничитель
 for (var m = 0; m < rez.length; m++) { // m++
     blackFound = false;
     pos = rez[m].index;
     do {
         pos = pos +1;
-        if (story.characters[pos].fillColor == app.activeDocument.colors.item("Black")) { 
-            blackFound = true; 
-            break; 
+        if (pos > lastStoryIndex) break; // 10.07.2026 (H377): без ограничителя цикл выходил за конец материала, если после маркера нет чёрного знака
+        if (story.characters[pos].fillColor == app.activeDocument.colors.item("Black")) {
+            blackFound = true;
+            break;
             }
         story.characters[pos].fillColor = app.activeDocument.colors.item("SkipTheWord");
         }

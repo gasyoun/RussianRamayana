@@ -54,7 +54,7 @@ sel = app.selection[0];
 var paraStyles = []; 
 var paraStylesID = [];
 while (paraStyles.length > 0) paraStyles.pop();
-while (paraStylesID.length > 0) paraStyles.pop();
+while (paraStylesID.length > 0) paraStylesID.pop(); // 10.07.2026 (H377): было paraStyles.pop() — опустошался не тот массив, риск вечного цикла в живом targetengine
 var myParagraphStyles = app.activeDocument.allParagraphStyles;
 var myParagraphStyleName, obj;
 for (var i=0; i < myParagraphStyles.length ; i++) { // for

@@ -83,7 +83,7 @@ for (var i=0; i < myCharacterStyles.length ; i++) { // i++
 var paraStyles = []; 
 var paraStylesID = [];
 while (paraStyles.length > 0) paraStyles.pop();
-while (paraStylesID.length > 0) paraStyles.pop();
+while (paraStylesID.length > 0) paraStylesID.pop(); // 10.07.2026 (H377): было paraStyles.pop() — опустошался не тот массив, риск вечного цикла в живом targetengine
 var myParagraphStyles = app.activeDocument.allParagraphStyles;
 var myParagraphStyleName, obj;
 for (var i=0; i < myParagraphStyles.length ; i++) { // for
@@ -877,7 +877,7 @@ nQ = 0;
 if (usePanel3.value) { // usePanel3
     if (pS3s.text.match("\\?") != null) nQ++;
     if (pS3f.text.match("\\?") != null) nQ++;
-    if (nQ == 2) { // 3 окно
+    if (nQ == 0) { // 3 окно | 10.07.2026 (H377): было nQ == 2 — проверка перекрытия панелей 3-4 никогда не выполнялась (везде выше шаблон nQ == 0 = оба номера заданы)
         var p3s = Number(pS3s.text);
         var p3f = Number(pS3f.text);      
         nQ = 0;
