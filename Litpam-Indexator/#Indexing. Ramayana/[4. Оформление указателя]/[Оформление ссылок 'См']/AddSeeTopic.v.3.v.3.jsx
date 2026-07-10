@@ -92,6 +92,7 @@
 
 #targetengine "AddSeeAlso"
 #include "../../ForIndex.jsxinc"
+var debugLog = false; // 10.07.2026 (H377): отладочный $.writeln-вывод (14 шт.) выключен по умолчанию — включать только при отладке
 
 app.scriptPreferences.userInteractionLevel = UserInteractionLevels.interactWithAll; // см. http://adobeindesign.ru/2008/10/24/restore-ui/
 
@@ -511,7 +512,7 @@ for (var p = 0; p < paraLength; p++, pBar.hit()) { // p++
         usedLetters[rez[0].characters[0].contents.toLowerCase()] = rez[0].index; // запомнили, что есть слова, начинающиеся с этой буквы
         wordsLineTop = rez[0].contents.split(indLineSep)[0]; // если перед термином есть последовательность номеров страниц, то эти номера в wordsLineTop не попадут
         continueFound = true;      
-        $.writeln("1: wordsLineTop = " + wordsLineTop);
+        if (debugLog) $.writeln("1: wordsLineTop = " + wordsLineTop);
         level1name = wordsLineTop;
         continue;
         } // == 1
@@ -535,15 +536,15 @@ for (var p = 0; p < paraLength; p++, pBar.hit()) { // p++
                 level2name = "";
                 continue; //  noLevel
                 }
-            $.writeln("2: rez[0].contents = " +rez[0].contents);            
+            if (debugLog) $.writeln("2: rez[0].contents = " +rez[0].contents);            
           //  wordsLine = get_wordsLine(rez[0].contents.split(indLineSep)[0], wordsLineTop);    
             wordsLine = get_wordsLine(rez[0].contents.split(indLineSep)[0], level1name);             
            // $.writeln("2: wordsLineTop = " + wordsLineTop);    
-            $.writeln("2: level2name = " + rez[0].contents.split(indLineSep)[0]);
+            if (debugLog) $.writeln("2: level2name = " + rez[0].contents.split(indLineSep)[0]);
             level2name = rez[0].contents.split(indLineSep)[0];
           //  wordsLineTop = wordsLineTop + interLevelSep + rez[0].contents.split(indLineSep)[0];
             wordsLineTop = level1name + interLevelSep + level2name;            
-            $.writeln("2: > wordsLineTop = " + wordsLineTop);
+            if (debugLog) $.writeln("2: > wordsLineTop = " + wordsLineTop);
             rezData.push(wordsLine);       
             continue;
             }  ///== 1 (2ур)
@@ -567,16 +568,16 @@ for (var p = 0; p < paraLength; p++, pBar.hit()) { // p++
                     level2name = "";
                     continue; // noLevel
                     }
-            $.writeln("3: rez[0].contents = " +rez[0].contents);                      
+            if (debugLog) $.writeln("3: rez[0].contents = " +rez[0].contents);                      
               //  wordsLine = get_wordsLine(rez[0].contents.split(indLineSep)[0], wordsLineTop); 
                 wordsLine = get_wordsLine(rez[0].contents.split(indLineSep)[0], level1name + interLevelSep + level2name);             
             //$.writeln("3: wordsLineTop = " + wordsLineTop);    
-            $.writeln("3: level3name = " + rez[0].contents.split(indLineSep)[0]);    
+            if (debugLog) $.writeln("3: level3name = " + rez[0].contents.split(indLineSep)[0]);    
            // wordsLineTop = wordsLineTop + interLevelSep + rez[0].contents.split(indLineSep)[0];
             level3name = rez[0].contents.split(indLineSep)[0];
             if (level2name.length != 0) wordsLineTop = level1name + interLevelSep + level2name + interLevelSep + level3name; 
             else wordsLineTop = level1name + interLevelSep + level3name; 
-            $.writeln("3: > wordsLineTop = " + wordsLineTop);            
+            if (debugLog) $.writeln("3: > wordsLineTop = " + wordsLineTop);            
                 rezData.push(wordsLine);           
                 continue;
                 }  ///== 1 (3ур)            
@@ -598,9 +599,9 @@ for (var p = 0; p < paraLength; p++, pBar.hit()) { // p++
                 }
             if (rez.length == 1)  { ///== 1 (4ур)  
                 wordsLine = get_wordsLine(rez[0].contents.split(indLineSep)[0], wordsLineTop);  
-            $.writeln("4: rez[0].contents = " +rez[0].contents);                      
-            $.writeln("4: wordsLineTop = " + wordsLineTop);    
-            $.writeln("4: wordsLine = " + wordsLine);           
+            if (debugLog) $.writeln("4: rez[0].contents = " +rez[0].contents);                      
+            if (debugLog) $.writeln("4: wordsLineTop = " + wordsLineTop);    
+            if (debugLog) $.writeln("4: wordsLine = " + wordsLine);           
                 rezData.push(wordsLine);
                 continue;
                 }  ///== 1 (4ур)             
@@ -613,7 +614,7 @@ for (var p = 0; p < paraLength; p++, pBar.hit()) { // p++
     }  // p++
 pBar.close();
 rezData.sort();
-for (var s = 0; s < rezData.length; s++) { $.writeln(s + " | rezData[s] = " + rezData[s]); }
+for (var s = 0; s < rezData.length; s++) { if (debugLog) $.writeln(s + " | rezData[s] = " + rezData[s]); }
 // В массиве rezData число разделителей около слова-ссылки 'см.' зависит от выбранной радиокнопки. 
 // если активна радиокнопка "только ссылка", то разделители (переменная sepChar) до и после этого слова, 
 // Если выбрана радиокнопка "ссылка и термин одним стилем ссылки", то есть один разделитель слева от этого слова. 
@@ -644,7 +645,7 @@ for (z = 0; z < rez.length; z++, pBar.hit()) { // z++
     itemsTopLevelArr.push(wordsLine + itemSep + rez[z].index); 
     }  // z++
 pBar.close();
-for (var s = 0; s < itemsTopLevelArr.length; s++) { $.writeln(s + " | itemsTopLevelArr[s] = " + itemsTopLevelArr[s]); }
+for (var s = 0; s < itemsTopLevelArr.length; s++) { if (debugLog) $.writeln(s + " | itemsTopLevelArr[s] = " + itemsTopLevelArr[s]); }
 // к этому моменту в itemsTopLevelArr все первые слова терминов верхнего уровня и индексы их начала в материале
 pBar.reset("3/4 Работа с терминами, которые должны иметь см-ссылки", rezData.length); 
 for (var a = 0; a < rezData.length; a++, pBar.hit()) {  // a++
@@ -659,7 +660,7 @@ itemsTopLevelArr.sort (function (a,b) {
     bn = b.toLowerCase();   
     return an > bn; }
     );
-for (var s = 0; s < itemsTopLevelArr.length; s++) { $.writeln(s + " || itemsTopLevelArr[s] = " + itemsTopLevelArr[s]); }    
+for (var s = 0; s < itemsTopLevelArr.length; s++) { if (debugLog) $.writeln(s + " || itemsTopLevelArr[s] = " + itemsTopLevelArr[s]); }    
 rezultNum = 0;
 var placeIndex = -1;
 var prev_placeIndex;
@@ -680,7 +681,7 @@ for (var i = itemsTopLevelArr.length-1; i >= 0; i-- , pBar.hit()) {   // i--
     // Если такая буква есть, то строка помещается по месту сохранённого индекса:
     // к строке добавляется перевод строки, она оформляется абзацным стилем индекса первого уровня, ссылка  оформляется символьным стилем, удаляются разделители sepChar.
    var termLine = itemsTopLevelArr[i];
-   $.writeln(i + " > termLine = itemsTopLevelArr[i] = " + termLine);       
+   if (debugLog) $.writeln(i + " > termLine = itemsTopLevelArr[i] = " + termLine);       
    while (top1Index.length > 0) top1Index.pop();
    top1Index = termLine.split(itemSep);
    if (top1Index.length ==2) {
