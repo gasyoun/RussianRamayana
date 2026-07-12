@@ -319,7 +319,8 @@ def render_html_review(model, sarga, out_path):
                 f'<div class="rnd"><span class="ru">«{html.escape(r["ru"])}»</span>'
                 f'<span class="loc">{html.escape(r["locus"])}</span></div>'
                 for r in f["renders"])
-            gloss = (f'<div class="gloss">📖 Кочергина: {html.escape(f["gloss"])}</div>'
+            gloss = (f'<div class="gloss"><span class="gl-tag">словарь</span> '
+                     f'Кочергина: {html.escape(f["gloss"])}</div>'
                      if f["gloss"] else "")
             tierbadge = f'<span class="tier tier-{f["tier"] or "x"}">{f["tier"] or "·"}</span>'
             fn_html.append(
@@ -450,6 +451,7 @@ h1{font-size:23px;margin:.2em 0}.sub{color:var(--mut);font-size:13px}
 .tier-A{background:var(--a)}.tier-B{background:var(--b)}.tier-x{background:#aaa}
 .rnd{font-size:14px;margin:.1em 0}.rnd .ru{color:#1d1a16}.rnd .loc{color:var(--mut);font-size:12px;margin-left:.4em}
 .gloss{font-size:13px;color:#4b4436;margin-top:.2em}
+.gl-tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:#8a7f6a;border:1px solid #d8cfbe;border-radius:3px;padding:0 .3em;margin-right:.3em}
 .meta-note{font-size:12px;color:var(--mut);margin-top:.5em;font-style:italic}
 .synth{font-size:14px;color:#33302a;margin-top:.7em;padding:.5em .7em;background:#f0f3ee;border-left:3px solid var(--b);border-radius:0 6px 6px 0}
 .synth-tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#1f527a;font-weight:bold;margin-right:.5em}
