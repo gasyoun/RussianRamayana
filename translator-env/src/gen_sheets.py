@@ -369,10 +369,12 @@ def render_web_mock(model, sarga, out_path):
             fn_defs.append(
                 f'<li id="fn{counter}"><a class="bk" href="#ref{counter}">↑</a> '
                 f'<b>{html.escape(f["iast"])}</b> — {html.escape(_fn_text_plain(f))}</li>')
-        sup = "".join(
-            f'<sup><a id="ref{n}" href="#fn{n}" class="fnmark" '
-            f'title="{html.escape(f["iast"])}: {html.escape(_fn_text_plain(f))}">{n}</a></sup>'
-            for n, f in marks)
+        # несколько маркеров на шлоку разделяем запятой, чтобы «1,2» не читалось «12»
+        links = [
+            f'<a id="ref{n}" href="#fn{n}" class="fnmark" '
+            f'title="{html.escape(f["iast"])}: {html.escape(_fn_text_plain(f))}">{n}</a>'
+            for n, f in marks]
+        sup = f'<sup class="fnmarks">{",".join(links)}</sup>' if links else ""
         synth = (f'<div class="rvsynth"><i>машинная сводка:</i> '
                  f'{html.escape(v["machine_summary"])}</div>') if v.get("machine_summary") else ""
         blocks.append(
@@ -477,6 +479,7 @@ body{{font:17px/1.7 Georgia,serif;background:#fff;color:#181410;margin:0}}
 .hdr .m{{font-size:12px;color:#998}}
 .rv{{margin:.55em 0}}.rvn{{color:#b03;font-size:12px;margin-right:.5em;font-variant:small-caps}}
 .rvsa{{font-style:italic}}.rvru{{color:#333;font-size:15px;margin:.1em 0 .2em}}
+.fnmarks{{margin-left:2px}}
 .fnmark{{color:#7a1f1f;text-decoration:none;font-weight:bold;padding:0 1px}}
 .fnmark:hover{{background:#f6e9e9}}
 .rvsynth{{font-size:13px;color:#33302a;background:#f0f3ee;border-left:3px solid #1f527a;padding:.35em .6em;margin:.25em 0;border-radius:0 5px 5px 0}}
