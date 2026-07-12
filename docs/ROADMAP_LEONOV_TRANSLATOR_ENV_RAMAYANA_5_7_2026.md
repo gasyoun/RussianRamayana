@@ -33,7 +33,7 @@ _Created: 12-07-2026 · Last updated: 12-07-2026_
 
 ## 4. Волны
 
-### Wave 0 — Пилот на книге 5 (сарги 1–2) — [H764](https://github.com/gasyoun/Uprava/blob/main/handoffs/H764-Opus_RussianRamayana_translator-env-pilot-sundara_12.07.26.md)
+### Wave 0 — Пилот на книге 5 (сарги 1–2) — [H764](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H764-Opus_RussianRamayana_translator-env-pilot-sundara_12.07.26.md)
 
 Книга 5 выбрана для пилота не потому, что нужна Леонову (перевод завершен), а потому, что только там есть валидационная база — его собственный ручной аппарат.
 
@@ -46,7 +46,7 @@ _Created: 12-07-2026 · Last updated: 12-07-2026_
 
 Выход: точность отбора известна, форма выбрана. Стоп-условие пилота — в H764.
 
-### Wave 1 — Санскритский текст книг 6–7 — [H765](https://github.com/gasyoun/Uprava/blob/main/handoffs/H765-Sonnet_SamudraManthanam_ramayana-yuddha-uttara-sanskrit-ingest_12.07.26.md)
+### Wave 1 — Санскритский текст книг 6–7 — [H765](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H765-Sonnet_SamudraManthanam_ramayana-yuddha-uttara-sanskrit-ingest_12.07.26.md)
 
 1. Книга 6: verse text Gita Supersite уже скачан в CommentaryStrategies (`data/valmiki_shlokas`, права CC BY, атрибуция обязательна) — конвертировать в canonical JSONL.
 2. Книга 7: GRETIL sa_rAmAyaNa TEI → существующий `gretil_tei_to_canonical.py`; при наличии книги 7 на valmiki.iitk.ac.in — предпочесть его (та же платформа, что книга 6).

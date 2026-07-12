@@ -2,7 +2,7 @@
 
 _Created: 10-07-2026 · Last updated: 10-07-2026_
 
-**Disposition of handoff [H371](https://github.com/gasyoun/Uprava/blob/main/handoffs/H371-Sonnet_RussianRamayana_revival_audit_roadmap_08.07.26.md)** — "RussianRamayana revival: audit + no-interview roadmap."
+**Disposition of handoff [H371](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H371-Sonnet_RussianRamayana_revival_audit_roadmap_08.07.26.md)** — "RussianRamayana revival: audit + no-interview roadmap."
 Executor Sonnet 5 (`claude-sonnet-5`), 10-07-2026.
 
 ## Verdict: no revival needed — the "dormant since 26-06" premise was already stale at mint time

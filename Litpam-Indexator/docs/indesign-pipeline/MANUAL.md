@@ -945,7 +945,7 @@ include); `FindTagsLight.jsx` — ручной вариант FindTags; `GetPred
 ## Замеченные дефекты
 
 Guardrail H355/H363 («код не трогать») **снят решением М.Г. 08-07-2026**; фиксы кода
-запланированы в [H377](https://github.com/gasyoun/Uprava/blob/main/handoffs/H377-Fable_RussianRamayana_litpam_manual_overhaul_copilot_08.07.26.md)
+запланированы в [H377](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H377-Fable_RussianRamayana_litpam_manual_overhaul_copilot_08.07.26.md)
 (каждый — отдельным коммитом, с прогоном [регрессионного дрилла](#регрессионный-дрилл-golden-fish)
 где применимо). Наблюдения из выверки по видео:
 

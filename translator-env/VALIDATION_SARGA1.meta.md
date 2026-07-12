@@ -17,7 +17,7 @@ _Created: 12-07-2026 · Last updated: 12-07-2026_
 
 ## Провенанс
 
-- Хэндофф: [H764](https://github.com/gasyoun/Uprava/blob/main/handoffs/H764-Opus_RussianRamayana_translator-env-pilot-sundara_12.07.26.md).
+- Хэндофф: [H764](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H764-Opus_RussianRamayana_translator-env-pilot-sundara_12.07.26.md).
 - Модель: Opus 4.8 (`claude-opus-4-8`).
 - Числа воспроизводятся: `python difficulty.py --sargas 1,2 && python validate.py`
   (артефакт [`data/validation_sarga1.json`](https://github.com/gasyoun/RussianRamayana/blob/main/translator-env/data/validation_sarga1.json)).
