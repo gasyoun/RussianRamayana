@@ -1,5 +1,7 @@
 # Roadmap: Русская Рамаяна
 
+_Created: 14-05-2026 · Last updated: 10-07-2026_
+
 _Revival audit 10-07-2026 ([H371](https://github.com/gasyoun/Uprava/blob/main/handoffs/H371-Sonnet_RussianRamayana_revival_audit_roadmap_08.07.26.md)): this file already **is** the audit-derived roadmap — waves in "Следующие шаги", decisions in "Следующие вопросы", risks below. Full disposition: [`docs/H371_REVIVAL_AUDIT_2026-07-10.md`](docs/H371_REVIVAL_AUDIT_2026-07-10.md)._
 
 ## Миссия проекта
@@ -410,3 +412,5 @@ Q15. Для подписчиков закрытые черновики выда�
 - Сбор через несколько платформ усложняет публичный счётчик и отчёты.
 - Надо аккуратно различать переводы, подстрочники, пересказы и адаптации, иначе сайт потеряет доверие.
 - Для широкой публики нужно объяснять ценность академического перевода без избыточной специальной терминологии.
+
+_Dr. Mārcis Gasūns_
