@@ -195,7 +195,6 @@ def score_token(slp1, entry, note_words):
     # ярус для группировки в листах
     ev["tier"] = "A" if diverge else ("B" if (midrare_glossed and score >= CAND_THRESHOLD) else "")
 
-    already_noted = slp1 in note_words or C.slp1_to_iast(slp1) in " ".join(note_words) if note_words else False
     return score, signals, ev, classic_renders
 
 

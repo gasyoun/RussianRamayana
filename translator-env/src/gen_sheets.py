@@ -110,8 +110,7 @@ def build_kochergina_index(needed_slp1):
     if not KOCHERGINA.exists():
         print(f"[gloss] Кочергина не найдена: {KOCHERGINA}")
         return idx
-    want = set(needed_slp1)
-    # хотим ловить и по усечённой основе — индексируем всё, потом матчим с fallback
+    # индексируем все леммы словаря; матч с усечением основы — в lookup_gloss
     try:
         with open(KOCHERGINA, encoding="utf-8") as fh:
             for ln in fh:
