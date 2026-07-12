@@ -397,13 +397,31 @@ def render_markdown(model, sarga, out_path):
     fn_block = []
     n = 0
     for v in sn["verses"]:
-        marks = ""
+        iast = v["iast"]
+        # привязываем маркер сноски к СВОЕМУ слову в строке (как в книге), нумеруем
+        # слева направо; слово, которое не удалось найти (сандхи), уходит в конец.
+        placed = []   # (insert_at, footnote)
+        tail = []
         for f in v["footnotes"]:
+            pos = iast.find(f["iast"])
+            if pos >= 0:
+                placed.append((pos + len(f["iast"]), f))
+            else:
+                tail.append(f)
+        placed.sort(key=lambda x: x[0])
+        ordered = [f for _, f in placed] + tail
+        num = {}
+        for f in ordered:
             n += 1
-            marks += f"[^{n}]"
+            num[id(f)] = n
             fn_block.append(f"[^{n}]: **{f['iast']}** ({f['deva']}) — "
-                            f"{_fn_text_plain(f).replace(chr(10),' ')}")
-        lines.append(f"**{sarga}.{v['verse']}** {v['iast']}{marks}  ")
+                            f"{_fn_text_plain(f).replace(chr(10), ' ')}")
+        # вставляем маркеры справа налево, чтобы позиции не сдвигались
+        marked = iast
+        for at, f in sorted(placed, key=lambda x: -x[0]):
+            marked = marked[:at] + f"[^{num[id(f)]}]" + marked[at:]
+        tail_marks = "".join(f"[^{num[id(f)]}]" for f in tail)
+        lines.append(f"**{sarga}.{v['verse']}** {marked}{tail_marks}  ")
         lines.append(f"{v['ru']}")
         if v.get("machine_summary"):
             lines.append("")
