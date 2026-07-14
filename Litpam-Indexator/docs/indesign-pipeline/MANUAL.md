@@ -107,7 +107,7 @@ Tags/ram_tags.txt              xls/Указатель_к_Рамаяне_*.xlsx
 удобочитаемости, а не то, что реально ставит код: `AddMarker` берёт буквы из `markLetters`
 по порядку. Если понадобятся мнемонические буквы, это правка `markLetters`/`AddMarker`,
 т.е. изменение кодового контракта (вне текущего объёма — см. `@DECIDE` в
-[`.ai_state.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/.ai_state.md)).
+[`.ai_state.md`](https://github.com/gasyoun/RussianRamayana/blob/main/.ai_state.md)).
 
 ## Симптом → Причина → Лечение
 
