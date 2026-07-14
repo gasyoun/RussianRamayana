@@ -27,7 +27,7 @@ _Created: 08-07-2026 · Last updated: 11-07-2026 (шаблон v2: добавл�
 
 ## Провенанс
 
-- **Создан:** 08-07-2026 в рамках [H355](https://github.com/gasyoun/Uprava/blob/main/handoffs/H355-Opus_RussianRamayana_indesign-pipeline-docs-uplift_08.07.26.md)
+- **Создан:** 08-07-2026 в рамках [H355](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H355-Opus_RussianRamayana_indesign-pipeline-docs-uplift_08.07.26.md)
   (Opus 4.8 `claude-opus-4-8`) — синтез из 18 ASR-расшифровок скринкастов Михаила
   Иванюшина + сверка с кодовым контрактом; таймкоды добыты заново из тайминговых субтитров.
 - **Закалка внедрена:** [H363](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H363-Opus_RussianRamayana_litpam-indexator-manual-and-process-uplift_08.07.26.md)
@@ -35,7 +35,7 @@ _Created: 08-07-2026 · Last updated: 11-07-2026 (шаблон v2: добавл�
   параллельный прогон; handoff done + заархивирован) — реализовал весь бэклог ниже + добавил
   [`tools/validate_dictionary.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/validate_dictionary.py)
   и регрессионный дрилл `regression_expected.md`.
-- **Пост-закалка:** [H377](https://github.com/gasyoun/Uprava/blob/main/handoffs/H377-Fable_RussianRamayana_litpam_manual_overhaul_copilot_08.07.26.md)
+- **Пост-закалка:** [H377](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H377-Fable_RussianRamayana_litpam_manual_overhaul_copilot_08.07.26.md)
   (Fable 5 `claude-fable-5`) — влил в MANUAL находки построчного аудита кода (раздел «Замеченные дефекты»).
 
 ## Бэклог улучшений (ранжированный)

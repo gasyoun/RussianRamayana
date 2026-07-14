@@ -107,7 +107,7 @@ Tags/ram_tags.txt              xls/Указатель_к_Рамаяне_*.xlsx
 удобочитаемости, а не то, что реально ставит код: `AddMarker` берёт буквы из `markLetters`
 по порядку. Если понадобятся мнемонические буквы, это правка `markLetters`/`AddMarker`,
 т.е. изменение кодового контракта (вне текущего объёма — см. `@DECIDE` в
-[`.ai_state.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/.ai_state.md)).
+[`.ai_state.md`](https://github.com/gasyoun/RussianRamayana/blob/main/.ai_state.md)).
 
 ## Симптом → Причина → Лечение
 
@@ -945,7 +945,7 @@ include); `FindTagsLight.jsx` — ручной вариант FindTags; `GetPred
 ## Замеченные дефекты
 
 Guardrail H355/H363 («код не трогать») **снят решением М.Г. 08-07-2026**; фиксы кода
-запланированы в [H377](https://github.com/gasyoun/Uprava/blob/main/handoffs/H377-Fable_RussianRamayana_litpam_manual_overhaul_copilot_08.07.26.md)
+запланированы в [H377](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H377-Fable_RussianRamayana_litpam_manual_overhaul_copilot_08.07.26.md)
 (каждый — отдельным коммитом, с прогоном [регрессионного дрилла](#регрессионный-дрилл-golden-fish)
 где применимо). Наблюдения из выверки по видео:
 
