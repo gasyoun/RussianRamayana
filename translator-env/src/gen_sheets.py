@@ -29,6 +29,12 @@ import re
 from pathlib import Path
 
 import common as C
+import context as CTX
+
+# Работа корпуса, из которой берётся сам пилотный текст (Сундараканда, кн. V) —
+# нужна как `exclude` для конкорданса (не показывать ту же шлоку) и как источник
+# соседних шлок.
+PILOT_WORK = "05_ramayana-sundarakanda"
 
 DATA = Path(__file__).resolve().parents[1] / "data"
 SHEETS = Path(__file__).resolve().parents[1] / "sheets"
@@ -222,7 +228,44 @@ def load_machine_summaries(sargas):
     return out
 
 
-def build_model(cand_path, sargas, max_fn):
+def _locus_rank(lc):
+    """Ключ сортировки loci: меньше = лучше. Предпочитаем одиночную строфу
+    (не диапазон) и работы Рамаяны (тот же текст, есть русская параллель)."""
+    work, _, passage = lc.partition(":")
+    return (1 if "-" in passage else 0, 0 if "_ramayana-" in work else 1)
+
+
+def _best_source(ctx, loci, slp1):
+    """Лучший резолвящийся locus для передачи (см. _locus_rank)."""
+    for lc in sorted(loci, key=_locus_rank):
+        src = ctx.resolve_locus(lc, slp1_form=slp1)
+        if src:
+            return src
+    return None
+
+
+def build_neighbors(cand, sargas):
+    """{(sarga, verse) -> {'prev':{iast,ru,verse}|None, 'next':...}} — локальный
+    нарратив из уже упорядоченного списка шлок корпуса (контекст (3))."""
+    by_sarga = {}
+    for v in cand["verses"]:
+        if v["sarga"] not in sargas:
+            continue
+        by_sarga.setdefault(v["sarga"], []).append(v)
+    nb = {}
+    for sarga, vs in by_sarga.items():
+        for i, v in enumerate(vs):
+            def cap(x):
+                return None if x is None else {
+                    "verse": x["verse"], "iast": x.get("iast", ""), "ru": x.get("ru", "")}
+            nb[(sarga, v["verse"])] = {
+                "prev": cap(vs[i - 1]) if i > 0 else None,
+                "next": cap(vs[i + 1]) if i + 1 < len(vs) else None,
+            }
+    return nb
+
+
+def build_model(cand_path, sargas, max_fn, ctx=None, ctx_kinds=()):
     cand = json.load(open(cand_path, encoding="utf-8"))
     # нужные леммы для словаря
     needed = set()
@@ -234,6 +277,9 @@ def build_model(cand_path, sargas, max_fn):
           f"нужно {len(needed)} форм")
     sundara = load_sundara_add_lemmas()
     machine = load_machine_summaries(sargas)
+    neighbors = build_neighbors(cand, sargas) if "neighbors" in ctx_kinds else {}
+    want_conc = ctx is not None and "concord" in ctx_kinds
+    want_pass = ctx is not None and "passage" in ctx_kinds
 
     model = {"_meta": {"handoff": "H764", "wave": 0, "model": MODEL,
                        "sargas": sargas, "max_fn_per_verse": max_fn,
@@ -258,14 +304,26 @@ def build_model(cand_path, sargas, max_fn):
             already = bool(c.get("already_noted")) or noted_add
             renders = []
             for r in c.get("classic_renders", []):
-                renders.append({"ru": r["ru"], "locus": locus_str(r)})
+                rd = {"ru": r["ru"], "locus": locus_str(r)}
+                # контекст (2): пассаж-источник — реальная строка за передачей.
+                # Предпочитаем одиночную строфу Рамаяны (выравнена, есть русская
+                # параллель) диапазонным loci Махабхараты/кавьи.
+                if want_pass:
+                    src = _best_source(ctx, r.get("loci") or [], c["slp1"])
+                    if src:
+                        rd["source"] = src
+                renders.append(rd)
             gloss = lookup_gloss(koch, c["slp1"])
+            # контекст (1): конкорданс — где ещё слово встречается в корпусе Рамаяны
+            concord = (ctx.concordance(c["slp1"], exclude=(PILOT_WORK, v["passage"]))
+                       if want_conc else [])
             fn = {
                 "slp1": c["slp1"], "iast": c["iast"],
                 "deva": C.slp1_to_deva(c["slp1"]),
                 "tier": c.get("tier", ""), "score": c["score"],
                 "n_total": c.get("n_total"),
                 "renders": renders, "gloss": gloss,
+                "concord": concord,
                 "already_noted": already,
             }
             fns.append(fn)
@@ -289,7 +347,12 @@ def build_model(cand_path, sargas, max_fn):
             "machine_summary": machine.get((sarga, v["verse"])),
             "overflow_count": len(overflow),
             "already_noted_count": len(suppressed),
+            "neighbors": neighbors.get((sarga, v["verse"])),
         })
+    stats["context_kinds"] = list(ctx_kinds)
+    stats["concord_footnotes"] = sum(
+        1 for s in model["sargas"].values() for vv in s["verses"]
+        for f in vv["footnotes"] if f.get("concord"))
     model["_meta"]["stats"] = stats
     return model
 
@@ -307,21 +370,72 @@ def _fn_text_plain(fn):
     return body
 
 
+def _ctx_source_html(src):
+    """Контекст (2): пассаж-источник под передачей классика."""
+    if not src:
+        return ""
+    ru = (f'<span class="src-ru">— {html.escape(src["ru"])}</span>'
+          if src.get("ru") else "")
+    return (f'<div class="src"><span class="cx-tag cx-pass">пассаж-источник</span>'
+            f'<span class="src-loc">{html.escape(src["label"])} {html.escape(src["passage"])}:</span> '
+            f'<span class="src-sa">{src["iast_html"]}</span> {ru}</div>')
+
+
+def _ctx_concord_html(concord):
+    """Контекст (1): конкорданс — где ещё слово встречается в корпусе Рамаяны."""
+    if not concord:
+        return ""
+    lines = []
+    for o in concord:
+        ru = f'<span class="conc-ru">— {html.escape(o["ru"])}</span>' if o.get("ru") else ""
+        lines.append(
+            f'<div class="conc-line"><span class="conc-loc">{html.escape(o["label"])} '
+            f'{html.escape(o["passage"])}</span> <span class="conc-sa">{o["iast_html"]}</span> {ru}</div>')
+    return (f'<div class="concord"><div class="cx-head"><span class="cx-tag cx-conc">конкорданс</span> '
+            f'где ещё встречается в корпусе Рамаяны (искомое слово выделено):</div>'
+            f'{"".join(lines)}</div>')
+
+
+def _ctx_neighbors_html(nb, sarga):
+    """Контекст (3): соседние шлоки (локальный нарратив)."""
+    if not nb:
+        return ""
+    def line(x, tag):
+        if not x:
+            return ""
+        ru = f'<span class="nb-ru">— {html.escape(x["ru"])}</span>' if x.get("ru") else ""
+        return (f'<div class="nb-line"><span class="nb-n">{tag} V.{sarga}.{x["verse"]}</span> '
+                f'<span class="nb-sa">{html.escape(x["iast"])}</span> {ru}</div>')
+    inner = line(nb.get("prev"), "◂") + line(nb.get("next"), "▸")
+    if not inner:
+        return ""
+    return (f'<div class="neigh"><span class="cx-tag cx-neigh">соседние шлоки</span>{inner}</div>')
+
+
 def render_html_review(model, sarga, out_path):
-    """Автономный офлайн-лист (паттерн review-sheet): шлока + карточки-сноски."""
+    """Автономный офлайн-лист (паттерн review-sheet): шлока + карточки-сноски.
+
+    Форма А (выбор Леонова, issue #35). Каждая сноска несёт до трёх видов
+    контекста (рулинг МГ 14-07-2026 — все три, Леонов выберет): конкорданс,
+    пассаж-источник, соседние шлоки. Именно контекста ему не хватало."""
     sn = model["sargas"][str(sarga)]
     st = model["_meta"]["stats"]
+    kinds = set(st.get("context_kinds", []))
     rows = []
     for v in sn["verses"]:
         fn_html = []
         for i, f in enumerate(v["footnotes"], 1):
-            renders = "".join(
-                f'<div class="rnd"><span class="ru">«{html.escape(r["ru"])}»</span>'
-                f'<span class="loc">{html.escape(r["locus"])}</span></div>'
-                for r in f["renders"])
+            rnd_parts = []
+            for r in f["renders"]:
+                src = _ctx_source_html(r.get("source")) if "passage" in kinds else ""
+                rnd_parts.append(
+                    f'<div class="rnd"><span class="ru">«{html.escape(r["ru"])}»</span>'
+                    f'<span class="loc">{html.escape(r["locus"])}</span>{src}</div>')
+            renders = "".join(rnd_parts)
             gloss = (f'<div class="gloss"><span class="gl-tag">словарь</span> '
                      f'Кочергина: {html.escape(f["gloss"])}</div>'
                      if f["gloss"] else "")
+            concord = _ctx_concord_html(f.get("concord")) if "concord" in kinds else ""
             tierbadge = f'<span class="tier tier-{f["tier"] or "x"}">{f["tier"] or "·"}</span>'
             fn_html.append(
                 f'<div class="fn"><div class="fnhead">{tierbadge}'
@@ -329,7 +443,7 @@ def render_html_review(model, sarga, out_path):
                 f'<span class="iast">{html.escape(f["iast"])}</span> '
                 f'<span class="score" title="балл трудности / корпусная частота">'
                 f'{f["score"]:.1f} · n={f["n_total"]}</span></div>'
-                f'{renders}{gloss}</div>')
+                f'{renders}{gloss}{concord}</div>')
         extra = ""
         if v["overflow_count"] or v["already_noted_count"]:
             extra = (f'<div class="meta-note">ещё {v["overflow_count"]} ниже порога вывода · '
@@ -338,19 +452,30 @@ def render_html_review(model, sarga, out_path):
         if v.get("machine_summary"):
             synth = (f'<div class="synth"><span class="synth-tag">машинная сводка</span> '
                      f'{html.escape(v["machine_summary"])}</div>')
+        neigh = _ctx_neighbors_html(v.get("neighbors"), sarga) if "neighbors" in kinds else ""
         rows.append(
             f'<section class="verse"><div class="vnum">V.{sarga}.{v["verse"]}</div>'
             f'<div class="sa deva">{html.escape(C.slp1_to_deva(v["slp1"]))}</div>'
             f'<div class="sa iast">{html.escape(v["iast"])}</div>'
             f'<div class="ru-podstr">{html.escape(v["ru"])}</div>'
+            f'{neigh}'
             f'<div class="fns">{"".join(fn_html) or "<i>трудных слов не отобрано</i>"}</div>'
             f'{synth}{extra}</section>')
+    ctx_legend = ""
+    if kinds:
+        names = {"concord": "конкорданс", "passage": "пассаж-источник",
+                 "neighbors": "соседние шлоки"}
+        on = ", ".join(names[k] for k in ("concord", "passage", "neighbors") if k in kinds)
+        ctx_legend = (f'<div class="legend cx-legend">Контекст (отзыв Леонова, issue #35): '
+                      f'<b>{on}</b>. Скажите, какой из них снимает поход в «Пахтание» — '
+                      f'остальные уберём.</div>')
     doc = _HTML_TMPL.format(
         title=f"Сундараканда · сарга {sarga} · лист сносок",
         sarga=sarga, model=html.escape(MODEL),
         nverses=len(sn["verses"]), nfn=sum(len(v["footnotes"]) for v in sn["verses"]),
         tierA=st["tierA"], tierB=st["tierB"],
-        body="\n".join(rows), css=_CSS_REVIEW, mode="Лист-обозрение (офлайн)")
+        body="\n".join(rows), css=_CSS_REVIEW, mode="Лист-обозрение (офлайн)",
+        ctx_legend=ctx_legend)
     out_path.write_text(doc, encoding="utf-8")
 
 
@@ -432,9 +557,19 @@ def render_markdown(model, sarga, out_path):
     out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def run(sargas, max_fn):
+def run(sargas, max_fn, ctx_kinds=("concord", "passage", "neighbors")):
     os.makedirs(SHEETS, exist_ok=True)
-    model = build_model(DATA / "candidates.json", sargas, max_fn)
+    cand_path = DATA / "candidates.json"
+    ctx = None
+    if ctx_kinds and ("concord" in ctx_kinds or "passage" in ctx_kinds):
+        cand = json.load(open(cand_path, encoding="utf-8"))
+        needed = {c["slp1"] for v in cand["verses"] for c in v["candidates"]}
+        print(f"[context] строю корпусный индекс для {len(needed)} форм "
+              f"(конкорданс + резолв locus'ов)…")
+        ctx = CTX.CorpusContext(needed)
+        print(f"[context] проиндексировано форм с вхождениями: {len(ctx.conc)}; "
+              f"работ в by_passage: {len(ctx.by_passage)}")
+    model = build_model(cand_path, sargas, max_fn, ctx=ctx, ctx_kinds=ctx_kinds)
     (DATA / "sheets_model.json").write_text(
         json.dumps(model, ensure_ascii=False, indent=1), encoding="utf-8")
     st = model["_meta"]["stats"]
@@ -475,6 +610,25 @@ h1{font-size:23px;margin:.2em 0}.sub{color:var(--mut);font-size:13px}
 .meta-note{font-size:12px;color:var(--mut);margin-top:.5em;font-style:italic}
 .synth{font-size:14px;color:#33302a;margin-top:.7em;padding:.5em .7em;background:#f0f3ee;border-left:3px solid var(--b);border-radius:0 6px 6px 0}
 .synth-tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#1f527a;font-weight:bold;margin-right:.5em}
+/* --- контекст (отзыв Леонова, issue #35): три вида, цветокодированы --- */
+.cx-legend{margin-top:8px;padding:6px 8px;background:#f4f1ea;border-radius:6px;color:#5a5343}
+.cx-tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:#fff;border-radius:3px;padding:0 .35em;margin-right:.4em;vertical-align:.08em}
+.cx-conc{background:#2e6b4f}
+.cx-pass{background:#7a4a1f}
+.cx-neigh{background:#4a3f7a}
+.src{font-size:12.5px;color:#5c5344;margin:.15em 0 .1em .8em;padding-left:.5em;border-left:2px solid #e2d8c4}
+.src-loc{color:#7a4a1f;font-weight:bold}.src-sa{font-style:italic;color:#3a352c}.src-sa b{background:#f3e6cf;font-style:normal}
+.src-ru{color:#4b4436}
+.concord{margin:.35em 0 .1em;padding:.3em .5em;background:#f1f6f2;border-left:3px solid #2e6b4f;border-radius:0 5px 5px 0}
+.cx-head{font-size:12px;color:#3f6b54;margin-bottom:.15em}
+.conc-line{font-size:12.5px;margin:.12em 0;line-height:1.45}
+.conc-loc{color:#2e6b4f;font-weight:bold;font-size:11.5px;white-space:nowrap}
+.conc-sa{font-style:italic;color:#33302a}.conc-sa b{background:#cfe8d8;font-style:normal;padding:0 1px;border-radius:2px}
+.conc-ru{color:#4b4436}
+.neigh{font-size:12.5px;margin:.2em 0 .5em;padding:.3em .5em;background:#f2f1f7;border-left:3px solid #4a3f7a;border-radius:0 5px 5px 0}
+.nb-line{margin:.1em 0;line-height:1.45}
+.nb-n{color:#4a3f7a;font-weight:bold;font-size:11.5px;margin-right:.3em}
+.nb-sa{font-style:italic;color:#3a352c}.nb-ru{color:#54503f}
 """
 
 _HTML_TMPL = """<!doctype html><html lang="ru"><head><meta charset="utf-8">
@@ -484,7 +638,7 @@ _HTML_TMPL = """<!doctype html><html lang="ru"><head><meta charset="utf-8">
 <div class="sub">{mode} · {nverses} шлок · {nfn} сносок (ярус A={tierA}, B={tierB}) · {model}</div>
 <div class="legend">Ярус <b style="color:#7a1f1f">A</b> — классики передают слово по-разному (показаны варианты).
 Ярус <b style="color:#1f527a">B</b> — нечастотное слово с аттестованной передачей (чтобы не искать в словаре).
-Приватный лист — не публиковать.</div></header>
+Приватный лист — не публиковать.</div>{ctx_legend}</header>
 {body}
 </div></body></html>"""
 
@@ -515,6 +669,18 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--sargas", default="1,2")
     ap.add_argument("--max-fn", type=int, default=8, help="макс. свежих сносок на шлоку")
+    ap.add_argument("--context", default="all",
+                    help="какие контекст-слои вшить: all | none | список из "
+                         "concord,passage,neighbors (через запятую). "
+                         "'all' = все три (сравнительный лист для выбора Леонова).")
     a = ap.parse_args()
     sargas = [int(x) for x in a.sargas.split(",") if x.strip()]
-    run(sargas, a.max_fn)
+    if a.context.strip().lower() == "all":
+        ctx_kinds = ("concord", "passage", "neighbors")
+    elif a.context.strip().lower() in ("none", ""):
+        ctx_kinds = ()
+    else:
+        allowed = {"concord", "passage", "neighbors"}
+        ctx_kinds = tuple(k for k in (x.strip() for x in a.context.split(","))
+                          if k in allowed)
+    run(sargas, a.max_fn, ctx_kinds)
