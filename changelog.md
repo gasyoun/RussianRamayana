@@ -2,6 +2,27 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-07-27
+
+### Импорт донатов Boosty/Patreon → summary.json (H1515)
+
+Роадмап-пункт «Настройка автоматического импорта донатов из Boosty и Patreon в
+`summary.json`» (roadmap.md:184-198 + architecture.md §Учёт пожертвований).
+
+- **`scripts/import_donations.py`** — нормализует выгрузку Boosty/Patreon/generic
+  CSV в приватный реестр (поля: date/platform/amount/currency/amount_rub/fee/
+  net_amount_rub/donor_name/public_name/anonymous/reward_level/comment/source_id),
+  сливает по `source_id` (повторный запуск идемпотентен), публикует в
+  `data/fundraising/summary.json` **только агрегаты**
+  (`onetime.collected_rub/donor_count`, `monthly.pledged_rub/supporter_count`,
+  `updated_at`) — бакет one-time/subscription берётся из уже существующего
+  `data/payment-methods.json`. Имена доноров в публичный файл никогда не попадают.
+- Реального экспорта Boosty/Patreon в репозитории ещё нет — раскладки колонок
+  best-effort, проверены на синтетических фикстурах (`tests/fixtures/`); свериться
+  с реальной выгрузкой при первом реальном импорте.
+- Приватный реестр (`donations_private.csv`, уже в `.gitignore`) в репозиторий не
+  попадает.
+
 ## 2026-07-14
 
 ### Среда переводчика — Wave 3: контекст сноски (H943, ответ на отзыв Леонова)

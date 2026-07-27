@@ -44,3 +44,8 @@ _private/
 
 # secrets
 .env
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+.pytest_cache/
