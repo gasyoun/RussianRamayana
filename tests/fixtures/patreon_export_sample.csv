@@ -1,0 +1,3 @@
+Patron,Amount,Fee,Currency,Charge Date,Reward Title,Incognito,Message,Charge Id
+John Doe,10,0.5,USD,2026-06-05,Риши (Мудрец),No,Great work!,patreon-tx-001
+Jane Roe,20,1,USD,2026-06-12,Кшатрий (Воин духа),Yes,,patreon-tx-002

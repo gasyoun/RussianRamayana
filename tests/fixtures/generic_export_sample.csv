@@ -1,0 +1,2 @@
+date,platform,amount,currency,amount_rub,fee,net_amount_rub,donor_name,public_name,anonymous,reward_level,comment,source_id
+2026-06-02,sber,3000,RUB,3000,0,3000,Пётр Иванов,Пётр Иванов,нет,,Перевод по номеру телефона,sber-2026-06-02-01
