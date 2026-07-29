@@ -47,9 +47,9 @@
 
 Портал не хранит тексты, но всё цитируемое обязано иметь канонический адрес.
 
-- [ ] [data/comparison-episodes.json](../data/comparison-episodes.json): каждому фрагменту — ключ `canonical_ref` вида `R.5.1.1–8` (кāṇḍa.sarga.śloka, южная редакция) + `source_url` на конкретный якорь параллельного корпуса samskrtam.ru.
-- [ ] [data/rama-route.json](../data/rama-route.json): поле `source` у каждой точки — чья идентификация локализации (издание/исследование); без атрибуции DH-карта не цитируема.
-- [ ] [data/timeline.json](../data/timeline.json): поле `source` у событий; стабильные `id`.
+- [x] [data/comparison-episodes.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/comparison-episodes.json): каждому фрагменту — ключ `canonical_ref` вида `R.5.1.1–8` (кāṇḍa.sarga.śloka, южная редакция) + `source_url` на конкретный якорь параллельного корпуса samskrtam.ru. — 8/8 эпизодов несут `canonical_ref` (verified 29-07-2026, H1880).
+- [x] [data/rama-route.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/rama-route.json): поле `source` у каждой точки — чья идентификация локализации (издание/исследование); без атрибуции DH-карта не цитируема. — 11/11 точек несут `source` (verified 29-07-2026, H1880).
+- [x] [data/timeline.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/timeline.json): поле `source` у событий; стабильные `id`. — 6/6 событий несут оба поля (verified 29-07-2026, H1880).
 - [ ] Каталог переводов: поле `recension` (южная/северная), уже предусмотрено в roadmap.md, но в JSON отсутствует.
 
 ## Фаза 5 — Непрерывность (постоянно)
