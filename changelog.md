@@ -2,6 +2,19 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-08-01
+
+### DH_ROADMAP Фаза 0 закрыта (H2061) — stale-tick + audio URL switch
+
+Пункт drain Tier-2: [`docs/DH_ROADMAP.md`](docs/DH_ROADMAP.md) Фаза 0.
+
+- Truth-pass: `.ai_state.md`, `_meta/` gitignore-disposition, `web-src/cover-og.png` — уже
+  сделаны 2026-06-12; чекбоксы в DH_ROADMAP были stale и отмечены.
+- **`resolveAudioUrl(track)`** в [`js/utils.js`](js/utils.js): единая точка замены хоста
+  аудио (`ia_url` → `url`, https-only). Подключено в `audio.html`, `index.html`,
+  `media.html` вместо прямого `track.url`. Когда Фаза 1 заполнит `ia_url` (archive.org),
+  плееры переключатся без правок страниц. Сейчас `url` по-прежнему raw.github.
+
 ## 2026-07-27
 
 ### Импорт донатов Boosty/Patreon → summary.json (H1515)
