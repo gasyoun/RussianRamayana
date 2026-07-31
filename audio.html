@@ -269,8 +269,9 @@ async function loadAudio() {
     const kandaPart = titleParts[1] ? esc(titleParts[1]) : '';
 
     let playerHTML;
-    if (track.status === 'available' && track.url && safeUrl(track.url)) {
-      playerHTML = '<div class="track-row"><audio controls preload="metadata" src="' + safeUrl(track.url) + '"></audio><a class="dl-btn" title="Скачать MP3" href="' + safeUrl(track.url) + '" download>↓</a></div>';
+    const playUrl = resolveAudioUrl(track);
+    if (track.status === 'available' && playUrl) {
+      playerHTML = '<div class="track-row"><audio controls preload="metadata" src="' + playUrl + '"></audio><a class="dl-btn" title="Скачать MP3" href="' + playUrl + '" download>↓</a></div>';
     } else {
       playerHTML = '<div class="track-unavailable"><span>MP3-файл недоступен — превышает лимит GitHub.</span></div>';
     }

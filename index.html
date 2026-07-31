@@ -866,8 +866,9 @@ async function loadAudiobook() {
       const kandaPart = titleParts[1] || '';
 
       let playerHTML;
-      if (a.status === 'available' && a.url && safeUrl(a.url)) {
-        playerHTML = '<div class="audio-row"><audio controls preload="metadata" src="' + safeUrl(a.url) + '"></audio><a class="dl-btn" title="Скачать MP3" href="' + safeUrl(a.url) + '" download>↓</a></div><a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>';
+      const playUrl = resolveAudioUrl(a);
+      if (a.status === 'available' && playUrl) {
+        playerHTML = '<div class="audio-row"><audio controls preload="metadata" src="' + playUrl + '"></audio><a class="dl-btn" title="Скачать MP3" href="' + playUrl + '" download>↓</a></div><a class="vk-link" href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a>';
       } else {
         playerHTML = '<div class="audio-unavailable"><span>Файл не загружен — добавьте MP3 на сервер.</span><a href="https://vk.com/audios-189073372?z=audio_playlist-189073372_5" target="_blank" rel="noopener noreferrer">Слушать на VK →</a></div>';
       }

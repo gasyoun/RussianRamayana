@@ -13,10 +13,10 @@
 
 ## Фаза 0 — Гигиена репозитория (≈1 день)
 
-- [ ] Создать `.ai_state.md` по орг-конвенции (см. CLAUDE.md уровня GitHub/).
-- [ ] Разобрать `_meta/`: рабочие документы (AUDIT.md, FAQ.md, HANDOFF.md, стайлгайды) → `docs/internal/`; AI-сгенерированные PNG-черновики дизайна — удалить из трекинга (вычистятся из истории в Фазе 1).
-- [ ] Проверить, что `cover-og.png` (указан в OpenGraph) реально существует и отдаётся.
-- [ ] В `js/utils.js` и страницах — подготовить точку замены URL аудио (сейчас `raw.githubusercontent.com`, это нестабильный хостинг медиа).
+- [x] Создать `.ai_state.md` по орг-конвенции (см. CLAUDE.md уровня GitHub/). — готово 2026-06-12; живой журнал с 4 каноническими секциями.
+- [x] Разобрать `_meta/`: рабочие документы (AUDIT.md, FAQ.md, HANDOFF.md, стайлгайды) → `docs/internal/`; AI-сгенерированные PNG-черновики дизайна — удалить из трекинга (вычистятся из истории в Фазе 1). — готово 2026-06-12: disposition = `_meta/` в `.gitignore` (RuWritingStyles-скрапы, не портальный контент); `docs/internal/` не создавался. PNG-черновики выйдут из истории в Фазе 1 вместе с MP3.
+- [x] Проверить, что `cover-og.png` (указан в OpenGraph) реально существует и отдаётся. — готово 2026-06-12: [`web-src/cover-og.png`](../web-src/cover-og.png) (1200×630); OG на страницах указывает на `…/web-src/cover-og.png`.
+- [x] В `js/utils.js` и страницах — подготовить точку замены URL аудио (сейчас `raw.githubusercontent.com`, это нестабильный хостинг медиа). — готово 2026-08-01 ([H2061](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2061-Grok_RussianRamayana_dh-phase0-audio-url-switch_01.08.26.md)): `resolveAudioUrl(track)` в [`js/utils.js`](../js/utils.js) предпочитает `ia_url` → `url`; wired в `audio.html`, `index.html`, `media.html`. Фаза 1 заполняет `ia_url` — плееры переключатся без правок страниц.
 
 ## Фаза 1 — Аудио → Internet Archive + чистка git-истории (≈1 неделя)
 
