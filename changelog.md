@@ -2,6 +2,30 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-08-05
+
+### Публичные аннотации каталога переводов (H1857)
+
+Каждая запись каталога [`translations.html`](https://github.com/gasyoun/RussianRamayana/blob/main/translations.html) получила русскую
+аннотацию в 2–4 предложения: что это за перевод/пересказ, с чего выполнен, подход
+и кому подойдёт.
+
+- **`data/translations.json`** — новое поле `annotation` у всех 6 записей; факты
+  взяты только из уже закоммиченных источников ([`data/editions.json`](https://github.com/gasyoun/RussianRamayana/blob/main/data/editions.json),
+  [`reception.html`](https://github.com/gasyoun/RussianRamayana/blob/main/reception.html), правила контента в [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/CLAUDE.md)/[`roadmap.md`](https://github.com/gasyoun/RussianRamayana/blob/main/roadmap.md)). Незафиксированные
+  детали (год Книги IV, годы русских изданий пересказов) явно помечены как
+  неизвестные, не выдуманы.
+- **`data/retellings.json`** — `description` всех 3 записей расширен до полной
+  аннотации; пересказы последовательно маркированы как «не перевод с санскрита»
+  (правило «Эрман = пересказ»).
+- **`translations.html`** — карточка перевода теперь рендерит `item.annotation`
+  над строками «Охват»/«Издание» (пересказы уже рендерили `description`).
+- **`data/schema/translations.schema.json`** — поле `annotation` задекларировано;
+  `scripts/validate_data.py` — 18 schema-validated, 0 failed.
+- Оценочный язык — описательный (подход, охват, адресат), без ранжирования
+  переводчиков.
+- Аннотации: Fable 5 (`claude-fable-5`).
+
 ## 2026-08-01
 
 ### DH_ROADMAP Фаза 0 закрыта (H2061) — stale-tick + audio URL switch
