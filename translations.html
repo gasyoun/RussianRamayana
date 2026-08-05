@@ -348,6 +348,7 @@ async function loadCatalog() {
           </div>
           <h3>${esc(item.title)}</h3>
           <div class="card-desc">
+            ${item.annotation ? `${esc(item.annotation)}<br><br>` : ''}
             ${item.coverage ? `<b>Охват:</b> ${esc(item.coverage)}<br>` : ''}
             ${item.edition ? `<b>Издание:</b> ${esc(item.edition)}` : ''}
             ${item.series ? ` · ${esc(item.series)}` : ''}

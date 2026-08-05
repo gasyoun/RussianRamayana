@@ -16,6 +16,7 @@
       "edition": {"type": "string"},
       "series": {"type": "string"},
       "url": {"type": "string"},
+      "annotation": {"type": "string"},
       "status": {"type": "string"}
     },
     "additionalProperties": true
