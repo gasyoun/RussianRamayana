@@ -1,6 +1,6 @@
 # Roadmap: указатели к «Рамаяне», том I
 
-_Created: 07-07-2026 · Last updated: 08-07-2026_
+_Created: 07-07-2026 · Last updated: 12-08-2026_
 
 > **Этот документ — пошаговый исполняемый чек-лист** с контрольными точками. Смежные:
 > сводный нарратив + техприложение — [`docs/indesign-pipeline/MANUAL.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md);
@@ -8,6 +8,13 @@ _Created: 07-07-2026 · Last updated: 08-07-2026_
 > Имена стилей/цветов/файлов и **буквы-маркеры `a/b/c/d`** сведены к канону из
 > [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc)
 > во всех трёх документах.
+
+> **Статус 12-08-2026:** этот файл остаётся детальным операторским сценарием стадий `[0]`–`[4]`.
+> Общая программа повторной генерации, миграции InDesign 2022→2026 и print-readiness обеих
+> книг теперь ведётся в
+> [`PLAN_LITPAM_INDEXATOR_PRINT_READINESS_2026.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/PLAN_LITPAM_INDEXATOR_PRINT_READINESS_2026.md).
+> PDF 12.10.25 уже содержат четыре указателя в каждом томе и служат визуальной базой; их
+> ссылки должны быть регенерированы и проверены, а не приняты как актуальные.
 
 Цель: четыре указателя (именной, географический, предметы и термины, флора и фауна) для `Ramayana_I_12.10.25.indd`.
 Исходное состояние: тегированная разметка уже перенесена в вёрстку (этап 0 пройден). Словник — `xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx`.
