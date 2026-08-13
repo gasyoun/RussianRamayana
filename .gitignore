@@ -49,3 +49,9 @@ _private/
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Local working copies of the InDesign proof PDFs (H2632, 13-08-2026).
+# Byte-identical duplicates of the tracked originals under
+# Litpam-Indexator/InDesign/Ramayana_{I,II}_12.10.25/ — keeping a second copy
+# under docs/ out of git stops them re-appearing as untracked dirt in every sweep.
+Litpam-Indexator/docs/*.pdf
