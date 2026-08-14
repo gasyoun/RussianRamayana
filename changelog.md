@@ -2,6 +2,29 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-08-14
+
+### Print-контракт четырёх указателей книг I–II (H2588)
+
+Первая волна плана print-readiness (шаг 1, Fable 5 `claude-fable-5`): измеренный по
+PDF-пруфам 12.10.25 единый контракт оформления указателей.
+
+- **[`Litpam-Indexator/docs/print-readiness/INDEX_STYLE_SPEC.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/print-readiness/INDEX_STYLE_SPEC.md)** —
+  геометрия полосы/колонок, сетка отступов двух уровней, шрифтовая система,
+  локаторы/диапазоны/полужирные ссылки примечаний, модель «см.», фурнитура;
+  таблица D1–D10 межтомных различий с классификацией
+  intentional / defect / review-required.
+- **[`DEFECT_POLICY.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/print-readiness/DEFECT_POLICY.md)** —
+  классы blocker/material/cosmetic, default-диспозиции по рулингу 23, формат
+  defect ledger.
+- **[`BOOK_I_REVIEW_CHECKLIST.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/print-readiness/BOOK_I_REVIEW_CHECKLIST.md)** —
+  детерминированная выборка ручной проверки (A1–A10 по статьям, B1–B5 по полосам).
+- **[`Litpam-Indexator/config/print-readiness.json`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/config/print-readiness.json)** —
+  машиночитаемые пороги/defaults; субъективное одобрение как test PASS не
+  кодируется (`notes_bold_page_ranges` = null до baseline IDML в H2589).
+- `.gitignore` — `/Litpam-Indexator/work/print-readiness/` (рабочие копии пакетов).
+- Production-файлы (packages, PDF, XLSX, `.jsx`) не тронуты — только additive docs/config.
+
 ## 2026-08-05
 
 ### Публичные аннотации каталога переводов (H1857)

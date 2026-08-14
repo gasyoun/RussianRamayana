@@ -1,0 +1,160 @@
+{
+  "$schema_note": "Машиночитаемые пороги и defaults print-контракта указателей. Источник нормы: Litpam-Indexator/docs/print-readiness/INDEX_STYLE_SPEC.md (секции указаны в spec_ref). Субъективное одобрение НЕ кодируется как PASS: поля review_sample задают только выборку для человеческой проверки.",
+  "contract_version": "1.0.0",
+  "provenance": {
+    "handoff": "H2588",
+    "authored_by": "Fable 5 (claude-fable-5)",
+    "measured_from": [
+      "Litpam-Indexator/InDesign/Ramayana_I_12.10.25/Ramayana_I_12.10.25.pdf",
+      "Litpam-Indexator/InDesign/Ramayana_II_12.10.25/Ramayana_II_12.10.25.pdf"
+    ],
+    "date": "2026-08-14"
+  },
+  "page_geometry": {
+    "spec_ref": "§2",
+    "page_size_pt": [467.72, 609.45],
+    "page_size_tolerance_pt": 0.5,
+    "columns": 2,
+    "column_left_x_pt": [48.0, 248.0],
+    "column_x_tolerance_pt": 1.0
+  },
+  "indent_grid": {
+    "spec_ref": "§4",
+    "max_levels_in_print": 2,
+    "level3_or_deeper": "review-required",
+    "relative_first_line_x_pt": {"level1": 0.0, "level2": 17.0},
+    "relative_runover_x_pt": {"level1": 34.0, "level2": 40.0},
+    "tolerance_pt": 1.0
+  },
+  "fonts": {
+    "spec_ref": "§3",
+    "allowed_family_prefixes": ["NewBaskervilleITC"],
+    "entry_size_pt": 10.0,
+    "running_head_size_pt": 9.0,
+    "folio_size_pt": 8.0,
+    "footnote_size_pt": 9.0,
+    "heading": {
+      "volume_exceptions": true,
+      "I": {"weight": "Regular", "size_pt": 13.0, "case": "upper"},
+      "II": {"weight": "Bold", "size_pt": 14.0, "case": "upper"},
+      "exception_ref": "§11-D1"
+    }
+  },
+  "indexes_order": [
+    {"n": 1, "sheet": "Именной", "title": "УКАЗАТЕЛЬ ИМЕН ЭПИЧЕСКИХ И МИФОЛОГИЧЕСКИХ ПЕРСОНАЖЕЙ"},
+    {"n": 2, "sheet": "Географ", "title": "УКАЗАТЕЛЬ ГЕОГРАФИЧЕСКИХ НАЗВАНИЙ"},
+    {"n": 3, "sheet": "Предметы и термины", "title": "ПРЕДМЕТНО-ТЕРМИНОЛОГИЧЕСКИЙ УКАЗАТЕЛЬ"},
+    {"n": 4, "sheet": "Флора и фауна", "title": "УКАЗАТЕЛЬ ФЛОРЫ И ФАУНЫ"}
+  ],
+  "section_start": {
+    "spec_ref": "§5",
+    "fresh_page_required": true,
+    "recto_required": false,
+    "blank_pages_between_indexes_allowed": false
+  },
+  "furniture": {
+    "spec_ref": "§6, §11-D6",
+    "default_disposition": "block-opener-bare",
+    "block_opener_has_running_head": false,
+    "block_opener_has_folio": false,
+    "inner_opener_has_running_head": true,
+    "inner_opener_has_folio": true,
+    "verso_running_head_text": "Приложения",
+    "recto_running_head": "index-title-lowercase-italic",
+    "running_head_style_default": "Italic",
+    "running_head_style_default_ref": "§11-D5"
+  },
+  "locators": {
+    "spec_ref": "§7.2, §7.3",
+    "separator": ", ",
+    "range_dash": "–",
+    "range_dash_spaces": false,
+    "ascending_required": true,
+    "duplicates_allowed": false,
+    "max_page": {"I": 442, "II": 668},
+    "bold_semantics": "notes-and-appendices-pages",
+    "notes_bold_page_ranges": {
+      "I": null,
+      "II": null,
+      "_note": "null = заполнить из baseline IDML в H2589; до заполнения bold-проверка §7.3 репортует UNVERIFIED, не PASS"
+    },
+    "bold_range_dash_inherits_bold": true
+  },
+  "headword": {
+    "spec_ref": "§7.1",
+    "locator_gap": "en-space-or-wider",
+    "variant_marker": ", или",
+    "homonym_gloss_dash": "—",
+    "homonym_gloss_dash_spaces": "single-both-sides",
+    "parenthetical_clarifier_allowed": true
+  },
+  "see_references": {
+    "spec_ref": "§7.5, §11-D3",
+    "canonical_model": "volume-II",
+    "token": "см.",
+    "target_must_exist_as_level1": true,
+    "locators_on_see_line_allowed": false,
+    "volume_I_2025_observed_count": 0,
+    "volume_II_2025_observed_count": 118,
+    "unification_status": "WAITING-editorial-confirmation"
+  },
+  "footnote_first_page": {
+    "spec_ref": "§7.4, §11-D4",
+    "default_marker": "*",
+    "observed": {"I": "¹", "II": "*"},
+    "once_per_volume_block": true
+  },
+  "stage4_options": {
+    "spec_ref": "§7.6",
+    "collapse_ranges": true,
+    "bold_note_refs": true,
+    "see_links": true,
+    "letter_rubrics": false,
+    "dash_instead_of_repeat": false,
+    "service_numbers_visible": false,
+    "annotation_data": true
+  },
+  "defect_classes": {
+    "spec_ref": "DEFECT_POLICY.md",
+    "classes": ["blocker", "material", "cosmetic"],
+    "ambiguous_class_default": "heavier",
+    "default_dispositions": {
+      "reversible_ambiguity": "apply-marked-default-and-log",
+      "editorial_fork": "WAITING",
+      "irreversible": "forbidden",
+      "failed_check": "ledger-and-continue"
+    }
+  },
+  "defect_ledger": {
+    "path_template": "Litpam-Indexator/artifacts/print-readiness/{scope}/defect-ledger.json",
+    "id_format": "DFT-{volume}-{seq:04d}",
+    "required_fields": ["id", "class", "status", "volume", "index", "page", "rule", "observed", "expected", "disposition", "evidence", "found_by"],
+    "statuses": ["open", "fixed", "queued", "WAITING", "wontfix-exception"]
+  },
+  "review_sample": {
+    "spec_ref": "BOOK_I_REVIEW_CHECKLIST.md",
+    "deterministic": true,
+    "rng_forbidden": true,
+    "top_by_locators": 3,
+    "single_locator_first_n": 3,
+    "nested_subentries_min": 3,
+    "nested_cap": 5,
+    "case_variant_pairs_cap": 5,
+    "range_entries_first_n": 5,
+    "bold_entries_first_n": 5,
+    "mixed_bold_entries_n": 2,
+    "see_all_if_at_most": 10,
+    "see_stride_rule": "ceil(N/10), start at first, always include last",
+    "page_stride": 5
+  },
+  "intervolume_exceptions": [
+    {"id": "D1", "class": "intentional", "summary": "Заголовки: I Regular 13 pt, II Bold 14 pt — внутритомные системы заголовков аппарата"},
+    {"id": "D2", "class": "intentional", "summary": "Разбивка заголовков на строки следует D1"}
+  ],
+  "review_required": ["D3", "D4", "D5", "D6", "D8"],
+  "known_defects_2025": [
+    {"id": "D7", "class": "material", "volume": "II", "page": 630, "summary": "Полужирная первая литера первой статьи"},
+    {"id": "D9", "class": "cosmetic", "volume": "II", "summary": "Regular-тире в полужирном диапазоне"},
+    {"id": "D10", "class": "cosmetic", "volume": "II", "page": 630, "summary": "Двойной пробел после тире-глоссы"}
+  ]
+}

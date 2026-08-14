@@ -55,3 +55,6 @@ __pycache__/
 # Litpam-Indexator/InDesign/Ramayana_{I,II}_12.10.25/ — keeping a second copy
 # under docs/ out of git stops them re-appearing as untracked dirt in every sweep.
 Litpam-Indexator/docs/*.pdf
+
+# Print-readiness working copies of InDesign packages (H2588 contract, IMPLEMENTATION step 4).
+/Litpam-Indexator/work/print-readiness/
