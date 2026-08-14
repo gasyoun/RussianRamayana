@@ -27,3 +27,6 @@
 *.ifo binary
 *.idx binary
 *.dz binary
+# Print-readiness evidence packets are checksum-manifested (verify-packet):
+# preserve bytes exactly, no EOL normalization (H2589).
+Litpam-Indexator/artifacts/** -text

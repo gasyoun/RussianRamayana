@@ -1,0 +1,52 @@
+[
+  {
+    "source": "Litpam-Indexator/InDesign/Ramayana_I_12.10.25",
+    "dest": "Litpam-Indexator/work/print-readiness/book-I/baseline-2022-workcopy",
+    "file_count": 14,
+    "ok": true,
+    "hash_mismatches": [],
+    "missing_in_dest": [],
+    "extra_in_dest": [],
+    "source_hashes": {
+      "desktop.ini": "44d0bbe4742f580215cfff643168b7bdeefa93c8fce0f3efd708ddbbf22b9a71",
+      "Document fonts/!CharterIndologique Italic.otf": "8a80abefbe2e1e16d2084064f0d24f88dee5271523543c2130279fab7a01e007",
+      "Document fonts/AdobeFnt23.lst": "930c562f641e6254d3ef72bec1ac6ff411dcd4b9ba0eac4addb79f4552331680",
+      "Document fonts/arial.ttf": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "Document fonts/CHARTERINDOLOGIQUE-REGULAR.OTF": "e2e5575704ad94919970133d5ae7e35bcbd6c3e28aafff3b8d579a34fb3f7b0a",
+      "Document fonts/desktop.ini": "44d0bbe4742f580215cfff643168b7bdeefa93c8fce0f3efd708ddbbf22b9a71",
+      "Document fonts/ITC-New-Baskerville_Bold.otf": "f025fabdc0d062454618de1fa2c89d4860a5c8a5f8dc020dd93e6c6f24fc5a39",
+      "Document fonts/ITC-New-Baskerville_Book.otf": "07ff60cf8abe692b0a85f1c3dd63c468cfdf7d4637734a0baaa24e1ef460e07a",
+      "Document fonts/ITC-New-Baskerville_Italic.otf": "4cae3c9becaeea2a63cf28c6a2632747cc016cc519cd5bbea9311fc328e14695",
+      "Document fonts/Santipur20140415.ttf": "3ac289c7310778992f99d6a8a712deb74d59c1ecacdd3c469ab73dd820942571",
+      "Document fonts/SourceCodeVariable-Roman.otf": "973b75fec889704184dbea0b73b698ef103fc6135a47f5d1a7a7d9815ea0c02b",
+      "Ramayana_I_12.10.25.idml": "a191757d63c994a1e68091216069a962a55529b65db3f8f34847c65f49470277",
+      "Ramayana_I_12.10.25.indd": "893003a7490b674d0ffa241542adcb162ce3cc97e297a22951961a8a8f1b1571",
+      "Ramayana_I_12.10.25.pdf": "70f545d959b2993f779dfce916422debee7864662ce96922d656d74df789e50a"
+    }
+  },
+  {
+    "source": "Litpam-Indexator/InDesign/Ramayana_I_12.10.25",
+    "dest": "Litpam-Indexator/work/print-readiness/book-I/production-2026-workcopy",
+    "file_count": 14,
+    "ok": true,
+    "hash_mismatches": [],
+    "missing_in_dest": [],
+    "extra_in_dest": [],
+    "source_hashes": {
+      "desktop.ini": "44d0bbe4742f580215cfff643168b7bdeefa93c8fce0f3efd708ddbbf22b9a71",
+      "Document fonts/!CharterIndologique Italic.otf": "8a80abefbe2e1e16d2084064f0d24f88dee5271523543c2130279fab7a01e007",
+      "Document fonts/AdobeFnt23.lst": "930c562f641e6254d3ef72bec1ac6ff411dcd4b9ba0eac4addb79f4552331680",
+      "Document fonts/arial.ttf": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "Document fonts/CHARTERINDOLOGIQUE-REGULAR.OTF": "e2e5575704ad94919970133d5ae7e35bcbd6c3e28aafff3b8d579a34fb3f7b0a",
+      "Document fonts/desktop.ini": "44d0bbe4742f580215cfff643168b7bdeefa93c8fce0f3efd708ddbbf22b9a71",
+      "Document fonts/ITC-New-Baskerville_Bold.otf": "f025fabdc0d062454618de1fa2c89d4860a5c8a5f8dc020dd93e6c6f24fc5a39",
+      "Document fonts/ITC-New-Baskerville_Book.otf": "07ff60cf8abe692b0a85f1c3dd63c468cfdf7d4637734a0baaa24e1ef460e07a",
+      "Document fonts/ITC-New-Baskerville_Italic.otf": "4cae3c9becaeea2a63cf28c6a2632747cc016cc519cd5bbea9311fc328e14695",
+      "Document fonts/Santipur20140415.ttf": "3ac289c7310778992f99d6a8a712deb74d59c1ecacdd3c469ab73dd820942571",
+      "Document fonts/SourceCodeVariable-Roman.otf": "973b75fec889704184dbea0b73b698ef103fc6135a47f5d1a7a7d9815ea0c02b",
+      "Ramayana_I_12.10.25.idml": "a191757d63c994a1e68091216069a962a55529b65db3f8f34847c65f49470277",
+      "Ramayana_I_12.10.25.indd": "893003a7490b674d0ffa241542adcb162ce3cc97e297a22951961a8a8f1b1571",
+      "Ramayana_I_12.10.25.pdf": "70f545d959b2993f779dfce916422debee7864662ce96922d656d74df789e50a"
+    }
+  }
+]

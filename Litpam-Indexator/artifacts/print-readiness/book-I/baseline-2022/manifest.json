@@ -1,0 +1,19 @@
+{
+  "packet_id": "book-I-baseline-2022",
+  "handoff": "H2589",
+  "created": "2026-08-14",
+  "members": [
+    {
+      "path": "idml-audit.json",
+      "sha256": "14d9e050594223d4d172f8124e3f930ced14f9133ab25f902ba090b826fb898b"
+    },
+    {
+      "path": "pdf-audit.json",
+      "sha256": "b275e2aa8bd5212338d3451b1c07db0aa36fe9e4b9bedd5f8a9f96f27e37b3c8"
+    },
+    {
+      "path": "workspace-manifest.json",
+      "sha256": "6b2b5018430d06d2879a9489d2213de67326eeae9326c46f64f181ffad6ab0eb"
+    }
+  ]
+}
