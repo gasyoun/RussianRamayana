@@ -4,6 +4,28 @@
 
 ## 2026-08-14
 
+### Deterministic print-readiness tooling + conversion gate книги I = FAIL (H2589)
+
+Шаги 2–5 плана print-readiness (работа Sonnet 5 `claude-sonnet-5`; сессия упала до
+коммита — crash-recovery доставка Fable 5 `claude-fable-5`,
+[PR #65](https://github.com/gasyoun/RussianRamayana/pull/65)):
+
+- **[`Litpam-Indexator/tools/print_ready.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/print_ready.py)** + пакет
+  [`tools/print_ready/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/tools/print_ready):
+  `repair-workbook` / `audit-idml` / `audit-pdf` / `coverage` / `verify-packet` /
+  `conversion-gate`; 20 pytest-тестов зелёные.
+- **Словник**: 42/43 находок валидатора исправлены идемпотентно в
+  [`xls/derived/Указатель_к_Рамаяне_1_2_2026_08_12.xlsx`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/xls/derived);
+  ledger — [`artifacts/print-readiness/dictionary/correction-ledger.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/dictionary/correction-ledger.md);
+  1 `WAITING` (строка 221 `[без тега не искать]` — решение за человеком).
+- **Conversion gate книги I: FAIL** —
+  [`gate-report.json`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/conversion-2026/gate-report.json):
+  DFT-I-0002 (blocker) — 3 overset-истории после 2022→2026, вероятно сам Именной
+  указатель; DFT-I-0001 (material) — 6 `LINK_MISSING`, правдоподобно pre-existing.
+  Шаг 6 (пилот) по собственному условию входа не запускался; книга II (H2590)
+  остаётся gated. Статус: `HUMAN_REVIEW_WAITING` — полный разбор в
+  [`PLAN_LITPAM_INDEXATOR_PRINT_READINESS_2026.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/PLAN_LITPAM_INDEXATOR_PRINT_READINESS_2026.md).
+
 ### Print-контракт четырёх указателей книг I–II (H2588)
 
 Первая волна плана print-readiness (шаг 1, Fable 5 `claude-fable-5`): измеренный по
