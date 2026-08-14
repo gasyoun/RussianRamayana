@@ -1,0 +1,31 @@
+{
+  "packet_id": "book-I-conversion-2026",
+  "handoff": "H2589",
+  "created": "2026-08-14",
+  "members": [
+    {
+      "path": "gate-report.json",
+      "sha256": "5a1e4cf03477238eb21ed4e078b3320c09cf4841677d7165c7df0ba939c3934c"
+    },
+    {
+      "path": "idml-audit.json",
+      "sha256": "1c74674cc87dc34b8b6aaab4c775758ce860094aa47f8d1630d1ff5ec8debd8b"
+    },
+    {
+      "path": "pdf-audit.json",
+      "sha256": "f02d434548cb0bd378f8d406a8aac3f378d170103ccc21e215c853f9ea207c13"
+    },
+    {
+      "path": "Ramayana_I_conversion_2026.idml",
+      "sha256": "57e7606b64c2cd7e2a3b5e5265fee96a27780e7ed259370232cc61e788cd1b95"
+    },
+    {
+      "path": "Ramayana_I_conversion_2026.pdf",
+      "sha256": "c519acd35e359a0f513429f1d84b73355b578e0943571cb90a1d26e4410f08b1"
+    },
+    {
+      "path": "Ramayana_I_conversion_2026.report.txt",
+      "sha256": "640ae3ff39d0d393c70d6b668ece6da2f4f0ac0bdec736e03bca0aa6d5e4ecff"
+    }
+  ]
+}
