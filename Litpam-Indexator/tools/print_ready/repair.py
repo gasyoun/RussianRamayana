@@ -88,13 +88,22 @@ def is_prose_row(forms):
     return False
 
 
-def compute_operations(source_path):
+def compute_operations(source_path, prose_clear=None, ruling_note=None):
     """Read source_path fresh and compute the candidate correction operations.
     Pure/read-only: does not touch the workbook. Returns (source_sha, operations)
     where each operation still carries its 'old' value as read from source_path —
     apply_operations() re-checks that value at apply time (guards staleness if the
     two steps are ever split across time/processes).
+
+    prose_clear: optional set of (sheet_name, row_number) pairs a HUMAN ruled may
+    be cleared (the prose operator note is deleted from the forms column). Prose
+    rows NOT in the whitelist stay WAITING as before — the ruling is per-cell,
+    never a blanket license. ruling_note (who ruled, when) is required with a
+    non-empty prose_clear and is recorded verbatim in each cleared op's rationale.
     """
+    prose_clear = set(prose_clear or [])
+    if prose_clear and not ruling_note:
+        raise ValueError("prose_clear requires ruling_note (who ruled, when)")
     source_path = Path(source_path)
     source_sha = sha256_file(source_path)
     wb = openpyxl.load_workbook(source_path, data_only=False)
@@ -118,6 +127,24 @@ def compute_operations(source_path):
 
             if is_prose_row(raw):
                 seq += 1
+                if (sheet_name, row) in prose_clear:
+                    operations.append(
+                        {
+                            "id": f"COR-{seq:04d}",
+                            "sheet": sheet_name,
+                            "row": row,
+                            "column": FORMS_COLUMN_LABEL,
+                            "class": "prose_in_forms",
+                            "old": raw,
+                            "new": "",
+                            "disposition": "fixed",
+                            "rationale": (
+                                "операторская пометка удалена из колонки форм по человеческому "
+                                f"рулингу: {ruling_note}"
+                            ),
+                        }
+                    )
+                    continue
                 operations.append(
                     {
                         "id": f"COR-{seq:04d}",
@@ -197,7 +224,7 @@ def apply_operations(source_path, output_path, operations, expected_source_sha=N
             conflict_ops.append({**op, "disposition": "stale_old_conflict", "actual_current": current})
             continue
         if op["disposition"] == "fixed":
-            cell.value = op["new"]
+            cell.value = op["new"] if op["new"] != "" else None
         applied_ops.append(op)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -216,8 +243,8 @@ def _find_forms_col(ws):
     return find_columns(header)["forms"]
 
 
-def repair_workbook(source_path, output_path, ledger_path):
-    source_sha, operations = compute_operations(source_path)
+def repair_workbook(source_path, output_path, ledger_path, prose_clear=None, ruling_note=None):
+    source_sha, operations = compute_operations(source_path, prose_clear=prose_clear, ruling_note=ruling_note)
     _, applied_ops, conflict_ops = apply_operations(source_path, output_path, operations, expected_source_sha=source_sha)
 
     output_sha = sha256_file(output_path)

@@ -17,16 +17,19 @@ _Created: 15-08-2026 · Last updated: 15-08-2026_
 | Версионная рабочая копия | `work/print-readiness/pilot-I/Ramayana_I_pilot_2026.indd` | InDesign 2026 (21.0.1.6) |
 | **Overset снят: 0 историй** (было 3, waived) | там же | [overset-resolution.txt](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/prep/overset-resolution.txt) — 5 extension-фреймов на pasteboard с меткой `H2776-overset-extension`; текст не удалялся, страницы не двигались |
 | Контент-нейтральность правки доказана | [pilot-vs-conversion-pages.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/prep/pilot-vs-conversion-pages.json) | 0/442 страниц отличий против conversion-PDF |
-| Corrected workbook подключён | `work/print-readiness/pilot-I/Указатель_к_Рамаяне_1_2_2026_08_12.xlsx` | 42/43 исправлений, [ledger](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/dictionary/correction-ledger.md) |
+| Corrected workbook подключён | `work/print-readiness/pilot-I/Указатель_к_Рамаяне_1_2_2026_08_15.xlsx` | 43/43 исправлений (строка 221 — рулинг МГ 15-08), [ledger](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/dictionary/correction-ledger.md) |
 | Шрифты все INSTALLED, 442 стр. | [Ramayana_I_pilot_2026.report.txt](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/prep/Ramayana_I_pilot_2026.report.txt) | live evidence export |
 
-## ⚠️ Перед стартом — один нерешённый пункт словника
+## ✅ Словник закрыт полностью (обновление 15-08-2026)
 
-Строка 221 листа «Предметы и термины» — `[без тега не искать]` в колонке `C` — оставлена
-`WAITING` (семантический форк, ledger COR-0043). **Ловушка MANUAL (видео 12): проза в
-колонке `C` может «завесить» стадию `[3]`.** Решение принимает человек (≈2 мин, GTD-строка
-уже есть): удалить пометку из `C` / переоформить / оставить и пропустить строку вручную.
-До решения строку 221 в стадию `[3]` не подавать.
+Строка 221 («Предметы и термины», `[без тега не искать]`) очищена по рулингу МГ
+15-08-2026 — repair перегнан с оригинала: **43/43 fixed, 0 WAITING, валидатор чист,
+второй прогон 0 операций.** Актуальный словник:
+`work/print-readiness/pilot-I/Указатель_к_Рамаяне_1_2_2026_08_15.xlsx`
+(канон в [xls/derived/](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/xls/derived);
+[ledger](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/dictionary/correction-ledger.md)).
+Файл `…2026_08_12.xlsx` упразднён — не использовать. Ловушка MANUAL про прозу в колонке
+`C` (видео 12) снята: прозы в словнике больше нет.
 
 ## Операторские стадии (по [MANUAL](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md))
 
@@ -35,7 +38,7 @@ _Created: 15-08-2026 · Last updated: 15-08-2026_
 стадия `[3]` ≈1–1,5 ч непрерывного блока.
 
 1. **`[0]` пропускается** — текст не менялся с 2025, символьные стили уже в вёрстке.
-2. **`[1]` Таблицы IndexList** (~30–60 мин): 4 листа corrected workbook →
+2. **`[1]` Таблицы IndexList** (~30–60 мин): 4 листа corrected workbook (`…2026_08_15.xlsx`) →
    `UseReadyTable.v.7.jsx` → `IndexList-001…004` → `AddMarker.jsx` (`a/b/c/d`) →
    `MergeTwoTables` → сводная `IndexList[@]-001`. Дрилл Golden Fish перед боевым прогоном
    `UseReadyTable` (статическая проверка H377 была, живой прогон в InDesign — нет).

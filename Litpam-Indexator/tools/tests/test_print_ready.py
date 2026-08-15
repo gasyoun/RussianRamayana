@@ -348,3 +348,38 @@ def test_gate_partial_waiver_still_fails(tmp_path):
     assert rep["verdict"] == "FAIL"
     blockers = [d for d in rep["defects"] if d["class"] == "blocker"]
     assert blockers and "2085" in blockers[0]["evidence"]
+
+
+# --- prose-clear ruling channel (MG 15-08-2026, row 221) ---------------------
+
+def test_repair_prose_clear_whitelisted_row(tmp_path):
+    wb = _make_workbook(
+        [
+            ("Оружие", "[без тега не искать]; оружие"),
+            ("Другое", "[тоже проза не в белом списке]; другое"),
+        ]
+    )
+    source = tmp_path / "source.xlsx"
+    wb.save(source)
+
+    out = tmp_path / "derived.xlsx"
+    ledger = repair_mod.repair_workbook(
+        source, out, tmp_path / "ledger.json",
+        prose_clear={("Именной", 2)},
+        ruling_note="MG 15-08-2026: строку 221 удалить из колонки C",
+    )
+    assert ledger["fixed_count"] == 1
+    assert ledger["waiting_count"] == 1  # non-whitelisted prose row still WAITING
+    wsd = openpyxl.load_workbook(out)["Именной"]
+    assert wsd.cell(row=2, column=3).value is None  # cleared, truly empty
+    assert wsd.cell(row=3, column=3).value == "[тоже проза не в белом списке]; другое"
+    cleared = [o for o in ledger["operations"] if o["row"] == 2][0]
+    assert cleared["disposition"] == "fixed" and "MG 15-08-2026" in cleared["rationale"]
+
+
+def test_repair_prose_clear_requires_ruling_note(tmp_path):
+    wb = _make_workbook([("Оружие", "[без тега не искать]; оружие")])
+    source = tmp_path / "source.xlsx"
+    wb.save(source)
+    with pytest.raises(ValueError):
+        repair_mod.compute_operations(source, prose_clear={("Именной", 2)})

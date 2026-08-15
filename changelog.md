@@ -4,6 +4,18 @@
 
 ## 2026-08-15
 
+### Словник закрыт 43/43: строка 221 очищена по рулингу МГ (H2776)
+
+Рулинг МГ 15-08-2026: `[без тега не искать]` удалено из колонки `C` строки 221
+листа «Предметы и термины». `repair-workbook` получил канал `--clear-prose SHEET:ROW`
+(+ обязательная `--ruling-note`, фиксируется в ledger; не-whitelisted проза остаётся
+`WAITING`). Repair перегнан с оригинала 05_18: **43/43 fixed, 0 WAITING, валидатор
+чист, второй прогон 0 операций.** Новый канон —
+[`xls/derived/Указатель_к_Рамаяне_1_2_2026_08_15.xlsx`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/xls/derived)
+(`…08_12.xlsx` упразднён), [ledger](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/dictionary/correction-ledger.md)
+перевыпущен; workspace пилота обновлён. 25 pytest. Ловушка MANUAL «проза в C завешивает
+стадию [3]» для пилота снята.
+
 ### Шаг 6 (пилот книги I) запущен: waiver гейта применён, машинная половина выполнена (H2776)
 
 Waiver МГ 15-08-2026 по адъюдикации H2770 (Fable 5 `claude-fable-5`):

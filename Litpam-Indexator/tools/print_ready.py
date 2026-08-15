@@ -35,7 +35,18 @@ from print_ready import conversion_gate as gate_mod  # noqa: E402
 
 
 def cmd_repair_workbook(args):
-    ledger = repair_mod.repair_workbook(args.source, args.output, args.ledger)
+    prose_clear = set()
+    for spec in args.clear_prose:
+        sheet, _, row = spec.rpartition(":")
+        if not sheet or not row.isdigit():
+            raise SystemExit(f"--clear-prose expects 'SHEET:ROW', got: {spec}")
+        prose_clear.add((sheet, int(row)))
+    if prose_clear and not args.ruling_note:
+        raise SystemExit("--clear-prose requires --ruling-note (who ruled, when)")
+    ledger = repair_mod.repair_workbook(
+        args.source, args.output, args.ledger,
+        prose_clear=prose_clear, ruling_note=args.ruling_note,
+    )
     md_path = Path(args.ledger).with_suffix(".md")
     md_path.write_text(repair_mod.format_ledger_md(ledger), encoding="utf-8")
     print(
@@ -97,6 +108,11 @@ def build_parser():
     rw.add_argument("--source", required=True)
     rw.add_argument("--output", required=True)
     rw.add_argument("--ledger", required=True)
+    rw.add_argument(
+        "--clear-prose", action="append", default=[], metavar="SHEET:ROW",
+        help="human-ruled prose row whose forms cell is cleared (repeatable)",
+    )
+    rw.add_argument("--ruling-note", default=None, help="who ruled the prose clear, when")
     rw.set_defaults(func=cmd_repair_workbook)
 
     ai = sub.add_parser("audit-idml", help="IDML structural inventory")

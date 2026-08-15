@@ -1,13 +1,13 @@
 {
   "handoff": "H2589",
   "tool": "print_ready.py repair-workbook",
-  "source_path": "Litpam-Indexator/xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx",
+  "source_path": "xls/Указатель_к_Рамаяне_1_2_2026_05_18.xlsx",
   "source_sha256": "acb63444fe565e6f3a9fb6079a94b9733e4207644e2a02d973653bd33d66d9f8",
-  "output_path": "Litpam-Indexator/xls/derived/Указатель_к_Рамаяне_1_2_2026_08_12.xlsx",
-  "output_sha256": "54c2f00737b508a05c3de92cd345f14eb5e7b54424e0fd3fa479206a13cc42a4",
+  "output_path": "xls/derived/Указатель_к_Рамаяне_1_2_2026_08_15.xlsx",
+  "output_sha256": "3c0955cd26f62ca259d9cb8c00646a8faa245448535e4aaa2088ad7d74aa7157",
   "operation_count": 43,
-  "fixed_count": 42,
-  "waiting_count": 1,
+  "fixed_count": 43,
+  "waiting_count": 0,
   "conflict_count": 0,
   "operations": [
     {
@@ -413,9 +413,9 @@
       "column": "Что искать, через точку с запятой",
       "class": "prose_in_forms",
       "old": "[без тега не искать]; оружие; оружием; оружии; оружию; оружия",
-      "new": "[без тега не искать]; оружие; оружием; оружии; оружию; оружия",
-      "disposition": "WAITING",
-      "rationale": "первый сегмент — операторская инструкция, а не форма поиска (например '[без тега не искать]'); удаление могло бы молчаливо отменить редакционное намерение исключить термин из авто-тегирования (ruling 23/29) — редакционный форк, не механический дубль."
+      "new": "",
+      "disposition": "fixed",
+      "rationale": "операторская пометка удалена из колонки форм по человеческому рулингу: рулинг МГ 15-08-2026 (чат, 'Строку 221 удаляй из колонки C — прогоняй repair заново')"
     },
     {
       "id": "COR-0038",
