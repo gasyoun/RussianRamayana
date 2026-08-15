@@ -4,6 +4,21 @@
 
 ## 2026-08-15
 
+### Стадия [3] выполнена: 1318 topics; три DOM-регрессии InDesign 2026 задокументированы (H2776)
+
+Backfill (а) → словник `…08_15b.xlsx` → стадия `[1]` пересобрана (сводная 1516 строк,
+[PR #70](https://github.com/gasyoun/RussianRamayana/pull/70)) → **стадия `[3]`**
+([PR #71](https://github.com/gasyoun/RussianRamayana/pull/71)): **1318 topics**
+(a=761 авторской палитрой + b/c/d аддитивным индексатором
+[`index_letter.jsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/index_letter.jsx)
+— авторский ProcStoryOrDoс headless под 2026 не работает: flatten
+`everyItem().cells`, пустые `contents` на everyItem-цепочках,
+`rows.itemByRange().select()` → Invalid parameter; per-guardrail «additive
+equivalent wrapper», архив не тронут). Evidence: 442 стр., OVERSET=0;
+[триаж лога](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/stage3/STAGE3_LOG_TRIAGE.md)
+— 138 «не найдено» = 133 ожидаемых (том II) + 5 подозрительных + 0 ошибок.
+Остаток: стадия `[4]` → волна H2590.
+
 ### Стадия [1] пилота выполнена агентом через COM: сводная IndexList[@]001, сравнение с 2025 (H2776)
 
 MG-override («Попробуй стадию [1] сам через COM»): генерационная стадия `[1]`

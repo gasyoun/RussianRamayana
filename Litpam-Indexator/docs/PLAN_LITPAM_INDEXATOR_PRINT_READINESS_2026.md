@@ -101,4 +101,13 @@ Waiver принят МГ 15-08-2026 («whitelist трёх story-ID и запус
 
 **Операторская половина** (стадии `[1]`–`[4]` авторскими скриптами, по рулингу 8 не автоматизируется) — по [PILOT_BOOK_I_OPERATOR_RUNBOOK_2026.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/print-readiness/PILOT_BOOK_I_OPERATOR_RUNBOOK_2026.md); ≈3–6 ч, стадия `[3]` — непрерывный блок ≈1,5 ч. Финальная агентская фиксация (coverage/refs/packet/status) — после стадии `[4]`.
 
+## Стадии [1]+[3] выполнены агентом; H2776 закрыт частичной поставкой (15-08-2026, Fable 5 `claude-fable-5`)
+
+MG-override'ы 15-08 («стадию [1] сам через COM» · «Backfill (а)» · «гони стадию [3]») исполнены:
+
+- **Backfill (а)**: 18 кураторских терминов 2025 внесены в словник → `…08_15b.xlsx` (валидатор чист; [ledger](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/dictionary/backfill-2025-ledger.json)); стадия `[1]` пересобрана: **сводная 1516 строк** ([PR #70](https://github.com/gasyoun/RussianRamayana/pull/70)).
+- **Стадия `[3]` выполнена** ([PR #71](https://github.com/gasyoun/RussianRamayana/pull/71)): **1318 topics** (a=761 авторской палитрой + b=183/183, c=286/287, d=88/88 аддитивным индексатором), пилот сохранён. Авторская палитра headless под 2026 не работает — **три DOM-регрессии** (flatten `everyItem().cells`, пустые `contents` на everyItem-цепочках, `rows.itemByRange().select()` → Invalid parameter), задокументированы с repro; по guardrail H2589 применён «additive equivalent wrapper» [index_letter.jsx](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/index_letter.jsx). [Триаж лога](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/stage3/STAGE3_LOG_TRIAGE.md): 138 «не найдено» = 133 ожидаемых (термины тома II общего словника) + 5 подозрительных (скобочные пояснения) + 0 ошибок.
+- **Evidence стадии [3]**: экспорт проиндексированного пилота — 442 стр., **OVERSET=0**, 6 `LINK_MISSING` (те же pre-existing, waived); [idml/pdf-аудиты](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/stage3) закоммичены.
+- **Остаток — стадия `[4]`** (Построить указатель ≈4 мин + `ProcNumberLines` + `SplitStory` + «См.»/рубрики по [INDEX_STYLE_SPEC.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/print-readiness/INDEX_STYLE_SPEC.md)) + финальный пилотный packet: **уходит в волну H2590 / оператору**. H2776 закрыт частичной поставкой по указанию МГ («как закончит evidence — закрывай H2776 и открывай H2590»).
+
 _Dr. Mārcis Gasūns_
