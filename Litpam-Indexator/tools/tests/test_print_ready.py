@@ -288,3 +288,63 @@ def test_verify_packet_fails_on_missing_manifest(tmp_path):
 )
 def test_headword_text(name, expected):
     assert coverage_mod.headword_text(name) == expected
+
+
+# --- conversion_gate waivers (H2770 ruling, 15-08-2026) ----------------------
+
+from print_ready import conversion_gate as gate_mod
+
+
+def _gate_fixture(tmp_path):
+    base = tmp_path / "base.json"
+    conv = tmp_path / "conv.json"
+    base.write_text(json.dumps({"page_count": 442, "story_list_count": 64}), encoding="utf-8")
+    conv.write_text(json.dumps({"page_count": 442, "story_list_count": 64}), encoding="utf-8")
+    report = tmp_path / "evidence.txt"
+    report.write_text(
+        "FONT|SomeFont|INSTALLED\n"
+        "LINK|102.eps|LINK_MISSING\n"
+        "LINK|LP.tif|LINK_MISSING\n"
+        "OVERSET_STORY|2019|title blurb\n"
+        "OVERSET_STORY|2085|copyright\n"
+        "OVERSET_STORY|12223|c-eнтри\n",
+        encoding="utf-8",
+    )
+    return str(base), str(conv), str(report)
+
+
+def test_gate_fails_without_waivers(tmp_path):
+    b, c, e = _gate_fixture(tmp_path)
+    rep = gate_mod.build_gate_report(b, c, e)
+    assert rep["verdict"] == "FAIL"
+    assert any(d["class"] == "blocker" for d in rep["defects"])
+
+
+def test_gate_passes_with_full_waivers(tmp_path):
+    b, c, e = _gate_fixture(tmp_path)
+    rep = gate_mod.build_gate_report(
+        b, c, e,
+        overset_waiver_ids=["2019", "2085", "12223"],
+        waive_missing_links=True,
+        waiver_note="MG waiver 15-08-2026 per H2770 adjudication",
+    )
+    assert rep["verdict"] == "PASS_WITH_WAIVERS"
+    assert rep["waivers"]["overset_story_ids"] == ["12223", "2019", "2085"]
+    assert rep["waivers"]["missing_links_waived"] is True
+    # waived items are still ledgered, not silently dropped
+    assert any(d["disposition"] == "wontfix-exception" for d in rep["defects"])
+    assert any(d["disposition"] == "WAITING" for d in rep["defects"])
+    assert not any(d["class"] == "blocker" for d in rep["defects"])
+
+
+def test_gate_partial_waiver_still_fails(tmp_path):
+    b, c, e = _gate_fixture(tmp_path)
+    rep = gate_mod.build_gate_report(
+        b, c, e,
+        overset_waiver_ids=["2019"],
+        waive_missing_links=True,
+        waiver_note="partial",
+    )
+    assert rep["verdict"] == "FAIL"
+    blockers = [d for d in rep["defects"] if d["class"] == "blocker"]
+    assert blockers and "2085" in blockers[0]["evidence"]

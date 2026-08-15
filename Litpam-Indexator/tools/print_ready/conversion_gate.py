@@ -34,10 +34,14 @@ def parse_evidence_report(report_path):
     return parsed
 
 
-def build_gate_report(baseline_idml, conversion_idml, conversion_evidence, volume="I"):
+def build_gate_report(
+    baseline_idml, conversion_idml, conversion_evidence, volume="I",
+    overset_waiver_ids=None, waive_missing_links=False, waiver_note=None,
+):
     baseline = json.loads(Path(baseline_idml).read_text(encoding="utf-8"))
     conversion = json.loads(Path(conversion_idml).read_text(encoding="utf-8"))
     evidence = parse_evidence_report(conversion_evidence)
+    overset_waiver_ids = set(overset_waiver_ids or [])
 
     checks = []
     defects = []
@@ -79,8 +83,21 @@ def build_gate_report(baseline_idml, conversion_idml, conversion_evidence, volum
 
     # --- links: any LINK_MISSING in the LIVE conversion report ---------------
     missing_links = [l for l in evidence["links"] if len(l) > 1 and "MISSING" in l[1]]
-    checks.append(("links_missing", len(missing_links) == 0, 0, len(missing_links)))
-    if missing_links:
+    links_ok = len(missing_links) == 0 or waive_missing_links
+    checks.append(("links_missing", links_ok, 0, len(missing_links)))
+    if missing_links and waive_missing_links:
+        add_defect(
+            "material",
+            "Step5 gate: 0 missing links (WAIVED as pre-existing)",
+            f"{len(missing_links)} link(s) LINK_MISSING, waived: "
+            + ", ".join(sorted(set(l[0] for l in missing_links))),
+            "0 missing links",
+            "WAITING",
+            (waiver_note or "human-approved missing-links waiver")
+            + " — files absent from the entire repo tree; remains WAITING until the "
+            "original assets are recovered, but does not gate index mutation.",
+        )
+    elif missing_links:
         add_defect(
             "material",
             "Step5 gate: 0 missing links",
@@ -107,29 +124,52 @@ def build_gate_report(baseline_idml, conversion_idml, conversion_evidence, volum
         )
 
     # --- overset: any live overset story in the conversion -------------------
-    overset_ok = len(evidence["overset_stories"]) == 0
-    checks.append(("overset_ok", overset_ok, 0, len(evidence["overset_stories"])))
+    # A waived story id (human-approved whitelist, e.g. tagged working stories
+    # whose content demonstrably renders elsewhere) does not fail the check but
+    # is still recorded as a wontfix-exception defect for the ledger.
+    all_overset = evidence["overset_stories"]
+    waived = [o for o in all_overset if o and o[0] in overset_waiver_ids]
+    unwaived = [o for o in all_overset if not (o and o[0] in overset_waiver_ids)]
+    overset_ok = len(unwaived) == 0
+    checks.append(("overset_ok", overset_ok, 0, len(unwaived)))
+    if waived:
+        add_defect(
+            "cosmetic",
+            "Step5 gate + ruling 21 fail condition: no clipping/overset (WAIVED)",
+            f"{len(waived)} overset story(ies) whitelisted by human waiver: "
+            + ", ".join(o[0] for o in waived),
+            "0 overset stories",
+            "wontfix-exception",
+            (waiver_note or "human-approved overset waiver")
+            + "; story IDs: " + ", ".join(o[0] for o in waived),
+        )
     if not overset_ok:
         add_defect(
             "blocker",
             "Step5 gate + ruling 21 fail condition: no clipping/overset",
-            f"{len(evidence['overset_stories'])} overset stories live in 2026, including a story whose "
+            f"{len(unwaived)} overset stories live in 2026, including a story whose "
             f"visible text starts with an alphabetically-sorted index fragment "
-            f"('{evidence['overset_stories'][-1][1] if evidence['overset_stories'] else ''}') — "
+            f"('{unwaived[-1][1] if unwaived else ''}') — "
             f"this is very likely the Именной index itself running over its frame after conversion.",
             "0 overset stories",
             "open",
             "export_print_evidence.jsx OVERSET_STORY|id|text-snippet lines; story IDs: "
-            + ", ".join(o[0] for o in evidence["overset_stories"]),
+            + ", ".join(o[0] for o in unwaived),
         )
 
-    overall_pass = page_ok and len(missing_links) == 0 and len(bad_fonts) == 0 and overset_ok
+    overall_pass = page_ok and links_ok and len(bad_fonts) == 0 and overset_ok
+    has_waivers = bool(waived) or (bool(missing_links) and waive_missing_links)
 
     report = {
         "handoff": "H2589",
         "volume": volume,
         "gate": "Step5 conversion gate (2022 baseline -> 2026 conversion)",
-        "verdict": "PASS" if overall_pass else "FAIL",
+        "verdict": ("PASS_WITH_WAIVERS" if has_waivers else "PASS") if overall_pass else "FAIL",
+        "waivers": {
+            "overset_story_ids": sorted(overset_waiver_ids),
+            "missing_links_waived": bool(missing_links) and waive_missing_links,
+            "note": waiver_note,
+        } if has_waivers else None,
         "checks": [
             {"name": name, "pass": ok, "baseline": b, "conversion": c} for name, ok, b, c in checks
         ],
@@ -156,15 +196,31 @@ def main(argv=None):
     p.add_argument("--conversion-evidence-report", required=True)
     p.add_argument("--volume", default="I")
     p.add_argument("--output", required=True)
+    p.add_argument(
+        "--waive-overset-story-id", action="append", default=[],
+        help="story id whose overset is human-waived (repeatable)",
+    )
+    p.add_argument(
+        "--waive-missing-links", action="store_true",
+        help="treat LINK_MISSING as pre-existing WAITING, not a gate failure",
+    )
+    p.add_argument("--waiver-note", default=None, help="who approved the waiver, when, evidence link")
     args = p.parse_args(argv)
 
+    if (args.waive_overset_story_id or args.waive_missing_links) and not args.waiver_note:
+        p.error("--waiver-note is required when any waiver flag is used")
+
     report = build_gate_report(
-        args.baseline_idml_audit, args.conversion_idml_audit, args.conversion_evidence_report, args.volume
+        args.baseline_idml_audit, args.conversion_idml_audit, args.conversion_evidence_report,
+        args.volume,
+        overset_waiver_ids=args.waive_overset_story_id,
+        waive_missing_links=args.waive_missing_links,
+        waiver_note=args.waiver_note,
     )
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"conversion_gate: verdict={report['verdict']} defects={len(report['defects'])} -> {args.output}")
-    return 0 if report["verdict"] == "PASS" else 1
+    return 0 if report["verdict"].startswith("PASS") else 1
 
 
 if __name__ == "__main__":
