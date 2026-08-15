@@ -4,6 +4,24 @@
 
 ## 2026-08-14
 
+### Overset книги I адъюдицирован без InDesign — DFT-I-0002 опровергнут как blocker (H2770)
+
+Ответ на открытый пункт H2589 (Fable 5 `claude-fable-5`): overset — результат
+вёрстки, которого IDML не хранит, но overset-текст не попадает в PDF, поэтому
+дифф IDML-историй против рендера + постраничный дифф пруфов решают вопрос
+детерминированно. Новый инструмент
+[`Litpam-Indexator/tools/overset_textdiff.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/overset_textdiff.py)
+(режимы `stories` / `pages`, переиспользуем для книги II):
+
+- **0 из 442 страниц** отличаются между пруфом 2022 и конвертацией 2026 —
+  посимвольная идентичность текста и пагинации;
+- все три overset-истории безобидны (титульная строка, копирайт, тегированная
+  рабочая история `c-`/`d-` — не Именной указатель, вопреки атрибуции дефекта);
+- **DFT-I-0002: blocker → cosmetic / pre-existing-by-design**; человеку остаётся
+  формальный waiver гейта + строка 221 словника.
+
+Разбор: [`OVERSET_TEXTDIFF_ADJUDICATION_BOOK_I_2026.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/overset-adjudication-2026/OVERSET_TEXTDIFF_ADJUDICATION_BOOK_I_2026.md).
+
 ### Deterministic print-readiness tooling + conversion gate книги I = FAIL (H2589)
 
 Шаги 2–5 плана print-readiness (работа Sonnet 5 `claude-sonnet-5`; сессия упала до
