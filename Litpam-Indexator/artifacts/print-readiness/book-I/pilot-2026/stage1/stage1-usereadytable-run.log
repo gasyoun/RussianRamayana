@@ -1,0 +1,22 @@
+[stage1] connected: Adobe InDesign 21.0.1.6
+[stage1] alert shim installed in engine UseReadyTable: shim-ok
+[stage1] Именной: 782 data rows -> src-imennoj.tsv
+[stage1] Именной: table built in 8s — rows=782|cols=2|extraFrames=1|saved=C:\Users\user\Documents\GitHub\RussianRamayana\Litpam-Indexator\work\print-readiness\pilot-I\indexlists\Source-imennoj.indd
+[stage1] Именной: UseReadyTable finished in 1824s; new file(s): ['IndexList-001.indd']; alerts: Таблица сохранена с именем 'IndexList-001.indd'.Время обработки: 30 мин. || 
+[stage1] Географ: 199 data rows -> src-geograf.tsv
+[stage1] Географ: table built in 5s — rows=199|cols=2|extraFrames=0|saved=C:\Users\user\Documents\GitHub\RussianRamayana\Litpam-Indexator\work\print-readiness\pilot-I\indexlists\Source-geograf.indd
+[stage1] Географ: UseReadyTable finished in 127s; new file(s): ['IndexList-002.indd']; alerts: Таблица сохранена с именем 'IndexList-002.indd'.Время обработки: 2 мин. || 
+[stage1] Предметы и термины: 429 data rows -> src-predmety.tsv
+[stage1] Предметы и термины: table built in 10s — rows=429|cols=2|extraFrames=0|saved=C:\Users\user\Documents\GitHub\RussianRamayana\Litpam-Indexator\work\print-readiness\pilot-I\indexlists\Source-predmety.indd
+[stage1] Предметы и термины: UseReadyTable finished in 742s; new file(s): ['IndexList-003.indd']; alerts: Таблица сохранена с именем 'IndexList-003.indd'.Время обработки: 12 мин. || 
+[stage1] Флора и фауна: 88 data rows -> src-flora.tsv
+[stage1] Флора и фауна: table built in 3s — rows=88|cols=2|extraFrames=0|saved=C:\Users\user\Documents\GitHub\RussianRamayana\Litpam-Indexator\work\print-readiness\pilot-I\indexlists\Source-flora.indd
+[stage1] Флора и фауна: UseReadyTable finished in 47s; new file(s): ['IndexList-004.indd']; alerts: Таблица сохранена с именем 'IndexList-004.indd'.Время обработки: 1 мин. || 
+
+[stage1] summary:
+  OK: Именной (782 rows) -> IndexList-001.indd | Таблица сохранена с именем 'IndexList-001.indd'.Время обработки: 30 мин. || 
+  OK: Географ (199 rows) -> IndexList-002.indd | Таблица сохранена с именем 'IndexList-002.indd'.Время обработки: 2 мин. || 
+  OK: Предметы и термины (429 rows) -> IndexList-003.indd | Таблица сохранена с именем 'IndexList-003.indd'.Время обработки: 12 мин. || 
+  OK: Флора и фауна (88 rows) -> IndexList-004.indd | Таблица сохранена с именем 'IndexList-004.indd'.Время обработки: 1 мин. || 
+
+[exited with code 0]

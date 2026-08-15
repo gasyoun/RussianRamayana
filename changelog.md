@@ -4,6 +4,29 @@
 
 ## 2026-08-15
 
+### Стадия [1] пилота выполнена агентом через COM: сводная IndexList[@]001, сравнение с 2025 (H2776)
+
+MG-override («Попробуй стадию [1] сам через COM»): генерационная стадия `[1]`
+прогнана headless на **авторских скриптах без модификаций** —
+[`drive_stage1.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/drive_stage1.py)
+строит 2-колоночные таблицы из словника
+([`build_indexlist_table.jsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/build_indexlist_table.jsx))
+и запускает `UseReadyTable.v.7.jsx` ×4 (782/199/429/88 строк; 30/2/12/1 мин;
+модальные alert'ы перехвачены шимом в его persistent engine);
+[`drive_stage1b.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/drive_stage1b.py)
+ставит маркеры `a`–`d` (аддитивный твин цикла `AddMarker.jsx`) и гонит авторский
+`MergeTwoIndexListTables.jsx` ×3 → **сводная `IndexList[@]001.indd`, 1498 строк,
+5 колонок** (вне Git, в pilot-workspace).
+
+Сравнение с типографскими указателями 2025 (страницы 415–438 пруфа;
+[`compare_stage1_2025.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/compare_stage1_2025.py)
++ read-only дампер [`dump_indexlist.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/dump_indexlist.py)):
+union common 1073, потерь строк словника нет; **находка — ~15–20 терминов 2025
+отсутствуют в словнике** (добавлены в 2025 напрямую в вёрстку при разборе
+`log.txt`, в `.xlsx` не возвращены) — вердикт и список:
+[SVODNAYA_VS_2025_STAGE1_COMPARISON.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/stage1/SVODNAYA_VS_2025_STAGE1_COMPARISON.md).
+Канал backfill — решение человека; иначе восстановить на стадии `[3]`.
+
 ### Словник закрыт 43/43: строка 221 очищена по рулингу МГ (H2776)
 
 Рулинг МГ 15-08-2026: `[без тега не искать]` удалено из колонки `C` строки 221

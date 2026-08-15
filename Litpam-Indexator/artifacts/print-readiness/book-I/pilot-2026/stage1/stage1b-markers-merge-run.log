@@ -1,0 +1,13 @@
+[stage1b] connected: Adobe InDesign 21.0.1.6
+[stage1b] marker a: IndexList-001.indd -> IndexList[a]001.indd (already-marked|rows=782|cols=5)
+[stage1b] marker b: IndexList-002.indd -> IndexList[b]002.indd (rows=199|cols=5)
+[stage1b] marker c: IndexList-003.indd -> IndexList[c]003.indd (rows=429|cols=5)
+[stage1b] marker d: IndexList-004.indd -> IndexList[d]004.indd (rows=88|cols=5)
+[stage1b] receiver: IndexList[a]001.indd -> IndexList[@]001.indd
+[stage1b] merge alert shim: shim-ok
+[stage1b] merge b: OK in 16s; alerts: Таблица добавлена. || 
+[stage1b] merge c: OK in 34s; alerts: Таблица добавлена. || 
+[stage1b] merge d: OK in 15s; alerts: Таблица добавлена. || 
+[stage1b] done: сводная таблица = C:\Users\user\Documents\GitHub\RussianRamayana\Litpam-Indexator\work\print-readiness\pilot-I\indexlists\IndexList[@]001.indd
+
+[exited with code 0]
