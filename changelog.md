@@ -2,6 +2,25 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-08-15
+
+### Шаг 6 (пилот книги I) запущен: waiver гейта применён, машинная половина выполнена (H2776)
+
+Waiver МГ 15-08-2026 по адъюдикации H2770 (Fable 5 `claude-fable-5`):
+
+- `conversion-gate` — waiver-каналы (`--waive-overset-story-id`, `--waive-missing-links`,
+  обязательный `--waiver-note`; waived-пункты остаются в ledger); вердикт
+  **`PASS_WITH_WAIVERS`** для книги I —
+  [gate-report-waived.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/gate-report-waived.json). 23 pytest.
+- Новый additive-инструмент
+  [`tools/indesign/resolve_overset.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/resolve_overset.py)
+  + [`resolve_overset.jsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/resolve_overset.jsx):
+  снял 3 waived overset-истории в версионной pilot-копии тредингом 5 extension-фреймов
+  на pasteboard (текст не удалялся; страницы посимвольно идентичны — 0/442 отличий).
+- Pilot workspace + corrected workbook подключены; операторская половина — по
+  [PILOT_BOOK_I_OPERATOR_RUNBOOK_2026.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/print-readiness/PILOT_BOOK_I_OPERATOR_RUNBOOK_2026.md)
+  (стадии `[1]`–`[4]`, ≈3–6 ч; строка 221 словника — `WAITING` до решения человека).
+
 ## 2026-08-14
 
 ### Overset книги I адъюдицирован без InDesign — DFT-I-0002 опровергнут как blocker (H2770)

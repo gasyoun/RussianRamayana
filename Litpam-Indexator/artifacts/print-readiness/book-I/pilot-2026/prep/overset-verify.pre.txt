@@ -1,0 +1,4 @@
+DOC=Ramayana_I_pilot_2026.indd
+MODE=report
+FIXED_COUNT=0
+STILL_OVERSET_COUNT=0
