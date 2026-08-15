@@ -1,0 +1,7 @@
+DOC=Ramayana_I_pilot_2026.indd
+MODE=report
+OVERSET_STORY|2019|containers=1|lastFrameAt=page 4|visibleChars=0|totalChars=83|oversetChars=83|head=© П.А. Гринцер. Перевод, статья, словарь имен и ге
+OVERSET_STORY|2085|containers=1|lastFrameAt=PASTEBOARD|visibleChars=95|totalChars=106|oversetChars=11|head=Репродуцирование (воспроизведение) данного издания
+OVERSET_STORY|12223|containers=1|lastFrameAt=PASTEBOARD|visibleChars=503|totalChars=13091|oversetChars=12588|head=c-абхиджит  58, 307 c-агнихотра  336 c-агништома  
+FIXED_COUNT=0
+STILL_OVERSET_COUNT=3

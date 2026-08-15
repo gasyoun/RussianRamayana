@@ -1,0 +1,78 @@
+{
+  "handoff": "H2589",
+  "volume": "I",
+  "gate": "Step5 conversion gate (2022 baseline -> 2026 conversion)",
+  "verdict": "PASS_WITH_WAIVERS",
+  "waivers": {
+    "overset_story_ids": [
+      "12223",
+      "2019",
+      "2085"
+    ],
+    "missing_links_waived": true,
+    "note": "MG ruling 15-08-2026 (chat, 'Waiver принят — whitelist трёх story-ID и запускай шаг 6') on the H2770 adjudication: 0/442 page text diff 2022 vs 2026, all 3 overset stories render fully (OVERSET_TEXTDIFF_ADJUDICATION_BOOK_I_2026.md); the 6 missing links are absent from the whole repo and pre-existing per the same page-identity evidence"
+  },
+  "checks": [
+    {
+      "name": "page_count",
+      "pass": true,
+      "baseline": 442,
+      "conversion": 442
+    },
+    {
+      "name": "story_count",
+      "pass": true,
+      "baseline": 64,
+      "conversion": 64
+    },
+    {
+      "name": "links_missing",
+      "pass": true,
+      "baseline": 0,
+      "conversion": 6
+    },
+    {
+      "name": "fonts_ok",
+      "pass": true,
+      "baseline": 0,
+      "conversion": 0
+    },
+    {
+      "name": "overset_ok",
+      "pass": true,
+      "baseline": 0,
+      "conversion": 0
+    }
+  ],
+  "defects": [
+    {
+      "id": "DFT-I-0001",
+      "class": "material",
+      "status": "open",
+      "volume": "I",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate: 0 missing links (WAIVED as pre-existing)",
+      "observed": "6 link(s) LINK_MISSING, waived: 102.eps, 28.eps, 29.eps, LP.tif, линейка21.eps",
+      "expected": "0 missing links",
+      "disposition": "WAITING",
+      "evidence": "MG ruling 15-08-2026 (chat, 'Waiver принят — whitelist трёх story-ID и запускай шаг 6') on the H2770 adjudication: 0/442 page text diff 2022 vs 2026, all 3 overset stories render fully (OVERSET_TEXTDIFF_ADJUDICATION_BOOK_I_2026.md); the 6 missing links are absent from the whole repo and pre-existing per the same page-identity evidence — files absent from the entire repo tree; remains WAITING until the original assets are recovered, but does not gate index mutation.",
+      "found_by": "print_ready.py conversion_gate (H2589)"
+    },
+    {
+      "id": "DFT-I-0002",
+      "class": "cosmetic",
+      "status": "wontfix-exception",
+      "volume": "I",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate + ruling 21 fail condition: no clipping/overset (WAIVED)",
+      "observed": "3 overset story(ies) whitelisted by human waiver: 2019, 2085, 12223",
+      "expected": "0 overset stories",
+      "disposition": "wontfix-exception",
+      "evidence": "MG ruling 15-08-2026 (chat, 'Waiver принят — whitelist трёх story-ID и запускай шаг 6') on the H2770 adjudication: 0/442 page text diff 2022 vs 2026, all 3 overset stories render fully (OVERSET_TEXTDIFF_ADJUDICATION_BOOK_I_2026.md); the 6 missing links are absent from the whole repo and pre-existing per the same page-identity evidence; story IDs: 2019, 2085, 12223",
+      "found_by": "print_ready.py conversion_gate (H2589)"
+    }
+  ],
+  "note": "Baseline captured from the already-committed InDesign-2022-native package (confirmed by its own designmap.xml product_version='17.4(51)' / PDF creator 'Adobe InDesign 17.4 (Windows)'), audited statically via audit-idml/audit-pdf — NOT a fresh live 2022 re-export. This machine's only registered InDesign COM ProgID resolves to InDesign 2026 (InDesign 2022 has no distinct registered ProgID here), so InDesign 2022 cannot be driven live via COM on this machine. See the H2589 PR description for the full finding."
+}

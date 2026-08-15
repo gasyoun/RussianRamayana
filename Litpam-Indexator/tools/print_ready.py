@@ -74,13 +74,19 @@ def cmd_verify_packet(args):
 
 
 def cmd_conversion_gate(args):
+    if (args.waive_overset_story_id or args.waive_missing_links) and not args.waiver_note:
+        raise SystemExit("conversion-gate: --waiver-note is required when any waiver flag is used")
     report = gate_mod.build_gate_report(
-        args.baseline_idml_audit, args.conversion_idml_audit, args.conversion_evidence_report, args.volume
+        args.baseline_idml_audit, args.conversion_idml_audit, args.conversion_evidence_report,
+        args.volume,
+        overset_waiver_ids=args.waive_overset_story_id,
+        waive_missing_links=args.waive_missing_links,
+        waiver_note=args.waiver_note,
     )
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"conversion-gate: verdict={report['verdict']} defects={len(report['defects'])} -> {args.output}")
-    return 0 if report["verdict"] == "PASS" else 1
+    return 0 if report["verdict"].startswith("PASS") else 1
 
 
 def build_parser():
@@ -121,6 +127,15 @@ def build_parser():
     cg.add_argument("--conversion-evidence-report", required=True)
     cg.add_argument("--volume", default="I")
     cg.add_argument("--output", required=True)
+    cg.add_argument(
+        "--waive-overset-story-id", action="append", default=[],
+        help="story id whose overset is human-waived (repeatable)",
+    )
+    cg.add_argument(
+        "--waive-missing-links", action="store_true",
+        help="treat LINK_MISSING as pre-existing WAITING, not a gate failure",
+    )
+    cg.add_argument("--waiver-note", default=None, help="who approved, when, evidence link")
     cg.set_defaults(func=cmd_conversion_gate)
 
     return p

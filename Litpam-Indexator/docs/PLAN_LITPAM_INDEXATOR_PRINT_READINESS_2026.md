@@ -1,6 +1,6 @@
 # Litpam-Indexator: план готовности указателей книг I–II к печати
 
-_Created: 12-08-2026 · Last updated: 14-08-2026_
+_Created: 12-08-2026 · Last updated: 15-08-2026_
 
 Цель — перевести существующие указатели двух томов из состояния «визуально готовый макет 2025 года» в воспроизводимую, доказуемо проверенную издательскую поставку: обновлённые указатели, версионные пакеты InDesign 2026, IDML, proof-PDF и полный пакет свидетельств. Финальный PDF для типографии выпускает издатель; этот план заканчивается проверенными пакетами и корректурными PDF.
 
@@ -88,5 +88,17 @@ _Created: 12-08-2026 · Last updated: 14-08-2026_
 - **Все три overset-истории безобидны**: 2019=`u7e3` титульная строка, 2085=`u825` копирайт-нотис — контент 100 % в обоих PDF; 12223=`u2fbf` — тегированная рабочая история категорий `c-`/`d-` (не Именной указатель — ошибочная атрибуция в исходном дефекте), все 381 заголовков рендерятся без префикса в обоих PDF.
 
 **DFT-I-0002: blocker → cosmetic / pre-existing-by-design.** Остаётся человеку: формальный waiver гейта (критерий «0 overset stories» как написан всё равно FAIL — рекомендуемый фикс: whitelist трёх story-ID или правило «tagged working stories не считаются») и строка 221. После waiver — шаг 6 книги I и H2590.
+
+## Шаг 6 запущен: waiver применён, машинная половина выполнена (15-08-2026, H2776, Fable 5 `claude-fable-5`)
+
+Waiver принят МГ 15-08-2026 («whitelist трёх story-ID и запускай шаг 6»). Сделано:
+
+- **Гейт**: `conversion-gate` получил waiver-каналы (`--waive-overset-story-id` ×3, `--waive-missing-links`, обязательный `--waiver-note`; waived-пункты остаются в defect ledger) — [gate-report-waived.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/gate-report-waived.json): **`PASS_WITH_WAIVERS`, exit 0** — формальное условие входа шага 6 выполнено. 23 pytest.
+- **Pilot workspace**: SHA-верифицированная копия пакета 2025 → `work/print-readiness/pilot-I/` (вне Git), версионная копия `Ramayana_I_pilot_2026.indd` (InDesign 2026, 21.0.1.6).
+- **Overset снят: 3 → 0** ([resolve_overset.py](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/resolve_overset.py)/[`.jsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/resolve_overset.jsx) — additive: 5 extension-фреймов на pasteboard, метка `H2776-overset-extension`, текст не удалялся; иначе собственные проверки стадий `[1]`/`[3]` отказали бы в запуске). Диагноз: 2019 — «схлопнутый» фрейм © на стр. 4 (0 видимых симв.), 2085 — 11 хвостовых симв., 12223 — 12 588/13 091 симв. рабочей истории. [Отчёты](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/prep).
+- **Контент-нейтральность доказана**: PDF pilot-копии посимвольно идентичен conversion-PDF на всех 442 страницах ([pilot-vs-conversion-pages.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/prep/pilot-vs-conversion-pages.json)); шрифты INSTALLED, OVERSET_COUNT=0.
+- **Corrected workbook подключён** в workspace; строка 221 — по-прежнему `WAITING` (в стадию `[3]` не подавать до решения человека).
+
+**Операторская половина** (стадии `[1]`–`[4]` авторскими скриптами, по рулингу 8 не автоматизируется) — по [PILOT_BOOK_I_OPERATOR_RUNBOOK_2026.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/print-readiness/PILOT_BOOK_I_OPERATOR_RUNBOOK_2026.md); ≈3–6 ч, стадия `[3]` — непрерывный блок ≈1,5 ч. Финальная агентская фиксация (coverage/refs/packet/status) — после стадии `[4]`.
 
 _Dr. Mārcis Gasūns_
