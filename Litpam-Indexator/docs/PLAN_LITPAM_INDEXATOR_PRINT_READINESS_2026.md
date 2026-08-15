@@ -80,4 +80,13 @@ _Created: 12-08-2026 · Last updated: 14-08-2026_
 
 **Итоговый статус: `HUMAN_REVIEW_WAITING` (частичный, evidence-backed).** Инструментарий готов и протестирован; конверсионный гейт книги I прогнан на реальных данных и корректно НЕ прошёл с конкретной, воспроизводимой находкой. Открыто человеку/Fable 5: (1) подтвердить/опровергнуть overset в Именном указателе непосредственно в InDesign (2022 и/или 2026, вручную — на машине с доступом к обеим версиям через COM или GUI), (2) решить судьбу `[без тега не искать]` в строке 221, (3) при необходимости — минт residual-handoff для книги II (H2590 остаётся gated тем же conversion gate).
 
+## Адъюдикация DFT-I-0002 (14-08-2026, H2770, Fable 5 `claude-fable-5`)
+
+Пункт (1) выше закрыт **без InDesign**: overset не хранится в IDML, но его следствие хранит PDF (overset-текст не рендерится). [`tools/overset_textdiff.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/overset_textdiff.py) дал два результата ([полный разбор](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/overset-adjudication-2026/OVERSET_TEXTDIFF_ADJUDICATION_BOOK_I_2026.md)):
+
+- **Пруф 2022 и конвертация 2026 посимвольно идентичны на всех 442 страницах** (whitespace-insensitive постраничный дифф: 0 отличий) — конвертация не изменила ни текст, ни пагинацию.
+- **Все три overset-истории безобидны**: 2019=`u7e3` титульная строка, 2085=`u825` копирайт-нотис — контент 100 % в обоих PDF; 12223=`u2fbf` — тегированная рабочая история категорий `c-`/`d-` (не Именной указатель — ошибочная атрибуция в исходном дефекте), все 381 заголовков рендерятся без префикса в обоих PDF.
+
+**DFT-I-0002: blocker → cosmetic / pre-existing-by-design.** Остаётся человеку: формальный waiver гейта (критерий «0 overset stories» как написан всё равно FAIL — рекомендуемый фикс: whitelist трёх story-ID или правило «tagged working stories не считаются») и строка 221. После waiver — шаг 6 книги I и H2590.
+
 _Dr. Mārcis Gasūns_
