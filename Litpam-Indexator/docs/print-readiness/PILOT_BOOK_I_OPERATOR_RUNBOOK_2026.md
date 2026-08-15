@@ -38,10 +38,16 @@ _Created: 15-08-2026 · Last updated: 15-08-2026_
 стадия `[3]` ≈1–1,5 ч непрерывного блока.
 
 1. **`[0]` пропускается** — текст не менялся с 2025, символьные стили уже в вёрстке.
-2. **`[1]` Таблицы IndexList** (~30–60 мин): 4 листа corrected workbook (`…2026_08_15.xlsx`) →
-   `UseReadyTable.v.7.jsx` → `IndexList-001…004` → `AddMarker.jsx` (`a/b/c/d`) →
-   `MergeTwoTables` → сводная `IndexList[@]-001`. Дрилл Golden Fish перед боевым прогоном
-   `UseReadyTable` (статическая проверка H377 была, живой прогон в InDesign — нет).
+2. **`[1]` — ✅ ВЫПОЛНЕНА АГЕНТОМ 15-08-2026 (COM, MG-override):**
+   `drive_stage1.py` (сборка 2-колоночных таблиц из словника + авторский
+   `UseReadyTable.v.7.jsx` ×4 без модификаций: 782/199/429/88 строк, 30/2/12/1 мин)
+   → `drive_stage1b.py` (маркеры `a`–`d` + авторский `MergeTwoIndexListTables.jsx` ×3)
+   → сводная **`work/print-readiness/pilot-I/indexlists/IndexList[@]001.indd`
+   (1498 строк, 5 колонок)**. Сравнение с указателями 2025:
+   [SVODNAYA_VS_2025_STAGE1_COMPARISON.md](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-I/pilot-2026/stage1/SVODNAYA_VS_2025_STAGE1_COMPARISON.md)
+   — union common 1073, потерь нет, НО ~15–20 терминов 2025 отсутствуют в словнике
+   (добавлены тогда напрямую в вёрстку при разборе `log.txt`) — см. вердикт, нужен
+   backfill-канал (человек решает) либо восстановление на стадии `[3]`.
 3. **`[2]`** почти пропускается (по info.txt автора).
 4. **`[3]` Индексирование** (≈1–1,5 ч + разбор `log.txt`): `ProcStoryOrDoс[09.10.2023].jsx`
    («с» кириллическая), в диалоге отметить «Удалить все имеющиеся записи в индексе»
