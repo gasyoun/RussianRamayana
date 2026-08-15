@@ -68,6 +68,62 @@ function _byText(txt) {
 }
 """
 
+# Регенерация: старый индекс 2025 сносится ЦЕЛИКОМ до прогона (авторская ветка
+# «Удалить все имеющиеся записи» зовёт docIndex.update()/topics.everyItem().remove()
+# на живом старом индексе — на нём COM-прогон падает Invalid parameter; после
+# полного remove() theAction сам создаёт свежий индекс через indexes.add()).
+PURGE = """#targetengine "StoryAndDoc"
+var tdoc = null;
+for (var i = 0; i < app.documents.length; i++)
+    if (app.documents[i].name.indexOf("IndexList") == -1) tdoc = app.documents[i];
+if (tdoc == null) throw new Error("target doc not found");
+// Index не имеет remove() — вычищаем topics; update() старого индекса пропускаем.
+var report = "indexes=" + tdoc.indexes.length;
+if (tdoc.indexes.length > 0) {
+    var ix = tdoc.indexes[0];
+    var nt = ix.topics.length;
+    try { ix.topics.everyItem().remove(); report += "|topicsRemoved=" + nt; }
+    catch (e) {
+        // поштучно с хвоста — устойчивее на битых topic-ссылках 2025 года
+        var removed = 0;
+        for (var t = ix.topics.length - 1; t >= 0; t--) {
+            try { ix.topics[t].remove(); removed++; } catch (e2) {}
+        }
+        report += "|topicsRemovedOneByOne=" + removed + "|left=" + ix.topics.length;
+    }
+}
+"purged|" + report;
+"""
+
+# InDesign-2026 DOM-регрессия: rows.everyItem().cells[0].contents возвращает
+# ПЛОСКИЙ список ячеек (row0cell0, row0cell1, ...), поэтому авторский сбор букв
+# в getDataAction обрывается на второй ячейке первой строки и letAr содержит
+# только букву первой выделенной строки. Обход БЕЗ правки авторского кода:
+# стадия [3] гонится четырьмя однобуквенными диапазонами — в каждом прогоне
+# letAr = [своя буква], её цвет создаётся и все строки диапазона его получают.
+SCAN = ('#targetengine "StoryAndDoc"\n' + """
+var idoc = null;
+for (var i = 0; i < app.documents.length; i++)
+    if (app.documents[i].name.indexOf("IndexList") != -1) idoc = app.documents[i];
+if (idoc == null) throw new Error("IndexList doc not open");
+var tbl = null;
+for (var s = 0; s < idoc.stories.length && tbl == null; s++)
+    if (idoc.stories[s].tables.length > 0) tbl = idoc.stories[s].tables[0];
+var n = tbl.rows.length;
+var spans = [];
+var cur = "", start = -1;
+for (var r = 0; r < n; r++) {
+    var t = String(tbl.rows[r].cells[0].texts[0].contents);
+    var m = (t.length > 1 && t.charAt(1) == "-") ? t.charAt(0) : "?";
+    if (m != cur) {
+        if (cur != "") spans.push(cur + ":" + start + "-" + (r - 1));
+        cur = m; start = r;
+    }
+}
+if (cur != "") spans.push(cur + ":" + start + "-" + (n - 1));
+spans.join(",");
+""")
+
 PREPARE = ('#targetengine "StoryAndDoc"\n' + FINDERS + """
 var idoc = null, tdoc = null;
 for (var i = 0; i < app.documents.length; i++) {
@@ -80,12 +136,43 @@ var tbl = null;
 for (var s = 0; s < idoc.stories.length && tbl == null; s++)
     if (idoc.stories[s].tables.length > 0) tbl = idoc.stories[s].tables[0];
 if (tbl == null) throw new Error("no table in IndexList doc");
-tbl.select();
+// rows.itemByRange().select() падает Invalid parameter в 2026 — выделяем тот же
+// диапазон через плоскую коллекцию ячеек (rows у полученного Cell-выделения есть).
+var nCols = tbl.columns.length;
+tbl.cells.itemByRange(%(start)s * nCols, %(end)s * nCols + nCols - 1).select();
 var btn = _byText("Подготовить задание на работу с текстом");
 if (btn == null) throw new Error("stGetData button not found in palette tree");
 $.global.__alertLog = "";
-btn.onClick();
-"prepared|rows=" + tbl.rows.length + "|alerts=" + ($.global.__alertLog || "");
+var verdict = "prepared";
+try { btn.onClick(); }
+catch (e) { verdict = "prepare-THREW|line=" + e.line + "|msg=" + e.message; }
+verdict + "|range=%(start)s-%(end)s|alerts=" + ($.global.__alertLog || "");
+""")
+
+# Ещё одна DOM-регрессия 2026: rows.everyItem().cells[0].contents возвращает
+# массив ПУСТЫХ строк, поэтому авторский сбор букв даёт letAr=[] и dataLines[*]
+# остаются без .color (usedColorNames пуст) — прогон падает на строке 773
+# (fillColor по несуществующему цвету). dataLines — engine-глобал: чиним его
+# ПОСЛЕ prepare, ДО run — цвета предсоздаём по авторской палитре colorsRGB.
+FIX_COLORS = ('#targetengine "StoryAndDoc"\n' + """
+var tdoc = null;
+for (var i = 0; i < app.documents.length; i++)
+    if (app.documents[i].name.indexOf("IndexList") == -1 && app.documents[i].name.indexOf("pilot") != -1)
+        tdoc = app.documents[i];
+if (tdoc == null) throw new Error("pilot doc not found");
+var letters = ["a", "b", "c", "d"];
+var made = [], present = [];
+for (var q = 0; q < letters.length; q++) {
+    var L = letters[q];
+    var cname = "IndexColor-" + L + "-[@]001";
+    if (tdoc.colors.itemByName(cname).isValid) { present.push(cname); continue; }
+    var r = 255, g = 0, b = 0;
+    for (var c = 0; c < colorsRGB.length; c++)
+        if (colorsRGB[c].letter == L) { r = colorsRGB[c].r; g = colorsRGB[c].g; b = colorsRGB[c].b; }
+    tdoc.colors.add({ name: cname, model: ColorModel.SPOT, space: ColorSpace.RGB, colorValue: [Number(r), Number(g), Number(b)] });
+    made.push(cname);
+}
+"colors|made=[" + made.join(",") + "]|present=[" + present.join(",") + "]";
 """)
 
 RUN = ('#targetengine "StoryAndDoc"\n' + FINDERS + """
@@ -99,14 +186,18 @@ var act = _byText("Обработать выбранный текст в соо�
 if (act == null || rbDoc == null) throw new Error("palette controls not found");
 rbDoc.value = true;
 rbStory.value = false;
-cbClear.value = %(clear)s; // присваивание НЕ вызывает confirm-диалог
+cbClear.value = false; // старый индекс уже снесён PURGE-шагом целиком (%(clear)s)
 var rbAdd = (rbAdd1 != null) ? rbAdd1 : rbAdd2;
 rbAdd.value = true;
 if (rbDel != null) rbDel.value = false;
 act.enabled = true;
 $.global.__alertLog = "";
-act.onClick();
-"action-done|alerts=" + ($.global.__alertLog || "");
+var verdict = "action-done";
+try { act.onClick(); }
+catch (e) {
+    verdict = "action-THREW|line=" + e.line + "|msg=" + e.message + "|file=" + (e.fileName || "?");
+}
+verdict + "|alerts=" + ($.global.__alertLog || "");
 """)
 
 
@@ -155,16 +246,38 @@ def main(argv=None):
     app.Open(str(ilist))
     print(f"[stage3] opened indexlist: {ilist.name}")
 
-    t0 = time.time()
-    prep = do_jsx(PREPARE, "prepare")
-    print(f"[stage3] prepare ({time.time()-t0:.0f}s): {prep}")
-    if "|dataLines=0" in str(prep):
-        raise SystemExit("[stage3] task is EMPTY (dataLines=0) — inspect alerts above")
+    if not args.no_clear:
+        print("[stage3] purge:", do_jsx(PURGE, "purge"))
 
-    t0 = time.time()
-    run = do_jsx(RUN % {"clear": "false" if args.no_clear else "true"}, "run")
-    dt = time.time() - t0
-    print(f"[stage3] theAction finished in {dt/60:.1f} min: {str(run)[:400]}")
+    spans_raw = str(do_jsx(SCAN, "scan"))
+    print(f"[stage3] marker spans: {spans_raw}")
+    spans = []
+    for part in spans_raw.split(","):
+        letter, _, rng = part.partition(":")
+        s, _, e = rng.partition("-")
+        if letter == "?":
+            raise SystemExit(f"[stage3] unmarked rows in span {part} — inspect the svodnaya")
+        spans.append((letter, int(s), int(e)))
+
+    t_all = time.time()
+    outcomes = []
+    for letter, s, e in spans:
+        t0 = time.time()
+        prep = str(do_jsx(PREPARE % {"start": s, "end": e}, f"prepare_{letter}"))
+        print(f"[stage3] prepare[{letter}] ({time.time()-t0:.0f}s): {prep[:200]}")
+        if "THREW" in prep:
+            raise SystemExit(f"[stage3] prepare[{letter}] failed — stopping before mutation")
+        print(f"[stage3] fix-colors[{letter}]:", do_jsx(FIX_COLORS, f"fix_{letter}"))
+        t0 = time.time()
+        run = str(do_jsx(RUN % {"clear": "false"}, f"run_{letter}"))
+        print(f"[stage3] run[{letter}] finished in {(time.time()-t0)/60:.1f} min: {run[:300]}")
+        outcomes.append((letter, run))
+        if "THREW" in run:
+            raise SystemExit(f"[stage3] run[{letter}] failed — see report; earlier letters kept")
+    dt = time.time() - t_all
+    run = " ||| ".join(f"[{ltr}] {r}" for ltr, r in outcomes)
+    prep = spans_raw
+    print(f"[stage3] ALL letters done in {dt/60:.1f} min")
 
     # Сохраняем обработанный документ (авторский скрипт этого не делает).
     for i in range(1, app.Documents.Count + 1):
