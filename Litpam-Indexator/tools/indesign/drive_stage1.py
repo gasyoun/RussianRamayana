@@ -45,7 +45,7 @@ HERE = Path(__file__).resolve().parent
 BASE = HERE.parents[1]  # Litpam-Indexator/
 BUILD_JSX = HERE / "build_indexlist_table.jsx"
 USE_READY = BASE / "#Indexing. Ramayana" / "[1. Подготовка таблиц]" / "UseReadyTable.v.7.jsx"
-WORKBOOK = BASE / "work" / "print-readiness" / "pilot-I" / "Указатель_к_Рамаяне_1_2_2026_08_15.xlsx"
+DEFAULT_WORKBOOK = BASE / "work" / "print-readiness" / "pilot-I" / "Указатель_к_Рамаяне_1_2_2026_08_15b.xlsx"
 
 SHEETS = ["Именной", "Географ", "Предметы и термины", "Флора и фауна"]
 
@@ -90,6 +90,7 @@ def sheet_to_tsv(wb, sheet, out_path):
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--sheets", default=",".join(SHEETS))
+    p.add_argument("--workbook", default=str(DEFAULT_WORKBOOK))
     p.add_argument("--workdir", default=str(BASE / "work" / "print-readiness" / "pilot-I" / "indexlists"))
     p.add_argument("--quit", action="store_true")
     args = p.parse_args(argv)
@@ -99,7 +100,7 @@ def main(argv=None):
         raise SystemExit("refusing: --workdir must live under work/print-readiness/ (ruling 26)")
     workdir.mkdir(parents=True, exist_ok=True)
 
-    wb = openpyxl.load_workbook(WORKBOOK, data_only=True)
+    wb = openpyxl.load_workbook(args.workbook, data_only=True)
 
     import win32com.client
 

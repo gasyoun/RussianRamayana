@@ -1,0 +1,561 @@
+{
+ "ruling": "MG 15-08-2026: backfill вариант (а)",
+ "candidates": [
+  {
+   "term": "богов",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "богов"
+  },
+  {
+   "term": "городов",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "городов"
+  },
+  {
+   "term": "городов, или разрушитель",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "городов, или разрушитель"
+  },
+  {
+   "term": "жертвоприношений",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "жертвоприношений"
+  },
+  {
+   "term": "крепостей, или покоритель",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "крепостей, или покоритель"
+  },
+  {
+   "term": "кушанабхи",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "кушанабхи"
+  },
+  {
+   "term": "мисампанна",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "мисампанна"
+  },
+  {
+   "term": "нардана",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "нардана"
+  },
+  {
+   "term": "пашупати-рудра",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "пашупати-рудра"
+  },
+  {
+   "term": "хи (митхилы)",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "хи (митхилы)"
+  },
+  {
+   "term": "царь (владыка) кекаи",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "царь (владыка) кекаи"
+  },
+  {
+   "term": "щая) тремя путями",
+   "index": "a",
+   "sheet": "Именной",
+   "source_raw": "щая) тремя путями"
+  },
+  {
+   "term": "рикшавата",
+   "index": "b",
+   "sheet": "Географ",
+   "source_raw": "рикшавата"
+  },
+  {
+   "term": "адитьи",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "адитьи"
+  },
+  {
+   "term": "асуры",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "асуры"
+  },
+  {
+   "term": "ашрама",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "ашрама"
+  },
+  {
+   "term": "брахмы",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "брахмы"
+  },
+  {
+   "term": "вриттимана",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "вриттимана"
+  },
+  {
+   "term": "данавы",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "данавы"
+  },
+  {
+   "term": "дхану",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "дхану"
+  },
+  {
+   "term": "дханью",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "дханью"
+  },
+  {
+   "term": "дхритималина",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "дхритималина"
+  },
+  {
+   "term": "лук шивы",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "лук шивы"
+  },
+  {
+   "term": "небо индры",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "небо индры"
+  },
+  {
+   "term": "праджапати кришашвы",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "праджапати кришашвы"
+  },
+  {
+   "term": "пурана",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "пурана"
+  },
+  {
+   "term": "пхалгуни",
+   "index": "c",
+   "sheet": "Предметы и термины",
+   "source_raw": "пхалгуни"
+  },
+  {
+   "term": "уттара пхалгуни",
+   "index": "d",
+   "sheet": "Флора и фауна",
+   "source_raw": "уттара пхалгуни"
+  },
+  {
+   "term": "южный крест",
+   "index": "d",
+   "sheet": "Флора и фауна",
+   "source_raw": "южный крест"
+  }
+ ],
+ "excluded": [
+  {
+   "term": "бала",
+   "index": "a",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "г омер",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "г опа",
+   "index": "a",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "г отама",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "джанардана, или пуруша джа-",
+   "index": "a",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "дочери кушанабхи, или сто дочерей",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "дры",
+   "index": "a",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "или лакшмивардхана",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "мадхушпанда (мадхучханда, мад-",
+   "index": "a",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "махишпанда, мадхушпанда)",
+   "index": "a",
+   "reason": "stray parenthetical fragment"
+  },
+  {
+   "term": "наделенный счастливой долей",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "наделенный счастьем, или лакш-",
+   "index": "a",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "потомок пуластьи, или паула-",
+   "index": "a",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "пурандара, или сокрушитель",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "сваямбху , или самосущий",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "стья",
+   "index": "a",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "темношеий, или «с темной шеей»",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "трипатхага, или текущая (иду-",
+   "index": "a",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "упендра, или младший брат ин-",
+   "index": "a",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "харихая",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "хучхандаса, махишьянда",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "царь (владыка, бык) тридцатки",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "царь (владыка, государь) виде-",
+   "index": "a",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "шатакрату , или вершитель ста",
+   "index": "a",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "г окарна",
+   "index": "b",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "г омати",
+   "index": "b",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "дакшинапатха (южная область",
+   "index": "b",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "совр. декан)",
+   "index": "b",
+   "reason": "stray parenthetical fragment"
+  },
+  {
+   "term": "божественное оружие, сыновья",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "брахманский посох, или посох",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "ваджра, или перун индры (ша-",
+   "index": "c",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "грихастха, гархастха, домохозя-",
+   "index": "c",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "девариши или божественные",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "дры",
+   "index": "c",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "жертвенный дар (подношение, при-",
+   "index": "c",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "знание брахмы, или священный слог",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "ин",
+   "index": "c",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "кры)",
+   "index": "c",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "мир индры, или третье небо, или",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "мохана, стрела",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "ношение)",
+   "index": "c",
+   "reason": "stray parenthetical fragment"
+  },
+  {
+   "term": "ом",
+   "index": "c",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "пайнака, или пинака, стрела ру-",
+   "index": "c",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "пахтанье океана",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "рьи",
+   "index": "c",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "сыновья (сыны) арджуны картави-",
+   "index": "c",
+   "reason": "hyphen-wrap head"
+  },
+  {
+   "term": "сыновья (сыны) дашаратхи",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "сыновья (сыны) сагары",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "сыновья васиштхи",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "сыновья вишвамитры",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "тамаса, стрела (?), наводящая",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "тридцатка",
+   "index": "c",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "тьму",
+   "index": "c",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "(слон)",
+   "index": "d",
+   "reason": "stray parenthetical fragment"
+  },
+  {
+   "term": "двапара-юга",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "кали-юга",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "сатья-юга, или крита-юга",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "упасад",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "халахала, или калакута",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "хотар",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "хранитель мира, или локапала",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "хранитель мира, или локапала (бог)",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "чайтра",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "чакра",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "чандала",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "чараны",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "чатуштома",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "чаша",
+   "index": "d",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "шанкха",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "шастра",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "шлока",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "шраддха",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "шрути",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "ювараджа",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  },
+  {
+   "term": "юга",
+   "index": "d",
+   "reason": "wrap tail fragment"
+  },
+  {
+   "term": "якши, якшини",
+   "index": "d",
+   "reason": "present in workbook (form difference)"
+  }
+ ]
+}
