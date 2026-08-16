@@ -2,6 +2,26 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-08-16
+
+### Книга II запущена: baseline+conversion evidence, gate PASS_WITH_WAIVERS, стадии [1]/[1b] выполнены (H2590)
+
+Baseline-2022 (статический аудит) + живая 2026 COM-конверсия (668 стр., 53 истории);
+Step5 gate FAIL на тех же классах дефектов, что книга I (`DFT-II-0001`: 7 LINK_MISSING,
+3/5 имён совпадают с книгой I; `DFT-II-0002`: 3 overset). Адъюдицировано
+`overset_textdiff.py` (переиспользован без изменений): 0/668 страниц отличий,
+все 3 истории рендерятся 100% —
+[адъюдикация](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-II/overset-adjudication-2026/OVERSET_TEXTDIFF_ADJUDICATION_BOOK_II_2026.md).
+МГ применил waiver-прецедент книги I (H2776) →
+`PASS_WITH_WAIVERS` ([PR #75](https://github.com/gasyoun/RussianRamayana/pull/75), merged).
+
+Стадия `[1]` (`drive_stage1.py`, COM, авторские скрипты без модификаций): все 4 листа
+общего словника → IndexList-001..004.indd (784/201/443/88 строк — та же сумма, что
+книга I, общий словник). Стадия `[1b]` (`drive_stage1b.py`): маркеры a/b/c/d + 3 мерджа
+→ сводная `IndexList[@]001.indd` (1516 строк). Остаток: стадия `[3]` (индексирование,
+ожидаются те же DOM-регрессии InDesign 2026, что H2776 задокументировал для книги I) →
+стадия `[4]` (сборка/оформление) → финальный evidence packet.
+
 ## 2026-08-15
 
 ### Стадия [3] выполнена: 1318 topics; три DOM-регрессии InDesign 2026 задокументированы (H2776)
