@@ -1,0 +1,6 @@
+stage3-checkpointed run 2026-08-16 16:23:21
+target: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-104968\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+indexlist: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-104968\Litpam-Indexator\work\print-readiness\pilot-II\indexlists\IndexList[@]001.indd
+letters: ['a']
+spans: a:0-783,b:784-984,c:985-1427,d:1428-1515
+results (1): [a] action-done|alerts=Время начала | время завершения [ч:м]  16:20 | 16:23Обработано строк 20, найдено записей 83. || 
