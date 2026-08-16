@@ -58,3 +58,4 @@ Litpam-Indexator/docs/*.pdf
 
 # Print-readiness working copies of InDesign packages (H2588 contract, IMPLEMENTATION step 4).
 /Litpam-Indexator/work/print-readiness/
+/Litpam-Indexator/artifacts/print-readiness/*/*/contact-sheets/

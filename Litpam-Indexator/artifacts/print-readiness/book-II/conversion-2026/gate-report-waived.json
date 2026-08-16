@@ -1,0 +1,78 @@
+{
+  "handoff": "H2589",
+  "volume": "II",
+  "gate": "Step5 conversion gate (2022 baseline -> 2026 conversion)",
+  "verdict": "PASS_WITH_WAIVERS",
+  "waivers": {
+    "overset_story_ids": [
+      "16237",
+      "1632",
+      "16507"
+    ],
+    "missing_links_waived": true,
+    "note": "MG 16-08-2026, applying Book-I precedent (H2776, MG 15-08-2026): overset stories adjudicated via overset_textdiff.py (0/668 pages differ 2022 vs 2026, all 3 flagged stories render 100% content in both PDFs -- see artifacts/print-readiness/book-II/overset-adjudication-2026/OVERSET_TEXTDIFF_ADJUDICATION_BOOK_II_2026.md); missing links (102.eps, 30.eps, 91.eps, LP.tif, \\u043b\\u0438\\u043d\\u0435\\u0439\\u043a\\u043021.eps) not in repo tree, 3/5 names shared with Book-I's already-ruled pre-existing DFT-I-0001"
+  },
+  "checks": [
+    {
+      "name": "page_count",
+      "pass": true,
+      "baseline": 668,
+      "conversion": 668
+    },
+    {
+      "name": "story_count",
+      "pass": true,
+      "baseline": 53,
+      "conversion": 53
+    },
+    {
+      "name": "links_missing",
+      "pass": true,
+      "baseline": 0,
+      "conversion": 7
+    },
+    {
+      "name": "fonts_ok",
+      "pass": true,
+      "baseline": 0,
+      "conversion": 0
+    },
+    {
+      "name": "overset_ok",
+      "pass": true,
+      "baseline": 0,
+      "conversion": 0
+    }
+  ],
+  "defects": [
+    {
+      "id": "DFT-II-0001",
+      "class": "material",
+      "status": "open",
+      "volume": "II",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate: 0 missing links (WAIVED as pre-existing)",
+      "observed": "7 link(s) LINK_MISSING, waived: 102.eps, 30.eps, 91.eps, LP.tif, линейка21.eps",
+      "expected": "0 missing links",
+      "disposition": "WAITING",
+      "evidence": "MG 16-08-2026, applying Book-I precedent (H2776, MG 15-08-2026): overset stories adjudicated via overset_textdiff.py (0/668 pages differ 2022 vs 2026, all 3 flagged stories render 100% content in both PDFs -- see artifacts/print-readiness/book-II/overset-adjudication-2026/OVERSET_TEXTDIFF_ADJUDICATION_BOOK_II_2026.md); missing links (102.eps, 30.eps, 91.eps, LP.tif, \\u043b\\u0438\\u043d\\u0435\\u0439\\u043a\\u043021.eps) not in repo tree, 3/5 names shared with Book-I's already-ruled pre-existing DFT-I-0001 — files absent from the entire repo tree; remains WAITING until the original assets are recovered, but does not gate index mutation.",
+      "found_by": "print_ready.py conversion_gate (H2589)"
+    },
+    {
+      "id": "DFT-II-0002",
+      "class": "cosmetic",
+      "status": "wontfix-exception",
+      "volume": "II",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate + ruling 21 fail condition: no clipping/overset (WAIVED)",
+      "observed": "3 overset story(ies) whitelisted by human waiver: 1632, 16507, 16237",
+      "expected": "0 overset stories",
+      "disposition": "wontfix-exception",
+      "evidence": "MG 16-08-2026, applying Book-I precedent (H2776, MG 15-08-2026): overset stories adjudicated via overset_textdiff.py (0/668 pages differ 2022 vs 2026, all 3 flagged stories render 100% content in both PDFs -- see artifacts/print-readiness/book-II/overset-adjudication-2026/OVERSET_TEXTDIFF_ADJUDICATION_BOOK_II_2026.md); missing links (102.eps, 30.eps, 91.eps, LP.tif, \\u043b\\u0438\\u043d\\u0435\\u0439\\u043a\\u043021.eps) not in repo tree, 3/5 names shared with Book-I's already-ruled pre-existing DFT-I-0001; story IDs: 1632, 16507, 16237",
+      "found_by": "print_ready.py conversion_gate (H2589)"
+    }
+  ],
+  "note": "Baseline captured from the already-committed InDesign-2022-native package (confirmed by its own designmap.xml product_version='17.4(51)' / PDF creator 'Adobe InDesign 17.4 (Windows)'), audited statically via audit-idml/audit-pdf — NOT a fresh live 2022 re-export. This machine's only registered InDesign COM ProgID resolves to InDesign 2026 (InDesign 2022 has no distinct registered ProgID here), so InDesign 2022 cannot be driven live via COM on this machine. See the H2589 PR description for the full finding."
+}
