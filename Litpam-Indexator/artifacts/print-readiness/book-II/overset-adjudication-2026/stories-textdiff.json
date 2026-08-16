@@ -1,0 +1,595 @@
+{
+ "verdict_all_rendered": false,
+ "stories": [
+  {
+   "story": "Stories/Story_u20e.xml",
+   "words": 1,
+   "head": "К н и г а п е р",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "Балаканда"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "Балаканда"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u331.xml",
+   "words": 1,
+   "head": "Приложение",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u3375.xml",
+   "words": 1,
+   "head": "ПРИЛОЖЕНИЯ",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u339d.xml",
+   "words": 28156,
+   "head": "ПРИМЕЧАНИЯ Перевод первых двух книг Рамаяны выполнен по",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 309,
+     "absent_sample": [
+      "Technique",
+      "Telugu",
+      "Terminalia",
+      "Touen",
+      "Tulasi",
+      "Tumburu",
+      "Turdus",
+      "Tvaṣṭṛ",
+      "añjana-prabham",
+      "cīra-valkala-",
+      "darb",
+      "daśa-ahaṃ",
+      "dhar",
+      "dharma-parāvarā",
+      "karmān"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 309,
+     "absent_sample": [
+      "Technique",
+      "Telugu",
+      "Terminalia",
+      "Touen",
+      "Tulasi",
+      "Tumburu",
+      "Turdus",
+      "Tvaṣṭṛ",
+      "añjana-prabham",
+      "cīra-valkala-",
+      "darb",
+      "daśa-ahaṃ",
+      "dhar",
+      "dharma-parāvarā",
+      "karmān"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u347.xml",
+   "words": 1,
+   "head": "Сноски",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "Сноски"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "Сноски"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u392.xml",
+   "words": 3,
+   "head": "Книга первая БАЛАКАНДА",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "БАЛАКАНДА"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "БАЛАКАНДА"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u3a8.xml",
+   "words": 1,
+   "head": "Примечания",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u3f24.xml",
+   "words": 1098,
+   "head": "Указатель имен эпических и мифологических персонажей Агастья 147",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 9,
+     "absent_sample": [
+      "Гокарна",
+      "Гомати",
+      "Гопа",
+      "Магха",
+      "наги",
+      "павлин",
+      "ратханга",
+      "шала",
+      "якши"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 3,
+     "absent_sample": [
+      "Гокарна",
+      "Гомати",
+      "Гопа"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u3f3.xml",
+   "words": 3,
+   "head": "Книга вторая АЙОДХЬЯКАНДА",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u3f6d.xml",
+   "words": 13,
+   "head": "Указатель имен эпических и мифологических персонажей 570 Указатель",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u3fa0.xml",
+   "words": 6,
+   "head": "Кандарпа См Кама Ананга См Кама Бестелесный См",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u407b.xml",
+   "words": 8,
+   "head": "Указатель географических названий 579 Предметно-терминологический указатель 582 Указатель",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u409.xml",
+   "words": 1,
+   "head": "Примечания",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u415d.xml",
+   "words": 5,
+   "head": "Предметно-терминологический указатель 582 Указатель флоры и фауны 587",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u41d9.xml",
+   "words": 86,
+   "head": "СОДЕРЖАНИЕ РАМАЯНА Перевод П А Гринцера Книга вторая",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 2,
+     "absent_sample": [
+      "Гончарова",
+      "Составил"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 2,
+     "absent_sample": [
+      "Гончарова",
+      "Составил"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u454.xml",
+   "words": 1,
+   "head": "Приложение",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u46a.xml",
+   "words": 4,
+   "head": "Словарь имен и географических названий",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u4e1.xml",
+   "words": 1,
+   "head": "Приложение",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u4f7.xml",
+   "words": 2,
+   "head": "Список сокращений",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u56e.xml",
+   "words": 1,
+   "head": "Приложения",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u5d0.xml",
+   "words": 5,
+   "head": "РОССИЙСКАЯ АКАДЕМИЯ НАУК ЛИТЕРАТУРНЫЕ ПАМЯТНИКИ",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "РОССИЙСКАЯ"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u611.xml",
+   "words": 14,
+   "head": "РАМАЯНА Книга вторая АЙОДХЬЯКАНДА Книга об Айодхье Издание",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u64a.xml",
+   "words": 218,
+   "head": "РЕДАКЦИОННАЯ КОЛЛЕГИЯ СЕРИИ ЛИТЕРАТУРНЫЕ ПАМЯТНИКИ Серия основана академиком",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 3,
+     "absent_sample": [
+      "Гаспаров",
+      "древнего",
+      "снабжено"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 3,
+     "absent_sample": [
+      "Гаспаров",
+      "древнего",
+      "снабжено"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u660.xml",
+   "words": 9,
+   "head": "Репродуцирование воспроизведение данного издания любым способом без договора",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u676.xml",
+   "words": 52553,
+   "head": "Книга вторая АЙОДХЬЯКАНДА Книга об Айодхье Первая песнь",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 20,
+     "absent_sample": [
+      "Герою",
+      "Голодного",
+      "Голосам",
+      "Гомати",
+      "Гони",
+      "Гопа",
+      "Гордая",
+      "Гордый",
+      "Гордящейся",
+      "Горевала",
+      "Горными",
+      "Горюет",
+      "Горячо",
+      "Гостеприимен",
+      "Гостеприимно"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 18,
+     "absent_sample": [
+      "Герою",
+      "Голодного",
+      "Голосам",
+      "Гомати",
+      "Гони",
+      "Гопа",
+      "Гордая",
+      "Гордый",
+      "Гордящейся",
+      "Горевала",
+      "Горными",
+      "Горюет",
+      "Горячо",
+      "Гостеприимен",
+      "Гостеприимно"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u68c.xml",
+   "words": 9,
+   "head": "П А Гринцер Перевод статья словарь имен и",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u8b1d.xml",
+   "words": 3,
+   "head": "с 158 - начало монолога Где конец",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "монолога"
+     ]
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 1,
+     "absent_sample": [
+      "монолога"
+     ]
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u90bf.xml",
+   "words": 3,
+   "head": "Книга вторая Айодхьяканда",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u90d6.xml",
+   "words": 2,
+   "head": "Книга об Айодхье",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u9128.xml",
+   "words": 1,
+   "head": "П А Гринцер",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_u9140.xml",
+   "words": 4,
+   "head": "Первая поэма Древней Индии",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  },
+  {
+   "story": "Stories/Story_ubfc4.xml",
+   "words": 34,
+   "head": "СОДЕРЖАНИЕ РАМАЯНА Перевод П А Гринцера Книга вторая",
+   "pdfs": {
+    "artifacts/print-readiness/book-II/conversion-2026/Ramayana_II_conversion_2026.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    },
+    "work/print-readiness/book-II/baseline-2022-workcopy/Ramayana_II_12.10.25.pdf": {
+     "absent_count": 0,
+     "absent_sample": []
+    }
+   }
+  }
+ ]
+}

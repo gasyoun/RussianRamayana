@@ -1,0 +1,70 @@
+{
+  "handoff": "H2589",
+  "volume": "II",
+  "gate": "Step5 conversion gate (2022 baseline -> 2026 conversion)",
+  "verdict": "FAIL",
+  "waivers": null,
+  "checks": [
+    {
+      "name": "page_count",
+      "pass": true,
+      "baseline": 668,
+      "conversion": 668
+    },
+    {
+      "name": "story_count",
+      "pass": true,
+      "baseline": 53,
+      "conversion": 53
+    },
+    {
+      "name": "links_missing",
+      "pass": false,
+      "baseline": 0,
+      "conversion": 7
+    },
+    {
+      "name": "fonts_ok",
+      "pass": true,
+      "baseline": 0,
+      "conversion": 0
+    },
+    {
+      "name": "overset_ok",
+      "pass": false,
+      "baseline": 0,
+      "conversion": 3
+    }
+  ],
+  "defects": [
+    {
+      "id": "DFT-II-0001",
+      "class": "material",
+      "status": "open",
+      "volume": "II",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate: 0 missing links",
+      "observed": "7 link(s) report LINK_MISSING in the live 2026 export: 102.eps, 30.eps, 91.eps, LP.tif, линейка21.eps",
+      "expected": "0 missing links",
+      "disposition": "WAITING",
+      "evidence": "export_print_evidence.jsx LINK|...|LINK_MISSING lines; not present anywhere in the committed repo tree either (git ls-tree search, 0 hits) — plausibly ALREADY missing under InDesign 2022 too (this machine cannot open InDesign 2022 live to confirm — see PR description 'InDesign 2022 COM limitation'), not necessarily conversion-introduced. A human/Fable call is needed: pre-existing vs conversion drift cannot be settled from this machine.",
+      "found_by": "print_ready.py conversion_gate (H2589)"
+    },
+    {
+      "id": "DFT-II-0002",
+      "class": "blocker",
+      "status": "open",
+      "volume": "II",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate + ruling 21 fail condition: no clipping/overset",
+      "observed": "3 overset stories live in 2026, including a story whose visible text starts with an alphabetically-sorted index fragment (' Указатель имен эпических и мифологических персонажей   570 ') — this is very likely the Именной index itself running over its frame after conversion.",
+      "expected": "0 overset stories",
+      "disposition": "open",
+      "evidence": "export_print_evidence.jsx OVERSET_STORY|id|text-snippet lines; story IDs: 1632, 16507, 16237",
+      "found_by": "print_ready.py conversion_gate (H2589)"
+    }
+  ],
+  "note": "Baseline captured from the already-committed InDesign-2022-native package (confirmed by its own designmap.xml product_version='17.4(51)' / PDF creator 'Adobe InDesign 17.4 (Windows)'), audited statically via audit-idml/audit-pdf — NOT a fresh live 2022 re-export. This machine's only registered InDesign COM ProgID resolves to InDesign 2026 (InDesign 2022 has no distinct registered ProgID here), so InDesign 2022 cannot be driven live via COM on this machine. See the H2589 PR description for the full finding."
+}
