@@ -13,7 +13,15 @@
 // the authorial "[ ??? ]" branch. Rows with c1 != "№" get a topic but no page
 // references. Existing topics of the letter are removed first (idempotent redo).
 //
-// Params via app.scriptArgs: letter, startRow, endRow, logPath
+// Params via app.scriptArgs: letter, startRow, endRow, logPath, excludeFromPage
+// (H2590: excludeFromPage, optional -- skip any grep hit whose containing page
+// number is >= this value. The original printed index block (old, unreplaced
+// pages) is itself searchable body text that literally lists headwords with
+// page numbers, so an unfiltered document-wide findGrep() picks up false-
+// positive "occurrences" there. Confirmed live: 40% of Book II's topics had
+// at least one contaminated reference into the old index pages before this
+// fix. Page.name is compared numerically where possible; non-numeric page
+// names (front matter, roman numerals) are never excluded by this filter.)
 // ExtendScript ES3; UTF-8 BOM + CRLF.
 
 (function () {
@@ -22,6 +30,9 @@
     var startRow = Number(arg("startRow"));
     var endRow = Number(arg("endRow"));
     var logPath = arg("logPath");
+    var excludeFromPageArg = arg("excludeFromPage");
+    var excludeFromPage = excludeFromPageArg !== "" ? Number(excludeFromPageArg) : null;
+    var excludedByPageFilter = 0;
 
     var idoc = null, tdoc = null;
     for (var i = 0; i < app.documents.length; i++) {
@@ -91,15 +102,28 @@
         try { found = tdoc.findGrep(); }
         catch (eF) { logLines.push("\tGREP-ERR " + c0 + " :: " + eF.message); continue; }
         if (found.length == 0) { notFound++; logLines.push("\t" + c0 + " [ не найдено ]"); continue; }
+        var refsAddedForThisRow = 0;
         for (var g = found.length - 1; g >= 0; g--) {
             var pageOk = false;
-            try { pageOk = found[g].parentTextFrames.length > 0 && found[g].parentTextFrames[0].parentPage != null; }
+            var pageNum = null;
+            try {
+                pageOk = found[g].parentTextFrames.length > 0 && found[g].parentTextFrames[0].parentPage != null;
+                if (pageOk) pageNum = Number(found[g].parentTextFrames[0].parentPage.name);
+            }
             catch (eP) { pageOk = false; }
             if (!pageOk) { noPage++; continue; } // pasteboard / overset extension frames — как авторская ветка [ ??? ]
+            if (excludeFromPage != null && !isNaN(pageNum) && pageNum >= excludeFromPage) {
+                excludedByPageFilter++;
+                continue; // false positive: hit lands inside the old printed index block itself
+            }
             try {
                 topic.pageReferences.add(found[g].insertionPoints[0], PageReferenceType.CURRENT_PAGE);
                 refs++;
+                refsAddedForThisRow++;
             } catch (eR) { logLines.push("\tREF-ERR " + c0 + " :: " + eR.message); }
+        }
+        if (refsAddedForThisRow == 0 && found.length > 0) {
+            logLines.push("\t" + c0 + " [ только в исключённом диапазоне страниц (старый указатель) ]");
         }
     }
     app.findGrepPreferences = NothingEnum.nothing;
@@ -111,6 +135,6 @@
         lf.write(logLines.join("\r\n") + "\r\n");
         lf.close();
     }
-    "letter=" + letter + "|topics=" + made + "|refs=" + refs + "|notFound=" + notFound +
+    "letter=" + letter + "|topics=" + made + "|refs=" + refs + "|excludedByPageFilter=" + excludedByPageFilter + "|notFound=" + notFound +
         "|noPage=" + noPage + "|skipped=" + skipped + "|dropped=" + dropped;
 })();
