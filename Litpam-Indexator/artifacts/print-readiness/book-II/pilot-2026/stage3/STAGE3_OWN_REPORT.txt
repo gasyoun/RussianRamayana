@@ -1,0 +1,8 @@
+stage3-own-checkpointed run 2026-08-17 08:01:18
+target: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-104968\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+indexlist: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-104968\Litpam-Indexator\work\print-readiness\pilot-II\indexlists\IndexList[@]001.indd
+letters: ['b', 'c', 'd']
+spans: a:0-783,b:784-984,c:985-1427,d:1428-1515
+[b] undefined|CHECKPOINT-SAVED|topics=944
+[c] undefined|CHECKPOINT-SAVED|topics=1230
+[d] undefined|CHECKPOINT-SAVED|topics=1318
