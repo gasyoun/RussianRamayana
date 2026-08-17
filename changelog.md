@@ -2,6 +2,24 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-08-17
+
+### Книга II: стадия [3] индексирования завершена — 1318 topics, точное совпадение с книгой I (H2590)
+
+Авторская палитра `ProcStoryOrDoс` воспроизвела ту же DOM-регрессию InDesign 2026,
+что H2776 задокументировал для книги I (строка 773, «Invalid parameter» для
+диапазона не с нулевой строки) — на письме `b`. Обход: уже проверенный на книге I
+additive-индексатор
+[`index_letter.jsx`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/index_letter.jsx)
+(без изменений) через новый параметризованный драйвер
+[`drive_stage3_own_checkpointed.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/indesign/drive_stage3_own_checkpointed.py).
+**Итог: a=761 (авторская палитра, до регрессии) + b=183/c=286/d=88 (additive
+индексатор) = 1318 topics — точное совпадение с итоговым числом книги I.**
+Независимо перепроверено. Метод оказался в 3–6 раз быстрее сломанной палитры.
+Лог «не найдено» (255 строк) пока не триажирован (ожидаемая доля — термины тома I
+общего словника). Остаток: стадия `[4]` (сборка/оформление, операторская) →
+финальный evidence packet.
+
 ## 2026-08-16
 
 ### Книга II запущена: baseline+conversion evidence, gate PASS_WITH_WAIVERS, стадии [1]/[1b] выполнены (H2590)
