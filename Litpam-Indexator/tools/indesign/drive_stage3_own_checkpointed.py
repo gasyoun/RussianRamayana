@@ -73,6 +73,10 @@ def main(argv=None):
     p.add_argument("--log", help="index_letter.jsx per-row not-found log (default: alongside target)")
     p.add_argument("--report", help="write run report here")
     p.add_argument("--quit", action="store_true")
+    p.add_argument("--exclude-from-page", type=int, default=None,
+                    help="skip grep hits landing on this page number or higher (H2590: excludes the old "
+                         "printed index block, which is itself searchable text listing headwords with page "
+                         "numbers, causing false-positive self-matches if not excluded)")
     args = p.parse_args(argv)
 
     target = Path(args.target).resolve()
@@ -125,6 +129,7 @@ def main(argv=None):
         app.ScriptArgs.SetValue("startRow", str(s))
         app.ScriptArgs.SetValue("endRow", str(e))
         app.ScriptArgs.SetValue("logPath", str(log_path))
+        app.ScriptArgs.SetValue("excludeFromPage", str(args.exclude_from_page) if args.exclude_from_page is not None else "")
         t0 = time.time()
         res = str(do_jsx(combined_jsx, f"letter_{letter}"))
         print(f"[stage3-own-ckpt] {letter} (rows {s}-{e}) finished in {(time.time()-t0)/60:.1f} min: {res}")

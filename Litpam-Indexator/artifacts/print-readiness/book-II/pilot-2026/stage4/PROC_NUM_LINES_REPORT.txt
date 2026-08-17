@@ -1,0 +1,5 @@
+proc-number-lines run 2026-08-17 14:11:41
+target: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-104968\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+click_result: clicked
+alerts: 
+saved|story_chars=44813|head=Сводный указательRomanAa-Агастья  159, 225, 534, 594, 609, 613–614a-Агни  79, 83, 250, 438, 455, 507–508, 538, 585, 594, 609, 612, 630, 636a-Анала  598, 630a-Павака  609, 630, 636a-Агниварна  461, 594, 630a-сын Сударшаны  461a-Аджа  461, 587, 594, 630a-Адити  8, 134, 394, 519, 569, 594, 59
