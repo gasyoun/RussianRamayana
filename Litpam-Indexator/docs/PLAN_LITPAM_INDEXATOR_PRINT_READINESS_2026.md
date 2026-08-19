@@ -143,4 +143,10 @@ MG-override'ы 15-08 («стадию [1] сам через COM» · «Backfill (
 
 Остаток: параграф `para[0]` «Сводный указатель» (стиль `Колонтитул`, нативный auto-заголовок от `Index.generate()`) — судьба не решена (удалить / превратить в колонтитул через master-page переменную — отдельный вопрос); «См.» (`AddSeeTopic.v.3.v.3.jsx`) → скрытие служебных `a-`/`b-`/`c-`/`d-` (`HideShowNumber.v.2.jsx`) → `AddAnnotationData.v.3.jsx`.
 
+## 19-08-2026 (продолжение 3): «Сводный указатель» удалён рулингом МГ
+
+**Рулинг МГ 19-08-2026**: удалить нативный auto-параграф «Сводный указатель» (`para[0]`, стиль `Колонтитул`) — не часть контракта печати (который описывает 4 отдельных заголовка, а не один общий), не превращать в колонтитул. Удалён (`paragraph.remove()`, с предохранителем — проверка имени стиля перед удалением). Проверено: `storyLength` 50070→50052 (−18 симв. = «Сводный указатель»+CR, ожидаемо), заголовок раздела «Именной» стал первым параграфом истории (уже с верным стилем/текстом/`NEXT_PAGE` — их не пришлось трогать), страниц как было — 711. **Coverage v5 = тот же набор 272 несовпадений**, 0 новых регрессий — [PAGE_SET_MISMATCHES_v5.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-II/pilot-2026/stage4/PAGE_SET_MISMATCHES_v5.json).
+
+Остаток: «См.» (`AddSeeTopic.v.3.v.3.jsx`) → скрытие служебных `a-`/`b-`/`c-`/`d-` (`HideShowNumber.v.2.jsx`) → `AddAnnotationData.v.3.jsx`; финал — coverage/reference recheck 100%, versioned IDML + proof-PDF + evidence packet.
+
 _Dr. Mārcis Gasūns_
