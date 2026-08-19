@@ -1,0 +1,2888 @@
+{
+ "tool": "coverage_check_stage4.py (H2590)",
+ "topics_total": 934,
+ "mismatches_total": 528,
+ "mismatches": [
+  {
+   "topic": "a-Агни",
+   "ref_count": 15,
+   "printed_count": 12
+  },
+  {
+   "topic": "a-Агниварна",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Аджа",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Адити",
+   "ref_count": 10,
+   "printed_count": 9
+  },
+  {
+   "topic": "a-Айи-Равана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Аламбуша=1",
+   "ref_count": 6,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Аламбуша=2",
+   "ref_count": 6,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Аларка",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Амбариша",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Анаранья",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Анасуя",
+   "ref_count": 25,
+   "printed_count": 10
+  },
+  {
+   "topic": "a-Ангарака",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Анша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Аншуман",
+   "ref_count": 7,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Арджуна Картавирья",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Асаманьджа",
+   "ref_count": 10,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Асита",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Атри",
+   "ref_count": 9,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Аурва",
+   "ref_count": 3,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Ашвины",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Бала, или Вала",
+   "ref_count": 4,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Бали",
+   "ref_count": 8,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Бана",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Брахма",
+   "ref_count": 60,
+   "printed_count": 38
+  },
+  {
+   "topic": "a-Брихаспати",
+   "ref_count": 21,
+   "printed_count": 18
+  },
+  {
+   "topic": "a-Будда",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Бхага",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Бхагиратха",
+   "ref_count": 14,
+   "printed_count": 10
+  },
+  {
+   "topic": "a-Бхадра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Бхарадваджа=1",
+   "ref_count": 59,
+   "printed_count": 31
+  },
+  {
+   "topic": "a-Бхарадваджа=2",
+   "ref_count": 59,
+   "printed_count": 31
+  },
+  {
+   "topic": "a-Бхарата=1",
+   "ref_count": 551,
+   "printed_count": 245
+  },
+  {
+   "topic": "a-Бхарата=2",
+   "ref_count": 551,
+   "printed_count": 245
+  },
+  {
+   "topic": "a-Бхригу",
+   "ref_count": 14,
+   "printed_count": 9
+  },
+  {
+   "topic": "a-Валин",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Вальмики",
+   "ref_count": 133,
+   "printed_count": 126
+  },
+  {
+   "topic": "a-Вамана=1",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Вамана=2",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Вамана=3",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Варуна",
+   "ref_count": 20,
+   "printed_count": 15
+  },
+  {
+   "topic": "a-Варуни, или Сура",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Васиштха",
+   "ref_count": 86,
+   "printed_count": 56
+  },
+  {
+   "topic": "a-Вибхандака",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Викукши",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Вината",
+   "ref_count": 7,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Вирочана",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Вирупакша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Вишала",
+   "ref_count": 13,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Вишвакарман",
+   "ref_count": 13,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Вишвамитра",
+   "ref_count": 27,
+   "printed_count": 16
+  },
+  {
+   "topic": "a-Вишну",
+   "ref_count": 67,
+   "printed_count": 40
+  },
+  {
+   "topic": "a-Вишравас",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Вритра",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Гадхи, или Гадхин",
+   "ref_count": 4,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Ганга",
+   "ref_count": 84,
+   "printed_count": 57
+  },
+  {
+   "topic": "a-Гандхамадана",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Гандхари, жена Дхритараштры",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Гаруда",
+   "ref_count": 11,
+   "printed_count": 10
+  },
+  {
+   "topic": "a-Гая",
+   "ref_count": 13,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Гомер",
+   "ref_count": 4,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Готама",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Гуха",
+   "ref_count": 67,
+   "printed_count": 31
+  },
+  {
+   "topic": "a-Гхритачьи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дадхимукха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дадхичи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дакша",
+   "ref_count": 12,
+   "printed_count": 9
+  },
+  {
+   "topic": "a-Дандхумара",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Дашаратха",
+   "ref_count": 281,
+   "printed_count": 198
+  },
+  {
+   "topic": "a-Джабали",
+   "ref_count": 17,
+   "printed_count": 11
+  },
+  {
+   "topic": "a-Джамадагни",
+   "ref_count": 9,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Джанака=1",
+   "ref_count": 62,
+   "printed_count": 39
+  },
+  {
+   "topic": "a-Джанака=2",
+   "ref_count": 62,
+   "printed_count": 39
+  },
+  {
+   "topic": "a-Джахну",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Дивьяваю",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дилипа",
+   "ref_count": 7,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-дочери Кушадхваджи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дхатри",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дхрувасандхи",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Идхмавахана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Икшваку",
+   "ref_count": 49,
+   "printed_count": 44
+  },
+  {
+   "topic": "a-Индра",
+   "ref_count": 144,
+   "printed_count": 91
+  },
+  {
+   "topic": "a-Кавья",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Кадру",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Кайкейи",
+   "ref_count": 298,
+   "printed_count": 174
+  },
+  {
+   "topic": "a-Какутстха=1",
+   "ref_count": 43,
+   "printed_count": 34
+  },
+  {
+   "topic": "a-Какутстха=2",
+   "ref_count": 43,
+   "printed_count": 34
+  },
+  {
+   "topic": "a-Калагни",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Калапа",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Калинди",
+   "ref_count": 11,
+   "printed_count": 7
+  },
+  {
+   "topic": "a-Калмашапада",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Кама",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Канду",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Капила",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Катха",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Каусалья, или Каушалья",
+   "ref_count": 195,
+   "printed_count": 127
+  },
+  {
+   "topic": "a-Кашьяпа=1",
+   "ref_count": 23,
+   "printed_count": 16
+  },
+  {
+   "topic": "a-Кашьяпа=2",
+   "ref_count": 23,
+   "printed_count": 16
+  },
+  {
+   "topic": "a-Корова, исполняющая желания",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Крату",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Кришна",
+   "ref_count": 10,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Кубера",
+   "ref_count": 24,
+   "printed_count": 20
+  },
+  {
+   "topic": "a-Кукши",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Куша=1",
+   "ref_count": 10,
+   "printed_count": 7
+  },
+  {
+   "topic": "a-Куша=2",
+   "ref_count": 10,
+   "printed_count": 7
+  },
+  {
+   "topic": "a-Лава",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Лакшмана",
+   "ref_count": 278,
+   "printed_count": 164
+  },
+  {
+   "topic": "a-Мадху=1",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Мадху=2",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Майи-Равана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Мандхатар",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Мантхара=1",
+   "ref_count": 42,
+   "printed_count": 23
+  },
+  {
+   "topic": "a-Мантхара=2",
+   "ref_count": 42,
+   "printed_count": 23
+  },
+  {
+   "topic": "a-Ману",
+   "ref_count": 26,
+   "printed_count": 19
+  },
+  {
+   "topic": "a-Марича",
+   "ref_count": 8,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Маричи",
+   "ref_count": 7,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Маркандея",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Мару=1",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Мару=2",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Матали",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Митра",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Молочный океан",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Набхага",
+   "ref_count": 6,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Налини, подруга Анасуи",
+   "ref_count": 7,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Нандин",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Нахуша",
+   "ref_count": 12,
+   "printed_count": 9
+  },
+  {
+   "topic": "a-Никумбха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Пака",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Патала-Равана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Пашупати-рудра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Прачетас",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Прашушрува, или Прашушрука",
+   "ref_count": 6,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Притху",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Пришни",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Пуластья",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Пулаха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Равана",
+   "ref_count": 30,
+   "printed_count": 18
+  },
+  {
+   "topic": "a-Рагхава",
+   "ref_count": 240,
+   "printed_count": 169
+  },
+  {
+   "topic": "a-Рагхавы",
+   "ref_count": 35,
+   "printed_count": 33
+  },
+  {
+   "topic": "a-Рагху",
+   "ref_count": 55,
+   "printed_count": 48
+  },
+  {
+   "topic": "a-Рама=2",
+   "ref_count": 1298,
+   "printed_count": 457
+  },
+  {
+   "topic": "a-Рама Джамадагнья",
+   "ref_count": 7,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Раху",
+   "ref_count": 16,
+   "printed_count": 10
+  },
+  {
+   "topic": "a-Ренука",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Ричика",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Ришьяшринга",
+   "ref_count": 7,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Ромапада, или Ломапада",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Рохини",
+   "ref_count": 10,
+   "printed_count": 8
+  },
+  {
+   "topic": "a-Савитри",
+   "ref_count": 9,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Сагара",
+   "ref_count": 21,
+   "printed_count": 16
+  },
+  {
+   "topic": "a-Самудра",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Сатурн",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Сатьяван",
+   "ref_count": 7,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Сатьявати",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Сауманаса",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Сита",
+   "ref_count": 286,
+   "printed_count": 146
+  },
+  {
+   "topic": "a-Сканда",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Сома=1",
+   "ref_count": 22,
+   "printed_count": 16
+  },
+  {
+   "topic": "a-Сома=2",
+   "ref_count": 22,
+   "printed_count": 16
+  },
+  {
+   "topic": "a-Сринджая",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Субаху",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Суврата",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Сугрива",
+   "ref_count": 12,
+   "printed_count": 10
+  },
+  {
+   "topic": "a-Сударшана",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Судханван=1",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Судханван=2",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Сукету=1",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Сукету=2",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Сумантра",
+   "ref_count": 130,
+   "printed_count": 68
+  },
+  {
+   "topic": "a-Сумати=1",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Сумати=2",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Сумитра",
+   "ref_count": 105,
+   "printed_count": 75
+  },
+  {
+   "topic": "a-Сунда",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Сураса",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Сурья, или Солнце",
+   "ref_count": 21,
+   "printed_count": 17
+  },
+  {
+   "topic": "a-Сусандхи",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Суяджня",
+   "ref_count": 10,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-сыновья (сыны) Арджуны Картавирьи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-сыновья (сыны) Васиштхи, или сто сыновей Васиштхи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-сыновья (сыны) Вишвамитры, или сто сыновей Вишвамитры",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Тара=1",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Тара=2",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Тара=3",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Тарака (Татака)",
+   "ref_count": 6,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Тваштар",
+   "ref_count": 7,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Тимидхваджа",
+   "ref_count": 7,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Триджата",
+   "ref_count": 11,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Тришанку",
+   "ref_count": 10,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Упасунда",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Урмила=1",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Урмила=2",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "a-Харишчандра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-царь (владыка) Кекаи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Читраратха=1",
+   "ref_count": 8,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Читраратха=2",
+   "ref_count": 8,
+   "printed_count": 5
+  },
+  {
+   "topic": "a-Чьявана",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Шамбара",
+   "ref_count": 7,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Шанкхана",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Шатругхна",
+   "ref_count": 81,
+   "printed_count": 58
+  },
+  {
+   "topic": "a-Шачи",
+   "ref_count": 10,
+   "printed_count": 9
+  },
+  {
+   "topic": "a-Шиби",
+   "ref_count": 10,
+   "printed_count": 6
+  },
+  {
+   "topic": "a-Шива",
+   "ref_count": 25,
+   "printed_count": 19
+  },
+  {
+   "topic": "a-Шигхрага",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Шри",
+   "ref_count": 13,
+   "printed_count": 9
+  },
+  {
+   "topic": "a-Шунахшепа",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Шьяма",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "a-Юванашва",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "a-Юдхаджит=1",
+   "ref_count": 8,
+   "printed_count": 7
+  },
+  {
+   "topic": "a-Юдхаджит=2",
+   "ref_count": 8,
+   "printed_count": 7
+  },
+  {
+   "topic": "a-Яду",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "a-Яма",
+   "ref_count": 34,
+   "printed_count": 29
+  },
+  {
+   "topic": "a-Ямуна",
+   "ref_count": 22,
+   "printed_count": 18
+  },
+  {
+   "topic": "a-Яяти",
+   "ref_count": 18,
+   "printed_count": 12
+  },
+  {
+   "topic": "b-Агнея",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Айодхья",
+   "ref_count": 19,
+   "printed_count": 18
+  },
+  {
+   "topic": "b-анги",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Апарапарватa",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-ашрама",
+   "ref_count": 5,
+   "printed_count": 2
+  },
+  {
+   "topic": "b-Бенгал (Бенгалия)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Биас (древн. Випаша)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Бхаратаварша",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-Бходжи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Бхригупрасавана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Вишала=1",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-Вишала=2",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-Ганга, Ганг",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Гандхамадана",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "b-Гандхара",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Гая",
+   "ref_count": 6,
+   "printed_count": 2
+  },
+  {
+   "topic": "b-Гомати",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "b-Дакшинапатха (Южная область; совр. Декан)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Джамна, или Ямуна",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Дхармавартана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Икшумати",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "b-Индия",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "b-Индракила",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Ионийцы (греки)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Калинги",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Калинди",
+   "ref_count": 11,
+   "printed_count": 7
+  },
+  {
+   "topic": "b-камбоджи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Кампилья",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-Кашмир",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-кекаи",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "b-кираты",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Кулинга",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "b-Куру",
+   "ref_count": 9,
+   "printed_count": 6
+  },
+  {
+   "topic": "b-Куруджагала",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Куруджангала",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "b-Ланка (совр. Шри-Ланка, Цейлон)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Магадхи",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "b-Магадхи, или Сумагадхи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Мадрас",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Мадхьядеша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Майнака",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-Мандакини",
+   "ref_count": 24,
+   "printed_count": 16
+  },
+  {
+   "topic": "b-Меру",
+   "ref_count": 21,
+   "printed_count": 14
+  },
+  {
+   "topic": "b-Митхила",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-млеччхи, или варвары",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-мунда",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Налини",
+   "ref_count": 6,
+   "printed_count": 4
+  },
+  {
+   "topic": "b-Нармада",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-нишады",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "b-обитель",
+   "ref_count": 41,
+   "printed_count": 31
+  },
+  {
+   "topic": "b-Паталипутра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-пахлавы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Пенджаб",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Прасравана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Раджастхан",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Рикша, или Рикшават",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Сараю",
+   "ref_count": 17,
+   "printed_count": 13
+  },
+  {
+   "topic": "b-Саугандхика",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-Северная гора",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Сиддхашрама",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Сита",
+   "ref_count": 123,
+   "printed_count": 82
+  },
+  {
+   "topic": "b-Сьядика",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Тапована",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Трипура, или тройной город",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Удджихана",
+   "ref_count": 3,
+   "printed_count": 1
+  },
+  {
+   "topic": "b-хариты",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Хастинапура",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "b-Чайтраратха",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "b-Читракута",
+   "ref_count": 11,
+   "printed_count": 10
+  },
+  {
+   "topic": "b-шаки",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Шальякаршана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Шатадру",
+   "ref_count": 6,
+   "printed_count": 4
+  },
+  {
+   "topic": "b-Шила",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-яваны",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-ядавы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-абхиджит",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-агништома",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-агништха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ад",
+   "ref_count": 14,
+   "printed_count": 12
+  },
+  {
+   "topic": "c-Адитидевата",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-адитьи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-адхварью",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-акаша (пустое пространство, эфир)",
+   "ref_count": 5,
+   "printed_count": 2
+  },
+  {
+   "topic": "c-акшаухини",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-апсара, апсары",
+   "ref_count": 15,
+   "printed_count": 12
+  },
+  {
+   "topic": "c-апторьяма",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-араньяки",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-аргхья",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-арии",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-аскеза пяти огней",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-асуры",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-атиратра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-атман",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-ашрама",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ашрамы",
+   "ref_count": 5,
+   "printed_count": 2
+  },
+  {
+   "topic": "c-аюс",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-аюштома",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-бали",
+   "ref_count": 10,
+   "printed_count": 5
+  },
+  {
+   "topic": "c-барабан",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-бездушное существо",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-беззаконие",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-белый зонт",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "c-брахман, брахманы",
+   "ref_count": 97,
+   "printed_count": 72
+  },
+  {
+   "topic": "c-брахмаракшас",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-бытие",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-вавата",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ваджапея",
+   "ref_count": 2,
+   "printed_count": 1
+  },
+  {
+   "topic": "c-вайдья (умник, ученый, врач)",
+   "ref_count": 8,
+   "printed_count": 5
+  },
+  {
+   "topic": "c-вандины",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-васу",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "c-веда кшатриев",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-веды",
+   "ref_count": 30,
+   "printed_count": 25
+  },
+  {
+   "topic": "c-великие змеи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-верхний мир (небо)",
+   "ref_count": 178,
+   "printed_count": 139
+  },
+  {
+   "topic": "c-видьядхари",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-вина",
+   "ref_count": 13,
+   "printed_count": 12
+  },
+  {
+   "topic": "c-вишваджит",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Вриттимана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-всесильные дочери Брахмы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Вторая Пхалгуни, или Уттара Пхалгуни",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-второе созвездие Семи Риши или созвездие Южного Креста",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-гада",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-гандхарвы, гандхарви",
+   "ref_count": 11,
+   "printed_count": 9
+  },
+  {
+   "topic": "c-гуру",
+   "ref_count": 40,
+   "printed_count": 32
+  },
+  {
+   "topic": "c-дайтьи",
+   "ref_count": 8,
+   "printed_count": 6
+  },
+  {
+   "topic": "c-данавы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-дандаки",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-дарша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-дваждырожденные",
+   "ref_count": 15,
+   "printed_count": 14
+  },
+  {
+   "topic": "c-день Брахмы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-джьотиша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-джьотиштома",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-династия",
+   "ref_count": 40,
+   "printed_count": 23
+  },
+  {
+   "topic": "c-Дхану",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Дханью",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Дхритималина",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-дыхание",
+   "ref_count": 11,
+   "printed_count": 8
+  },
+  {
+   "topic": "c-жертва, или возлияние на огне",
+   "ref_count": 94,
+   "printed_count": 72
+  },
+  {
+   "topic": "c-жертвенная пища",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-жертвенная церемония",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенная чаша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенник",
+   "ref_count": 9,
+   "printed_count": 7
+  },
+  {
+   "topic": "c-жертвенное животное",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенные путы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный ковш",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный конь",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный костер",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный кувшин",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный нож",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный обряд",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный столб",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-знамя Агни",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-знамя Индры, или знамя Шакры, или знамя супруга Шачи.",
+   "ref_count": 10,
+   "printed_count": 6
+  },
+  {
+   "topic": "c-знамя Шивы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-знание Брахмы, или священный слог ом",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кавья",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-каларатри (ночь гибели мира)",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-кальпа",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-кальпасутра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-карма",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кармадхарая",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Каустубха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кимпуруши",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-киннари",
+   "ref_count": 7,
+   "printed_count": 6
+  },
+  {
+   "topic": "c-коти",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "c-кушилавы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кшуд",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-лагна",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-локаятики (неверующие брахманы)",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-лук Шивы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-магадхи",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-Магха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-майя",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-мантра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-марга",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-махишья",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-мир Индры, или третье небо, или небо Индры",
+   "ref_count": 13,
+   "printed_count": 11
+  },
+  {
+   "topic": "c-мукхьи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-муштика, муштики",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-наги",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "c-настика (безбожие)",
+   "ref_count": 5,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-небожители",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-небо Индры",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-нижний мир",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ночь Брахмы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-одежда (платье) из лыка",
+   "ref_count": 51,
+   "printed_count": 33
+  },
+  {
+   "topic": "c-оружие",
+   "ref_count": 21,
+   "printed_count": 17
+  },
+  {
+   "topic": "c-отшельник, отшельники",
+   "ref_count": 70,
+   "printed_count": 51
+  },
+  {
+   "topic": "c-падья",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-паннаги (ураги, махораги)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-париврикти, или паривритти",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пахтанье (молочного) океана",
+   "ref_count": 9,
+   "printed_count": 7
+  },
+  {
+   "topic": "c-паша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-паяса",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-певец, певцы",
+   "ref_count": 15,
+   "printed_count": 14
+  },
+  {
+   "topic": "c-планеты",
+   "ref_count": 15,
+   "printed_count": 9
+  },
+  {
+   "topic": "c-праваргья",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Праджапати Кришашвы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пралая",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пранджали",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-предки",
+   "ref_count": 55,
+   "printed_count": 44
+  },
+  {
+   "topic": "c-призраки",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Проштхапада",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пуджа",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-пурана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пураны",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пурнамаса",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пурохита",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "c-пут",
+   "ref_count": 6,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-путрия",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Пушпака",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Пушья",
+   "ref_count": 18,
+   "printed_count": 15
+  },
+  {
+   "topic": "c-рага",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-раджасуя",
+   "ref_count": 4,
+   "printed_count": 3
+  },
+  {
+   "topic": "c-разум",
+   "ref_count": 92,
+   "printed_count": 80
+  },
+  {
+   "topic": "c-Рак",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ракшасы, ракшаси",
+   "ref_count": 30,
+   "printed_count": 21
+  },
+  {
+   "topic": "c-Раса",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-раса=1",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-раса=2",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-расатала",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-рахасья",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-рисовая каша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-риши",
+   "ref_count": 238,
+   "printed_count": 192
+  },
+  {
+   "topic": "c-рудры",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Рыбы",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-садас",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-садхарана",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сандалии",
+   "ref_count": 29,
+   "printed_count": 7
+  },
+  {
+   "topic": "c-сарга",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сарга (песня)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Сарпа",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-свастика",
+   "ref_count": 5,
+   "printed_count": 2
+  },
+  {
+   "topic": "c-сваямвара",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-святилище",
+   "ref_count": 11,
+   "printed_count": 10
+  },
+  {
+   "topic": "c-семь святых мудрецов (риши)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сиддхи",
+   "ref_count": 6,
+   "printed_count": 5
+  },
+  {
+   "topic": "c-сказители",
+   "ref_count": 10,
+   "printed_count": 9
+  },
+  {
+   "topic": "c-Смерть",
+   "ref_count": 6,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-смрити",
+   "ref_count": 5,
+   "printed_count": 4
+  },
+  {
+   "topic": "c-собрание",
+   "ref_count": 18,
+   "printed_count": 14
+  },
+  {
+   "topic": "c-советник, советники",
+   "ref_count": 57,
+   "printed_count": 45
+  },
+  {
+   "topic": "c-созвездие Семи Риши",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-созерцание",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-стража (промежуток времени)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-стхапати",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-судьба",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сута",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-суты",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сыновья (сыны) Кашьяпы и Адити, или Адитьи, или сыновья (сыны) Адити, или суры, или боги",
+   "ref_count": 188,
+   "printed_count": 134
+  },
+  {
+   "topic": "c-сыновья (сыны) Кашьяпы и Дану, или данавы",
+   "ref_count": 8,
+   "printed_count": 7
+  },
+  {
+   "topic": "c-сыновья (сыны) Кашьяпы и Дити, или сыновья (сыны) Дити, или асуры",
+   "ref_count": 21,
+   "printed_count": 13
+  },
+  {
+   "topic": "c-тайттирия",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-таладжангхи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тамбурин",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тантри",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тапас",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-таркшьи",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-теджас",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тилака",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тимпан",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тиртха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-триварга (три цели)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тридцатка, или тридцать три бога, или тридцать три губителя недругов",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-три мира",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-удгатар",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-уктхьея",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-уктхья",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-упанишады",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-упасад",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Уттара Пхалгуни",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-халахала, или калакута",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-харихая",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-хотар",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Хранитель мира, или локапала (бог)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Хранитель мира, или локапала (слон)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Чайтра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чакра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чакравартин",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чандала",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чараны",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-час Митры",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чатуштома",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чаша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Читра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шанкха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шастра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шлока, шлоки",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шраддха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шрути",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ювараджа",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-юга",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Южный Крест",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-якши, якшини",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-янтра",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-агару",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-алоэ",
+   "ref_count": 11,
+   "printed_count": 8
+  },
+  {
+   "topic": "d-ашваттха",
+   "ref_count": 4,
+   "printed_count": 2
+  },
+  {
+   "topic": "d-баран",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-бибхитака, или вибхитака",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "d-ветаса",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-ветра",
+   "ref_count": 13,
+   "printed_count": 12
+  },
+  {
+   "topic": "d-джримбха",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "d-ингуди",
+   "ref_count": 13,
+   "printed_count": 9
+  },
+  {
+   "topic": "d-какубха",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-киншука, или палаша",
+   "ref_count": 8,
+   "printed_count": 5
+  },
+  {
+   "topic": "d-ковидара, или ковидра",
+   "ref_count": 7,
+   "printed_count": 3
+  },
+  {
+   "topic": "d-куша",
+   "ref_count": 29,
+   "printed_count": 22
+  },
+  {
+   "topic": "d-лань, лани",
+   "ref_count": 25,
+   "printed_count": 23
+  },
+  {
+   "topic": "d-парни",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-патала",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-плакша",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-прияка",
+   "ref_count": 3,
+   "printed_count": 2
+  },
+  {
+   "topic": "d-сандал",
+   "ref_count": 17,
+   "printed_count": 15
+  },
+  {
+   "topic": "d-сома (гриб или растение)",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-шлешмата",
+   "ref_count": 0,
+   "printed_count": null,
+   "note": "not found in printed text"
+  }
+ ]
+}

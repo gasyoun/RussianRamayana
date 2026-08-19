@@ -2,6 +2,42 @@
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-08-19
+
+### Книга II: контаминация stage[3] исправлена и подтверждена; stage[4] шаги 1–2 перегнаны; новый дефект DFT-II-0003 (H2590)
+
+Продолжение находки от 17-08 (PR #86): `index_letter.jsx`'s document-wide grep
+self-matched against the OLD 2025 printed index text still present on pages
+630+, contaminating ~10% of page references. That commit shipped the fix
+(`--exclude-from-page`) but only re-ran letter `a`; letters `b`/`c`/`d` redone
+today (2.0/9.1/1.8 min, `drive_stage3_own_checkpointed.py --exclude-from-page
+630`) — 17 filtered hits confirmed across all 4 letters. Verified on a concrete
+example: `a-Агастья` printed `…613, 614, 630` (contaminated) → now `…613–614`
+(630 correctly excluded).
+
+Stage[4] steps 1–2 re-run from scratch on the corrected data: "Построить
+указатель" (668→711 pages) + `ProcNumberLines` (1.9 min, 58282→49929 chars
+after range-collapse). Coverage check v2 (`dump_topic_pages.py` +
+`analyze_topic_pages.py`, comparing deduplicated page-number sets — the older
+`coverage_check_stage4.py` v1 false-flags legitimate `ProcNumberLines`
+dedup) found a new defect **DFT-II-0003** (material, `WAITING`,
+[defect-ledger.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/artifacts/print-readiness/book-II/defect-ledger.json)):
+29/934 Level-1 topics each lose exactly one locator in print vs. the data
+model. Root-cause hypothesis: `ProcNumberLines`' native range-collapse leaves
+one trailing `PageReference` per topic unresolvable (`Object is invalid`) —
+harmless for 664/693 affected topics (page already covered by a collapsed
+range) but silently drops a standalone non-adjacent page for 29/693. Native
+InDesign palette behavior, not an artifact of `index_letter.jsx` or
+`drive_proc_number_lines.py` (both call the unmodified authorial script/API).
+Book I has not yet run stage[4] and is plausibly at the same risk — flagged
+as a follow-up, out of scope for this Book-II-titled handoff.
+
+Remaining: resolve or accept-as-`WAITING` DFT-II-0003, then `SplitStory` →
+«См.»/`HideShowNumber`/`AddAnnotationData` per the authorial `Очерёдность.txt`
+ordering (`AddLetter`/`DashInsteadWord` stay disabled per contract);
+`notes_bold_page_ranges` for both volumes still `null` in
+`config/print-readiness.json` (not measured this session).
+
 ## 2026-08-17
 
 ### Книга II: стадия [3] индексирования завершена — 1318 topics, точное совпадение с книгой I (H2590)
