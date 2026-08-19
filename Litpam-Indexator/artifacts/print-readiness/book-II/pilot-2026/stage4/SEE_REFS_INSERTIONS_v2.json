@@ -1,0 +1,925 @@
+{
+ "insertions": [
+  {
+   "alias": "Анала",
+   "target": "Агни",
+   "section": "a",
+   "anchor_topic": "a-Анаранья",
+   "insert_before_para_idx": 23,
+   "line": "Анала см. Агни"
+  },
+  {
+   "alias": "ананга",
+   "target": "Кама",
+   "section": "a",
+   "anchor_topic": "a-Анаранья",
+   "insert_before_para_idx": 23,
+   "line": "ананга см. Кама"
+  },
+  {
+   "alias": "Антака",
+   "target": "Яма",
+   "section": "a",
+   "anchor_topic": "a-Аншуман",
+   "insert_before_para_idx": 38,
+   "line": "Антака см. Яма"
+  },
+  {
+   "alias": "Ариштанеми",
+   "target": "Кашьяпа",
+   "section": "a",
+   "anchor_topic": "a-Арьяман",
+   "insert_before_para_idx": 43,
+   "line": "Ариштанеми см. Кашьяпа"
+  },
+  {
+   "alias": "бестелесный",
+   "target": "Кама",
+   "section": "a",
+   "anchor_topic": "a-Брахма",
+   "insert_before_para_idx": 62,
+   "line": "бестелесный см. Кама"
+  },
+  {
+   "alias": "благой",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Брахма",
+   "insert_before_para_idx": 62,
+   "line": "благой см. Шива"
+  },
+  {
+   "alias": "Бхава",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Бхага",
+   "insert_before_para_idx": 87,
+   "line": "Бхава см. Шива"
+  },
+  {
+   "alias": "Бхима",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Бхригу",
+   "insert_before_para_idx": 106,
+   "line": "Бхима см. Шива"
+  },
+  {
+   "alias": "бык среди людей",
+   "target": "Дашаратха",
+   "section": "a",
+   "anchor_topic": "a-Валин",
+   "insert_before_para_idx": 108,
+   "line": "бык среди людей см. Дашаратха"
+  },
+  {
+   "alias": "Вайшравана",
+   "target": "Кубера",
+   "section": "a",
+   "anchor_topic": "a-Валин",
+   "insert_before_para_idx": 108,
+   "line": "Вайшравана см. Кубера"
+  },
+  {
+   "alias": "Васава",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Васиштха",
+   "insert_before_para_idx": 119,
+   "line": "Васава см. Индра"
+  },
+  {
+   "alias": "Васудева",
+   "target": "Кришна",
+   "section": "a",
+   "anchor_topic": "a-Васуки",
+   "insert_before_para_idx": 125,
+   "line": "Васудева см. Кришна"
+  },
+  {
+   "alias": "Вачаспати",
+   "target": "Брихаспати",
+   "section": "a",
+   "anchor_topic": "a-Ваю",
+   "insert_before_para_idx": 126,
+   "line": "Вачаспати см. Брихаспати"
+  },
+  {
+   "alias": "великий подвижник",
+   "target": "Вишвамитра",
+   "section": "a",
+   "anchor_topic": "a-Вибудха",
+   "insert_before_para_idx": 129,
+   "line": "великий подвижник см. Вишвамитра"
+  },
+  {
+   "alias": "верный своей цели",
+   "target": "Рама",
+   "section": "a",
+   "anchor_topic": "a-Вибудха",
+   "insert_before_para_idx": 129,
+   "line": "верный своей цели см. Рама"
+  },
+  {
+   "alias": "вечный",
+   "target": "Вишну",
+   "section": "a",
+   "anchor_topic": "a-Вибудха",
+   "insert_before_para_idx": 129,
+   "line": "вечный см. Вишну"
+  },
+  {
+   "alias": "Вивасват",
+   "target": "Сураштра",
+   "section": "a",
+   "anchor_topic": "a-Виджая",
+   "insert_before_para_idx": 134,
+   "line": "Вивасват см. Сураштра"
+  },
+  {
+   "alias": "Видхатар",
+   "target": "Брахма",
+   "section": "a",
+   "anchor_topic": "a-Викукши",
+   "insert_before_para_idx": 135,
+   "line": "Видхатар см. Брахма"
+  },
+  {
+   "alias": "владыка богатств",
+   "target": "Кубера",
+   "section": "a",
+   "anchor_topic": "a-Вритра",
+   "insert_before_para_idx": 169,
+   "line": "владыка богатств см. Кубера"
+  },
+  {
+   "alias": "владыка богов",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Вритра",
+   "insert_before_para_idx": 169,
+   "line": "владыка богов см. Индра"
+  },
+  {
+   "alias": "владыка людей",
+   "target": "Дашаратха",
+   "section": "a",
+   "anchor_topic": "a-Вритра",
+   "insert_before_para_idx": 169,
+   "line": "владыка людей см. Дашаратха"
+  },
+  {
+   "alias": "владыка людей",
+   "target": "Сагара",
+   "section": "a",
+   "anchor_topic": "a-Вритра",
+   "insert_before_para_idx": 169,
+   "line": "владыка людей см. Сагара"
+  },
+  {
+   "alias": "внук Кашьяпы",
+   "target": "Ришьяшринга",
+   "section": "a",
+   "anchor_topic": "a-Вритра",
+   "insert_before_para_idx": 169,
+   "line": "внук Кашьяпы см. Ришьяшринга"
+  },
+  {
+   "alias": "внук Сагары",
+   "target": "Аншуман",
+   "section": "a",
+   "anchor_topic": "a-Вритра",
+   "insert_before_para_idx": 169,
+   "line": "внук Сагары см. Аншуман"
+  },
+  {
+   "alias": "враг данавов",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Вритра",
+   "insert_before_para_idx": 169,
+   "line": "враг данавов см. Индра"
+  },
+  {
+   "alias": "всегда побеждающий недругов",
+   "target": "Шатругхна",
+   "section": "a",
+   "anchor_topic": "a-Гадхи, или Гадхин",
+   "insert_before_para_idx": 170,
+   "line": "всегда побеждающий недругов см. Шатругхна"
+  },
+  {
+   "alias": "губитель Балы",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Гуха",
+   "insert_before_para_idx": 191,
+   "line": "губитель Балы см. Индра"
+  },
+  {
+   "alias": "губитель Паки",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Гуха",
+   "insert_before_para_idx": 191,
+   "line": "губитель Паки см. Индра"
+  },
+  {
+   "alias": "Дашагрива",
+   "target": "Равана",
+   "section": "a",
+   "anchor_topic": "a-Дашаратха",
+   "insert_before_para_idx": 197,
+   "line": "Дашагрива см. Равана"
+  },
+  {
+   "alias": "держатель ваджры",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Джабали",
+   "insert_before_para_idx": 210,
+   "line": "держатель ваджры см. Индра"
+  },
+  {
+   "alias": "десятиголовый",
+   "target": "Равана",
+   "section": "a",
+   "anchor_topic": "a-Джабали",
+   "insert_before_para_idx": 210,
+   "line": "десятиголовый см. Равана"
+  },
+  {
+   "alias": "десятишеий",
+   "target": "Равана",
+   "section": "a",
+   "anchor_topic": "a-Джабали",
+   "insert_before_para_idx": 210,
+   "line": "десятишеий см. Равана"
+  },
+  {
+   "alias": "Джанардана",
+   "target": "Вишну",
+   "section": "a",
+   "anchor_topic": "a-Джатаюс",
+   "insert_before_para_idx": 224,
+   "line": "Джанардана см. Вишну"
+  },
+  {
+   "alias": "Джахнави или дочь Джахну",
+   "target": "Ганга",
+   "section": "a",
+   "anchor_topic": "a-Джахну",
+   "insert_before_para_idx": 225,
+   "line": "Джахнави или дочь Джахну см. Ганга"
+  },
+  {
+   "alias": "Диргхаюс",
+   "target": "Маркандея",
+   "section": "a",
+   "anchor_topic": "a-Дити",
+   "insert_before_para_idx": 230,
+   "line": "Диргхаюс см. Маркандея"
+  },
+  {
+   "alias": "дочь Джанаки",
+   "target": "Сита",
+   "section": "a",
+   "anchor_topic": "a-Драупади",
+   "insert_before_para_idx": 232,
+   "line": "дочь Джанаки см. Сита"
+  },
+  {
+   "alias": "Дхармараджа",
+   "target": "Яма",
+   "section": "a",
+   "anchor_topic": "a-Дхриштакету",
+   "insert_before_para_idx": 241,
+   "line": "Дхармараджа см. Яма"
+  },
+  {
+   "alias": "Дхатар",
+   "target": "Брахма",
+   "section": "a",
+   "anchor_topic": "a-Дхриштакету",
+   "insert_before_para_idx": 241,
+   "line": "Дхатар см. Брахма"
+  },
+  {
+   "alias": "Индраджит",
+   "target": "Мегханада",
+   "section": "a",
+   "anchor_topic": "a-Кабандха",
+   "insert_before_para_idx": 272,
+   "line": "Индраджит см. Мегханада"
+  },
+  {
+   "alias": "Кала",
+   "target": "Яма",
+   "section": "a",
+   "anchor_topic": "a-Калапа",
+   "insert_before_para_idx": 287,
+   "line": "Кала см. Яма"
+  },
+  {
+   "alias": "Кандарпа",
+   "target": "Кама",
+   "section": "a",
+   "anchor_topic": "a-Канду",
+   "insert_before_para_idx": 296,
+   "line": "Кандарпа см. Кама"
+  },
+  {
+   "alias": "Картикея",
+   "target": "Сканда",
+   "section": "a",
+   "anchor_topic": "a-Катха",
+   "insert_before_para_idx": 299,
+   "line": "Картикея см. Сканда"
+  },
+  {
+   "alias": "Карттикея",
+   "target": "Сканда",
+   "section": "a",
+   "anchor_topic": "a-Катха",
+   "insert_before_para_idx": 299,
+   "line": "Карттикея см. Сканда"
+  },
+  {
+   "alias": "Каушика",
+   "target": "Вишвамитра",
+   "section": "a",
+   "anchor_topic": "a-Кашьяпа=1",
+   "insert_before_para_idx": 308,
+   "line": "Каушика см. Вишвамитра"
+  },
+  {
+   "alias": "Кешава",
+   "target": "Вишну",
+   "section": "a",
+   "anchor_topic": "a-Кешини",
+   "insert_before_para_idx": 313,
+   "line": "Кешава см. Вишну"
+  },
+  {
+   "alias": "криводушная",
+   "target": "Кайкейи",
+   "section": "a",
+   "anchor_topic": "a-Кришашва",
+   "insert_before_para_idx": 322,
+   "line": "криводушная см. Кайкейи"
+  },
+  {
+   "alias": "Лакшми",
+   "target": "Шри",
+   "section": "a",
+   "anchor_topic": "a-Мадху=1",
+   "insert_before_para_idx": 355,
+   "line": "Лакшми см. Шри"
+  },
+  {
+   "alias": "любимец царя",
+   "target": "Рама",
+   "section": "a",
+   "anchor_topic": "a-Мадху=1",
+   "insert_before_para_idx": 355,
+   "line": "любимец царя см. Рама"
+  },
+  {
+   "alias": "любимый людьми",
+   "target": "Рама",
+   "section": "a",
+   "anchor_topic": "a-Мадху=1",
+   "insert_before_para_idx": 355,
+   "line": "любимый людьми см. Рама"
+  },
+  {
+   "alias": "Магхаван",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Мадху=1",
+   "insert_before_para_idx": 355,
+   "line": "Магхаван см. Индра"
+  },
+  {
+   "alias": "Мадана",
+   "target": "Кама",
+   "section": "a",
+   "anchor_topic": "a-Мадху=1",
+   "insert_before_para_idx": 355,
+   "line": "Мадана см. Кама"
+  },
+  {
+   "alias": "Мадхусудана",
+   "target": "Вишну",
+   "section": "a",
+   "anchor_topic": "a-Мадхушпанда (Мадхучханда, Мадхучхандаса, Махишьянда, Махишпанда, Мадхушпанда)",
+   "insert_before_para_idx": 357,
+   "line": "Мадхусудана см. Вишну"
+  },
+  {
+   "alias": "Малини",
+   "target": "Ганга",
+   "section": "a",
+   "anchor_topic": "a-Мандави",
+   "insert_before_para_idx": 359,
+   "line": "Малини см. Ганга"
+  },
+  {
+   "alias": "Манматха",
+   "target": "Кама",
+   "section": "a",
+   "anchor_topic": "a-Мантхара=1",
+   "insert_before_para_idx": 361,
+   "line": "Манматха см. Кама"
+  },
+  {
+   "alias": "Марута",
+   "target": "Ваю",
+   "section": "a",
+   "anchor_topic": "a-Матали",
+   "insert_before_para_idx": 375,
+   "line": "Марута см. Ваю"
+  },
+  {
+   "alias": "Махадева",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Махападма",
+   "insert_before_para_idx": 380,
+   "line": "Махадева см. Шива"
+  },
+  {
+   "alias": "Махешвара",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Махидхрака",
+   "insert_before_para_idx": 383,
+   "line": "Махешвара см. Шива"
+  },
+  {
+   "alias": "Нараяна",
+   "target": "Вишну",
+   "section": "a",
+   "anchor_topic": "a-Нахуша",
+   "insert_before_para_idx": 405,
+   "line": "Нараяна см. Вишну"
+  },
+  {
+   "alias": "Павака",
+   "target": "Агни",
+   "section": "a",
+   "anchor_topic": "a-Пака",
+   "insert_before_para_idx": 410,
+   "line": "Павака см. Агни"
+  },
+  {
+   "alias": "Парашурама",
+   "target": "Рама Джамадагнья",
+   "section": "a",
+   "anchor_topic": "a-Прабхаса",
+   "insert_before_para_idx": 411,
+   "line": "Парашурама см. Рама Джамадагнья"
+  },
+  {
+   "alias": "Парвати",
+   "target": "Ума",
+   "section": "a",
+   "anchor_topic": "a-Прабхаса",
+   "insert_before_para_idx": 411,
+   "line": "Парвати см. Ума"
+  },
+  {
+   "alias": "Парджанья",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Прабхаса",
+   "insert_before_para_idx": 411,
+   "line": "Парджанья см. Индра"
+  },
+  {
+   "alias": "Пашупати",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Прабхаса",
+   "insert_before_para_idx": 411,
+   "line": "Пашупати см. Шива"
+  },
+  {
+   "alias": "податель даров",
+   "target": "Кубера",
+   "section": "a",
+   "anchor_topic": "a-Прабхаса",
+   "insert_before_para_idx": 411,
+   "line": "податель даров см. Кубера"
+  },
+  {
+   "alias": "податель даров",
+   "target": "Рама",
+   "section": "a",
+   "anchor_topic": "a-Прабхаса",
+   "insert_before_para_idx": 411,
+   "line": "податель даров см. Рама"
+  },
+  {
+   "alias": "Праджапати",
+   "target": "Брахма",
+   "section": "a",
+   "anchor_topic": "a-Прасенаджит",
+   "insert_before_para_idx": 414,
+   "line": "Праджапати см. Брахма"
+  },
+  {
+   "alias": "Пурандара",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Пуру",
+   "insert_before_para_idx": 427,
+   "line": "Пурандара см. Индра"
+  },
+  {
+   "alias": "Пуруша",
+   "target": "Брахма",
+   "section": "a",
+   "anchor_topic": "a-Пушан",
+   "insert_before_para_idx": 428,
+   "line": "Пуруша см. Брахма"
+  },
+  {
+   "alias": "Пурушоттама",
+   "target": "Вишну",
+   "section": "a",
+   "anchor_topic": "a-Пушан",
+   "insert_before_para_idx": 428,
+   "line": "Пурушоттама см. Вишну"
+  },
+  {
+   "alias": "Рудра",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Савитри",
+   "insert_before_para_idx": 475,
+   "line": "Рудра см. Шива"
+  },
+  {
+   "alias": "саморожденный",
+   "target": "Брахма",
+   "section": "a",
+   "anchor_topic": "a-Сампати",
+   "insert_before_para_idx": 478,
+   "line": "саморожденный см. Брахма"
+  },
+  {
+   "alias": "сиятельный великий подвижник",
+   "target": "Бхарадваджа",
+   "section": "a",
+   "anchor_topic": "a-Сканда",
+   "insert_before_para_idx": 496,
+   "line": "сиятельный великий подвижник см. Бхарадваджа"
+  },
+  {
+   "alias": "Супарна",
+   "target": "Гаруда",
+   "section": "a",
+   "anchor_topic": "a-Супрабха",
+   "insert_before_para_idx": 527,
+   "line": "Супарна см. Гаруда"
+  },
+  {
+   "alias": "супруг Умы",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Сура",
+   "insert_before_para_idx": 528,
+   "line": "супруг Умы см. Шива"
+  },
+  {
+   "alias": "супруг Шачи",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Сура",
+   "insert_before_para_idx": 528,
+   "line": "супруг Шачи см. Индра"
+  },
+  {
+   "alias": "сведущий в советах",
+   "target": "Сумантра",
+   "section": "a",
+   "anchor_topic": "a-Сиддхартха=2",
+   "insert_before_para_idx": 490,
+   "line": "сведущий в советах см. Сумантра"
+  },
+  {
+   "alias": "сын Асаманьджи",
+   "target": "Аншуман",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Асаманьджи см. Аншуман"
+  },
+  {
+   "alias": "сын Брахмы",
+   "target": "Кумбхакарна",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Брахмы см. Кумбхакарна"
+  },
+  {
+   "alias": "сын Вибхандаки",
+   "target": "Ришьяшринга",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Вибхандаки см. Ришьяшринга"
+  },
+  {
+   "alias": "сын Гадхи",
+   "target": "Вишвамитра",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Гадхи см. Вишвамитра"
+  },
+  {
+   "alias": "сын Дашаратхи",
+   "target": "Рама",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Дашаратхи см. Рама"
+  },
+  {
+   "alias": "сын Какутстхи",
+   "target": "Сумантра",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Какутстхи см. Сумантра"
+  },
+  {
+   "alias": "сын Каусальи",
+   "target": "Рама",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Каусальи см. Рама"
+  },
+  {
+   "alias": "сын Маричи",
+   "target": "Кашьяпа",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Маричи см. Кашьяпа"
+  },
+  {
+   "alias": "сын Сумитры",
+   "target": "Лакшмана",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Сумитры см. Лакшмана"
+  },
+  {
+   "alias": "текущая тремя путями",
+   "target": "Ганга",
+   "section": "a",
+   "anchor_topic": "a-Тилоттама",
+   "insert_before_para_idx": 548,
+   "line": "текущая тремя путями см. Ганга"
+  },
+  {
+   "alias": "Трипатхага",
+   "target": "Ганга",
+   "section": "a",
+   "anchor_topic": "a-Тришанку",
+   "insert_before_para_idx": 552,
+   "line": "Трипатхага см. Ганга"
+  },
+  {
+   "alias": "тысячеглазый",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Удавасу",
+   "insert_before_para_idx": 558,
+   "line": "тысячеглазый см. Индра"
+  },
+  {
+   "alias": "Хара",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Харьяшва",
+   "insert_before_para_idx": 570,
+   "line": "Хара см. Шива"
+  },
+  {
+   "alias": "как золото»",
+   "target": "Рама",
+   "section": "a",
+   "anchor_topic": "a-Какутстха=1",
+   "insert_before_para_idx": 284,
+   "line": "как золото» см. Рама"
+  },
+  {
+   "alias": "Хришикеша",
+   "target": "Вишну",
+   "section": "a",
+   "anchor_topic": "a-Хуху",
+   "insert_before_para_idx": 577,
+   "line": "Хришикеша см. Вишну"
+  },
+  {
+   "alias": "Царевна Видехи",
+   "target": "Сита",
+   "section": "a",
+   "anchor_topic": "a-Чандра, или Луна, или Месяц",
+   "insert_before_para_idx": 578,
+   "line": "Царевна Видехи см. Сита"
+  },
+  {
+   "alias": "царь богов",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Чандра, или Луна, или Месяц",
+   "insert_before_para_idx": 578,
+   "line": "царь богов см. Индра"
+  },
+  {
+   "alias": "царь птиц",
+   "target": "Гаруда",
+   "section": "a",
+   "anchor_topic": "a-Чандра, или Луна, или Месяц",
+   "insert_before_para_idx": 578,
+   "line": "царь птиц см. Гаруда"
+  },
+  {
+   "alias": "царь царей",
+   "target": "Кубера",
+   "section": "a",
+   "anchor_topic": "a-Чандра, или Луна, или Месяц",
+   "insert_before_para_idx": 578,
+   "line": "царь царей см. Кубера"
+  },
+  {
+   "alias": "Шакра",
+   "target": "Индра",
+   "section": "a",
+   "anchor_topic": "a-Шакунтала",
+   "insert_before_para_idx": 586,
+   "line": "Шакра см. Индра"
+  },
+  {
+   "alias": "Шанкара",
+   "target": "Шива",
+   "section": "a",
+   "anchor_topic": "a-Шанкхана",
+   "insert_before_para_idx": 589,
+   "line": "Шанкара см. Шива"
+  },
+  {
+   "alias": "артха",
+   "target": "Тилака",
+   "section": "c",
+   "anchor_topic": "c-атман",
+   "insert_before_para_idx": 806,
+   "line": "артха см. Тилака"
+  },
+  {
+   "alias": "божественные мудрецы",
+   "target": "Риши",
+   "section": "c",
+   "anchor_topic": "c-брахман, брахманы",
+   "insert_before_para_idx": 817,
+   "line": "божественные мудрецы см. Риши"
+  },
+  {
+   "alias": "божественные риши",
+   "target": "Риши",
+   "section": "c",
+   "anchor_topic": "c-брахман, брахманы",
+   "insert_before_para_idx": 817,
+   "line": "божественные риши см. Риши"
+  },
+  {
+   "alias": "брахманы",
+   "target": "Варны",
+   "section": "c",
+   "anchor_topic": "c-брахмачарин",
+   "insert_before_para_idx": 818,
+   "line": "брахманы см. Варны"
+  },
+  {
+   "alias": "брахмариши",
+   "target": "Риши",
+   "section": "c",
+   "anchor_topic": "c-брахмачарин",
+   "insert_before_para_idx": 818,
+   "line": "брахмариши см. Риши"
+  },
+  {
+   "alias": "вайшьи",
+   "target": "варны",
+   "section": "c",
+   "anchor_topic": "c-ванара (рикша, гопучха, голангула)",
+   "insert_before_para_idx": 827,
+   "line": "вайшьи см. варны"
+  },
+  {
+   "alias": "кшатрии",
+   "target": "Варны",
+   "section": "c",
+   "anchor_topic": "c-локаятики (неверующие брахманы)",
+   "insert_before_para_idx": 890,
+   "line": "кшатрии см. Варны"
+  },
+  {
+   "alias": "Ригведа",
+   "target": "Веды",
+   "section": "c",
+   "anchor_topic": "c-риши",
+   "insert_before_para_idx": 943,
+   "line": "Ригведа см. Веды"
+  },
+  {
+   "alias": "Самаведа",
+   "target": "Веды",
+   "section": "c",
+   "anchor_topic": "c-саманы (песнопение)",
+   "insert_before_para_idx": 948,
+   "line": "Самаведа см. Веды"
+  },
+  {
+   "alias": "Сиддха",
+   "target": "Риши",
+   "section": "c",
+   "anchor_topic": "c-сиддхи",
+   "insert_before_para_idx": 954,
+   "line": "Сиддха см. Риши"
+  },
+  {
+   "alias": "шудры",
+   "target": "варны",
+   "section": "c",
+   "anchor_topic": null,
+   "insert_before_para_idx": 965,
+   "line": "шудры см. варны"
+  },
+  {
+   "alias": "Нандини",
+   "target": "корова, исполняющая желания",
+   "section": "a",
+   "anchor_topic": "a-Нарада",
+   "insert_before_para_idx": 402,
+   "line": "Нандини см. корова, исполняющая желания"
+  },
+  {
+   "alias": "Сурабхи",
+   "target": "корова, исполняющая желания",
+   "section": "a",
+   "anchor_topic": "a-Сураштра",
+   "insert_before_para_idx": 529,
+   "line": "Сурабхи см. корова, исполняющая желания"
+  },
+  {
+   "alias": "Шабала",
+   "target": "корова, исполняющая желания",
+   "section": "a",
+   "anchor_topic": "a-Шабари",
+   "insert_before_para_idx": 585,
+   "line": "Шабала см. корова, исполняющая желания"
+  },
+  {
+   "alias": "услада матери Сумитры",
+   "target": "Лакшмана",
+   "section": "a",
+   "anchor_topic": "a-Уччайхшравас",
+   "insert_before_para_idx": 566,
+   "line": "услада матери Сумитры см. Лакшмана"
+  },
+  {
+   "alias": "сын Вирочаны",
+   "target": "Бала, или Вала",
+   "section": "a",
+   "anchor_topic": "a-сыновья (сыны) Вишвамитры",
+   "insert_before_para_idx": 540,
+   "line": "сын Вирочаны см. Бала, или Вала"
+  },
+  {
+   "alias": "амрита или напиток бессмерития",
+   "target": "ракшасы, ракшаси",
+   "section": "c",
+   "anchor_topic": "c-анвикшики",
+   "insert_before_para_idx": 803,
+   "line": "амрита или напиток бессмерития см. ракшасы, ракшаси"
+  },
+  {
+   "alias": "сома",
+   "target": "ракшасы, ракшаси",
+   "section": "c",
+   "anchor_topic": "c-сыновья (сыны) Кашьяпы и Адити, или Адитьи, или сыновья (сыны) Адити, или суры, или боги",
+   "insert_before_para_idx": 962,
+   "line": "сома см. ракшасы, ракшаси"
+  }
+ ],
+ "unresolved": []
+}
