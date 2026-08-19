@@ -58,10 +58,18 @@ def main(argv=None):
         topic_pages[name] = pages
 
     # Split printed text into per-topic-name segments (a/b/c/d- prefixed).
+    # No trailing lookahead requiring the next thing to be another a/b/c/d-
+    # segment or end-of-string (H2590): a "Alias см. Target" cross-reference
+    # line -- inserted between two real entries, starting with a lowercase
+    # Cyrillic letter, not a/b/c/d-latin -- is a valid stopping point too.
+    # The digit/comma/dash/whitespace character class already excludes
+    # letters, so the greedy page-group naturally stops there; the old
+    # lookahead only rejected otherwise-correct matches once см. lines
+    # existed in the text.
     segments = re.split(r"(?=[abcd]-)", text)
     printed_pages = {}
     for seg in segments:
-        m = re.match(r"([abcd]-[^\r\n]*?)\s+([\d,\s–—-]+)(?=[abcd]-|$)", seg, re.S)
+        m = re.match(r"([abcd]-[^\r\n]*?)\s+([\d,\s–—-]+)", seg, re.S)
         if not m:
             continue
         name = m.group(1).strip()
