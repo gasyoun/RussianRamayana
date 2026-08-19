@@ -1,0 +1,48 @@
+{
+  "$schema_note": "H2590: consolidated defect ledger for Book II, per config/print-readiness.json defect_ledger.path_template. Carries forward DFT-II-0001/0002 from conversion-2026/gate-report-waived.json (single source of truth going forward) plus new defects found during stage[4].",
+  "volume": "II",
+  "defects": [
+    {
+      "id": "DFT-II-0001",
+      "class": "material",
+      "status": "open",
+      "volume": "II",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate: 0 missing links (WAIVED as pre-existing)",
+      "observed": "7 link(s) LINK_MISSING, waived: 102.eps, 30.eps, 91.eps, LP.tif, линейка21.eps",
+      "expected": "0 missing links",
+      "disposition": "WAITING",
+      "evidence": "Litpam-Indexator/artifacts/print-readiness/book-II/conversion-2026/gate-report-waived.json — files absent from the entire repo tree; remains WAITING until the original assets are recovered, but does not gate index mutation.",
+      "found_by": "print_ready.py conversion_gate (H2589/H2590)"
+    },
+    {
+      "id": "DFT-II-0002",
+      "class": "cosmetic",
+      "status": "wontfix-exception",
+      "volume": "II",
+      "index": null,
+      "page": null,
+      "rule": "Step5 gate + ruling 21 fail condition: no clipping/overset (WAIVED)",
+      "observed": "3 overset story(ies) whitelisted by human waiver: 1632, 16507, 16237",
+      "expected": "0 overset stories",
+      "disposition": "wontfix-exception",
+      "evidence": "Litpam-Indexator/artifacts/print-readiness/book-II/overset-adjudication-2026/OVERSET_TEXTDIFF_ADJUDICATION_BOOK_II_2026.md — 0/668 pages differ 2022 vs 2026, all 3 flagged stories render 100% content in both PDFs.",
+      "found_by": "print_ready.py conversion_gate (H2589/H2590)"
+    },
+    {
+      "id": "DFT-II-0003",
+      "class": "material",
+      "status": "open",
+      "volume": "II",
+      "index": "all four (Именной/Географ/Предметы и термины/Флора и фауна share the mechanism; sample below is from Именной)",
+      "page": null,
+      "rule": "Ruling 29: no silent loss of dictionary entries or references. coverage_check_stage4.py v2 (analyze_topic_pages.py, comparing deduplicated page-number SETS per topic) requires every page number recorded on a Topic's pageReferences to appear in the printed, ProcNumberLines-processed index text.",
+      "observed": "29 of 934 Level-1 topics are each missing exactly ONE locator from the printed text vs. the Index.Topics data model (e.g. a-Анасуя loses page 595; a-Равана loses page 617; a-Будда loses page 597 while printed text shows a spurious extra page 456 not present in that topic's own reference set at all). Root-cause hypothesis (not yet confirmed): 693/934 topics carry one trailing PageReference whose sourceText throws 'Object is invalid' when re-queried post-ProcNumberLines (see TOPIC_PAGES_DUMP_v2.json) -- consistent with ProcNumberLines' native range-collapse consolidating/orphaning one reference object per topic; for 664/693 this is harmless (the orphaned ref's page number was already represented via a collapsed range), but for 29/693 the orphaned reference held the ONLY occurrence of a non-adjacent page number, which is then silently dropped from print instead of printing standalone. This is a live-InDesign ProcNumberLines behavior, not something introduced by index_letter.jsx or drive_proc_number_lines.py (which invokes the authorial palette unmodified, per H2589 guardrail).",
+      "expected": "Every page reference in the data model appears as a printed locator (bold-range/collapse formatting aside).",
+      "disposition": "WAITING",
+      "evidence": "Litpam-Indexator/artifacts/print-readiness/book-II/pilot-2026/stage4/PAGE_SET_MISMATCHES_v2.json (29 concrete topic/page pairs), Litpam-Indexator/artifacts/print-readiness/book-II/pilot-2026/stage4/TOPIC_PAGES_DUMP_v2.json (raw per-reference COM read incl. the 693 trailing 'Object is invalid' entries). Book I has not yet run stage[4] (ProcNumberLines) so is not yet known to be affected or unaffected -- same tooling/method, so plausibly at equal risk; flagged as a follow-up, out of scope for this Book-II-titled handoff.",
+      "found_by": "dump_topic_pages.py + analyze_topic_pages.py v2 (H2590, 19-08-2026, Sonnet 5 claude-sonnet-5)"
+    }
+  ]
+}

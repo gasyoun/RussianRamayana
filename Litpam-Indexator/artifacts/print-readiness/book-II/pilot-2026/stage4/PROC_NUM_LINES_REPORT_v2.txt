@@ -1,0 +1,5 @@
+proc-number-lines run 2026-08-19 08:08:24
+target: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-104968\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+click_result: clicked
+alerts: 
+saved|story_chars=49929|head=Сводный указательAa-Агастья  159, 225, 534, 594, 609, 613–614a-великий риши=1  251, 253, 255, 288, 307, 386, 391, 394, 414, 546, 595a-Агни  79, 83, 250, 438, 455, 507–508, 538, 585, 594, 609, 612a-Анала  598a-Павака  609a-Агниварна  461, 594a-сын Сударшаны  461a-Аджа  461, 587, 594a-Адити 

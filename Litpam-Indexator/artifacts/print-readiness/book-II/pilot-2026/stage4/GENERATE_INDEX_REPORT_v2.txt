@@ -1,0 +1,3 @@
+generate-index run 2026-08-19 08:06:17
+target: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-104968\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+result: generated|pages_before=668|pages_after=711|story_length=1|story_frames=ERR:undefined is not an object
