@@ -1,0 +1,3369 @@
+{
+ "tool": "analyze_topic_pages.py (H2590)",
+ "topics_total": 934,
+ "read_errors": [
+  "935:Object is invalid"
+ ],
+ "mismatches_total": 272,
+ "mismatches": [
+  {
+   "topic": "a-Айи-Равана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Анасуя",
+   "src_pages": [
+    481,
+    482,
+    484,
+    485,
+    486,
+    489,
+    490,
+    491,
+    591,
+    592,
+    595
+   ],
+   "printed_pages": [
+    481,
+    482,
+    484,
+    485,
+    486,
+    489,
+    490,
+    491,
+    591,
+    592
+   ],
+   "missing_from_print": [
+    595
+   ]
+  },
+  {
+   "topic": "a-Анша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Аншуман",
+   "src_pages": [
+    460,
+    499,
+    539,
+    595,
+    596,
+    602
+   ],
+   "printed_pages": [
+    460,
+    499,
+    539,
+    595,
+    596
+   ],
+   "missing_from_print": [
+    602
+   ]
+  },
+  {
+   "topic": "a-Арджуна Картавирья",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Асаманьджа",
+   "src_pages": [
+    180,
+    460,
+    527,
+    595,
+    596,
+    611
+   ],
+   "printed_pages": [
+    179,
+    180,
+    460,
+    527,
+    595,
+    596
+   ],
+   "missing_from_print": [
+    611
+   ]
+  },
+  {
+   "topic": "a-Будда",
+   "src_pages": [
+    585,
+    586,
+    597
+   ],
+   "printed_pages": [
+    456,
+    585,
+    586
+   ],
+   "missing_from_print": [
+    597
+   ]
+  },
+  {
+   "topic": "a-Бхадра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Бхарадваджа=1",
+   "src_pages": [
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    259,
+    262,
+    366,
+    380,
+    381,
+    382,
+    383,
+    384,
+    387,
+    388,
+    391,
+    392,
+    393,
+    394,
+    395,
+    397,
+    414,
+    469,
+    470,
+    538,
+    564,
+    566,
+    568,
+    569,
+    597
+   ],
+   "printed_pages": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    259,
+    262,
+    366,
+    380,
+    381,
+    382,
+    383,
+    384,
+    387,
+    388,
+    391,
+    392,
+    393,
+    394,
+    395,
+    397,
+    414,
+    469,
+    470,
+    538,
+    564,
+    566,
+    568,
+    569
+   ],
+   "missing_from_print": [
+    597
+   ]
+  },
+  {
+   "topic": "a-Бхарадваджа=2",
+   "src_pages": [
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    259,
+    262,
+    366,
+    380,
+    381,
+    382,
+    383,
+    384,
+    387,
+    388,
+    391,
+    392,
+    393,
+    394,
+    395,
+    397,
+    414,
+    469,
+    470,
+    538,
+    564,
+    566,
+    568,
+    569,
+    597
+   ],
+   "printed_pages": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    259,
+    262,
+    366,
+    380,
+    381,
+    382,
+    383,
+    384,
+    387,
+    388,
+    391,
+    392,
+    393,
+    394,
+    395,
+    397,
+    414,
+    469,
+    470,
+    538,
+    564,
+    566,
+    568,
+    569
+   ],
+   "missing_from_print": [
+    597
+   ]
+  },
+  {
+   "topic": "a-Варуна",
+   "src_pages": [
+    79,
+    83,
+    89,
+    132,
+    157,
+    307,
+    487,
+    497,
+    523,
+    567,
+    594,
+    595,
+    597,
+    598,
+    613
+   ],
+   "printed_pages": [
+    7,
+    79,
+    83,
+    89,
+    132,
+    157,
+    307,
+    487,
+    497,
+    523,
+    567,
+    594,
+    595,
+    597,
+    598
+   ],
+   "missing_from_print": [
+    613
+   ]
+  },
+  {
+   "topic": "a-Вирупакша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Вишала",
+   "src_pages": [
+    599,
+    602,
+    603,
+    606,
+    612,
+    613,
+    615
+   ],
+   "printed_pages": [
+    599,
+    602,
+    603,
+    606,
+    612,
+    613
+   ],
+   "missing_from_print": [
+    615
+   ]
+  },
+  {
+   "topic": "a-Вишвакарман",
+   "src_pages": [
+    384,
+    386,
+    566,
+    599,
+    608,
+    609,
+    614
+   ],
+   "printed_pages": [
+    384,
+    386,
+    566,
+    599,
+    608,
+    609
+   ],
+   "missing_from_print": [
+    614
+   ]
+  },
+  {
+   "topic": "a-Вишвамитра",
+   "src_pages": [
+    488,
+    514,
+    524,
+    531,
+    587,
+    600,
+    602,
+    604,
+    605,
+    606,
+    608,
+    611,
+    612,
+    614,
+    615,
+    617
+   ],
+   "printed_pages": [
+    131,
+    488,
+    514,
+    524,
+    531,
+    587,
+    600,
+    602,
+    604,
+    605,
+    606,
+    608,
+    611,
+    612,
+    614,
+    615
+   ],
+   "missing_from_print": [
+    617
+   ]
+  },
+  {
+   "topic": "a-Гандхари, жена Дхритараштры",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Готама",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Гхритачьи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дадхимукха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дадхичи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дивьяваю",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-дочери Кушадхваджи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Дхатри",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Идхмавахана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Кадру",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Калагни",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Корова, исполняющая желания",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Крату",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Кришна",
+   "src_pages": [
+    598,
+    601,
+    604,
+    605,
+    606,
+    617
+   ],
+   "printed_pages": [
+    153,
+    598,
+    601,
+    604,
+    605,
+    606
+   ],
+   "missing_from_print": [
+    617
+   ]
+  },
+  {
+   "topic": "a-Лакшмана",
+   "src_pages": [
+    14,
+    26,
+    27,
+    28,
+    39,
+    41,
+    69,
+    89,
+    90,
+    102,
+    107,
+    110,
+    112,
+    114,
+    115,
+    116,
+    119,
+    121,
+    122,
+    126,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    164,
+    165,
+    168,
+    169,
+    171,
+    182,
+    183,
+    193,
+    194,
+    195,
+    197,
+    203,
+    205,
+    206,
+    207,
+    208,
+    209,
+    211,
+    212,
+    215,
+    216,
+    217,
+    221,
+    223,
+    229,
+    231,
+    232,
+    233,
+    235,
+    238,
+    242,
+    243,
+    245,
+    246,
+    247,
+    248,
+    249,
+    251,
+    253,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    267,
+    269,
+    270,
+    273,
+    274,
+    275,
+    283,
+    302,
+    304,
+    312,
+    313,
+    314,
+    325,
+    326,
+    328,
+    340,
+    342,
+    346,
+    347,
+    350,
+    358,
+    361,
+    364,
+    368,
+    369,
+    372,
+    373,
+    376,
+    377,
+    381,
+    382,
+    394,
+    398,
+    400,
+    402,
+    404,
+    405,
+    406,
+    408,
+    409,
+    410,
+    412,
+    414,
+    415,
+    416,
+    426,
+    430,
+    432,
+    433,
+    436,
+    437,
+    438,
+    439,
+    448,
+    449,
+    450,
+    478,
+    481,
+    488,
+    489,
+    491,
+    492,
+    500,
+    504,
+    508,
+    513,
+    514,
+    516,
+    517,
+    525,
+    528,
+    530,
+    536,
+    537,
+    539,
+    540,
+    548,
+    551,
+    569,
+    570,
+    572,
+    573,
+    574,
+    588,
+    601,
+    603,
+    606,
+    613,
+    614,
+    615,
+    617
+   ],
+   "printed_pages": [
+    4,
+    14,
+    26,
+    27,
+    28,
+    39,
+    41,
+    69,
+    89,
+    90,
+    102,
+    107,
+    110,
+    112,
+    114,
+    115,
+    116,
+    119,
+    121,
+    122,
+    126,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    164,
+    165,
+    168,
+    169,
+    171,
+    182,
+    183,
+    193,
+    194,
+    195,
+    197,
+    203,
+    205,
+    206,
+    207,
+    208,
+    209,
+    211,
+    212,
+    215,
+    216,
+    217,
+    221,
+    223,
+    229,
+    231,
+    232,
+    233,
+    235,
+    238,
+    242,
+    243,
+    245,
+    246,
+    247,
+    248,
+    249,
+    251,
+    253,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    267,
+    269,
+    270,
+    273,
+    274,
+    275,
+    283,
+    302,
+    304,
+    312,
+    313,
+    314,
+    325,
+    326,
+    328,
+    340,
+    342,
+    346,
+    347,
+    350,
+    358,
+    361,
+    364,
+    368,
+    369,
+    372,
+    373,
+    376,
+    377,
+    381,
+    382,
+    394,
+    398,
+    400,
+    402,
+    404,
+    405,
+    406,
+    408,
+    409,
+    410,
+    412,
+    414,
+    415,
+    416,
+    426,
+    430,
+    432,
+    433,
+    436,
+    437,
+    438,
+    439,
+    448,
+    449,
+    450,
+    478,
+    481,
+    488,
+    489,
+    491,
+    492,
+    500,
+    504,
+    508,
+    513,
+    514,
+    516,
+    517,
+    525,
+    528,
+    530,
+    536,
+    537,
+    539,
+    540,
+    548,
+    551,
+    569,
+    570,
+    572,
+    573,
+    574,
+    588,
+    601,
+    603,
+    606,
+    613,
+    614,
+    615
+   ],
+   "missing_from_print": [
+    617
+   ]
+  },
+  {
+   "topic": "a-Майи-Равана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Митра",
+   "src_pages": [
+    565,
+    566,
+    594
+   ],
+   "printed_pages": [
+    379,
+    565,
+    566
+   ],
+   "missing_from_print": [
+    594
+   ]
+  },
+  {
+   "topic": "a-Молочный океан",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Нандин",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Никумбха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Патала-Равана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Пашупати-рудра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Прачетас",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Пришни",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Пулаха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Равана",
+   "src_pages": [
+    4,
+    7,
+    478,
+    497,
+    588,
+    595,
+    599,
+    600,
+    601,
+    602,
+    603,
+    605,
+    606,
+    607,
+    608,
+    610,
+    614,
+    615,
+    617
+   ],
+   "printed_pages": [
+    4,
+    7,
+    478,
+    497,
+    588,
+    595,
+    599,
+    600,
+    601,
+    602,
+    603,
+    605,
+    606,
+    607,
+    608,
+    610,
+    614,
+    615
+   ],
+   "missing_from_print": [
+    617
+   ]
+  },
+  {
+   "topic": "a-Ричика",
+   "src_pages": [
+    612,
+    617
+   ],
+   "printed_pages": [
+    611,
+    612
+   ],
+   "missing_from_print": [
+    617
+   ]
+  },
+  {
+   "topic": "a-Сатурн",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Сауманаса",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Сита",
+   "src_pages": [
+    4,
+    26,
+    27,
+    28,
+    29,
+    31,
+    65,
+    87,
+    88,
+    89,
+    91,
+    100,
+    102,
+    115,
+    136,
+    137,
+    138,
+    143,
+    144,
+    145,
+    146,
+    149,
+    151,
+    152,
+    153,
+    154,
+    157,
+    158,
+    159,
+    163,
+    164,
+    169,
+    173,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    190,
+    191,
+    193,
+    194,
+    195,
+    197,
+    203,
+    205,
+    208,
+    209,
+    212,
+    214,
+    215,
+    217,
+    221,
+    222,
+    225,
+    232,
+    233,
+    236,
+    238,
+    242,
+    243,
+    244,
+    245,
+    246,
+    248,
+    249,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    259,
+    260,
+    267,
+    270,
+    273,
+    274,
+    275,
+    276,
+    277,
+    300,
+    325,
+    326,
+    334,
+    369,
+    371,
+    372,
+    373,
+    375,
+    382,
+    399,
+    402,
+    404,
+    405,
+    406,
+    408,
+    412,
+    415,
+    416,
+    430,
+    432,
+    438,
+    449,
+    468,
+    478,
+    481,
+    482,
+    485,
+    486,
+    489,
+    490,
+    491,
+    492,
+    499,
+    502,
+    504,
+    508,
+    514,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    528,
+    530,
+    531,
+    536,
+    539,
+    543,
+    569,
+    573,
+    583,
+    592,
+    596,
+    599,
+    601,
+    603,
+    605,
+    607,
+    608,
+    609,
+    612,
+    613,
+    614,
+    615,
+    616
+   ],
+   "printed_pages": [
+    4,
+    26,
+    27,
+    28,
+    29,
+    31,
+    65,
+    87,
+    88,
+    89,
+    91,
+    100,
+    102,
+    115,
+    136,
+    137,
+    138,
+    143,
+    144,
+    145,
+    146,
+    149,
+    151,
+    152,
+    153,
+    154,
+    157,
+    158,
+    159,
+    163,
+    164,
+    169,
+    173,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    190,
+    191,
+    193,
+    194,
+    195,
+    197,
+    203,
+    205,
+    208,
+    209,
+    212,
+    214,
+    215,
+    217,
+    221,
+    222,
+    225,
+    232,
+    233,
+    236,
+    238,
+    242,
+    243,
+    244,
+    245,
+    246,
+    248,
+    249,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    259,
+    260,
+    267,
+    270,
+    273,
+    274,
+    275,
+    276,
+    277,
+    300,
+    325,
+    326,
+    334,
+    369,
+    371,
+    372,
+    373,
+    375,
+    382,
+    399,
+    402,
+    404,
+    405,
+    406,
+    408,
+    412,
+    415,
+    416,
+    430,
+    432,
+    438,
+    449,
+    468,
+    478,
+    481,
+    482,
+    485,
+    486,
+    489,
+    490,
+    491,
+    492,
+    499,
+    502,
+    504,
+    508,
+    514,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    528,
+    530,
+    531,
+    536,
+    539,
+    543,
+    569,
+    573,
+    583,
+    592,
+    596,
+    599,
+    601,
+    603,
+    605,
+    607,
+    608,
+    609
+   ],
+   "missing_from_print": [
+    612,
+    613,
+    614,
+    615,
+    616
+   ]
+  },
+  {
+   "topic": "a-Сканда",
+   "src_pages": [
+    604,
+    605,
+    612
+   ],
+   "printed_pages": [
+    132,
+    604,
+    605
+   ],
+   "missing_from_print": [
+    612
+   ]
+  },
+  {
+   "topic": "a-Сома=1",
+   "src_pages": [
+    83,
+    132,
+    133,
+    385,
+    455,
+    511,
+    529,
+    567,
+    585,
+    592,
+    597,
+    598,
+    601,
+    611,
+    612,
+    620
+   ],
+   "printed_pages": [
+    79,
+    83,
+    132,
+    133,
+    385,
+    455,
+    511,
+    529,
+    567,
+    585,
+    592,
+    597,
+    598,
+    601,
+    611,
+    612
+   ],
+   "missing_from_print": [
+    620
+   ]
+  },
+  {
+   "topic": "a-Сома=2",
+   "src_pages": [
+    83,
+    132,
+    133,
+    385,
+    455,
+    511,
+    529,
+    567,
+    585,
+    592,
+    597,
+    598,
+    601,
+    611,
+    612,
+    620
+   ],
+   "printed_pages": [
+    79,
+    83,
+    132,
+    133,
+    385,
+    455,
+    511,
+    529,
+    567,
+    585,
+    592,
+    597,
+    598,
+    601,
+    611,
+    612
+   ],
+   "missing_from_print": [
+    620
+   ]
+  },
+  {
+   "topic": "a-Сураса",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-сыновья (сыны) Арджуны Картавирьи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-сыновья (сыны) Васиштхи, или сто сыновей Васиштхи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-сыновья (сыны) Вишвамитры, или сто сыновей Вишвамитры",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Харишчандра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-царь (владыка) Кекаи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "a-Шанкхана",
+   "src_pages": [
+    461,
+    616
+   ],
+   "printed_pages": [
+    460,
+    461
+   ],
+   "missing_from_print": [
+    616
+   ]
+  },
+  {
+   "topic": "b-Агнея",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-анги",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Апарапарватa",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Бенгал (Бенгалия)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Биас (древн. Випаша)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Бходжи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Бхригупрасавана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Ганга, Ганг",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Гандхара",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Дакшинапатха (Южная область; совр. Декан)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Джамна, или Ямуна",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Дхармавартана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Индракила",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Ионийцы (греки)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Калинги",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-камбоджи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Кашмир",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-кираты",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Куруджагала",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Ланка (совр. Шри-Ланка, Цейлон)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Магадхи, или Сумагадхи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Мадрас",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Мадхьядеша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Мандакини",
+   "src_pages": [
+    393,
+    397,
+    402,
+    403,
+    404,
+    414,
+    415,
+    433,
+    436,
+    440,
+    444,
+    469,
+    541,
+    568,
+    571,
+    572,
+    607
+   ],
+   "printed_pages": [
+    393,
+    397,
+    402,
+    403,
+    404,
+    414,
+    415,
+    433,
+    436,
+    440,
+    444,
+    469,
+    541,
+    568,
+    571,
+    572
+   ],
+   "missing_from_print": [
+    607
+   ]
+  },
+  {
+   "topic": "b-млеччхи, или варвары",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-мунда",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Нармада",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Паталипутра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-пахлавы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Пенджаб",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Прасравана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Раджастхан",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Рикша, или Рикшават",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Северная гора",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Сиддхашрама",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Сьядика",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Тапована",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Трипура, или тройной город",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-хариты",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Чайтраратха",
+   "src_pages": [
+    567,
+    568,
+    615
+   ],
+   "printed_pages": [
+    552,
+    567,
+    568
+   ],
+   "missing_from_print": [
+    615
+   ]
+  },
+  {
+   "topic": "b-шаки",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Шальякаршана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Шила",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-Экасала",
+   "src_pages": [
+    617
+   ],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-яваны",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "b-ядавы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-абхиджит",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-агништома",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-агништха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Адитидевата",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-адитьи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-адхварью",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-акшаухини",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-апторьяма",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-араньяки",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-аргхья",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-аскеза пяти огней",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-асуры",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-атиратра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ашрама",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-аюс",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-аюштома",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-бездушное существо",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-беззаконие",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-брахмаракшас",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-вавата",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-вандины",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-веда кшатриев",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-веды",
+   "src_pages": [
+    16,
+    74,
+    78,
+    105,
+    129,
+    134,
+    137,
+    213,
+    292,
+    318,
+    513,
+    518,
+    521,
+    534,
+    562,
+    576,
+    577,
+    582,
+    583,
+    597,
+    599,
+    609,
+    611,
+    612,
+    614
+   ],
+   "printed_pages": [
+    9,
+    16,
+    74,
+    78,
+    105,
+    129,
+    134,
+    137,
+    213,
+    292,
+    318,
+    513,
+    518,
+    521,
+    534,
+    562,
+    576,
+    577,
+    582,
+    583,
+    597,
+    599,
+    609,
+    611,
+    612
+   ],
+   "missing_from_print": [
+    614
+   ]
+  },
+  {
+   "topic": "c-великие змеи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-видьядхари",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-вишваджит",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Вриттимана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-всесильные дочери Брахмы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Вторая Пхалгуни, или Уттара Пхалгуни",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-второе созвездие Семи Риши или созвездие Южного Креста",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-гада",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-данавы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-дарша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-день Брахмы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-джьотиша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-джьотиштома",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Дхану",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Дханью",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Дхритималина",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенная церемония",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенная чаша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенное животное",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенные путы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный ковш",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный конь",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный костер",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный кувшин",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный нож",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный обряд",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-жертвенный столб",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-знамя Агни",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-знамя Шивы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-знание Брахмы, или священный слог ом",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кальпасутра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-карма",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кармадхарая",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Каустубха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кимпуруши",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кушилавы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-кшуд",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-лагна",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-лук Шивы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Магха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-майя",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-мантра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-марга",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-махишья",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-мукхьи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-муштика, муштики",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-наги",
+   "src_pages": [
+    519,
+    574,
+    597,
+    598,
+    608
+   ],
+   "printed_pages": [
+    228,
+    519,
+    574,
+    597,
+    598
+   ],
+   "missing_from_print": [
+    608
+   ]
+  },
+  {
+   "topic": "c-небожители",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-небо Индры",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-нижний мир",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ночь Брахмы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-падья",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-паннаги (ураги, махораги)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-париврикти, или паривритти",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-паша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-паяса",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-праваргья",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Праджапати Кришашвы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пралая",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пранджали",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-призраки",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Проштхапада",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пурана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пураны",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пурнамаса",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-пурохита",
+   "src_pages": [
+    598,
+    616
+   ],
+   "printed_pages": [
+    597,
+    598
+   ],
+   "missing_from_print": [
+    616
+   ]
+  },
+  {
+   "topic": "c-путрия",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Пушпака",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-рага",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Рак",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ракшасы, ракшаси",
+   "src_pages": [
+    4,
+    44,
+    56,
+    132,
+    205,
+    312,
+    331,
+    478,
+    479,
+    491,
+    505,
+    507,
+    531,
+    550,
+    600,
+    602,
+    606,
+    610,
+    612,
+    613,
+    614,
+    617
+   ],
+   "printed_pages": [
+    4,
+    44,
+    56,
+    132,
+    205,
+    312,
+    331,
+    478,
+    479,
+    491,
+    505,
+    507,
+    531,
+    550,
+    600,
+    602,
+    606,
+    610,
+    612,
+    613,
+    614
+   ],
+   "missing_from_print": [
+    617
+   ]
+  },
+  {
+   "topic": "c-Раса",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-раса=1",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-раса=2",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-расатала",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-рахасья",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-рисовая каша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-риши",
+   "src_pages": [
+    18,
+    21,
+    23,
+    25,
+    28,
+    29,
+    31,
+    34,
+    38,
+    42,
+    50,
+    54,
+    57,
+    61,
+    70,
+    73,
+    76,
+    77,
+    79,
+    81,
+    87,
+    92,
+    95,
+    96,
+    99,
+    102,
+    104,
+    106,
+    110,
+    113,
+    118,
+    121,
+    126,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    140,
+    143,
+    145,
+    146,
+    149,
+    154,
+    158,
+    163,
+    167,
+    174,
+    178,
+    179,
+    181,
+    186,
+    188,
+    192,
+    198,
+    200,
+    204,
+    206,
+    210,
+    214,
+    218,
+    220,
+    224,
+    226,
+    228,
+    232,
+    235,
+    242,
+    246,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    258,
+    260,
+    262,
+    266,
+    270,
+    274,
+    276,
+    277,
+    280,
+    282,
+    285,
+    286,
+    287,
+    288,
+    296,
+    299,
+    303,
+    307,
+    310,
+    312,
+    316,
+    321,
+    327,
+    330,
+    334,
+    341,
+    343,
+    345,
+    346,
+    349,
+    351,
+    354,
+    356,
+    360,
+    363,
+    365,
+    368,
+    371,
+    374,
+    377,
+    380,
+    381,
+    383,
+    384,
+    386,
+    391,
+    394,
+    395,
+    396,
+    399,
+    401,
+    402,
+    403,
+    404,
+    407,
+    411,
+    413,
+    414,
+    418,
+    426,
+    429,
+    430,
+    435,
+    439,
+    444,
+    448,
+    449,
+    450,
+    452,
+    454,
+    455,
+    457,
+    460,
+    461,
+    463,
+    465,
+    466,
+    468,
+    470,
+    471,
+    474,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    489,
+    490,
+    491,
+    492,
+    501,
+    515,
+    534,
+    538,
+    541,
+    546,
+    549,
+    567,
+    570,
+    573,
+    587,
+    591,
+    595,
+    596,
+    597,
+    598,
+    600,
+    604,
+    605,
+    607,
+    609,
+    610,
+    613,
+    614,
+    615,
+    616,
+    617
+   ],
+   "printed_pages": [
+    12,
+    18,
+    21,
+    23,
+    25,
+    28,
+    29,
+    31,
+    34,
+    38,
+    42,
+    50,
+    54,
+    57,
+    61,
+    70,
+    73,
+    76,
+    77,
+    79,
+    81,
+    87,
+    92,
+    95,
+    96,
+    99,
+    102,
+    104,
+    106,
+    110,
+    113,
+    118,
+    121,
+    126,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    140,
+    143,
+    145,
+    146,
+    149,
+    154,
+    158,
+    163,
+    167,
+    174,
+    178,
+    179,
+    181,
+    186,
+    188,
+    192,
+    198,
+    200,
+    204,
+    206,
+    210,
+    214,
+    218,
+    220,
+    224,
+    226,
+    228,
+    232,
+    235,
+    242,
+    246,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    258,
+    260,
+    262,
+    266,
+    270,
+    274,
+    276,
+    277,
+    280,
+    282,
+    285,
+    286,
+    287,
+    288,
+    296,
+    299,
+    303,
+    307,
+    310,
+    312,
+    316,
+    321,
+    327,
+    330,
+    334,
+    341,
+    343,
+    345,
+    346,
+    349,
+    351,
+    354,
+    356,
+    360,
+    363,
+    365,
+    368,
+    371,
+    374,
+    377,
+    380,
+    381,
+    383,
+    384,
+    386,
+    391,
+    394,
+    395,
+    396,
+    399,
+    401,
+    402,
+    403,
+    404,
+    407,
+    411,
+    413,
+    414,
+    418,
+    426,
+    429,
+    430,
+    435,
+    439,
+    444,
+    448,
+    449,
+    450,
+    452,
+    454,
+    455,
+    457,
+    460,
+    461,
+    463,
+    465,
+    466,
+    468,
+    470,
+    471,
+    474,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    489,
+    490,
+    491,
+    492,
+    501,
+    515,
+    534,
+    538,
+    541,
+    546,
+    549,
+    567,
+    570,
+    573,
+    587,
+    591,
+    595,
+    596,
+    597,
+    598,
+    600,
+    604,
+    605,
+    607,
+    609,
+    610
+   ],
+   "missing_from_print": [
+    613,
+    614,
+    615,
+    616,
+    617
+   ]
+  },
+  {
+   "topic": "c-рудры",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Рыбы",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-садас",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-садхарана",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сандалии",
+   "src_pages": [
+    467,
+    468,
+    469,
+    470,
+    476,
+    477,
+    588,
+    589,
+    590
+   ],
+   "printed_pages": [
+    391,
+    467,
+    468,
+    469,
+    470,
+    476,
+    477
+   ],
+   "missing_from_print": [
+    588,
+    589,
+    590
+   ]
+  },
+  {
+   "topic": "c-сарга",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сарга (песня)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Сарпа",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-семь святых мудрецов (риши)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-созвездие Семи Риши",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-созерцание",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-стража (промежуток времени)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-стхапати",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-судьба",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сута",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-суты",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-сыновья (сыны) Кашьяпы и Дити, или сыновья (сыны) Дити, или асуры",
+   "src_pages": [
+    44,
+    233,
+    369,
+    531,
+    545,
+    596,
+    598,
+    601,
+    607,
+    612,
+    613,
+    614
+   ],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тайттирия",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-таладжангхи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тамбурин",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тантри",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тапас",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-таркшьи",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-теджас",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тилака",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тимпан",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тиртха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-триварга (три цели)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-тридцатка, или тридцать три бога, или тридцать три губителя недругов",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-три мира",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-удгатар",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-уктхьея",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-уктхья",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-упанишады",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-упасад",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Уттара Пхалгуни",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-халахала, или калакута",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-харихая",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-хотар",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Хранитель мира, или локапала (бог)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Хранитель мира, или локапала (слон)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Чайтра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чакра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чакравартин",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чандала",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чараны",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-час Митры",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чатуштома",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-чаша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Читра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шанкха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шастра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шлока, шлоки",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шраддха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-шрути",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-ювараджа",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-юга",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-Южный Крест",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-якши, якшини",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "c-янтра",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-агару",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-алоэ",
+   "src_pages": [
+    90,
+    93,
+    319,
+    343,
+    391,
+    473,
+    474,
+    511
+   ],
+   "printed_pages": [
+    76,
+    90,
+    93,
+    319,
+    343,
+    391,
+    473,
+    474
+   ],
+   "missing_from_print": [
+    511
+   ]
+  },
+  {
+   "topic": "d-баран",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-ветаса",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-какубха",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-парни",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-патала",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-плакша",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-сома (гриб или растение)",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  },
+  {
+   "topic": "d-шлешмата",
+   "src_pages": [],
+   "printed_pages": null,
+   "note": "not found in printed text"
+  }
+ ]
+}
