@@ -13,7 +13,13 @@
 // the authorial "[ ??? ]" branch. Rows with c1 != "№" get a topic but no page
 // references. Existing topics of the letter are removed first (idempotent redo).
 //
-// Params via app.scriptArgs: letter, startRow, endRow, logPath, excludeFromPage
+// Params via app.scriptArgs: letter, startRow, endRow, logPath, excludeFromPage,
+// keepExisting (H2590 rebuild: optional, default "" == false -- skip the
+// idempotent-redo drop-existing-topics-of-this-letter step below. Lets a
+// single letter's row range be split across several short DoScript calls
+// (each call is its own InDesign "long script" watchdog window) without the
+// second+ chunk wiping the first chunk's just-added topics; pass "1" only for
+// continuation chunks of the SAME letter within one rebuild run.)
 // (H2590: excludeFromPage, optional -- skip any grep hit whose containing page
 // number is >= this value. The original printed index block (old, unreplaced
 // pages) is itself searchable body text that literally lists headwords with
@@ -33,6 +39,7 @@
     var excludeFromPageArg = arg("excludeFromPage");
     var excludeFromPage = excludeFromPageArg !== "" ? Number(excludeFromPageArg) : null;
     var excludedByPageFilter = 0;
+    var keepExisting = arg("keepExisting") == "1";
 
     var idoc = null, tdoc = null;
     for (var i = 0; i < app.documents.length; i++) {
@@ -47,12 +54,15 @@
 
     var ix = (tdoc.indexes.length > 0) ? tdoc.indexes[0] : tdoc.indexes.add();
 
-    // idempotent redo: drop existing topics of this letter
+    // idempotent redo: drop existing topics of this letter (skipped for a
+    // keepExisting continuation chunk of an already-in-progress letter)
     var dropped = 0;
-    for (var t = ix.topics.length - 1; t >= 0; t--) {
-        var nm = String(ix.topics[t].name);
-        if (nm.length > 1 && nm.charAt(0) == letter && nm.charAt(1) == "-") {
-            try { ix.topics[t].remove(); dropped++; } catch (eD) {}
+    if (!keepExisting) {
+        for (var t = ix.topics.length - 1; t >= 0; t--) {
+            var nm = String(ix.topics[t].name);
+            if (nm.length > 1 && nm.charAt(0) == letter && nm.charAt(1) == "-") {
+                try { ix.topics[t].remove(); dropped++; } catch (eD) {}
+            }
         }
     }
 
