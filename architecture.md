@@ -18,7 +18,7 @@
 Материалы и решения
   |
   |-- roadmap.md
-  |-- changelog.md
+  |-- CHANGELOG.md
   |-- architecture.md
   |
 Структурированные данные
@@ -440,7 +440,7 @@ RussianRamayana/
     content-inventory.md
     fundraising-operations.md
   roadmap.md
-  changelog.md
+  CHANGELOG.md
   architecture.md
 ```
 
@@ -455,7 +455,7 @@ RussianRamayana/
 3. Создать `data/payment-methods.json`.
 4. Добавить на `index.html` новый первый экран сбора.
 5. Создать `support.html` как отдельную страницу сбора.
-6. Добавить в `changelog.md` запись о первом публичном краудфандинговом каркасе.
+6. Добавить в `CHANGELOG.md` запись о первом публичном краудфандинговом каркасе.
 
 Это даст видимый результат без полной миграции сайта.
 

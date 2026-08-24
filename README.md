@@ -95,7 +95,7 @@ _Created: 15-05-2026 · Last updated: 11-07-2026_
 ## Документация (`docs/`) и корневые документы
 
 - [content-inventory.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/content-inventory.md) — реестр материалов; [use-cases.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/use-cases.md) — сценарии; [RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md) — реестр прав; [DH_ROADMAP.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/DH_ROADMAP.md) — план развития; [ia-upload.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/ia-upload.md) — манифест загрузки аудио на Internet Archive.
-- Корневые: [`roadmap.md`](https://github.com/gasyoun/RussianRamayana/blob/main/roadmap.md) — продуктовые решения, открытые вопросы (Q1–Q15) и риски; [`architecture.md`](https://github.com/gasyoun/RussianRamayana/blob/main/architecture.md) — техническая архитектура; [`changelog.md`](https://github.com/gasyoun/RussianRamayana/blob/main/changelog.md) — рабочий журнал изменений.
+- Корневые: [`roadmap.md`](https://github.com/gasyoun/RussianRamayana/blob/main/roadmap.md) — продуктовые решения, открытые вопросы (Q1–Q15) и риски; [`architecture.md`](https://github.com/gasyoun/RussianRamayana/blob/main/architecture.md) — техническая архитектура; [`CHANGELOG.md`](https://github.com/gasyoun/RussianRamayana/blob/main/CHANGELOG.md) — рабочий журнал изменений.
 
 ## Лицензии и права
 

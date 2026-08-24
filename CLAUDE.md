@@ -68,7 +68,7 @@ To change the palette or any shared element, edit `style.css` only. Each page's 
 
 `roadmap.md` — long-form product decisions, open questions (Q1–Q15), and risks. Consult before making structural changes.
 
-`changelog.md` — working log of decisions and changes; update when making non-trivial edits.
+`CHANGELOG.md` — working log of decisions and changes; update when making non-trivial edits.
 
 ## Large binary assets
 
