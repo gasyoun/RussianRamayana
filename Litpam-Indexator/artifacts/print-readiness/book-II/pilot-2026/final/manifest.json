@@ -1,0 +1,35 @@
+{
+  "packet_id": "book-II-pilot-2026-final",
+  "handoff": "H2589",
+  "created": "2026-08-25",
+  "members": [
+    {
+      "path": "coverage.json",
+      "sha256": "d086ed770b202026371f36e5cc0ffe20f37faccaf84f7c3e3f9938c42ab15de5"
+    },
+    {
+      "path": "idml-audit.json",
+      "sha256": "1d8c7d182cd23408061ba534926d409f76fd7e62012f8862f863e87b8a1c756d"
+    },
+    {
+      "path": "NOTES_BOLD_CHECK.txt",
+      "sha256": "ec9b9fda8c4ea92bdf223eeaebf46c13f826fcfdb0961c655e8405a3f7a6154f"
+    },
+    {
+      "path": "pdf-audit.json",
+      "sha256": "6066967215755af57b77c6ceb76bffbc2c3b0c294ebaf0153cd14d345e1e14e8"
+    },
+    {
+      "path": "Ramayana_II_pilot_2026.idml",
+      "sha256": "3bae2f96cf12aeb333f8b590b090863f0c3ffd09568bc715c2a842d2f2d5447d"
+    },
+    {
+      "path": "Ramayana_II_pilot_2026.pdf",
+      "sha256": "18d6752e22e73e65774e061c3023c4dfa79a882bb496ccca7857ec5350480f4c"
+    },
+    {
+      "path": "Ramayana_II_pilot_2026.report.txt",
+      "sha256": "3f152511715ea42369f13a3d49d8e93ca151ee44825e9c5bf7f095ed97d8bedd"
+    }
+  ]
+}

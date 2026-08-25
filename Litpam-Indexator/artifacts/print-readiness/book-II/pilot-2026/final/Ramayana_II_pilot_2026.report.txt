@@ -1,0 +1,25 @@
+SCHEMA=print_ready_evidence.v1
+DOC_NAME=Ramayana_II_pilot_2026.indd
+DOC_FULL_NAME=C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+APP_VERSION=21.0.1.6
+APP_NAME=Adobe InDesign
+PAGE_COUNT=711
+STORY_COUNT=53
+SECTION||1|ARABIC|continue
+FONT|New Baskerville ITC	Regular|INSTALLED|New Baskerville ITC
+FONT|New Baskerville ITC	Bold|INSTALLED|New Baskerville ITC
+FONT|New Baskerville ITC	Italic|INSTALLED|New Baskerville ITC
+FONT|Charter Indologique	Regular|INSTALLED|Charter Indologique
+FONT|Leelawadee UI	Semilight|INSTALLED|Leelawadee UI
+FONT|Santipur2014	Regular|INSTALLED|Santipur2014
+LINK|линейка21.eps|LINK_MISSING
+LINK|LP.tif|LINK_MISSING
+LINK|102.eps|LINK_MISSING
+LINK|30.eps|LINK_MISSING
+LINK|91.eps|LINK_MISSING
+LINK|91.eps|LINK_MISSING
+LINK|линейка21.eps|LINK_MISSING
+OVERSET_COUNT=0
+PREFLIGHT_ERROR_COUNT=209
+EXPORTED_IDML=C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\artifacts\print-readiness\book-II\pilot-2026\final\Ramayana_II_pilot_2026.idml
+EXPORTED_PDF=C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\artifacts\print-readiness\book-II\pilot-2026\final\Ramayana_II_pilot_2026.pdf
