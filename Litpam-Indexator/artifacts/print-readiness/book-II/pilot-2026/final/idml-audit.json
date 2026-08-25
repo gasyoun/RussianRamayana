@@ -1,0 +1,5798 @@
+{
+  "idml_path": "artifacts/print-readiness/book-II/pilot-2026/final/Ramayana_II_pilot_2026.idml",
+  "product_version": "21.0(6)",
+  "dom_version": "21.0",
+  "story_list_count": 54,
+  "page_count": 711,
+  "spread_count": 356,
+  "sections": [
+    {
+      "self": "ub3",
+      "name": "",
+      "marker": "",
+      "page_number_start": null,
+      "page_number_type": null,
+      "included_document_page_start": "false"
+    }
+  ],
+  "pages": [
+    {
+      "spread_file": "Spreads/Spread_u1031.xml",
+      "self": "u1036",
+      "name": "102",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1031.xml",
+      "self": "u1037",
+      "name": "103",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1064.xml",
+      "self": "u1069",
+      "name": "104",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1064.xml",
+      "self": "u106a",
+      "name": "105",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1097.xml",
+      "self": "u109c",
+      "name": "106",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1097.xml",
+      "self": "u109d",
+      "name": "107",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u10ca.xml",
+      "self": "u10cf",
+      "name": "108",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u10ca.xml",
+      "self": "u10d0",
+      "name": "109",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u10fd.xml",
+      "self": "u1102",
+      "name": "110",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u10fd.xml",
+      "self": "u1103",
+      "name": "111",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1130.xml",
+      "self": "u1135",
+      "name": "112",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1130.xml",
+      "self": "u1136",
+      "name": "113",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1163.xml",
+      "self": "u1168",
+      "name": "114",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1163.xml",
+      "self": "u1169",
+      "name": "115",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1196.xml",
+      "self": "u119b",
+      "name": "116",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1196.xml",
+      "self": "u119c",
+      "name": "117",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u11c9.xml",
+      "self": "u11ce",
+      "name": "118",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u11c9.xml",
+      "self": "u11cf",
+      "name": "119",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u11fc.xml",
+      "self": "u1201",
+      "name": "120",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u11fc.xml",
+      "self": "u1202",
+      "name": "121",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u122f.xml",
+      "self": "u1234",
+      "name": "122",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u122f.xml",
+      "self": "u1235",
+      "name": "123",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1262.xml",
+      "self": "u1267",
+      "name": "124",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1262.xml",
+      "self": "u1268",
+      "name": "125",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1295.xml",
+      "self": "u129a",
+      "name": "126",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1295.xml",
+      "self": "u129b",
+      "name": "127",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u12c8.xml",
+      "self": "u12cd",
+      "name": "128",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u12c8.xml",
+      "self": "u12ce",
+      "name": "129",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u12fb.xml",
+      "self": "u1300",
+      "name": "130",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u12fb.xml",
+      "self": "u1301",
+      "name": "131",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u132e.xml",
+      "self": "u1333",
+      "name": "132",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u132e.xml",
+      "self": "u1334",
+      "name": "133",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1361.xml",
+      "self": "u1366",
+      "name": "134",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1361.xml",
+      "self": "u1367",
+      "name": "135",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1394.xml",
+      "self": "u1399",
+      "name": "136",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1394.xml",
+      "self": "u139a",
+      "name": "137",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u13c7.xml",
+      "self": "u13cc",
+      "name": "138",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u13c7.xml",
+      "self": "u13cd",
+      "name": "139",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u13fa.xml",
+      "self": "u13ff",
+      "name": "140",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u13fa.xml",
+      "self": "u1400",
+      "name": "141",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u142d.xml",
+      "self": "u1432",
+      "name": "142",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u142d.xml",
+      "self": "u1433",
+      "name": "143",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1460.xml",
+      "self": "u1465",
+      "name": "144",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1460.xml",
+      "self": "u1466",
+      "name": "145",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1493.xml",
+      "self": "u1498",
+      "name": "146",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1493.xml",
+      "self": "u1499",
+      "name": "147",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u14c6.xml",
+      "self": "u14cb",
+      "name": "148",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u14c6.xml",
+      "self": "u14cc",
+      "name": "149",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u14f9.xml",
+      "self": "u14fe",
+      "name": "150",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u14f9.xml",
+      "self": "u14ff",
+      "name": "151",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u152c.xml",
+      "self": "u1531",
+      "name": "152",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u152c.xml",
+      "self": "u1532",
+      "name": "153",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u155f.xml",
+      "self": "u1564",
+      "name": "154",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u155f.xml",
+      "self": "u1565",
+      "name": "155",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1592.xml",
+      "self": "u1597",
+      "name": "156",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1592.xml",
+      "self": "u1598",
+      "name": "157",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u15c5.xml",
+      "self": "u15ca",
+      "name": "158",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u15c5.xml",
+      "self": "u15cb",
+      "name": "159",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u15f8.xml",
+      "self": "u15fd",
+      "name": "160",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u15f8.xml",
+      "self": "u15fe",
+      "name": "161",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u162b.xml",
+      "self": "u1630",
+      "name": "162",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u162b.xml",
+      "self": "u1631",
+      "name": "163",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u165e.xml",
+      "self": "u1663",
+      "name": "164",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u165e.xml",
+      "self": "u1664",
+      "name": "165",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1691.xml",
+      "self": "u1696",
+      "name": "166",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1691.xml",
+      "self": "u1697",
+      "name": "167",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u16c4.xml",
+      "self": "u16c9",
+      "name": "168",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u16c4.xml",
+      "self": "u16ca",
+      "name": "169",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u16f7.xml",
+      "self": "u16fc",
+      "name": "170",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u16f7.xml",
+      "self": "u16fd",
+      "name": "171",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u172a.xml",
+      "self": "u172f",
+      "name": "172",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u172a.xml",
+      "self": "u1730",
+      "name": "173",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u175d.xml",
+      "self": "u1762",
+      "name": "174",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u175d.xml",
+      "self": "u1763",
+      "name": "175",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1790.xml",
+      "self": "u1795",
+      "name": "176",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1790.xml",
+      "self": "u1796",
+      "name": "177",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u17c3.xml",
+      "self": "u17c8",
+      "name": "178",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u17c3.xml",
+      "self": "u17c9",
+      "name": "179",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u17f6.xml",
+      "self": "u17fb",
+      "name": "180",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u17f6.xml",
+      "self": "u17fc",
+      "name": "181",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181a6.xml",
+      "self": "u181ab",
+      "name": "670",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181a6.xml",
+      "self": "u181b2",
+      "name": "671",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181b9.xml",
+      "self": "u181be",
+      "name": "672",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181b9.xml",
+      "self": "u181c5",
+      "name": "673",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181cc.xml",
+      "self": "u181d1",
+      "name": "674",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181cc.xml",
+      "self": "u181d7",
+      "name": "675",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181de.xml",
+      "self": "u181e3",
+      "name": "676",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181de.xml",
+      "self": "u181ea",
+      "name": "677",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181f0.xml",
+      "self": "u181f5",
+      "name": "678",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u181f0.xml",
+      "self": "u181fc",
+      "name": "679",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18203.xml",
+      "self": "u18208",
+      "name": "680",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18203.xml",
+      "self": "u1820f",
+      "name": "681",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18215.xml",
+      "self": "u1821a",
+      "name": "682",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18215.xml",
+      "self": "u18221",
+      "name": "683",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18228.xml",
+      "self": "u1822d",
+      "name": "684",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18228.xml",
+      "self": "u18234",
+      "name": "685",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1823a.xml",
+      "self": "u1823f",
+      "name": "686",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1823a.xml",
+      "self": "u18246",
+      "name": "687",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1824d.xml",
+      "self": "u18252",
+      "name": "688",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1824d.xml",
+      "self": "u18259",
+      "name": "689",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1825f.xml",
+      "self": "u18264",
+      "name": "690",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1825f.xml",
+      "self": "u1826b",
+      "name": "691",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18272.xml",
+      "self": "u18277",
+      "name": "692",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18272.xml",
+      "self": "u1827e",
+      "name": "693",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18284.xml",
+      "self": "u18289",
+      "name": "694",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18284.xml",
+      "self": "u18290",
+      "name": "695",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1829.xml",
+      "self": "u182e",
+      "name": "182",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1829.xml",
+      "self": "u182f",
+      "name": "183",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18297.xml",
+      "self": "u1829c",
+      "name": "696",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18297.xml",
+      "self": "u182a3",
+      "name": "697",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182a9.xml",
+      "self": "u182ae",
+      "name": "698",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182a9.xml",
+      "self": "u182b5",
+      "name": "699",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182bc.xml",
+      "self": "u182c1",
+      "name": "700",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182bc.xml",
+      "self": "u182c8",
+      "name": "701",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182ce.xml",
+      "self": "u182d3",
+      "name": "702",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182ce.xml",
+      "self": "u182da",
+      "name": "703",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182e1.xml",
+      "self": "u182e6",
+      "name": "704",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182e1.xml",
+      "self": "u182ec",
+      "name": "705",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182f3.xml",
+      "self": "u182f8",
+      "name": "706",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u182f3.xml",
+      "self": "u182ff",
+      "name": "707",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18306.xml",
+      "self": "u1830b",
+      "name": "708",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18306.xml",
+      "self": "u18311",
+      "name": "709",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18318.xml",
+      "self": "u1831d",
+      "name": "710",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18318.xml",
+      "self": "u18324",
+      "name": "711",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_u185c.xml",
+      "self": "u1861",
+      "name": "184",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u185c.xml",
+      "self": "u1862",
+      "name": "185",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u188f.xml",
+      "self": "u1894",
+      "name": "186",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u188f.xml",
+      "self": "u1895",
+      "name": "187",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18c2.xml",
+      "self": "u18c7",
+      "name": "188",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18c2.xml",
+      "self": "u18c8",
+      "name": "189",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18f5.xml",
+      "self": "u18fa",
+      "name": "190",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u18f5.xml",
+      "self": "u18fb",
+      "name": "191",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1928.xml",
+      "self": "u192d",
+      "name": "192",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1928.xml",
+      "self": "u192e",
+      "name": "193",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u195b.xml",
+      "self": "u1960",
+      "name": "194",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u195b.xml",
+      "self": "u1961",
+      "name": "195",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u198e.xml",
+      "self": "u1993",
+      "name": "196",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u198e.xml",
+      "self": "u1994",
+      "name": "197",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u19c1.xml",
+      "self": "u19c6",
+      "name": "198",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u19c1.xml",
+      "self": "u19c7",
+      "name": "199",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u19f4.xml",
+      "self": "u19f9",
+      "name": "200",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u19f4.xml",
+      "self": "u19fa",
+      "name": "201",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1a27.xml",
+      "self": "u1a2c",
+      "name": "202",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1a27.xml",
+      "self": "u1a2d",
+      "name": "203",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1a5a.xml",
+      "self": "u1a5f",
+      "name": "204",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1a5a.xml",
+      "self": "u1a60",
+      "name": "205",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1a8d.xml",
+      "self": "u1a92",
+      "name": "206",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1a8d.xml",
+      "self": "u1a93",
+      "name": "207",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1ac0.xml",
+      "self": "u1ac5",
+      "name": "208",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1ac0.xml",
+      "self": "u1ac6",
+      "name": "209",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1af3.xml",
+      "self": "u1af8",
+      "name": "210",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1af3.xml",
+      "self": "u1af9",
+      "name": "211",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1b26.xml",
+      "self": "u1b2b",
+      "name": "212",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1b26.xml",
+      "self": "u1b2c",
+      "name": "213",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1b59.xml",
+      "self": "u1b5e",
+      "name": "214",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1b59.xml",
+      "self": "u1b5f",
+      "name": "215",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1b8c.xml",
+      "self": "u1b91",
+      "name": "216",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1b8c.xml",
+      "self": "u1b92",
+      "name": "217",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1bbf.xml",
+      "self": "u1bc4",
+      "name": "218",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1bbf.xml",
+      "self": "u1bc5",
+      "name": "219",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1bf2.xml",
+      "self": "u1bf7",
+      "name": "220",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1bf2.xml",
+      "self": "u1bf8",
+      "name": "221",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1c25.xml",
+      "self": "u1c2a",
+      "name": "222",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1c25.xml",
+      "self": "u1c2b",
+      "name": "223",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1c58.xml",
+      "self": "u1c5d",
+      "name": "224",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1c58.xml",
+      "self": "u1c5e",
+      "name": "225",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1c8b.xml",
+      "self": "u1c90",
+      "name": "226",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1c8b.xml",
+      "self": "u1c91",
+      "name": "227",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1cbe.xml",
+      "self": "u1cc3",
+      "name": "228",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1cbe.xml",
+      "self": "u1cc4",
+      "name": "229",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1cf1.xml",
+      "self": "u1cf6",
+      "name": "230",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1cf1.xml",
+      "self": "u1cf7",
+      "name": "231",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1d24.xml",
+      "self": "u1d29",
+      "name": "232",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1d24.xml",
+      "self": "u1d2a",
+      "name": "233",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1d57.xml",
+      "self": "u1d5c",
+      "name": "234",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1d57.xml",
+      "self": "u1d5d",
+      "name": "235",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1d8a.xml",
+      "self": "u1d8f",
+      "name": "236",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1d8a.xml",
+      "self": "u1d90",
+      "name": "237",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1dbd.xml",
+      "self": "u1dc2",
+      "name": "238",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1dbd.xml",
+      "self": "u1dc3",
+      "name": "239",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1df0.xml",
+      "self": "u1df5",
+      "name": "240",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1df0.xml",
+      "self": "u1df6",
+      "name": "241",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1e23.xml",
+      "self": "u1e28",
+      "name": "242",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1e23.xml",
+      "self": "u1e29",
+      "name": "243",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1e56.xml",
+      "self": "u1e5b",
+      "name": "244",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1e56.xml",
+      "self": "u1e5c",
+      "name": "245",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1e89.xml",
+      "self": "u1e8e",
+      "name": "246",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1e89.xml",
+      "self": "u1e8f",
+      "name": "247",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1ebc.xml",
+      "self": "u1ec1",
+      "name": "248",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1ebc.xml",
+      "self": "u1ec2",
+      "name": "249",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1eef.xml",
+      "self": "u1ef4",
+      "name": "250",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1eef.xml",
+      "self": "u1ef5",
+      "name": "251",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1f22.xml",
+      "self": "u1f27",
+      "name": "252",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1f22.xml",
+      "self": "u1f28",
+      "name": "253",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1f55.xml",
+      "self": "u1f5a",
+      "name": "254",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1f55.xml",
+      "self": "u1f5b",
+      "name": "255",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1f88.xml",
+      "self": "u1f8d",
+      "name": "256",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1f88.xml",
+      "self": "u1f8e",
+      "name": "257",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1fbb.xml",
+      "self": "u1fc0",
+      "name": "258",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1fbb.xml",
+      "self": "u1fc1",
+      "name": "259",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1fee.xml",
+      "self": "u1ff3",
+      "name": "260",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u1fee.xml",
+      "self": "u1ff4",
+      "name": "261",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2021.xml",
+      "self": "u2026",
+      "name": "262",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2021.xml",
+      "self": "u2027",
+      "name": "263",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2054.xml",
+      "self": "u2059",
+      "name": "264",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2054.xml",
+      "self": "u205a",
+      "name": "265",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2087.xml",
+      "self": "u208c",
+      "name": "266",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2087.xml",
+      "self": "u208d",
+      "name": "267",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u20ba.xml",
+      "self": "u20bf",
+      "name": "268",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u20ba.xml",
+      "self": "u20c0",
+      "name": "269",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u20ed.xml",
+      "self": "u20f2",
+      "name": "270",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u20ed.xml",
+      "self": "u20f3",
+      "name": "271",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2120.xml",
+      "self": "u2125",
+      "name": "272",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2120.xml",
+      "self": "u2126",
+      "name": "273",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2153.xml",
+      "self": "u2158",
+      "name": "274",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2153.xml",
+      "self": "u2159",
+      "name": "275",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2186.xml",
+      "self": "u218b",
+      "name": "276",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2186.xml",
+      "self": "u218c",
+      "name": "277",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u21b9.xml",
+      "self": "u21be",
+      "name": "278",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u21b9.xml",
+      "self": "u21bf",
+      "name": "279",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u21ec.xml",
+      "self": "u21f1",
+      "name": "280",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u21ec.xml",
+      "self": "u21f2",
+      "name": "281",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u221f.xml",
+      "self": "u2224",
+      "name": "282",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u221f.xml",
+      "self": "u2225",
+      "name": "283",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2252.xml",
+      "self": "u2257",
+      "name": "284",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2252.xml",
+      "self": "u2258",
+      "name": "285",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2285.xml",
+      "self": "u228a",
+      "name": "286",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2285.xml",
+      "self": "u228b",
+      "name": "287",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u22b8.xml",
+      "self": "u22bd",
+      "name": "288",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u22b8.xml",
+      "self": "u22be",
+      "name": "289",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u22eb.xml",
+      "self": "u22f0",
+      "name": "290",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u22eb.xml",
+      "self": "u22f1",
+      "name": "291",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u231e.xml",
+      "self": "u2323",
+      "name": "292",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u231e.xml",
+      "self": "u2324",
+      "name": "293",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2351.xml",
+      "self": "u2356",
+      "name": "294",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2351.xml",
+      "self": "u2357",
+      "name": "295",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2384.xml",
+      "self": "u2389",
+      "name": "296",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2384.xml",
+      "self": "u238a",
+      "name": "297",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u23b7.xml",
+      "self": "u23bc",
+      "name": "298",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u23b7.xml",
+      "self": "u23bd",
+      "name": "299",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u23ea.xml",
+      "self": "u23ef",
+      "name": "300",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u23ea.xml",
+      "self": "u23f0",
+      "name": "301",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u241d.xml",
+      "self": "u2422",
+      "name": "302",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u241d.xml",
+      "self": "u2423",
+      "name": "303",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2450.xml",
+      "self": "u2455",
+      "name": "304",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2450.xml",
+      "self": "u2456",
+      "name": "305",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2483.xml",
+      "self": "u2488",
+      "name": "306",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2483.xml",
+      "self": "u2489",
+      "name": "307",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u24b6.xml",
+      "self": "u24bb",
+      "name": "308",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u24b6.xml",
+      "self": "u24bc",
+      "name": "309",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u24e9.xml",
+      "self": "u24ee",
+      "name": "310",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u24e9.xml",
+      "self": "u24ef",
+      "name": "311",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u251c.xml",
+      "self": "u2521",
+      "name": "312",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u251c.xml",
+      "self": "u2522",
+      "name": "313",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u254f.xml",
+      "self": "u2554",
+      "name": "314",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u254f.xml",
+      "self": "u2555",
+      "name": "315",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2582.xml",
+      "self": "u2587",
+      "name": "316",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2582.xml",
+      "self": "u2588",
+      "name": "317",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u25b5.xml",
+      "self": "u25ba",
+      "name": "318",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u25b5.xml",
+      "self": "u25bb",
+      "name": "319",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u25e8.xml",
+      "self": "u25ed",
+      "name": "320",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u25e8.xml",
+      "self": "u25ee",
+      "name": "321",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u261b.xml",
+      "self": "u2620",
+      "name": "322",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u261b.xml",
+      "self": "u2621",
+      "name": "323",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u264e.xml",
+      "self": "u2653",
+      "name": "324",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u264e.xml",
+      "self": "u2654",
+      "name": "325",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2681.xml",
+      "self": "u2686",
+      "name": "326",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2681.xml",
+      "self": "u2687",
+      "name": "327",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u26b4.xml",
+      "self": "u26b9",
+      "name": "328",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u26b4.xml",
+      "self": "u26ba",
+      "name": "329",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u26e7.xml",
+      "self": "u26ec",
+      "name": "330",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u26e7.xml",
+      "self": "u26ed",
+      "name": "331",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u271a.xml",
+      "self": "u271f",
+      "name": "332",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u271a.xml",
+      "self": "u2720",
+      "name": "333",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u274d.xml",
+      "self": "u2752",
+      "name": "334",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u274d.xml",
+      "self": "u2753",
+      "name": "335",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2780.xml",
+      "self": "u2785",
+      "name": "336",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2780.xml",
+      "self": "u2786",
+      "name": "337",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u27b3.xml",
+      "self": "u27b8",
+      "name": "338",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u27b3.xml",
+      "self": "u27b9",
+      "name": "339",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u27e6.xml",
+      "self": "u27eb",
+      "name": "340",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u27e6.xml",
+      "self": "u27ec",
+      "name": "341",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2819.xml",
+      "self": "u281e",
+      "name": "342",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2819.xml",
+      "self": "u281f",
+      "name": "343",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u284c.xml",
+      "self": "u2851",
+      "name": "344",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u284c.xml",
+      "self": "u2852",
+      "name": "345",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u287f.xml",
+      "self": "u2884",
+      "name": "346",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u287f.xml",
+      "self": "u2885",
+      "name": "347",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u28b2.xml",
+      "self": "u28b7",
+      "name": "348",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u28b2.xml",
+      "self": "u28b8",
+      "name": "349",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u28e5.xml",
+      "self": "u28ea",
+      "name": "350",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u28e5.xml",
+      "self": "u28eb",
+      "name": "351",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2918.xml",
+      "self": "u291d",
+      "name": "352",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2918.xml",
+      "self": "u291e",
+      "name": "353",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u294b.xml",
+      "self": "u2950",
+      "name": "354",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u294b.xml",
+      "self": "u2951",
+      "name": "355",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u297e.xml",
+      "self": "u2983",
+      "name": "356",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u297e.xml",
+      "self": "u2984",
+      "name": "357",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u29b1.xml",
+      "self": "u29b6",
+      "name": "358",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u29b1.xml",
+      "self": "u29b7",
+      "name": "359",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u29e4.xml",
+      "self": "u29e9",
+      "name": "360",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u29e4.xml",
+      "self": "u29ea",
+      "name": "361",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2a17.xml",
+      "self": "u2a1c",
+      "name": "362",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2a17.xml",
+      "self": "u2a1d",
+      "name": "363",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2a4a.xml",
+      "self": "u2a4f",
+      "name": "364",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2a4a.xml",
+      "self": "u2a50",
+      "name": "365",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2a7d.xml",
+      "self": "u2a82",
+      "name": "366",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2a7d.xml",
+      "self": "u2a83",
+      "name": "367",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2ab0.xml",
+      "self": "u2ab5",
+      "name": "368",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2ab0.xml",
+      "self": "u2ab6",
+      "name": "369",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2ae3.xml",
+      "self": "u2ae8",
+      "name": "370",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2ae3.xml",
+      "self": "u2ae9",
+      "name": "371",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2b16.xml",
+      "self": "u2b1b",
+      "name": "372",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2b16.xml",
+      "self": "u2b1c",
+      "name": "373",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2b49.xml",
+      "self": "u2b4e",
+      "name": "374",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2b49.xml",
+      "self": "u2b4f",
+      "name": "375",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2b7c.xml",
+      "self": "u2b81",
+      "name": "376",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2b7c.xml",
+      "self": "u2b82",
+      "name": "377",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2baf.xml",
+      "self": "u2bb4",
+      "name": "378",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2baf.xml",
+      "self": "u2bb5",
+      "name": "379",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2be2.xml",
+      "self": "u2be7",
+      "name": "380",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2be2.xml",
+      "self": "u2be8",
+      "name": "381",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2c15.xml",
+      "self": "u2c1a",
+      "name": "382",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2c15.xml",
+      "self": "u2c1b",
+      "name": "383",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2c48.xml",
+      "self": "u2c4d",
+      "name": "384",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2c48.xml",
+      "self": "u2c4e",
+      "name": "385",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2c7b.xml",
+      "self": "u2c80",
+      "name": "386",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2c7b.xml",
+      "self": "u2c81",
+      "name": "387",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2cae.xml",
+      "self": "u2cb3",
+      "name": "388",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2cae.xml",
+      "self": "u2cb4",
+      "name": "389",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2ce1.xml",
+      "self": "u2ce6",
+      "name": "390",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2ce1.xml",
+      "self": "u2ce7",
+      "name": "391",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2d14.xml",
+      "self": "u2d19",
+      "name": "392",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2d14.xml",
+      "self": "u2d1a",
+      "name": "393",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2d47.xml",
+      "self": "u2d4c",
+      "name": "394",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2d47.xml",
+      "self": "u2d4d",
+      "name": "395",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2d7a.xml",
+      "self": "u2d7f",
+      "name": "396",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2d7a.xml",
+      "self": "u2d80",
+      "name": "397",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2dad.xml",
+      "self": "u2db2",
+      "name": "398",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2dad.xml",
+      "self": "u2db3",
+      "name": "399",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2de0.xml",
+      "self": "u2de5",
+      "name": "400",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2de0.xml",
+      "self": "u2de6",
+      "name": "401",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2e13.xml",
+      "self": "u2e18",
+      "name": "402",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2e13.xml",
+      "self": "u2e19",
+      "name": "403",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2e46.xml",
+      "self": "u2e4b",
+      "name": "404",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2e46.xml",
+      "self": "u2e4c",
+      "name": "405",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2e79.xml",
+      "self": "u2e7e",
+      "name": "406",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2e79.xml",
+      "self": "u2e7f",
+      "name": "407",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2eac.xml",
+      "self": "u2eb1",
+      "name": "408",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2eac.xml",
+      "self": "u2eb2",
+      "name": "409",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2edf.xml",
+      "self": "u2ee4",
+      "name": "410",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2edf.xml",
+      "self": "u2ee5",
+      "name": "411",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2f12.xml",
+      "self": "u2f17",
+      "name": "412",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2f12.xml",
+      "self": "u2f18",
+      "name": "413",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2f45.xml",
+      "self": "u2f4a",
+      "name": "414",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2f45.xml",
+      "self": "u2f4b",
+      "name": "415",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2f78.xml",
+      "self": "u2f7d",
+      "name": "416",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2f78.xml",
+      "self": "u2f7e",
+      "name": "417",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2fab.xml",
+      "self": "u2fb0",
+      "name": "418",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2fab.xml",
+      "self": "u2fb1",
+      "name": "419",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2fde.xml",
+      "self": "u2fe3",
+      "name": "420",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u2fde.xml",
+      "self": "u2fe4",
+      "name": "421",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3011.xml",
+      "self": "u3016",
+      "name": "422",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3011.xml",
+      "self": "u3017",
+      "name": "423",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3044.xml",
+      "self": "u3049",
+      "name": "424",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3044.xml",
+      "self": "u304a",
+      "name": "425",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3077.xml",
+      "self": "u307c",
+      "name": "426",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3077.xml",
+      "self": "u307d",
+      "name": "427",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u30aa.xml",
+      "self": "u30af",
+      "name": "428",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u30aa.xml",
+      "self": "u30b0",
+      "name": "429",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u30dd.xml",
+      "self": "u30e2",
+      "name": "430",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u30dd.xml",
+      "self": "u30e3",
+      "name": "431",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3110.xml",
+      "self": "u3115",
+      "name": "432",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3110.xml",
+      "self": "u3116",
+      "name": "433",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3143.xml",
+      "self": "u3148",
+      "name": "434",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3143.xml",
+      "self": "u3149",
+      "name": "435",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3176.xml",
+      "self": "u317b",
+      "name": "436",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3176.xml",
+      "self": "u317c",
+      "name": "437",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u31a9.xml",
+      "self": "u31ae",
+      "name": "438",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u31a9.xml",
+      "self": "u31af",
+      "name": "439",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u31dc.xml",
+      "self": "u31e1",
+      "name": "440",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u31dc.xml",
+      "self": "u31e2",
+      "name": "441",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u320f.xml",
+      "self": "u3214",
+      "name": "442",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u320f.xml",
+      "self": "u3215",
+      "name": "443",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3242.xml",
+      "self": "u3247",
+      "name": "444",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3242.xml",
+      "self": "u3248",
+      "name": "445",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3275.xml",
+      "self": "u327a",
+      "name": "446",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3275.xml",
+      "self": "u327b",
+      "name": "447",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u32a8.xml",
+      "self": "u32ad",
+      "name": "448",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u32a8.xml",
+      "self": "u32ae",
+      "name": "449",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u32db.xml",
+      "self": "u32e0",
+      "name": "450",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u32db.xml",
+      "self": "u32e1",
+      "name": "451",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u330e.xml",
+      "self": "u3313",
+      "name": "452",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u330e.xml",
+      "self": "u3314",
+      "name": "453",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3341.xml",
+      "self": "u3346",
+      "name": "454",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3341.xml",
+      "self": "u8ccf",
+      "name": "455",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3395.xml",
+      "self": "u339b",
+      "name": "496",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u1aa"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3395.xml",
+      "self": "u33cd",
+      "name": "497",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u33c8.xml",
+      "self": "u33ce",
+      "name": "498",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u33c8.xml",
+      "self": "u3400",
+      "name": "499",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u33fb.xml",
+      "self": "u3401",
+      "name": "500",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u33fb.xml",
+      "self": "u3433",
+      "name": "501",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u342e.xml",
+      "self": "u3434",
+      "name": "502",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u342e.xml",
+      "self": "u3466",
+      "name": "503",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3461.xml",
+      "self": "u3467",
+      "name": "504",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3461.xml",
+      "self": "u3499",
+      "name": "505",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3494.xml",
+      "self": "u349a",
+      "name": "506",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3494.xml",
+      "self": "u34cc",
+      "name": "507",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u34c7.xml",
+      "self": "u34cd",
+      "name": "508",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u34c7.xml",
+      "self": "u34ff",
+      "name": "509",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u34fa.xml",
+      "self": "u3500",
+      "name": "510",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u34fa.xml",
+      "self": "u3532",
+      "name": "511",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u352d.xml",
+      "self": "u3533",
+      "name": "512",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u352d.xml",
+      "self": "u3565",
+      "name": "513",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3560.xml",
+      "self": "u3566",
+      "name": "514",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3560.xml",
+      "self": "u3598",
+      "name": "515",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3593.xml",
+      "self": "u3599",
+      "name": "516",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3593.xml",
+      "self": "u35cb",
+      "name": "517",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u35c6.xml",
+      "self": "u35cc",
+      "name": "518",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u35c6.xml",
+      "self": "u35fe",
+      "name": "519",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u35f9.xml",
+      "self": "u35ff",
+      "name": "520",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u35f9.xml",
+      "self": "u3631",
+      "name": "521",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u362c.xml",
+      "self": "u3632",
+      "name": "522",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u362c.xml",
+      "self": "u3664",
+      "name": "523",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u365f.xml",
+      "self": "u3665",
+      "name": "524",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u365f.xml",
+      "self": "u3697",
+      "name": "525",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3692.xml",
+      "self": "u3698",
+      "name": "526",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3692.xml",
+      "self": "u36ca",
+      "name": "527",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u36c5.xml",
+      "self": "u36cb",
+      "name": "528",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u36c5.xml",
+      "self": "u36fd",
+      "name": "529",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u36f8.xml",
+      "self": "u36fe",
+      "name": "530",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u36f8.xml",
+      "self": "u3730",
+      "name": "531",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u372b.xml",
+      "self": "u3731",
+      "name": "532",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u372b.xml",
+      "self": "u3763",
+      "name": "533",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u375e.xml",
+      "self": "u3764",
+      "name": "534",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u375e.xml",
+      "self": "u3796",
+      "name": "535",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3791.xml",
+      "self": "u3797",
+      "name": "536",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3791.xml",
+      "self": "u37c9",
+      "name": "537",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u37c4.xml",
+      "self": "u37ca",
+      "name": "538",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u37c4.xml",
+      "self": "u37fc",
+      "name": "539",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u37f7.xml",
+      "self": "u37fd",
+      "name": "540",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u37f7.xml",
+      "self": "u382f",
+      "name": "541",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u382a.xml",
+      "self": "u3830",
+      "name": "542",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u382a.xml",
+      "self": "u3862",
+      "name": "543",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u385d.xml",
+      "self": "u3863",
+      "name": "544",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u385d.xml",
+      "self": "u3895",
+      "name": "545",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3890.xml",
+      "self": "u3896",
+      "name": "546",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3890.xml",
+      "self": "u38c8",
+      "name": "547",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u38c3.xml",
+      "self": "u38c9",
+      "name": "548",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u38c3.xml",
+      "self": "u38fb",
+      "name": "549",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u38f6.xml",
+      "self": "u38fc",
+      "name": "550",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u38f6.xml",
+      "self": "u392e",
+      "name": "551",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3929.xml",
+      "self": "u392f",
+      "name": "552",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3929.xml",
+      "self": "u3961",
+      "name": "553",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u395c.xml",
+      "self": "u3962",
+      "name": "554",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u395c.xml",
+      "self": "u3994",
+      "name": "555",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u398f.xml",
+      "self": "u3995",
+      "name": "556",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u398f.xml",
+      "self": "u39c7",
+      "name": "557",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u39c2.xml",
+      "self": "u39c8",
+      "name": "558",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u39c2.xml",
+      "self": "u39fa",
+      "name": "559",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u39f5.xml",
+      "self": "u39fb",
+      "name": "560",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u39f5.xml",
+      "self": "u3a2d",
+      "name": "561",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3a28.xml",
+      "self": "u3a2e",
+      "name": "562",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3a28.xml",
+      "self": "u3a60",
+      "name": "563",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3a5b.xml",
+      "self": "u3a61",
+      "name": "564",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3a5b.xml",
+      "self": "u3a93",
+      "name": "565",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3a8e.xml",
+      "self": "u3a94",
+      "name": "566",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3a8e.xml",
+      "self": "u3ac6",
+      "name": "567",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ac1.xml",
+      "self": "u3ac7",
+      "name": "568",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ac1.xml",
+      "self": "u3af9",
+      "name": "569",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3af4.xml",
+      "self": "u3afa",
+      "name": "570",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3af4.xml",
+      "self": "u3b2c",
+      "name": "571",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3b27.xml",
+      "self": "u3b2d",
+      "name": "572",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3b27.xml",
+      "self": "u3b5f",
+      "name": "573",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3b5a.xml",
+      "self": "u3b60",
+      "name": "574",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3b5a.xml",
+      "self": "u3b92",
+      "name": "575",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3b8d.xml",
+      "self": "u3b93",
+      "name": "576",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3b8d.xml",
+      "self": "u3bc5",
+      "name": "577",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3bc0.xml",
+      "self": "u3bc6",
+      "name": "578",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3bc0.xml",
+      "self": "u3bf8",
+      "name": "579",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3bf3.xml",
+      "self": "u3bf9",
+      "name": "580",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3bf3.xml",
+      "self": "u3c2b",
+      "name": "581",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3c26.xml",
+      "self": "u3c2c",
+      "name": "582",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3c26.xml",
+      "self": "u3c5e",
+      "name": "583",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3c59.xml",
+      "self": "u3c5f",
+      "name": "584",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3c59.xml",
+      "self": "u3ca7",
+      "name": "585",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ca2.xml",
+      "self": "u3ca8",
+      "name": "586",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ca2.xml",
+      "self": "u3cda",
+      "name": "587",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3cd5.xml",
+      "self": "u3cdb",
+      "name": "588",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3cd5.xml",
+      "self": "u3d0d",
+      "name": "589",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3d08.xml",
+      "self": "u3d0e",
+      "name": "590",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3d08.xml",
+      "self": "u3d40",
+      "name": "591",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3d3b.xml",
+      "self": "u3d41",
+      "name": "592",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3d3b.xml",
+      "self": "u3d73",
+      "name": "593",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u3bd"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3d6e.xml",
+      "self": "u3d74",
+      "name": "594",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3d6e.xml",
+      "self": "u3da6",
+      "name": "595",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3da1.xml",
+      "self": "u3da7",
+      "name": "596",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3da1.xml",
+      "self": "u3dd9",
+      "name": "597",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3dd4.xml",
+      "self": "u3dda",
+      "name": "598",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3dd4.xml",
+      "self": "u3e0c",
+      "name": "599",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3e07.xml",
+      "self": "u3e0d",
+      "name": "600",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3e07.xml",
+      "self": "u3e3f",
+      "name": "601",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3e3a.xml",
+      "self": "u3e40",
+      "name": "602",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3e3a.xml",
+      "self": "u3e72",
+      "name": "603",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3e6d.xml",
+      "self": "u3e73",
+      "name": "604",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3e6d.xml",
+      "self": "u3ea5",
+      "name": "605",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ea0.xml",
+      "self": "u3ea6",
+      "name": "606",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ea0.xml",
+      "self": "u3ed8",
+      "name": "607",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ed3.xml",
+      "self": "u3ed9",
+      "name": "608",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ed3.xml",
+      "self": "u3f0b",
+      "name": "609",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3f06.xml",
+      "self": "u3f0c",
+      "name": "630",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3f06.xml",
+      "self": "u3f3e",
+      "name": "631",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3f39.xml",
+      "self": "u3f3f",
+      "name": "632",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3f39.xml",
+      "self": "u3f9d",
+      "name": "633",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3f98.xml",
+      "self": "u3f9e",
+      "name": "634",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3f98.xml",
+      "self": "u3ffc",
+      "name": "635",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ff7.xml",
+      "self": "u3ffd",
+      "name": "636",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u3ff7.xml",
+      "self": "u402f",
+      "name": "637",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u402a.xml",
+      "self": "u4030",
+      "name": "638",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u402a.xml",
+      "self": "u4062",
+      "name": "639",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u405d.xml",
+      "self": "u4063",
+      "name": "640",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u405d.xml",
+      "self": "u40ab",
+      "name": "641",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u40a6.xml",
+      "self": "u40ac",
+      "name": "642",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u40a6.xml",
+      "self": "u40de",
+      "name": "643",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u40d9.xml",
+      "self": "u40df",
+      "name": "644",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u40d9.xml",
+      "self": "u4111",
+      "name": "645",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u410c.xml",
+      "self": "u4112",
+      "name": "646",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u410c.xml",
+      "self": "u4144",
+      "name": "647",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u413f.xml",
+      "self": "u4145",
+      "name": "648",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u413f.xml",
+      "self": "u418d",
+      "name": "649",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u538"
+    },
+    {
+      "spread_file": "Spreads/Spread_u5c5.xml",
+      "self": "u5ca",
+      "name": "1",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "uba"
+    },
+    {
+      "spread_file": "Spreads/Spread_u5f1.xml",
+      "self": "u5f6",
+      "name": "2",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "uba"
+    },
+    {
+      "spread_file": "Spreads/Spread_u5f1.xml",
+      "self": "u5f7",
+      "name": "3",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "uba"
+    },
+    {
+      "spread_file": "Spreads/Spread_u63c.xml",
+      "self": "u641",
+      "name": "4",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "uba"
+    },
+    {
+      "spread_file": "Spreads/Spread_u63c.xml",
+      "self": "u642",
+      "name": "5",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u1aa"
+    },
+    {
+      "spread_file": "Spreads/Spread_u6a1.xml",
+      "self": "u6a6",
+      "name": "6",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u6a1.xml",
+      "self": "u6a7",
+      "name": "7",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u6d4.xml",
+      "self": "u6d9",
+      "name": "8",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u6d4.xml",
+      "self": "u6da",
+      "name": "9",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u707.xml",
+      "self": "u70c",
+      "name": "10",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u707.xml",
+      "self": "u70d",
+      "name": "11",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u73a.xml",
+      "self": "u73f",
+      "name": "12",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u73a.xml",
+      "self": "u740",
+      "name": "13",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u76d.xml",
+      "self": "u772",
+      "name": "14",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u76d.xml",
+      "self": "u773",
+      "name": "15",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u7a0.xml",
+      "self": "u7a5",
+      "name": "16",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u7a0.xml",
+      "self": "u7a6",
+      "name": "17",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u7d3.xml",
+      "self": "u7d8",
+      "name": "18",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u7d3.xml",
+      "self": "u7d9",
+      "name": "19",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u806.xml",
+      "self": "u80b",
+      "name": "20",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u806.xml",
+      "self": "u80c",
+      "name": "21",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u839.xml",
+      "self": "u83e",
+      "name": "22",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u839.xml",
+      "self": "u83f",
+      "name": "23",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u86c.xml",
+      "self": "u871",
+      "name": "24",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u86c.xml",
+      "self": "u872",
+      "name": "25",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u89f.xml",
+      "self": "u8a4",
+      "name": "26",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u89f.xml",
+      "self": "u8a5",
+      "name": "27",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8cd0.xml",
+      "self": "u8cd5",
+      "name": "456",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8cd0.xml",
+      "self": "u8ce5",
+      "name": "457",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce6.xml",
+      "self": "u8cfa",
+      "name": "458",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce6.xml",
+      "self": "u8cfb",
+      "name": "459",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce7.xml",
+      "self": "u8cfc",
+      "name": "460",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce7.xml",
+      "self": "u8cfd",
+      "name": "461",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce8.xml",
+      "self": "u8cfe",
+      "name": "462",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce8.xml",
+      "self": "u8cff",
+      "name": "463",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce9.xml",
+      "self": "u8d00",
+      "name": "464",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ce9.xml",
+      "self": "u8d01",
+      "name": "465",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d02.xml",
+      "self": "u8d07",
+      "name": "466",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d02.xml",
+      "self": "u8d3e",
+      "name": "467",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d2.xml",
+      "self": "u8d7",
+      "name": "28",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d2.xml",
+      "self": "u8d8",
+      "name": "29",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d3f.xml",
+      "self": "u8d53",
+      "name": "468",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d3f.xml",
+      "self": "u8d54",
+      "name": "469",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d40.xml",
+      "self": "u8d55",
+      "name": "470",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d40.xml",
+      "self": "u8d56",
+      "name": "471",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d41.xml",
+      "self": "u8d57",
+      "name": "472",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d41.xml",
+      "self": "u8d58",
+      "name": "473",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d42.xml",
+      "self": "u8d59",
+      "name": "474",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d42.xml",
+      "self": "u8d5a",
+      "name": "475",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d5b.xml",
+      "self": "u8d60",
+      "name": "476",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8d5b.xml",
+      "self": "u8dad",
+      "name": "477",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8dae.xml",
+      "self": "u8dc2",
+      "name": "478",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8dae.xml",
+      "self": "u8ddf",
+      "name": "479",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8dda.xml",
+      "self": "u3347",
+      "name": "494",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "uba"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8dda.xml",
+      "self": "u339a",
+      "name": "495",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "uba"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8e95.xml",
+      "self": "u8e9a",
+      "name": "610",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8e95.xml",
+      "self": "u8e9b",
+      "name": "611",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ebd.xml",
+      "self": "u8edf",
+      "name": "612",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ebd.xml",
+      "self": "u8ee5",
+      "name": "613",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ee0.xml",
+      "self": "u8f02",
+      "name": "614",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8ee0.xml",
+      "self": "u8f08",
+      "name": "615",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8f03.xml",
+      "self": "u8f25",
+      "name": "616",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8f03.xml",
+      "self": "u8f2b",
+      "name": "617",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8f26.xml",
+      "self": "u8f48",
+      "name": "618",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u8f26.xml",
+      "self": "u9066",
+      "name": "619",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_u905.xml",
+      "self": "u90a",
+      "name": "30",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u905.xml",
+      "self": "u90b",
+      "name": "31",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u938.xml",
+      "self": "u93d",
+      "name": "32",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u938.xml",
+      "self": "u93e",
+      "name": "33",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u96b.xml",
+      "self": "u970",
+      "name": "34",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u96b.xml",
+      "self": "u971",
+      "name": "35",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u99e.xml",
+      "self": "u9a3",
+      "name": "36",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u99e.xml",
+      "self": "u9a4",
+      "name": "37",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u9d1.xml",
+      "self": "u9d6",
+      "name": "38",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_u9d1.xml",
+      "self": "u9d7",
+      "name": "39",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua04.xml",
+      "self": "ua09",
+      "name": "40",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua04.xml",
+      "self": "ua0a",
+      "name": "41",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua37.xml",
+      "self": "ua3c",
+      "name": "42",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua37.xml",
+      "self": "ua3d",
+      "name": "43",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua6a.xml",
+      "self": "ua6f",
+      "name": "44",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua6a.xml",
+      "self": "ua70",
+      "name": "45",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua74f.xml",
+      "self": "ua754",
+      "name": "620",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u41e"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua74f.xml",
+      "self": "ua755",
+      "name": "621",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua9d.xml",
+      "self": "uaa2",
+      "name": "46",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ua9d.xml",
+      "self": "uaa3",
+      "name": "47",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uad0.xml",
+      "self": "uad5",
+      "name": "48",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uad0.xml",
+      "self": "uad6",
+      "name": "49",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub03.xml",
+      "self": "ub08",
+      "name": "50",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub03.xml",
+      "self": "ub09",
+      "name": "51",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub36.xml",
+      "self": "ub3b",
+      "name": "52",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub36.xml",
+      "self": "ub3c",
+      "name": "53",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub56f.xml",
+      "self": "ub588",
+      "name": "622",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub56f.xml",
+      "self": "ub589",
+      "name": "623",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub570.xml",
+      "self": "ub58a",
+      "name": "624",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub570.xml",
+      "self": "ub58b",
+      "name": "625",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub571.xml",
+      "self": "ub58c",
+      "name": "626",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub571.xml",
+      "self": "ub58d",
+      "name": "627",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub572.xml",
+      "self": "ub58e",
+      "name": "628",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub572.xml",
+      "self": "ub58f",
+      "name": "629",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub573.xml",
+      "self": "ub590",
+      "name": "650",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub573.xml",
+      "self": "ub591",
+      "name": "651",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub69.xml",
+      "self": "ub6e",
+      "name": "54",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub69.xml",
+      "self": "ub6f",
+      "name": "55",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub9c.xml",
+      "self": "uba1",
+      "name": "56",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ub9c.xml",
+      "self": "uba2",
+      "name": "57",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubaae.xml",
+      "self": "ubab3",
+      "name": "652",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubaae.xml",
+      "self": "ubaba",
+      "name": "653",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubac1.xml",
+      "self": "ubac6",
+      "name": "654",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubac1.xml",
+      "self": "ubacc",
+      "name": "655",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubad1.xml",
+      "self": "ubad6",
+      "name": "656",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubad1.xml",
+      "self": "ubadb",
+      "name": "657",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubae2.xml",
+      "self": "ubae7",
+      "name": "658",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubae2.xml",
+      "self": "ubaec",
+      "name": "659",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubaf3.xml",
+      "self": "ubaf8",
+      "name": "660",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubaf3.xml",
+      "self": "ubaff",
+      "name": "661",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubb06.xml",
+      "self": "ubb0b",
+      "name": "662",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubb06.xml",
+      "self": "ubb11",
+      "name": "663",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubb18.xml",
+      "self": "ubb1d",
+      "name": "664",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u4ab"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubb18.xml",
+      "self": "ubb23",
+      "name": "665",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubcf.xml",
+      "self": "ubd4",
+      "name": "58",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ubcf.xml",
+      "self": "ubd5",
+      "name": "59",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc02.xml",
+      "self": "uc07",
+      "name": "60",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc02.xml",
+      "self": "uc08",
+      "name": "61",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc35.xml",
+      "self": "uc3a",
+      "name": "62",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc35.xml",
+      "self": "uc3b",
+      "name": "63",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc4bd.xml",
+      "self": "u41d6",
+      "name": "668",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc4bd.xml",
+      "self": "u10eb1",
+      "name": "669",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc4c4.xml",
+      "self": "uc4c9",
+      "name": "666",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc4c4.xml",
+      "self": "u418e",
+      "name": "667",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "uba"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc68.xml",
+      "self": "uc6d",
+      "name": "64",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc68.xml",
+      "self": "uc6e",
+      "name": "65",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc9b.xml",
+      "self": "uca0",
+      "name": "66",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uc9b.xml",
+      "self": "uca1",
+      "name": "67",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucce.xml",
+      "self": "ucd3",
+      "name": "68",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucce.xml",
+      "self": "ucd4",
+      "name": "69",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf29.xml",
+      "self": "ucf2e",
+      "name": "480",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf29.xml",
+      "self": "ucf2f",
+      "name": "481",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf38.xml",
+      "self": "ucf3d",
+      "name": "482",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf38.xml",
+      "self": "ucf3e",
+      "name": "483",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4c.xml",
+      "self": "ucf65",
+      "name": "484",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4c.xml",
+      "self": "ucf66",
+      "name": "485",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4d.xml",
+      "self": "ucf67",
+      "name": "486",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4d.xml",
+      "self": "ucf68",
+      "name": "487",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4e.xml",
+      "self": "ucf69",
+      "name": "488",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4e.xml",
+      "self": "ucf6a",
+      "name": "489",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4f.xml",
+      "self": "ucf6b",
+      "name": "490",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf4f.xml",
+      "self": "ucf6c",
+      "name": "491",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf50.xml",
+      "self": "ucf6d",
+      "name": "492",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf50.xml",
+      "self": "ucf6e",
+      "name": "493",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "n"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud01.xml",
+      "self": "ud06",
+      "name": "70",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud01.xml",
+      "self": "ud07",
+      "name": "71",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud34.xml",
+      "self": "ud39",
+      "name": "72",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud34.xml",
+      "self": "ud3a",
+      "name": "73",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud67.xml",
+      "self": "ud6c",
+      "name": "74",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud67.xml",
+      "self": "ud6d",
+      "name": "75",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud9a.xml",
+      "self": "ud9f",
+      "name": "76",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ud9a.xml",
+      "self": "uda0",
+      "name": "77",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_udcd.xml",
+      "self": "udd2",
+      "name": "78",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_udcd.xml",
+      "self": "udd3",
+      "name": "79",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue00.xml",
+      "self": "ue05",
+      "name": "80",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue00.xml",
+      "self": "ue06",
+      "name": "81",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue33.xml",
+      "self": "ue38",
+      "name": "82",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue33.xml",
+      "self": "ue39",
+      "name": "83",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue66.xml",
+      "self": "ue6b",
+      "name": "84",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue66.xml",
+      "self": "ue6c",
+      "name": "85",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue99.xml",
+      "self": "ue9e",
+      "name": "86",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ue99.xml",
+      "self": "ue9f",
+      "name": "87",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uecc.xml",
+      "self": "ued1",
+      "name": "88",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uecc.xml",
+      "self": "ued2",
+      "name": "89",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ueff.xml",
+      "self": "uf04",
+      "name": "90",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ueff.xml",
+      "self": "uf05",
+      "name": "91",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uf32.xml",
+      "self": "uf37",
+      "name": "92",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uf32.xml",
+      "self": "uf38",
+      "name": "93",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uf65.xml",
+      "self": "uf6a",
+      "name": "94",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uf65.xml",
+      "self": "uf6b",
+      "name": "95",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uf98.xml",
+      "self": "uf9d",
+      "name": "96",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uf98.xml",
+      "self": "uf9e",
+      "name": "97",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ufcb.xml",
+      "self": "ufd0",
+      "name": "98",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_ufcb.xml",
+      "self": "ufd1",
+      "name": "99",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uffe.xml",
+      "self": "u1003",
+      "name": "100",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    },
+    {
+      "spread_file": "Spreads/Spread_uffe.xml",
+      "self": "u1004",
+      "name": "101",
+      "geometric_bounds": "0 0 609.4488188976001 467.71653543310003",
+      "applied_master": "u239"
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Cond",
+      "postscript_name": "MinionPro-Cn",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Bold Cond",
+      "postscript_name": "MinionPro-BoldCn",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Bold Cond Italic",
+      "postscript_name": "MinionPro-BoldCnIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Regular",
+      "postscript_name": "MinionPro-Regular",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Italic",
+      "postscript_name": "MinionPro-It",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Medium",
+      "postscript_name": "MinionPro-Medium",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Medium Italic",
+      "postscript_name": "MinionPro-MediumIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Semibold",
+      "postscript_name": "MinionPro-Semibold",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Semibold Italic",
+      "postscript_name": "MinionPro-SemiboldIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Bold",
+      "postscript_name": "MinionPro-Bold",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Bold Italic",
+      "postscript_name": "MinionPro-BoldIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Cond Italic",
+      "postscript_name": "MinionPro-CnIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Semibold Cond",
+      "postscript_name": "MinionPro-SemiboldCn",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Minion Pro",
+      "name": "Minion Pro Semibold Cond Italic",
+      "postscript_name": "MinionPro-SemiboldCnIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Condensed",
+      "postscript_name": "MyriadPro-Cond",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Condensed Italic",
+      "postscript_name": "MyriadPro-CondIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Semibold Condensed",
+      "postscript_name": "MyriadPro-SemiboldCond",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Bold Condensed",
+      "postscript_name": "MyriadPro-BoldCond",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Bold Condensed Italic",
+      "postscript_name": "MyriadPro-BoldCondIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Regular",
+      "postscript_name": "MyriadPro-Regular",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Italic",
+      "postscript_name": "MyriadPro-It",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Semibold",
+      "postscript_name": "MyriadPro-Semibold",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Semibold Italic",
+      "postscript_name": "MyriadPro-SemiboldIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Bold",
+      "postscript_name": "MyriadPro-Bold",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Bold Italic",
+      "postscript_name": "MyriadPro-BoldIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Light Condensed",
+      "postscript_name": "MyriadPro-LightCond",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Light Condensed Italic",
+      "postscript_name": "MyriadPro-LightCondIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Semibold Condensed Italic",
+      "postscript_name": "MyriadPro-SemiboldCondIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Black Condensed",
+      "postscript_name": "MyriadPro-BlackCond",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Myriad Pro",
+      "name": "Myriad Pro Black Condensed Italic",
+      "postscript_name": "MyriadPro-BlackCondIt",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Kozuka Mincho Pr6N",
+      "name": "Kozuka Mincho Pr6N EL",
+      "postscript_name": "KozMinPr6N-ExtraLight",
+      "font_type": "OpenTypeCID",
+      "status": "Substituted"
+    },
+    {
+      "family": "Kozuka Mincho Pr6N",
+      "name": "Kozuka Mincho Pr6N L",
+      "postscript_name": "KozMinPr6N-Light",
+      "font_type": "OpenTypeCID",
+      "status": "Substituted"
+    },
+    {
+      "family": "Kozuka Mincho Pr6N",
+      "name": "Kozuka Mincho Pr6N R",
+      "postscript_name": "KozMinPr6N-Regular",
+      "font_type": "OpenTypeCID",
+      "status": "Installed"
+    },
+    {
+      "family": "Kozuka Mincho Pr6N",
+      "name": "Kozuka Mincho Pr6N M",
+      "postscript_name": "KozMinPr6N-Medium",
+      "font_type": "OpenTypeCID",
+      "status": "Substituted"
+    },
+    {
+      "family": "Kozuka Mincho Pr6N",
+      "name": "Kozuka Mincho Pr6N B",
+      "postscript_name": "KozMinPr6N-Bold",
+      "font_type": "OpenTypeCID",
+      "status": "Substituted"
+    },
+    {
+      "family": "Kozuka Mincho Pr6N",
+      "name": "Kozuka Mincho Pr6N H",
+      "postscript_name": "KozMinPr6N-Heavy",
+      "font_type": "OpenTypeCID",
+      "status": "Substituted"
+    },
+    {
+      "family": "NewBaskervilleCTT",
+      "name": "NewBaskervilleCTT Regular",
+      "postscript_name": "NewBaskervilleCTT",
+      "font_type": "TrueType",
+      "status": "Substituted"
+    },
+    {
+      "family": "NewBaskervilleCTT",
+      "name": "NewBaskervilleCTT Italic",
+      "postscript_name": "NewBaskervilleCTT-Italic",
+      "font_type": "TrueType",
+      "status": "Substituted"
+    },
+    {
+      "family": "NewBaskervilleCTT",
+      "name": "NewBaskervilleCTT Bold",
+      "postscript_name": "NewBaskervilleCTT-Bold",
+      "font_type": "TrueType",
+      "status": "Substituted"
+    },
+    {
+      "family": "Santipur2014",
+      "name": "Santipur2014 Regular",
+      "postscript_name": "Santipur2014",
+      "font_type": "TrueType",
+      "status": "Installed"
+    },
+    {
+      "family": "Calibri",
+      "name": "Calibri Light",
+      "postscript_name": "Calibri-Light",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Calibri",
+      "name": "Calibri Light Italic",
+      "postscript_name": "Calibri-LightItalic",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Calibri",
+      "name": "Calibri Regular",
+      "postscript_name": "Calibri",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Calibri",
+      "name": "Calibri Italic",
+      "postscript_name": "Calibri-Italic",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Calibri",
+      "name": "Calibri Bold",
+      "postscript_name": "Calibri-Bold",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Calibri",
+      "name": "Calibri Bold Italic",
+      "postscript_name": "Calibri-BoldItalic",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Symbol",
+      "name": "Symbol Regular",
+      "postscript_name": "SymbolMT",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "New Baskerville ITC",
+      "name": "New Baskerville ITC Regular",
+      "postscript_name": "NewBaskervilleITC-Regular",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "New Baskerville ITC",
+      "name": "New Baskerville ITC Italic",
+      "postscript_name": "NewBaskervilleITC-Italic",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "New Baskerville ITC",
+      "name": "New Baskerville ITC Bold",
+      "postscript_name": "NewBaskervilleITC-Bold",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "New Baskerville ITC",
+      "name": "New Baskerville ITC Bold Italic",
+      "postscript_name": "NewBaskervilleITC-BoldItalic",
+      "font_type": "OpenTypeCFF",
+      "status": "Substituted"
+    },
+    {
+      "family": "Charter Indologique",
+      "name": "Charter Indologique Italic",
+      "postscript_name": "CharterIndologique-Italic",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Charter Indologique",
+      "name": "Charter Indologique Regular",
+      "postscript_name": "CharterIndologique",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Charter Indologique",
+      "name": "Charter Indologique Bold",
+      "postscript_name": "CharterIndologique-Bold",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Charter Indologique",
+      "name": "Charter Indologique Bold Italic",
+      "postscript_name": "CharterIndologique-BoldItalic",
+      "font_type": "OpenTypeCFF",
+      "status": "Installed"
+    },
+    {
+      "family": "Leelawadee UI",
+      "name": "Leelawadee UI Semilight",
+      "postscript_name": "LeelawadeeUI-Semilight",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Leelawadee UI",
+      "name": "Leelawadee UI Regular",
+      "postscript_name": "LeelawadeeUI",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    },
+    {
+      "family": "Leelawadee UI",
+      "name": "Leelawadee UI Bold",
+      "postscript_name": "LeelawadeeUI-Bold",
+      "font_type": "OpenTypeTT",
+      "status": "Installed"
+    }
+  ],
+  "links": [
+    {
+      "spread_file": "Spreads/Spread_u3395.xml",
+      "link_resource_uri": "file:E:/WORK/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0/Ramayana_II_25.02.2022/Links/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BA%D0%B021.eps",
+      "stored_state": "Normal",
+      "link_resource_modified": "false"
+    },
+    {
+      "spread_file": "Spreads/Spread_u5c5.xml",
+      "link_resource_uri": "file:E:/WORK/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0/Ramayana_II_25.02.2022/Links/LP.tif",
+      "stored_state": "Normal",
+      "link_resource_modified": "false"
+    },
+    {
+      "spread_file": "Spreads/Spread_ucf50.xml",
+      "link_resource_uri": "file:E:/WORK/%D0%A0%D0%B0%D0%BC%D0%B0%D1%8F%D0%BD%D0%B0/Ramayana_II_25.02.2022/Links/102.eps",
+      "stored_state": "Normal",
+      "link_resource_modified": "false"
+    }
+  ],
+  "stories": [
+    {
+      "file": "Stories/Story_u10eb3.xml",
+      "self": "u10eb3",
+      "text_length": 54110,
+      "text_sha256": "7a75bef1a0dfc93c81702a9d0244878d7afdab398b1332c08a4b85e3fc7eb352",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u1c3.xml",
+      "self": "u1c3",
+      "text_length": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u20e.xml",
+      "self": "u20e",
+      "text_length": 34,
+      "text_sha256": "6cb50bba6900ac3dbbeceb56f8016c186c05d3322fbd7150ab5fb452cedb3862",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u224.xml",
+      "self": "u224",
+      "text_length": 30,
+      "text_sha256": "f086dc2cb2582be06b73f8a91ea6a79fe939f5da672123adb38f30164c1f41fd",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u305.xml",
+      "self": "u305",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u31b.xml",
+      "self": "u31b",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u331.xml",
+      "self": "u331",
+      "text_length": 10,
+      "text_sha256": "26b855cc1660a365f859c871146d407adc04b7bb2476e523f43443bd9f3de6d5",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3375.xml",
+      "self": "u3375",
+      "text_length": 10,
+      "text_sha256": "00798228f0674c77b3b5365fcab704bdfa85cc2630e06b86a4cafe9517db7d20",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u339d.xml",
+      "self": "u339d",
+      "text_length": 283512,
+      "text_sha256": "87f131a995a3e7b04502d7d069a3faf43257284f65001ff5b077caec5929853e",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u347.xml",
+      "self": "u347",
+      "text_length": 6,
+      "text_sha256": "cfe8f50961d7b52441469b9f445f6fb4b2bb1d7d4786289351ed37532d70cdc5",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u366.xml",
+      "self": "u366",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u37c.xml",
+      "self": "u37c",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u392.xml",
+      "self": "u392",
+      "text_length": 26,
+      "text_sha256": "bc782cf44384b6e035f94dde2e3061665f9a7e269e6dd618ade0f7dae817fafa",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3a8.xml",
+      "self": "u3a8",
+      "text_length": 11,
+      "text_sha256": "5cfd475d46ae9035ea817e2a8bc98d0428d69f260f183da7c5629b34513172ba",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3c77.xml",
+      "self": "u3c77",
+      "text_length": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3f24.xml",
+      "self": "u3f24",
+      "text_length": 34972,
+      "text_sha256": "da2aeb1db0bdae215fd8009e24a78851bc7404234da4354ed861a1be05320b0c",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3f3.xml",
+      "self": "u3f3",
+      "text_length": 28,
+      "text_sha256": "8f437889b514132301cdbea0ff934dff932d18d7677c74d2351e58f907d4f4e9",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3f57.xml",
+      "self": "u3f57",
+      "text_length": 2,
+      "text_sha256": "a88a7902cb4ef697ba0b6759c50e8c10297ff58f942243de19b984841bfe1f73",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3f6d.xml",
+      "self": "u3f6d",
+      "text_length": 166,
+      "text_sha256": "3dd2fd0bb4509d48ce71b585fac2104163ea0c488fa1d8d3965900f38f4185b9",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3fa0.xml",
+      "self": "u3fa0",
+      "text_length": 52,
+      "text_sha256": "2d4ddb89c2012123371b58ed3b038285cd8903bba565a02af169b31ed9dee220",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u3fb6.xml",
+      "self": "u3fb6",
+      "text_length": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u407b.xml",
+      "self": "u407b",
+      "text_length": 108,
+      "text_sha256": "75e8246fbe5a0dad93b5e6abce3b147924602c05eed6a858d51acc4d9cc04730",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u409.xml",
+      "self": "u409",
+      "text_length": 11,
+      "text_sha256": "5cfd475d46ae9035ea817e2a8bc98d0428d69f260f183da7c5629b34513172ba",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u415d.xml",
+      "self": "u415d",
+      "text_length": 70,
+      "text_sha256": "4238465567a69fa8fd6fd1ce9135c76dc1ec1f2154ed7f51fe1e2553644b19de",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u41d9.xml",
+      "self": "u41d9",
+      "text_length": 956,
+      "text_sha256": "91f9012bd9f96d9bd05dcb152ed67d7c888b33d666638a030c876a8b05fcb364",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u428.xml",
+      "self": "u428",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u43e.xml",
+      "self": "u43e",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u454.xml",
+      "self": "u454",
+      "text_length": 10,
+      "text_sha256": "26b855cc1660a365f859c871146d407adc04b7bb2476e523f43443bd9f3de6d5",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u46a.xml",
+      "self": "u46a",
+      "text_length": 38,
+      "text_sha256": "ea7b1154e92487977116eedd4291176a48e734fcd80a167a4f8750d39da8affb",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u480.xml",
+      "self": "u480",
+      "text_length": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u4e1.xml",
+      "self": "u4e1",
+      "text_length": 10,
+      "text_sha256": "26b855cc1660a365f859c871146d407adc04b7bb2476e523f43443bd9f3de6d5",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u4f7.xml",
+      "self": "u4f7",
+      "text_length": 17,
+      "text_sha256": "55ca56383fbbe9b01a94c8dfa50aa105b27bc91dc583da6439e46a407f6cf247",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u56e.xml",
+      "self": "u56e",
+      "text_length": 10,
+      "text_sha256": "39c4b42c8d1130725166e1dcc4c1b156bfe6771f760ecbd30c80cc38d7996cd0",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u584.xml",
+      "self": "u584",
+      "text_length": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u5d0.xml",
+      "self": "u5d0",
+      "text_length": 46,
+      "text_sha256": "839c77a3d4d45395c12a1a347e48ade86fa7d2cb324e2b1b58929d32fea112e1",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u5fb.xml",
+      "self": "u5fb",
+      "text_length": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u611.xml",
+      "self": "u611",
+      "text_length": 133,
+      "text_sha256": "5ccc8426f1da7ba4821eb6e5a024860e24b4decc012189ac698a2250430a6160",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u627.xml",
+      "self": "u627",
+      "text_length": 33,
+      "text_sha256": "1ae634d45ee3c869ccf4da49fcc26f4a08cf278ae96f120849c5df4c95e4f3f1",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u64a.xml",
+      "self": "u64a",
+      "text_length": 2303,
+      "text_sha256": "5df08d0fc503f57e0cb1a7caafc019890101c22aaf556fee981be465eeb8265c",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u660.xml",
+      "self": "u660",
+      "text_length": 105,
+      "text_sha256": "f271cbfd14e4ac3941f1cdad2d8c0e53792462ffd52865dbdadfe96ac0c85b90",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u676.xml",
+      "self": "u676",
+      "text_length": 481607,
+      "text_sha256": "95a836f7597952d63335e4d14a2a10107c9e67b03b890e4b6a3c4b676d1130bc",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u68c.xml",
+      "self": "u68c",
+      "text_length": 84,
+      "text_sha256": "d09685d319edc025e7921e993bc6c1152291dd1551feb9f6283533f2014e7c11",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u8b1d.xml",
+      "self": "u8b1d",
+      "text_length": 34,
+      "text_sha256": "54b09f69139be1872421d9ce1e8bf768e36b96f7dfd1f1de28a8cf6dc051483c",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u90bf.xml",
+      "self": "u90bf",
+      "text_length": 26,
+      "text_sha256": "03add6b95761637c6fb20e22cbdc286be8639286010c05afb566321dddc114bf",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u90d6.xml",
+      "self": "u90d6",
+      "text_length": 18,
+      "text_sha256": "4a10bbf9b6a5eb65c3bbcb43f3489a6aa34f5bfa381ea0c2d87fbb966545104a",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u90fa.xml",
+      "self": "u90fa",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u9111.xml",
+      "self": "u9111",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u9128.xml",
+      "self": "u9128",
+      "text_length": 13,
+      "text_sha256": "1d7637ccdcd0b189f97d9711ad8def84df11827ee4f584da8d1fa3264a56496f",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u9140.xml",
+      "self": "u9140",
+      "text_length": 28,
+      "text_sha256": "127237b390eeb4436db64e3f3eb0b498386932f2f1ba21b173ba3b96881594ac",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u9582.xml",
+      "self": "u9582",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u9599.xml",
+      "self": "u9599",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_u9f1c.xml",
+      "self": "u9f1c",
+      "text_length": 10,
+      "text_sha256": "43048692573bdcf8c5cc1aae226c7e103ccfc059ebb9980764f832420ae9ea40",
+      "in_story_list": true
+    },
+    {
+      "file": "Stories/Story_ubfc4.xml",
+      "self": "ubfc4",
+      "text_length": 444,
+      "text_sha256": "5da9d28c1b77f8f99538902a4bf217d7d1d68bc57c76c4f1692d0ac83547e40d",
+      "in_story_list": true
+    }
+  ]
+}

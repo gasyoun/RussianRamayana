@@ -44,6 +44,21 @@
       "ruling": "MG 19-08-2026: accept as a known, narrow print-time defect rather than chase a fix inside ProcNumberLines; hand the exact 29-item list to the final proofreading pass instead. Does not gate continuing stage[4] (SplitStory/AddSeeTopic/HideShowNumber/AddAnnotationData).",
       "evidence": "Litpam-Indexator/artifacts/print-readiness/book-II/pilot-2026/stage4/PAGE_SET_MISMATCHES_v2.json (29 concrete topic/page pairs), Litpam-Indexator/artifacts/print-readiness/book-II/pilot-2026/stage4/TOPIC_PAGES_DUMP_v2.json (raw per-reference COM read incl. the 693 trailing 'Object is invalid' entries), Litpam-Indexator/artifacts/print-readiness/book-II/pilot-2026/stage4/DFT-II-0003_PROOFREADING_LIST.md (the 29-row manual correction checklist for the proofreader). Book I has not yet run stage[4] (ProcNumberLines) so is not yet known to be affected or unaffected -- same tooling/method, so plausibly at equal risk; flagged as a follow-up, out of scope for this Book-II-titled handoff.",
       "found_by": "dump_topic_pages.py + analyze_topic_pages.py v2 (H2590, 19-08-2026, Sonnet 5 claude-sonnet-5)"
+    },
+    {
+      "id": "DFT-II-0004",
+      "class": "material",
+      "status": "queued",
+      "volume": "II",
+      "index": "all four (document-wide check, not sheet-scoped)",
+      "page": null,
+      "rule": "§7.3 INDEX_STYLE_SPEC.md: every printed locator whose page number falls inside notes_bold_page_ranges (config/print-readiness.json) must render bold. notes_bold_page_ranges.II was null until this session (H2590 rebuild, 25-08-2026) -- measured now by scanning the baseline 2025 PDF's running heads: 'Примечания' pp. 497-593, 'Приложение' pp. 594-664 (contiguous, combined per bold_semantics), confirmed by direct text reads at both boundaries.",
+      "observed": "check_notes_bold_locators.py: 2567 numeric locator occurrences fall inside 497-664 in the final Сводный указатель story; 0 are bold (fontStyle check on the matched digit's first character). No step in the stage[3]/stage[4] pipeline (this rebuild or, per the PLAN doc's own change-log, the original 19-08-2026 session) ever applied bold character formatting to notes/appendix-range locators -- Index.generate()/ProcNumberLines do not carry it over automatically, and no dedicated bold-application step exists anywhere in tools/indesign/.",
+      "expected": "Every locator with 497 <= page <= 664 rendered in a bold character style.",
+      "disposition": "queued-for-human-decision",
+      "evidence": "Litpam-Indexator/artifacts/print-readiness/book-II/pilot-2026/final/NOTES_BOLD_CHECK.txt (raw counts + 20 sample unbolded occurrences), Litpam-Indexator/config/print-readiness.json locators.notes_bold_page_ranges.II._note (measurement method + page-boundary evidence).",
+      "note": "Not fixed in this pass: a same-session automated bold-application over 2567 locations (across 4 index sheets, with the AddAnnotationData gloss text now interleaved) risks false positives -- e.g. a stray digit inside an annotation gloss coincidentally landing in 497-664 -- that an agent should not silently decide how to disambiguate. A human/editorial call is needed on the exact application method (character style vs. direct bold override, whether to exclude gloss-adjacent digits) before this runs at scale; ruling 23/24 -- log and continue, this does not block anything else in stage[4].",
+      "found_by": "check_notes_bold_locators.py (H2590 rebuild, 25-08-2026, Sonnet 5 claude-sonnet-5)"
     }
   ]
 }

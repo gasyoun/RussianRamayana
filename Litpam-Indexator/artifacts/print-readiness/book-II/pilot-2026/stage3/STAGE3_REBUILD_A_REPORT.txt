@@ -1,0 +1,10 @@
+stage3-chunked run 2026-08-25 02:24:57
+target: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+indexlist: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\work\print-readiness\pilot-II\indexlists\IndexList[@]001.indd
+letter: a span: 0-783 chunk_size: 150
+[0-149] undefined|CHECKPOINT-SAVED|topics=71
+[150-299] undefined|CHECKPOINT-SAVED|topics=149
+[300-449] undefined|CHECKPOINT-SAVED|topics=209
+[450-599] undefined|CHECKPOINT-SAVED|topics=283
+[600-749] undefined|CHECKPOINT-SAVED|topics=362
+[750-783] undefined|CHECKPOINT-SAVED|topics=382

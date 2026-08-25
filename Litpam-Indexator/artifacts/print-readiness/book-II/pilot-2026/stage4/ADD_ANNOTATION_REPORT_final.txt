@@ -1,0 +1,7 @@
+add-annotation-data run 2026-08-25 05:13:35
+target: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\work\print-readiness\pilot-II\Ramayana_II_pilot_2026.indd
+tsv: C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\work\print-readiness\pilot-II\annotations.tsv
+build_res: rows=820|cols=2|extraFrames=1|saved=C:\Users\user\Documents\GitHub\RussianRamayana-h2590-32577\Litpam-Indexator\work\print-readiness\pilot-II\AnnotationTable.indd
+action_res: action-done|action.enabled=false
+alerts: 
+saved|story_chars=55201|paragraphs=1091

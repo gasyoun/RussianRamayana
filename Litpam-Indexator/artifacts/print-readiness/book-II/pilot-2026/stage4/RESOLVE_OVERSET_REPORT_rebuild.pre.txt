@@ -1,0 +1,8 @@
+DOC=Ramayana_II_pilot_2026.indd
+MODE=report
+OVERSET_STORY|1632|containers=1|lastFrameAt=PASTEBOARD|visibleChars=95|totalChars=106|oversetChars=11|head=Репродуцирование (воспроизведение) данного издания
+OVERSET_STORY|16507|containers=1|lastFrameAt=PASTEBOARD|visibleChars=84|totalChars=112|oversetChars=28|head= Указатель географических названий  579 Предметно
+OVERSET_STORY|16237|containers=1|lastFrameAt=PASTEBOARD|visibleChars=60|totalChars=170|oversetChars=110|head= Указатель имен эпических и мифологических персона
+OVERSET_STORY|69279|containers=43|lastFrameAt=page 711|visibleChars=51005|totalChars=52371|oversetChars=1366|head=Указатель имен эпических и мифологических персонаж
+FIXED_COUNT=0
+STILL_OVERSET_COUNT=4
