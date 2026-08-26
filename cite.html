@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Как цитировать проект «Русская Рамаяна»: библиографическая запись сайта, ссылки на отдельные издания, лицензии данных и кода, готовые BibTeX и CSL-JSON.">
+<meta property="og:title" content="Как цитировать · Русская Рамаяна">
+<meta property="og:description" content="Библиографическая запись проекта «Русская Рамаяна», ссылки на отдельные издания и лицензии данных и кода.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gasyoun.github.io/RussianRamayana/cite.html">
+<meta property="og:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Как цитировать · Русская Рамаяна">
+<meta name="twitter:description" content="Библиографическая запись проекта «Русская Рамаяна», ссылки на отдельные издания и лицензии данных и кода.">
+<meta name="twitter:image" content="https://gasyoun.github.io/RussianRamayana/web-src/cover-og.png">
+<title>Как цитировать · Русская Рамаяна</title>
+<link rel="canonical" href="https://gasyoun.github.io/RussianRamayana/cite.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><polygon points=%2750,10 61,35 90,35 68,55 77,90 50,70 23,90 32,55 10,35 39,35%27 fill=%27%23b8913a%27/></svg>">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Как цитировать",
+  "description": "Библиографическая запись проекта «Русская Рамаяна», ссылки на отдельные издания и лицензии данных и кода.",
+  "url": "https://gasyoun.github.io/RussianRamayana/cite.html"
+}
+</script>
+<style>
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 60px 2rem 100px;
+    position: relative;
+    z-index: 1;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin: 48px 0 18px;
+  }
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--ink-soft);
+    margin: 26px 0 10px;
+  }
+  .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--ink-muted);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  p, li {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .cite-note,
+  .status-block {
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
+    padding: 24px 28px;
+    margin-bottom: 28px;
+  }
+  .cite-block {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px;
+    margin-bottom: 18px;
+  }
+  .cite-block p { margin: 0; }
+  pre {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid var(--border);
+    padding: 18px 22px;
+    overflow-x: auto;
+    margin-bottom: 18px;
+  }
+  code, pre {
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+  a:hover { color: var(--gold-light); border-color: var(--gold-light); }
+  ol, ul { padding-left: 22px; }
+  .field { color: var(--gold); white-space: nowrap; }
+  @media (max-width: 720px) {
+    .container { padding-inline: 1.25rem; }
+    .cite-note, .status-block, .cite-block, pre { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="nav-back">← На главную</a>
+
+  <header>
+    <span class="header-ornament">ссылки · атрибуция · лицензии</span>
+    <h1>Как цитировать</h1>
+    <p class="subtitle">Проект «Русская Рамаяна» — это сайт, набор открытых данных и код. Цитируется каждое из трёх по-разному; отдельные печатные издания цитируются по их собственным выходным данным, а не по этому сайту.</p>
+  </header>
+
+  <section class="cite-note">
+    <p>Машиночитаемая запись проекта хранится в файле <a href="CITATION.cff">CITATION.cff</a> в корне репозитория — GitHub показывает по нему кнопку «Cite this repository». Всё, что ниже, — человекочитаемая развёртка того же файла. Текущая версия — <span class="field">0.2.0</span>, дата выпуска — <span class="field">12.06.2026</span>.</p>
+  </section>
+
+  <section>
+    <h2>Проект целиком</h2>
+
+    <h3>ГОСТ Р 7.0.5-2008 (электронный ресурс)</h3>
+    <div class="cite-block">
+      <p>Гасунс М. Ю. Русская Рамаяна: архив русских переводов Валмики-Рамаяны : [сайт]. Версия 0.2.0. 2026. URL: https://gasyoun.github.io/RussianRamayana/ (дата обращения: ДД.ММ.ГГГГ).</p>
+    </div>
+
+    <h3>APA 7</h3>
+    <div class="cite-block">
+      <p>Гасунс, М. Ю. (2026). <em>Русская Рамаяна: архив русских переводов Валмики-Рамаяны</em> (версия 0.2.0) [набор данных]. https://gasyoun.github.io/RussianRamayana/</p>
+    </div>
+
+    <h3>BibTeX</h3>
+<pre>@misc{russian_ramayana,
+  author       = {Гасунс, Марцис Юрьевич},
+  title        = {Русская Рамаяна: архив русских переводов Валмики-Рамаяны},
+  year         = {2026},
+  version      = {0.2.0},
+  url          = {https://gasyoun.github.io/RussianRamayana/},
+  howpublished = {\url{https://github.com/gasyoun/RussianRamayana}},
+  note         = {Дата обращения: ДД.ММ.ГГГГ},
+}</pre>
+
+    <p>Дату обращения подставляет цитирующий: сайт обновляется, а версии пока не архивируются по отдельности.</p>
+  </section>
+
+  <section class="status-block">
+    <h2>DOI</h2>
+    <p>Постоянного цифрового идентификатора (DOI) у проекта <strong>пока нет</strong>. Депонирование в Zenodo — открытый пункт дорожной карты (<a href="docs/DH_ROADMAP.md">docs/DH_ROADMAP.md</a>, раздел «Цитируемость»); это внешнее действие, которое выполняется руководителем проекта, а не автоматически. Пока DOI нет, цитируйте URL и версию. Как только депонирование состоится, поле <span class="field">doi</span> появится в <a href="CITATION.cff">CITATION.cff</a> и здесь.</p>
+  </section>
+
+  <section>
+    <h2>Отдельные издания и пересказы</h2>
+    <p>Печатное издание цитируется по самому изданию, а не по этому сайту. Каталог с выходными данными — на странице <a href="bibliography.html">Библиография</a>; она же отдаёт готовые машиночитаемые файлы:</p>
+    <ul>
+      <li><a href="data/export/bibliography.bib" download>bibliography.bib</a> — BibTeX;</li>
+      <li><a href="data/export/bibliography.csl.json" download>bibliography.csl.json</a> — CSL-JSON для Zotero, Mendeley, Pandoc.</li>
+    </ul>
+    <p>Оба файла генерируются из <code>data/editions.json</code> и <code>data/retellings.json</code> скриптом <code>scripts/export_bibliography.py</code> — вручную их не правят. Ссылаться на этот сайт имеет смысл тогда, когда цитируется именно наша сводка: сопоставление рецензий, хронология, реестр прав, метаданные каталога.</p>
+    <p>Три вида текста в каталоге разведены намеренно и в ссылке не смешиваются: <strong>перевод</strong> (Гринцер, Серебряный, Леонов, Потапова), <strong>подстрочник</strong> и <strong>пересказ</strong> (Эрман, Нараян, Бхактиведанта). Пересказ не цитируется как перевод.</p>
+  </section>
+
+  <section>
+    <h2>Данные и код</h2>
+    <p>У материалов проекта разные лицензии, поэтому и атрибуция разная:</p>
+    <ul>
+      <li><strong>Метаданные</strong> <code>data/*.json</code> и документация — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, см. <a href="LICENSE-data.md">LICENSE-data.md</a>. Использование свободно при указании авторства и ссылке на источник.</li>
+      <li><strong>Код</strong> сайта и скриптов — <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>, см. <a href="LICENSE">LICENSE</a>.</li>
+      <li><strong>Тексты переводов</strong> охраняются авторским правом и на этом сайте либо не размещаются, либо доступны по отдельному разрешению. Правовая формула каждого материала — в реестре <a href="rights.html">Права и источники</a>; каноническая запись — <a href="docs/RIGHTS.md">docs/RIGHTS.md</a>. Цитирование охраняемого текста идёт по <a href="rights.html">реестру</a>, а не по лицензии данных.</li>
+    </ul>
+    <p>Каждая запись каталога изданий несёт собственное поле <span class="field">rights</span> с правовой формулой и номером объекта в реестре — при выгрузке метаданных статус права уезжает вместе с описанием.</p>
+  </section>
+
+  <section class="status-block">
+    <h2>Если цитируете отдельный факт с сайта</h2>
+    <ol>
+      <li>Сопоставление рецензий (южная вульгата, критическое издание Бароды) — страница <a href="recensions.html">Рецензии</a>.</li>
+      <li>Сравнение эпизодов и подстрочник кн. V — <a href="compare/sundarakanda-start.html">параллельное чтение</a>; краткие цитаты там приведены в порядке свободного цитирования с указанием автора.</li>
+      <li>Хронология работ над переводом — <a href="timeline.html">Хронология</a>.</li>
+      <li>Аудиозапись 1986 года — <a href="audio.html">Аудиотека</a>; права на запись и на звучащий в ней текст разведены, см. объекты №3 и №4 реестра.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>См. также: <a href="bibliography.html">библиография</a> · <a href="rights.html">права и источники</a> · <a href="CITATION.cff">CITATION.cff</a> · <a href="README.md">README</a></p>
+  </footer>
+</div>
+</body>
+</html>

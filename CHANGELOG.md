@@ -4,6 +4,74 @@
 
 ## 2026-08-26
 
+### Дорожка A DH-роадмапа исполнена: `rights` и `recension` в каталоге, VIAF-идентификаторы, страница «Как цитировать» (H3558)
+
+Исполнение агентских (Дорожка A) пунктов, которые оставила после себя
+статус-проверка H3003. Что изменилось на диске:
+
+- **`rights` у всех записей каталога.** Поле добавлено в
+  [data/editions.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/editions.json)
+  (**6 из 6**, было 0) и
+  [data/retellings.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/retellings.json)
+  (**3 из 3**, было 0). Формулы дословно взяты из реестра
+  [docs/RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md);
+  ничего нового о правах не решалось. В реестр добавлен **объект №13** —
+  библиографические описания (описания CC BY 4.0, описываемые произведения InC) —
+  и правило: каждая запись `editions/retellings/audio/videos` несёт `rights`
+  формы «статус · правообладатель · основание · См. docs/RIGHTS.md, объект №N».
+  Поле объявлено в
+  [data/schema/editions.schema.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/schema/editions.schema.json)
+  и [data/schema/retellings.schema.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/schema/retellings.schema.json)
+  по образцу `audio.schema.json`, так что CI-job `data-validate` его проверяет.
+
+- **Пять заглушек `recension` «уточняется» сняты (осталось 0).** Значения не
+  выдуманы, а выведены из измерений репозитория: у `leonov-6` — из
+  [data/YUDDHA_GITASUPERSITE_COMPARISON_REPORT.md](https://github.com/gasyoun/RussianRamayana/blob/main/data/YUDDHA_GITASUPERSITE_COMPARISON_REPORT.md)
+  (5728 шлок против 5209 у Gita Supersite, сопоставлена 5031 пара, 3353 из них
+  near-identical) — южная (вульгата); у `leonov-5` — из
+  [data/comparison-episodes.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/comparison-episodes.json)
+  (эпизод R.5.1.1 размечен как южная вульгата). Для `grintser-1-2`,
+  `grintser-3` и `serebryany-4` записано честное «не установлена» с причиной:
+  в самих изданиях редакция не оговорена, и
+  [recensions.html](https://github.com/gasyoun/RussianRamayana/blob/main/recensions.html)
+  это фиксирует. Потребителей у этого поля в HTML/JS нет — страница сравнения
+  читает `recension` из `comparison-episodes.json`, — так что правка ничего
+  не ломает визуально.
+
+- **Идентификаторы людей: VIAF Гасунса найден, остальное измерено и
+  переклассифицировано.**
+  [data/people.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/people.json):
+  `viaf` теперь **2 из 4** (добавлен кластер `1158167565597098750002`,
+  единственный источник — DNB/GND `1279528044`), `wikidata` остаётся **1 из 4**.
+  Для Леонова и Костиной записи VIAF не существует вовсе, а items Wikidata
+  ни для кого из троих не заводились — их **создание** требует согласия М. Г.
+  и остаётся Дорожкой C. Замер и техническая заметка (VIAF снял старые
+  REST-пути; рабочий вызов — POST на `/api/cluster-record`) записаны в
+  [docs/wikidata-drafts.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/wikidata-drafts.md).
+
+- **Страница «Как цитировать»** — новая
+  [cite.html](https://github.com/gasyoun/RussianRamayana/blob/main/cite.html):
+  библиографическая запись проекта по ГОСТ Р 7.0.5-2008 и APA 7, готовый
+  BibTeX, ссылки на выгрузки `data/export/*`, лицензии данных и кода,
+  правило «пересказ не цитируется как перевод». **DOI не выдуман** — страница
+  прямо говорит, что его нет, что депонирование в Zenodo остаётся внешним
+  актом и что поле `doi` появится в
+  [CITATION.cff](https://github.com/gasyoun/RussianRamayana/blob/main/CITATION.cff)
+  после него. Страница прилинкована с
+  [index.html](https://github.com/gasyoun/RussianRamayana/blob/main/index.html),
+  из подвалов [rights.html](https://github.com/gasyoun/RussianRamayana/blob/main/rights.html)
+  и [bibliography.html](https://github.com/gasyoun/RussianRamayana/blob/main/bibliography.html)
+  и внесена в [sitemap.xml](https://github.com/gasyoun/RussianRamayana/blob/main/sitemap.xml).
+  Сборки не потребовалось: `scripts/prerender.py` берёт все корневые `*.html`.
+
+- **ISBN для четырёх изданий — исполнимого остатка нет (Дорожка B).** Замер:
+  `potapova` (1986) в собственном описании оговаривает, что издание вышло до
+  введения ISBN; `serebryany-4`, `leonov-5`, `leonov-6` не изданы (нет и года),
+  так что номера пока не существует. Половина пункта про `wikidata` для изданий
+  остаётся Дорожкой C.
+
+Проверка: `scripts/validate_data.py` — 19 файлов, 18 схемных, 0 падений.
+
 ### DH-роадмап сверен с диском: решение о правах на аудио 1986 г. пересмотрено, шесть пунктов оказались выполненными (H3003)
 
 [docs/DH_ROADMAP.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/DH_ROADMAP.md)

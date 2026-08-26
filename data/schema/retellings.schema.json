@@ -4,17 +4,46 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "type", "author", "title", "status"],
+    "required": [
+      "id",
+      "type",
+      "author",
+      "title",
+      "status"
+    ],
     "properties": {
-      "id": {"type": "string"},
-      "type": {"type": "string"},
-      "author": {"type": "string"},
-      "author_wikidata": {"type": "string", "pattern": "^Q[0-9]+$"},
-      "author_viaf": {"type": "string", "pattern": "^[0-9]+$"},
-      "title": {"type": "string"},
-      "year": {"type": "string"},
-      "description": {"type": "string"},
-      "status": {"type": "string"}
+      "id": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "author": {
+        "type": "string"
+      },
+      "author_wikidata": {
+        "type": "string",
+        "pattern": "^Q[0-9]+$"
+      },
+      "author_viaf": {
+        "type": "string",
+        "pattern": "^[0-9]+$"
+      },
+      "title": {
+        "type": "string"
+      },
+      "year": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "rights": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      }
     },
     "additionalProperties": true
   }

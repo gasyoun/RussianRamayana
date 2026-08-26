@@ -1,5 +1,7 @@
 # Черновики статей Wikidata для участников проекта
 
+_Created: 13-06-2026 · Last updated: 26-08-2026_
+
 Двух участников проекта нет в Wikidata (проверено 2026-06-13: `wbsearchentities`
 по русским меткам возвращает только однофамильцев). Ниже — черновики для ручного
 создания через [wikidata.org/wiki/Special:NewItem](https://www.wikidata.org/wiki/Special:NewItem).
@@ -60,3 +62,46 @@ JSON-LD страниц (`sameAs`).
 "wikidata": "Q…",   // новый QID
 // затем добавить sameAs в project.html JSON-LD (блок mentions, объект Леонова)
 ```
+
+---
+
+## Замер 26-08-2026 (H3558) — что удалось и что нет
+
+Проверка проведена в рамках [H3558](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3558-Opus_multi_stale-roadmap-s5-lane-a-residuals_26.08.26.md)
+(Opus 5, `claude-opus-5`) по пункту «Идентификаторы людей» Фазы 3
+[docs/DH_ROADMAP.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/DH_ROADMAP.md).
+Метод: `wbsearchentities` (Wikidata API, `language=ru` и `language=en`) и
+`viaf.org/viaf/AutoSuggest` по латинской и кириллической формам имени.
+
+| Человек | Wikidata (`wbsearchentities`) | VIAF (`AutoSuggest`) | Итог |
+|---|---|---|---|
+| П. А. Гринцер | `Q4149672` — было | `35823334` — было | заполнено ранее |
+| М. В. Леонов | пусто (ru и en) | пусто (латиница и кириллица) | записи не существует |
+| Е. А. Костина | пусто (ru и en) | пусто (латиница и кириллица) | записи не существует |
+| М. Ю. Гасунс | пусто (ru и en) | **`1158167565597098750002`** | VIAF проставлен 26-08-2026 |
+
+**Что сделано.** У Гасунса нашлась уже существующая авторитетная запись VIAF —
+кластер `1158167565597098750002`, `nameType: Personal`, заголовок
+«Gasuns, Marcis Jurʹevič 1983-», кириллическая форма «Гасунс, Марцис, 1983-»,
+единственный источник кластера — Немецкая национальная библиотека,
+`DNB|1279528044` → [d-nb.info/gnd/1279528044](http://d-nb.info/gnd/1279528044).
+Это **поиск существующей записи, а не создание новой**, поэтому поле `viaf`
+вписано в `data/people.json`. Близкий по написанию кластер `305381106`
+(«Gasūns, Renārs, jurists») — другой человек, использовать его нельзя.
+
+**Чего сделать нельзя и почему.** QID не проставлен ни одному из трёх: поиск
+Wikidata подтвердил замер 2026-06-13 — items просто нет. Единственный путь —
+создание через `Special:NewItem`, а это внешняя правка, на которую по
+[.ai_state.md](https://github.com/gasyoun/RussianRamayana/blob/main/.ai_state.md)
+нужно согласие М. Г.; задание H3558 прямо относит создание Wikidata-items к
+дорожке C. Поэтому в роадмапе пункт разделён: агентская половина (VIAF по
+существующим записям) закрыта, half-C (создание items) остаётся открытой.
+
+**Техническая заметка на будущее.** Старые REST-пути VIAF для кластера
+(`/viaf/<id>/viaf.json`, `/viaf/<id>/`, `/en/viaf/<id>`) отдают HTTP 404
+`no Route matched with those values`; рабочий вызов — POST на
+`https://viaf.org/api/cluster-record` с телом
+`{"reqValues":{"field":"local.viafID","index":"VIAF","recordId":"<id>"},"meta":{"env":"prod","pageIndex":0,"pageSize":1}}`.
+GET на тот же путь отдаёт 405.
+
+_Dr. Mārcis Gasūns_
