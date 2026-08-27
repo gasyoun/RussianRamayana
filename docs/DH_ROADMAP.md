@@ -1,6 +1,8 @@
 # DH-роадмап: приведение «Русской Рамаяны» к стандартам цифровой гуманитаристики
 
-_Created: 12-06-2026 · Last updated: 26-08-2026_
+_Created: 12-06-2026 · Last updated: 27-08-2026_
+
+> **Human-gate 27-08-2026** (Grok 4.6 `grok-4.6`). The next open unit is a human act — fetch MP3 of books V and VI from Yandex Disk — not `/roadmap-item-exec` for an agent. Do not tick the box. Do not fetch the files.
 
 Составлен 2026-06-12. Дополняет [roadmap.md](https://github.com/gasyoun/RussianRamayana/blob/main/roadmap.md) (продуктовый/краудфандинговый
 план) — здесь только инфраструктура данных, идентификаторы, права и долговременное хранение.
