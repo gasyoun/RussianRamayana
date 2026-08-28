@@ -4,6 +4,42 @@
 
 ## 2026-08-28
 
+### Репозиторий подключён к «хребту»: конвейер печатной готовности зарегистрирован ребром графа — на перспективу, с условием снятия (H3568)
+
+Решение F5 программы связности отменяет вердикт `standalone-by-design` для этого
+репозитория и регистрирует *Litpam print-readiness lane* как ребро в
+[PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
+и [interlinks_edges.tsv](https://github.com/gasyoun/Uprava/blob/main/interlinks_edges.tsv):
+[`Litpam-Indexator/tools/print_ready.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/print_ready.py),
+ExtendScript-инструменты
+[`tools/indesign/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/tools/indesign),
+порог
+[`config/print-readiness.json`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/config/print-readiness.json)
+и версионированные артефакты
+[`artifacts/print-readiness/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/artifacts/print-readiness).
+
+- ⚠️ **Ребро зарегистрировано на перспективу.** Замер 28-08-2026 по всем соседним клонам
+  (`kosha`, `SanskritLexicography`, `CommentaryStrategies`, `BookIndex`, `SamudraManthanam`,
+  `github-spine`, `csl-atlas`, `IndologyScholars`, `SanskritKaraoke`, `AfanasiyNikitin`,
+  `Systema-Sanscriticum`, `ORS-FAQ`): **конвейер не читает ни один репозиторий**; единственные
+  совпадения — английское словосочетание *print-readiness* в словарном смысле и URL
+  `litpamyatniki.ru`. Это единственная спекулятивная строка, которую бюджетирует Gate 2
+  программы; вторую добавлять нельзя.
+- ⚠️ **Условие снятия:** если к следующей переписи связности реального потребителя не назовут,
+  строка удаляется, а вердикт в
+  [INTERLINKS_COVERAGE_LEDGER.tsv](https://github.com/gasyoun/Uprava/blob/main/INTERLINKS_COVERAGE_LEDGER.tsv)
+  возвращается к `standalone-by-design`.
+- Производящая сторона реальна и активна: H2589 (книга I) и
+  [H2590](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2590-OxAlpha_RussianRamayana_litpam-book2-print-readiness-application_12.08.26.md)
+  (книга II, [PR #98](https://github.com/gasyoun/RussianRamayana/pull/98)) выпускают
+  gate-отчёты, покрытие, реестр дефектов и proof-PDF по этому пути.
+- [README.md](https://github.com/gasyoun/RussianRamayana/blob/main/README.md) получил раздел
+  «Как этот репозиторий связан с остальными» (решение F11 — до сих пор обратных ссылок на
+  «хребет» здесь не было),
+  [CLAUDE.md](https://github.com/gasyoun/RussianRamayana/blob/main/CLAUDE.md) — раздел
+  маршрутизации находок по двум хабам (решение F1; локальных реестров репозиторий не заводит).
+
+
 ### Сведение MP3 (Фаза 1, чек-бокс A05): замер на mac-машине — книг V–VI нет, пять файлов целы (sha256 5/5)
 
 Дорожка C, чек-бокс «Свести воедино MP3 всех 7 книг»

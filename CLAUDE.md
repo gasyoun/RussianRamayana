@@ -70,6 +70,22 @@ To change the palette or any shared element, edit `style.css` only. Each page's 
 
 `CHANGELOG.md` — working log of decisions and changes; update when making non-trivial edits.
 
+## Where findings go (ruling F1, 26-08-2026)
+
+This repo keeps **no local registries of its own**. Gotchas found here are routed to the two
+org hubs: infra and process to
+[Uprava/FINDINGS.md](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md); Sanskrit data
+(encodings, transliteration, corpus traps) to
+[SanskritLexicography/FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+Do not scaffold a local `FINDINGS.md` or any of the seven sibling registries here — the
+two-hub routing is the design, not a gap.
+
+Before writing a normalizer, transcoder, parser or exporter, read
+[SHARED_CODE.md](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md); what this
+repo produces for the rest of the spine is registered in
+[PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
+and [interlinks_edges.tsv](https://github.com/gasyoun/Uprava/blob/main/interlinks_edges.tsv).
+
 ## Large binary assets
 
 MP3 audiobook files (7 books, named in Cyrillic) live in the repo root. GitHub has a 100 MiB file limit — hosting for large files is an open risk noted in `roadmap.md`. Do not add new large binaries without a hosting plan.
