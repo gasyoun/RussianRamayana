@@ -1,6 +1,6 @@
 # Русская Рамаяна (Russian Ramayana)
 
-_Created: 15-05-2026 · Last updated: 11-07-2026_
+_Created: 15-05-2026 · Last updated: 28-08-2026_
 
 Цифровой портал, архив переводов и краудфандинговая платформа для завершения первого полного поэтического академического перевода «Рамаяны» Вальмики на русский язык.
 
@@ -96,6 +96,45 @@ _Created: 15-05-2026 · Last updated: 11-07-2026_
 
 - [content-inventory.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/content-inventory.md) — реестр материалов; [use-cases.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/use-cases.md) — сценарии; [RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md) — реестр прав; [DH_ROADMAP.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/DH_ROADMAP.md) — план развития; [ia-upload.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/ia-upload.md) — манифест загрузки аудио на Internet Archive.
 - Корневые: [`roadmap.md`](https://github.com/gasyoun/RussianRamayana/blob/main/roadmap.md) — продуктовые решения, открытые вопросы (Q1–Q15) и риски; [`architecture.md`](https://github.com/gasyoun/RussianRamayana/blob/main/architecture.md) — техническая архитектура; [`CHANGELOG.md`](https://github.com/gasyoun/RussianRamayana/blob/main/CHANGELOG.md) — рабочий журнал изменений.
+
+## Как этот репозиторий связан с остальными
+
+Проект — часть организационного «хребта» из примерно 85 репозиториев; ниже — что он отдаёт
+наружу, кто это читает и куда записывать находки.
+
+- **Что производит.** Конвейер печатной готовности «Литпамятников» (*Litpam print-readiness
+  lane*): детерминированный набор для сборки предметных указателей и проверки готовности к
+  печати двухтомного академического издания —
+  [`Litpam-Indexator/tools/print_ready.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/print_ready.py)
+  и ExtendScript-инструменты
+  [`Litpam-Indexator/tools/indesign/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/tools/indesign),
+  порог качества —
+  [`Litpam-Indexator/config/print-readiness.json`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/config/print-readiness.json),
+  версионированные артефакты (`gate-report.json`, покрытие, `defect-ledger.json`, IDML и
+  proof-PDF по каждой книге) —
+  [`Litpam-Indexator/artifacts/print-readiness/`](https://github.com/gasyoun/RussianRamayana/tree/main/Litpam-Indexator/artifacts/print-readiness).
+  Операторское руководство —
+  [`docs/indesign-pipeline/MANUAL.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md).
+  Кому нужен воспроизводимый контракт «указатель + готовность к печати» для русской книги —
+  берёт этот конвейер, а не строит второй.
+- **Кто читает.** ⚠️ **Пока никто.** Конвейер зарегистрирован рёбром графа в
+  [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
+  и [interlinks_edges.tsv](https://github.com/gasyoun/Uprava/blob/main/interlinks_edges.tsv)
+  28-08-2026 **на перспективу** (решение F5): проверка по всем соседним клонам показала, что
+  ни один репозиторий его сегодня не читает. **Условие снятия:** если к следующей переписи
+  связности реального потребителя не назовут, строка удаляется, а вердикт репозитория в
+  [INTERLINKS_COVERAGE_LEDGER.tsv](https://github.com/gasyoun/Uprava/blob/main/INTERLINKS_COVERAGE_LEDGER.tsv)
+  возвращается к `standalone-by-design`.
+- **Куда писать находки.** Инфраструктура и процесс —
+  [Uprava/FINDINGS.md](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md); санскритские
+  данные — [SanskritLexicography/FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+  Своих реестров этот репозиторий не держит (решение F1).
+- **Общий код.** Прежде чем писать нормализатор, транскриптор, парсер или экспортёр —
+  [SHARED_CODE.md](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md).
+- **Что уже существует.**
+  [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md).
+- **Что делать дальше / кто решает.**
+  [GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
 
 ## Лицензии и права
 
