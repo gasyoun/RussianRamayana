@@ -1,6 +1,6 @@
 # Русская Рамаяна (Russian Ramayana)
 
-_Created: 15-05-2026 · Last updated: 28-08-2026_
+_Created: 15-05-2026 · Last updated: 29-08-2026_
 
 Цифровой портал, архив переводов и краудфандинговая платформа для завершения первого полного поэтического академического перевода «Рамаяны» Вальмики на русский язык.
 
@@ -117,14 +117,18 @@ _Created: 15-05-2026 · Last updated: 28-08-2026_
   [`docs/indesign-pipeline/MANUAL.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/indesign-pipeline/MANUAL.md).
   Кому нужен воспроизводимый контракт «указатель + готовность к печати» для русской книги —
   берёт этот конвейер, а не строит второй.
-- **Кто читает.** ⚠️ **Пока никто.** Конвейер зарегистрирован рёбром графа в
+- **Кто читает — сама книга.** Потребитель конвейера — **двухтомное академическое издание
+  «Литературных памятников»** (перевод П. А. Гринцера, «Наука»), та самая печатная книга, ради
+  готовности которой конвейер и существует (решение F5b, 29-08-2026). Потребитель **вне git и
+  вне графа репозиториев**, поэтому искать читающий его репозиторий бессмысленно: проверка по
+  всем соседним клонам 28-08-2026 ожидаемо пуста, и эта пустота — не дефект. Ребро
+  зарегистрировано в
   [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
-  и [interlinks_edges.tsv](https://github.com/gasyoun/Uprava/blob/main/interlinks_edges.tsv)
-  28-08-2026 **на перспективу** (решение F5): проверка по всем соседним клонам показала, что
-  ни один репозиторий его сегодня не читает. **Условие снятия:** если к следующей переписи
-  связности реального потребителя не назовут, строка удаляется, а вердикт репозитория в
+  и [interlinks_edges.tsv](https://github.com/gasyoun/Uprava/blob/main/interlinks_edges.tsv);
+  прежнее **условие снятия исполнено решением**, вердикт `edges-registered` в
   [INTERLINKS_COVERAGE_LEDGER.tsv](https://github.com/gasyoun/Uprava/blob/main/INTERLINKS_COVERAGE_LEDGER.tsv)
-  возвращается к `standalone-by-design`.
+  остаётся в силе и на следующей переписи связности не отменяется. Доставка потребителю идёт
+  прямо сейчас: книга II — статус `AUTOMATED_PASS / HUMAN_REVIEW_WAITING`.
 - **Куда писать находки.** Инфраструктура и процесс —
   [Uprava/FINDINGS.md](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md); санскритские
   данные — [SanskritLexicography/FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
