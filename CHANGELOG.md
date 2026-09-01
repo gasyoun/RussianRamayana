@@ -4,6 +4,32 @@
 
 ## 2026-09-01
 
+### CI: job `Pytest` починен — 25 из 34 тестов не запускались ни разу
+
+`Pytest` был красным на `main` на всех трёх матричных версиях, и, судя по истории
+запусков, с самого появления теста. Причина не в тестах: в репозитории не было ни
+`requirements.txt`, ни `pyproject.toml`, поэтому job ставил только сам `pytest`,
+и сбор падал ещё до первого теста —
+`ModuleNotFoundError: No module named 'openpyxl'` в
+[`Litpam-Indexator/tools/tests/test_print_ready.py`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/tools/tests/test_print_ready.py),
+выход 2. Из-за прерванного сбора **ни один** из 25 тестов `print_ready` не
+исполнялся; проходили только 9 тестов `test_import_donations.py`.
+
+- **Починка — один новый файл**, [`requirements.txt`](https://github.com/gasyoun/RussianRamayana/blob/main/requirements.txt) в корне: `openpyxl>=3.1` (чтение
+  словника указателя в `print_ready/{repair,coverage}.py` и `validate_dictionary.py`)
+  и `PyMuPDF>=1.24` (модуль `fitz` в `print_ready/pdf_audit.py`). Правка
+  `ci.yml` не понадобилась — шаг `Run pytest` уже несёт условие
+  `if [ -f requirements.txt ]; then pip install -r requirements.txt; fi`,
+  которому до сих пор нечего было читать. Тот же приём, что в соседнем
+  [CommentaryStrategies](https://github.com/gasyoun/CommentaryStrategies/blob/main/requirements.txt) с идентичным `ci.yml`.
+- **Замер до и после:** локально с обоими пакетами — `34 passed`; в CI до правки —
+  `collected 9 items / 1 error`.
+- Зависимости самого сайта не затронуты: страницы остаются статическим HTML,
+  данные тянутся через `fetch()` из `data/*.json`. `prerender.py` (headless
+  Chromium) по-прежнему обслуживается `deploy.yml`, а не этим файлом.
+- `Link health (non-blocking)` остаётся красным — это отдельный `continue-on-error`
+  job про внешние ссылки, к сбору тестов отношения не имеет.
+
 ### Блокер Фазы 1 «достать MP3 книг V–VI с Яндекс Диска» снят: доставать нечего (H3777)
 
 Чек-бокс, из-за которого 27-08-2026 весь DH-роадмап получил врезку «human-gate, не тикать»,
