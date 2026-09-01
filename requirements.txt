@@ -1,0 +1,25 @@
+# RussianRamayana — зависимости Python-инструментов
+#
+# Сам сайт зависимостей не имеет: страницы — статический HTML/CSS/ES6+, данные
+# тянутся через fetch() из data/*.json. Всё ниже нужно только tooling-скриптам
+# и тестам, которые их проверяют.
+#
+# Файл читает .github/workflows/ci.yml (job Pytest: `if [ -f requirements.txt ];
+# then pip install -r requirements.txt; fi`). До его появления job ставил один
+# pytest, и сбор падал на `import openpyxl` — 3 из 3 матричных версий красные
+# на main; 25 из 34 тестов не запускались ни разу.
+#
+# Кто что использует:
+#   • openpyxl — Litpam-Indexator/tools/print_ready/{repair,coverage}.py,
+#     validate_dictionary.py: чтение словника указателя из xls/*.xlsx
+#     (тесты: Litpam-Indexator/tools/tests/test_print_ready.py)
+#   • PyMuPDF (модуль fitz) — Litpam-Indexator/tools/print_ready/pdf_audit.py:
+#     аудит вёрстки PDF перед печатью
+#
+# Стандартной библиотекой обходятся: scripts/*.py (validate_data,
+# export_bibliography, export_geojson, export_gazetteer, check_links,
+# audio_inventory, import_donations, changelog_duplicate_bullets).
+# Исключение — scripts/prerender.py: нужен headless Chromium, его ставит
+# отдельно deploy.yml, а не этот файл.
+openpyxl>=3.1
+PyMuPDF>=1.24
