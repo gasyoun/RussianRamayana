@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 # JSON-схемы данных
 
 Каждый файл `<basename>.schema.json` — это [JSON Schema](https://json-schema.org/)
@@ -52,3 +54,5 @@ python scripts/validate_data.py
 - Добавили новый `data/*.json` — заведите для него схему здесь (или оставьте
   parse-only, если структура ещё не устоялась).
 - `reports.json` пока parse-only — схема не написана.
+
+_Dr. Mārcis Gasūns_

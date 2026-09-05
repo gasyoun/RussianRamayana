@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -144,3 +146,5 @@ na śakyaṃ yatparityaktumātmacchandena jīvitam \|\| 20
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe pañcaviṃśaḥ sargaḥ \|\| 25 \|\|
 
 > iti śrīrāmābhirāme śrīrāma rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍe pañcaviṃśaḥ sargaḥ \|\| 25 \|\|
+
+_Dr. Mārcis Gasūns_

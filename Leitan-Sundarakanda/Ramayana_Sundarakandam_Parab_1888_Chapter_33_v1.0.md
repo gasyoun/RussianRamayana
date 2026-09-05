@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -260,3 +262,5 @@ dvau māsau tena me kālo jīvitānugrahaḥ kṛtaḥ \|
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe trayastriṃśaḥ sargaḥ \|\| 33 \|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍe trayastriṃśaḥ sargaḥ \|\| 33 \|\|
+
+_Dr. Mārcis Gasūns_

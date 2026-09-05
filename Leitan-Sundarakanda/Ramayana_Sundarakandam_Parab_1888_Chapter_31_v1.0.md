@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -159,3 +161,5 @@ dadarśa piṅgādhipateramātyaṃ vātātmajaṃ sūryamivodayastham \|\| 18
 ityārṣe śrīmadrāmāyaṇe vālmīkīye ādikāvye sundarakāṇḍe ekatriṃśaḥ sargaḥ \|\| 31 \|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍa ekatriṃśaḥ sargaḥ \|\| 31 \|\|
+
+_Dr. Mārcis Gasūns_

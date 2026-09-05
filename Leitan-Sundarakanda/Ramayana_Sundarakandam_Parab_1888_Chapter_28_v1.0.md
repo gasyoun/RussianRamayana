@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -198,3 +200,5 @@ prādurnimittāni tadā babhūvuḥ purāpi siddhānyupalakṣitāni \|\| 19
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe'ṣṭāviṃśaḥ sargaḥ \|\| 28 \|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍe'ṣṭāviṃśaḥ sargaḥ \|\| 28 \|\|
+
+_Dr. Mārcis Gasūns_

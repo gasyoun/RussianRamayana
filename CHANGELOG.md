@@ -1,3 +1,5 @@
+_Created: 14-05-2026 · Last updated: 05-09-2026_
+
 # Changelog
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
@@ -561,11 +563,11 @@ PDF-пруфам 12.10.25 единый контракт оформления у�
 
 ### DH_ROADMAP Фаза 0 закрыта (H2061) — stale-tick + audio URL switch
 
-Пункт drain Tier-2: [`docs/DH_ROADMAP.md`](docs/DH_ROADMAP.md) Фаза 0.
+Пункт drain Tier-2: [`docs/DH_ROADMAP.md`](https://github.com/gasyoun/RussianRamayana/blob/main/docs/DH_ROADMAP.md) Фаза 0.
 
 - Truth-pass: `.ai_state.md`, `_meta/` gitignore-disposition, `web-src/cover-og.png` — уже
   сделаны 2026-06-12; чекбоксы в DH_ROADMAP были stale и отмечены.
-- **`resolveAudioUrl(track)`** в [`js/utils.js`](js/utils.js): единая точка замены хоста
+- **`resolveAudioUrl(track)`** в [`js/utils.js`](https://github.com/gasyoun/RussianRamayana/blob/main/js/utils.js): единая точка замены хоста
   аудио (`ia_url` → `url`, https-only). Подключено в `audio.html`, `index.html`,
   `media.html` вместо прямого `track.url`. Когда Фаза 1 заполнит `ia_url` (archive.org),
   плееры переключатся без правок страниц. Сейчас `url` по-прежнему raw.github.
@@ -850,3 +852,5 @@ PDF-пруфам 12.10.25 единый контракт оформления у�
 - Зафиксированы ограничения для первой фазы: не трогать MP3, PDF, изображения, карту, аудио-логику и приватные данные доноров.
 - Зафиксированы критерии приёмки: валидный JSON, наличие `support.html`, видимый CTA, отсутствие приватных данных, отсутствие новых больших файлов, сохранность аудио и карты.
 - Добавлены команды автоматической проверки и ручной браузерный чеклист.
+
+_Dr. Mārcis Gasūns_

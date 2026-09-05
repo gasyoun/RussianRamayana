@@ -1,3 +1,5 @@
+_Created: 15-05-2026 · Last updated: 05-09-2026_
+
 # Automated Verification
 
 Запустить из корня репозитория.
@@ -78,3 +80,5 @@ git status --porcelain
 Критерий:
 
 - в списке новых файлов нет MP3, PDF, PNG, JPG, MOV.
+
+_Dr. Mārcis Gasūns_

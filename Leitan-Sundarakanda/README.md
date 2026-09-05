@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 # Leitan — Sundarakanda (Parab 1888)
 
 Part of the [Русская Рамаяна](https://gasyoun.github.io/RussianRamayana/) project —
@@ -55,3 +57,5 @@ pandoc "<file>.docx" --from docx --to gfm --wrap=none \
 
 Do not hand-edit the `.md` files — changes belong in the source `.docx`,
 followed by re-running the conversion above.
+
+_Dr. Mārcis Gasūns_

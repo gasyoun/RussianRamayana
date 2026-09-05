@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -54,3 +56,5 @@ Tags/ram_tags.txt        xls/Указатель_к_Рамаяне_*.xlsx
 - Скрипты этапов 1 и 3 отказываются работать при вытесненном (overflow) тексте и несохранённом документе — это проверки в коде, а не баги.
 - В `xls/` рабочие листы — только «Именной», «Географ», «Предметы и термины», «Флора и фауна» (и справочник «Все_Теги»); остальные листы служебные.
 - `_Ram_Tag_explorer/backup/` и `lib/` — артефакты Lazarus, генерируются при сборке.
+
+_Dr. Mārcis Gasūns_

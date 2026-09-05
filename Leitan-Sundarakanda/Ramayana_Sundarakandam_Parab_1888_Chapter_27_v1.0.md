@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -488,3 +490,5 @@ avocadyadi tattathyaṃ bhaveyaṃ śaraṇaṃ hi vaḥ \|\| 47
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe saptaviṃśaḥ sargaḥ \|\| 27 \|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ā- dikāvye sundarakāṇḍe saptaviṃśaḥ sargaḥ \|\|27\|\|
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -284,3 +286,5 @@ evaṃ nirbhartsyamānā sā sītā surasutopamā \|\| rākṣasībhirvirūpābh
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe caturviṃśaḥ sargaḥ \|\| 24 \|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍe caturviṃśaḥ sargaḥ \|\| 24 \|\|
+
+_Dr. Mārcis Gasūns_

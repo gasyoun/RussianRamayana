@@ -1,3 +1,5 @@
+_Created: 15-05-2026 · Last updated: 05-09-2026_
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -89,3 +91,5 @@ and [interlinks_edges.tsv](https://github.com/gasyoun/Uprava/blob/main/interlink
 ## Large binary assets
 
 MP3 audiobook files (7 books, named in Cyrillic) live in the repo root. GitHub has a 100 MiB file limit — hosting for large files is an open risk noted in `roadmap.md`. Do not add new large binaries without a hosting plan.
+
+_Dr. Mārcis Gasūns_

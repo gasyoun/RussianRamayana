@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 # trayoviṃśaḥ sargaḥ \|\| 23
 
 *PDF: страницы 103 (cтихи 1-16), ….*
@@ -93,3 +95,5 @@ yasya sūryo na tapati bhīto yasya sa mārutaḥ \|\|
 na vāti smāyatāpāṅgi kiṃ tvaṃ tasya na tiṣṭhase \|\| 16
 
 > yasya bhītaḥ …
+
+_Dr. Mārcis Gasūns_

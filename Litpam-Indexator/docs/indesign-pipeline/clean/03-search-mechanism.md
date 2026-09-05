@@ -45,3 +45,5 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 ---
 
 > _Выверено из авто-субтитров: исправлены ошибки распознавания (имена скриптов, стилей и цветов — по_ [`ForIndex.jsxinc`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/%23Indexing.%20Ramayana/ForIndex.jsxinc) _и_ [`CLAUDE.md`](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/CLAUDE.md)_), расставлена пунктуация, добавлена разбивка на шаги. Смысл и порядок действий автора сохранены; сырой файл оставлен как провенанс._
+
+_Dr. Mārcis Gasūns_

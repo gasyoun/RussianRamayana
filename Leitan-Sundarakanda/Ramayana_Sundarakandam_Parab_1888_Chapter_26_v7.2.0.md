@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -512,3 +514,5 @@ prāṇāṃsyakṣyāmi pāpasya rāvaṇasya gatā vaśam \|\| 47
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe ṣaḍiśaḥ sargaḥ \|\| 26 \|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍe ṣaḍviṃśaḥ sargaḥ \|\| 26 \|\|
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -311,3 +313,5 @@ madhuramavitathaṃ jagāda vākyaṃ drumaviṭapāntaramāsthito hanūmān \|\
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe triṃśaḥ sargaḥ \|\| 30
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyatilake vālmīkīya ādikāvye sundarakāṇḍe triśaḥ sargaḥ \|\| 30 \|\|
+
+_Dr. Mārcis Gasūns_

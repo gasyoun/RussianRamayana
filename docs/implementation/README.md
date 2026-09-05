@@ -1,3 +1,5 @@
+_Created: 15-05-2026 · Last updated: 05-09-2026_
+
 # Implementation Plan
 
 Цель: дать Gemini Flash маленький, проверяемый путь внедрения, без попытки сразу перестроить весь сайт.
@@ -89,3 +91,5 @@
 - `verification-and-tests.md`;
 - `verification-automated.md`;
 - `verification-manual.md`.
+
+_Dr. Mārcis Gasūns_

@@ -936,3 +936,5 @@ _Dr. Mārcis Gasūns_
 > - яджурведа
 > - ямуна
 > - янтра
+
+_Dr. Mārcis Gasūns_

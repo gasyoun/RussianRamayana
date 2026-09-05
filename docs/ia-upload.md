@@ -1,3 +1,5 @@
+_Created: 12-06-2026 · Last updated: 05-09-2026_
+
 # Манифест загрузки аудиокниги 1986 г. на Internet Archive
 
 Подготовка: Фаза 1 [DH-роадмапа](DH_ROADMAP.md). Все 7 MP3 присутствуют локально
@@ -77,3 +79,5 @@ ia upload ramayana-russian-1986 \
    книги 5–6 перевести в `status: "available"`.
 3. В [audio.html](../audio.html) убрать формулу «превышает лимит GitHub»; добавить ссылку на item.
 4. Только после проверки плеера — чистка git-истории (`git filter-repo`, см. Фазу 1 роадмапа).
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -202,3 +204,5 @@ anena coktaṃ yadidaṃ mamāgrato vanaukasā tacca tathāstu nānyathā \|\| 1
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe dvātriṃśaḥ sargaḥ \|\|32\|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍe dvātriṃśaḥ sargaḥ \|\| 32 \|\|
+
+_Dr. Mārcis Gasūns_

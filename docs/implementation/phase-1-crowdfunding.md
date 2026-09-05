@@ -1,3 +1,5 @@
+_Created: 15-05-2026 · Last updated: 05-09-2026_
+
 # Phase 1: Crowdfunding Skeleton
 
 ## Цель
@@ -81,3 +83,5 @@
 - Нет новых больших файлов.
 - Старые аудио-плееры работают как прежде.
 - В `CHANGELOG.md` есть запись о фазе 1.
+
+_Dr. Mārcis Gasūns_

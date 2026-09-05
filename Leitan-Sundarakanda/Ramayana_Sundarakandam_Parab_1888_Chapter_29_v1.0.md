@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -78,3 +80,5 @@ aśobhatāryā vadanena śukle śītāṃśunā rātririvoditena \|\| 8
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍa ekonatriṃśaḥ sargaḥ \|\| 29 \|\|
 
 > iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍa ekonatriṃśaḥ sargaḥ \|\| 29 \|\|
+
+_Dr. Mārcis Gasūns_

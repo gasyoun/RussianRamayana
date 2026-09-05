@@ -1,3 +1,5 @@
+_Created: 12-06-2026 · Last updated: 05-09-2026_
+
 # Лицензия на данные / Data licence
 
 Структурированные данные этого репозитория — каталожные и библиографические
@@ -15,4 +17,6 @@ https://github.com/gasyoun/RussianRamayana, CC BY 4.0».
 - программный код сайта (HTML/CSS/JS, Python-скрипты) — лицензия
   [Apache 2.0](LICENSE);
 - тексты переводов, аудиозаписи, изображения и видео — права на каждый
-  материал указаны в реестре [docs/RIGHTS.md](docs/RIGHTS.md).
+  материал указаны в реестре [docs/RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md).
+
+_Dr. Mārcis Gasūns_

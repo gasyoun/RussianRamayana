@@ -1,3 +1,5 @@
+_Created: 08-07-2026 · Last updated: 05-09-2026_
+
 # Отчёт валидатора словаря
 
 _Автосгенерировано_ `Litpam-Indexator/tools/validate_dictionary.py` _(H363). Перегенерировать:_ `python tools/validate_dictionary.py <xlsx> --report <файл>`_._
@@ -79,3 +81,4 @@ _чисто_
 
 _чисто_
 
+_Dr. Mārcis Gasūns_

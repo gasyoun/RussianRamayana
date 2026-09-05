@@ -1,3 +1,5 @@
+_Created: 07-07-2026 · Last updated: 05-09-2026_
+
 ॥ श्रीः॥ ॥śrīḥ॥
 
 ādikaviśrīvālmīkimahāmunipraṇītaṃ
@@ -1768,3 +1770,5 @@ praviśuḥ praviviśuḥ \|\| 45 \|\| 46 \|\|
 ityārṣe śrīmadrāmāyaṇe vālmīkīya ādikāvye sundarakāṇḍe dvāviṃśaḥ sargaḥ \|\| 22 \|\|
 
 iti śrīrāmābhirāme śrīrāmīye rāmāyaṇatilake vālmīkīya ādikāvye sundarakāṇḍe dvāviṃśaḥ sargaḥ \|\| 22 \|\|
+
+_Dr. Mārcis Gasūns_
