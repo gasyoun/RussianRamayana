@@ -4,6 +4,10 @@ _Created: 14-05-2026 · Last updated: 05-09-2026_
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-09-13
+
+- Added a root `AGENTS.md` agent-entrypoint stub (H4634): names itself the agent entrypoint, links [CLAUDE.md](CLAUDE.md), points at the [Uprava org standard](https://github.com/gasyoun/Uprava/blob/main/AGENTS.md).
+
 ## 2026-09-01
 
 ### CI: job `Pytest` починен — 25 из 34 тестов не запускались ни разу
