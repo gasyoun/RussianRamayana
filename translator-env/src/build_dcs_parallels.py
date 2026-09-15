@@ -216,8 +216,11 @@ def layer_text(layer):
 
 
 def write_layer(layer):
-    with gzip.open(LAYER_GZ, "wt", encoding="utf-8", compresslevel=9, newline="") as fh:
-        fh.write(layer_text(layer))
+    """Записать слой; gzip с mtime=0 — контейнер воспроизводим байт-в-байт."""
+    payload = layer_text(layer).encode("utf-8")
+    with open(LAYER_GZ, "wb") as raw:
+        with gzip.GzipFile(fileobj=raw, mode="wb", compresslevel=9, mtime=0) as gz:
+            gz.write(payload)
 
 
 def read_layer():
