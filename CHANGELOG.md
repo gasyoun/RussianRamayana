@@ -1,8 +1,22 @@
-_Created: 14-05-2026 · Last updated: 05-09-2026_
+_Created: 14-05-2026 · Last updated: 15-09-2026_
 
 # Changelog
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
+
+## 2026-09-15
+
+- H4706 (OxAlpha): слой параллельных пассажей DCS для сносок переводчика —
+  kosha-датасет `dcs-parallel-passages-full` (PARA/Polnorazmernye) инвертирован
+  в per-passage контекст: [build_dcs_parallels.py](translator-env/src/build_dcs_parallels.py)
+  (dry-run/`--emit`/`--check`), слой [dcs_parallels.tsv.gz](translator-env/data/dcs_parallels.tsv.gz)
+  (167 строк, GOOD 64 / PARTLY 103, 51% сторон локованы в корпус),
+  срез под пилот Сундары 1–2 ([JSON](translator-env/data/dcs_parallels_sundara_s01_s02.json)),
+  отчёт [DCS_PARALLELS_JOIN_REPORT_15-09-2026.md](translator-env/DCS_PARALLELS_JOIN_REPORT_15-09-2026.md).
+  Главная находка: экспорт содержит всего 240 выравниваний с участием Рамаяны —
+  точечный контекст (Сундара 28–66), не сплошной; для сплошной покрышки —
+  конкорданс B3 или Stopovye (отдельное решение). Проверка: 20/20
+  export-parity (seed=4706). Edge зарегистрирован в Uprava interlinks_edges.tsv.
 
 ## 2026-09-13
 

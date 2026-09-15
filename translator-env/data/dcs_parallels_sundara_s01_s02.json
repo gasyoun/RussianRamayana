@@ -1,0 +1,70 @@
+{
+ "1.155": [
+  {
+   "delta": "+ vā - mad",
+   "direction": "src",
+   "half_src_file": "248_1--606.csv",
+   "label": "Rāmāyaṇa Rām",
+   "passage": "",
+   "ram_text": "āgamiṣyāmi te vaktraṁ satyaṁ pratiśṛṇomi te ||",
+   "ref_raw": "Rāmāyaṇa Rām, 5, 56: 380 26",
+   "text": "atha maithilīṁ dṛṣṭvā rāmaṁ cākliṣṭakāriṇam |āgamiṣyāmi te vaktraṁ satyaṁ pratiśṛṇoti me ||",
+   "verdict": "PARTLY",
+   "work": ""
+  }
+ ],
+ "1.156": [
+  {
+   "delta": "+ hanumant - tu",
+   "direction": "src",
+   "half_src_file": "248_1--606.csv",
+   "label": "Rāmāyaṇa Rām",
+   "passage": "",
+   "ram_text": "abravīnnātivartenmāṁ kaścid eṣa varo mama ||",
+   "ref_raw": "Rāmāyaṇa Rām, 5, 56: 380 27",
+   "text": "evam uktā mayā sā tu surasā kāmarūpiṇī |abravīnnātivarteta kaścid eṣa varo mama ||",
+   "verdict": "PARTLY",
+   "work": ""
+  }
+ ],
+ "2.39": [
+  {
+   "delta": "+ vipad - vinaś",
+   "direction": "src",
+   "half_src_file": "248_1--606.csv",
+   "label": "Рамаяна V (Сундара)",
+   "passage": "2.39",
+   "ram_text": "viklavaṁ dūtam āsādya tamaḥ sūryodaye yathā ||",
+   "ref_raw": "Rāmāyaṇa Rām, 5, 28: 352 37",
+   "text": "bhūtāścārthā vinaśyanti deśakālavirodhitāḥ |viklavaṁ dūtam āsādya tamaḥ sūryodaye yathā ||",
+   "verdict": "PARTLY",
+   "work": "05_ramayana-sundarakanda"
+  },
+  {
+   "delta": "+ vinaś - vipad",
+   "direction": "src",
+   "half_src_file": "248_1--606.csv",
+   "label": "Rāmāyaṇa Rām",
+   "passage": "",
+   "ram_text": "viklavaṁ dūtam āsādya tamaḥ sūryodaye yathā ||",
+   "ref_raw": "Rāmāyaṇa Rām, 5, 2: 326 37",
+   "text": "bhūtāścārthā vipadyante deśakālavirodhitāḥ |viklavaṁ dūtam āsādya tamaḥ sūryodaye yathā ||",
+   "verdict": "PARTLY",
+   "work": ""
+  }
+ ],
+ "2.40": [
+  {
+   "delta": "+ vipad - vinaś",
+   "direction": "src",
+   "half_src_file": "248_1--606.csv",
+   "label": "Рамаяна V (Сундара)",
+   "passage": "2.40",
+   "ram_text": "ghātayanti hi kāryāṇi dūtāḥ paṇḍitamāninaḥ ||",
+   "ref_raw": "Rāmāyaṇa Rām, 5, 28: 352 38",
+   "text": "arthānarthāntare buddhir niścitāpi na śobhate |ghātayanti hi kāryāṇi dūtāḥ paṇḍitamāninaḥ ||",
+   "verdict": "GOOD",
+   "work": "05_ramayana-sundarakanda"
+  }
+ ]
+}
