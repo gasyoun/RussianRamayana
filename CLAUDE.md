@@ -1,4 +1,4 @@
-_Created: 15-05-2026 · Last updated: 05-09-2026_
+_Created: 15-05-2026 · Last updated: 15-09-2026_
 
 # CLAUDE.md
 
@@ -91,5 +91,9 @@ and [interlinks_edges.tsv](https://github.com/gasyoun/Uprava/blob/main/interlink
 ## Large binary assets
 
 MP3 audiobook files (7 books, named in Cyrillic) live in the repo root. GitHub has a 100 MiB file limit — hosting for large files is an open risk noted in `roadmap.md`. Do not add new large binaries without a hosting plan.
+
+## Memory store
+
+This repo keeps a committed memory store at [`.claude/projects/RussianRamayana/memory/`](https://github.com/gasyoun/RussianRamayana/tree/main/.claude/projects/RussianRamayana/memory) per the org Memory-routing rule ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — write dangerous/durable facts there and index each in its `MEMORY.md` (H4547).
 
 _Dr. Mārcis Gasūns_

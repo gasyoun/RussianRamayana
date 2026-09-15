@@ -40,7 +40,9 @@ _private/
 .contributing_audit.txt
 
 # Claude Code local settings/permissions — personal, not shared
-.claude/
+.claude/*
+# committed memory store (H4547)
+!.claude/projects/
 
 # secrets
 .env
