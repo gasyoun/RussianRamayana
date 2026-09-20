@@ -1,7 +1,9 @@
 # Среда переводчика Рамаяны (книги 5–7): автосноски по трудным словам — роадмап
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 20-09-2026_
 
+
+> **Truth-pass 20-09-2026** — `roadmap_handoff_truth.py --check` verified every H### handoff referenced below DONE/terminal against the combined registry (0 OPEN). Backlog fully drained; page retained in place as the programme record (H3075 classification — rulings survive their backlog).
 Авторство аудита и роадмапа: Fable 5 (`claude-fable-5`), рулинги — М. Гасунс (интервью 12-07-2026).
 
 ## 1. Задача
