@@ -110,8 +110,8 @@ python -m pytest Litpam-Indexator/tools/tests
 
 ## Исполнительские границы
 
-1. [H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md): спецификация оформления, defect policy и review packet.
-2. [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md): tooling + corrected workbook + Book-I baseline/conversion/pilot evidence; production formatting начинается после Fable spec, tooling может строиться параллельно.
+1. [H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md): спецификация оформления, defect policy и review packet.
+2. [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md): tooling + corrected workbook + Book-I baseline/conversion/pilot evidence; production formatting начинается после Fable spec, tooling может строиться параллельно.
 3. [H2590 (Sonnet 5) — повторяемое применение print-readiness к книге II](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2590-Sonnet_RussianRamayana_litpam-book2-print-readiness-application_12.08.26.md): отдельный gated handoff после Book-I automated gate.
 
 _Dr. Mārcis Gasūns_

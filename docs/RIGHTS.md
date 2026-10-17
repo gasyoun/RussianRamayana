@@ -52,7 +52,7 @@ _Created: 12-06-2026 · Last updated: 26-08-2026_
 
 _Dr. Mārcis Gasūns_
 
-## Канальная матрица (W0, 06-09-2026 — [H4238](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4238-OxAlpha_RussianRamayana_w0-rights-channel-matrix-500k-allocation_06.09.26.md))
+## Канальная матрица (W0, 06-09-2026 — [H4238](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4238-OxAlpha_RussianRamayana_w0-rights-channel-matrix-500k-allocation_06.09.26.md))
 
 Производная от сводной таблицы выше, без новых правовых утверждений: каждая ячейка
 повторяет основание строки объекта. Легенда: **✓** разрешено · **✗** блокировано ·

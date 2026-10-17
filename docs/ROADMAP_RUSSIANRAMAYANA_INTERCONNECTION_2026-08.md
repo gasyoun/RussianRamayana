@@ -9,7 +9,7 @@ Programme roadmap: [ROADMAP_SPINE_INTERCONNECTION_2026H2.md](https://github.com/
 
 ## Wave 1 — RussianRamayana's wiring change
 
-- [ ] [H3568 (Opus 5)](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3568-Opus_RussianRamayana_interconnect-ramayana-printlane-speculative-edge_26.08.26.md) · medium
+- [ ] [H3568 (Opus 5)](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3568-Opus_RussianRamayana_interconnect-ramayana-printlane-speculative-edge_26.08.26.md) · medium
 
 ## Order and prerequisites
 

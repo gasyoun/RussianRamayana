@@ -3,7 +3,7 @@
 _Created: 06-09-2026 · Last updated: 06-09-2026_
 
 **Статус: ЧЕРНОВИК.** Это исполнение п. 6 волны W0 программы H4093
-([H4238](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4238-OxAlpha_RussianRamayana_w0-rights-channel-matrix-500k-allocation_06.09.26.md)):
+([H4238](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4238-OxAlpha_RussianRamayana_w0-rights-channel-matrix-500k-allocation_06.09.26.md)):
 структура распределения фиксированной цели **500 000 ₽** и запасной путь по гейту V10.
 Сбор НЕ активируется (запуск кампании — отдельное действие W3, после верифицированного
 пакета). Числа-заглушки помечены ⚠️ и заполняются только подтверждёнными

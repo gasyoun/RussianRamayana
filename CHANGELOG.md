@@ -276,7 +276,7 @@ Zenodo DOI, Software Heritage, правки в Wikidata). Ни один пунк
 группы в этом проходе не исполнялся.
 
 Выполнено Opus 5 (`claude-opus-5`) по
-[H3003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3003-Opus_multi_stale-roadmap-s5-dh-narrative-ask-replan_17.08.26.md).
+[H3003](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3003-Opus_multi_stale-roadmap-s5-dh-narrative-ask-replan_17.08.26.md).
 
 ## 2026-08-25
 

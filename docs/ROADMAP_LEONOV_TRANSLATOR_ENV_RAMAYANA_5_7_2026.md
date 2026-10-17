@@ -57,7 +57,7 @@ _Created: 12-07-2026 · Last updated: 20-09-2026_
 
 Запускается параллельно Wave 0 — H765 не ждет пилота.
 
-### Wave 2 — Продакшен книги 6 — [H808](https://github.com/gasyoun/Uprava/blob/main/handoffs/H808-Opus_RussianRamayana_translator-env-wave2-all-sargas-log499_12.07.26.md)
+### Wave 2 — Продакшен книги 6 — [H808](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H808-Opus_RussianRamayana_translator-env-wave2-all-sargas-log499_12.07.26.md)
 
 Листы по всем саргам Юддхи в выбранной Леоновым форме (остальные две — по запросу). Подключение экспортированного лога запросов как сигнала (в) и селф-TM как сигнала (г). Регенерация — одна команда на саргу.
 

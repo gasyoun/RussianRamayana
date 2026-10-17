@@ -55,7 +55,7 @@ Full rulings table with every fork:
 
 ## Handoff
 
-- [H3568 (Opus 5) — interconnect ramayana printlane speculative edge](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3568-Opus_RussianRamayana_interconnect-ramayana-printlane-speculative-edge_26.08.26.md) · medium · 🟡 queued
+- [H3568 (Opus 5) — interconnect ramayana printlane speculative edge](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3568-Opus_RussianRamayana_interconnect-ramayana-printlane-speculative-edge_26.08.26.md) · medium · 🟡 queued
 
 ## Autonomy contract
 

@@ -12,7 +12,7 @@ _Created: 14-08-2026 · Last updated: 14-08-2026_
 ## Провенанс
 
 - Автор: Fable 5 (`claude-fable-5`), сессия
-  [H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md),
+  [H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md),
   14-08-2026.
 - Метод: измерение текстовых спанов обоих PDF-пруфов 12.10.25 (PyMuPDF: шрифт,
   кегль, x-координаты строк по всем полосам указателей + смежные полосы), сверка

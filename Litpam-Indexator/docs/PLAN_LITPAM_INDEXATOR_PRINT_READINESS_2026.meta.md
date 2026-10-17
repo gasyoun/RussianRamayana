@@ -14,7 +14,7 @@ _Created: 12-08-2026 · Last updated: 14-08-2026_
 
 - Аудит и интервью: Codex Sol (`gpt-5.6-sol`) + М. Гасунс, 11–12-08-2026.
 - Источники: repo state, git/GitHub, PDF renders/text/font metadata, IDML structure, MANUAL, предыдущие H355/H363/H377 и org hubs.
-- Следующая закалка: [H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md), [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md) и [H2590 (Sonnet 5) — повторяемое применение print-readiness к книге II](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2590-Sonnet_RussianRamayana_litpam-book2-print-readiness-application_12.08.26.md).
+- Следующая закалка: [H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md), [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md) и [H2590 (Sonnet 5) — повторяемое применение print-readiness к книге II](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2590-Sonnet_RussianRamayana_litpam-book2-print-readiness-application_12.08.26.md).
 
 ## Бэклог улучшений
 

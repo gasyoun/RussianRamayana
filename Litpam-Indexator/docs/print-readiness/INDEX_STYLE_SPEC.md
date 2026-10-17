@@ -6,7 +6,7 @@ _Created: 14-08-2026 · Last updated: 14-08-2026_
 (серия «Литературные памятники»). Контракт первой волны
 [PLAN](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/PLAN_LITPAM_INDEXATOR_PRINT_READINESS_2026.md)
 / [IMPLEMENTATION](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/IMPLEMENTATION_LITPAM_INDEXATOR_PRINT_READINESS.md),
-шаг 1 (Fable 5, [H2588](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md)).
+шаг 1 (Fable 5, [H2588](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md)).
 Машиночитаемые параметры — в
 [config/print-readiness.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/config/print-readiness.json);
 политика дефектов — в
@@ -161,7 +161,7 @@ FAIL: recto-колонтитул называет не тот указатель
   Machine-check по диапазонам из
   [config/print-readiness.json](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/config/print-readiness.json)
   (`notes_bold_page_ranges`; заполняются при снятии baseline IDML в
-  [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md)).
+  [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md)).
 - В диапазоне из двух полужирных локаторов тире наследует полужирность. Наблюдено
   regular-тире между bold-концами («539–541», том II) — cosmetic FAIL, очередь.
 - Полужирная первая литера заголовочного слова (том II, стр. 630: «**А**гастья») —
@@ -229,7 +229,7 @@ material FAIL по рулингу 21 (наблюдение тома II — §11-
 ## 11. Наблюдаемые межтомные различия — классификация
 
 Обязательная таблица evidence
-([H2588](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md)).
+([H2588](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md)).
 Классы: **intentional** (записанное exception, рулинг 30) · **defect**
 (нарушение контракта, в ledger) · **review-required** (гипотеза, нужно
 подтверждение человека; работа НЕ блокируется — применяется отмеченный default).
@@ -243,7 +243,7 @@ material FAIL по рулингу 21 (наблюдение тома II — §11-
 | D5 | Verso-колонтитул «Приложения»: Regular (I) ↔ Italic (II); recto в обоих — Italic | review-required | Default: Italic в обоих томах (внутренняя симметрия verso/recto; совпадает с томом II). Обратимо; строка decision-log. |
 | D6 | Фурнитура полос-открытий: том I стр. 415 — спусковая без колонтитула/колонцифры, остальные открытия I и все открытия II — с фурнитурой | review-required | Default: спуск без фурнитуры ТОЛЬКО на первой полосе блока указателей каждого тома (модель тома I, стр. 415); открытия внутри блока — с фурнитурой. Том II стр. 630 при регенерации теряет колонтитул/колонцифру. Обратимо; строка decision-log. |
 | D7 | Полужирная первая литера «**А**гастья» (II, стр. 630) — только у первой статьи первого указателя | defect (material) | Утечка символьного стиля на первую литеру. В ledger; чинится при регенерации. |
-| D8 | Том II: три полосы 627–629 несут ТОЛЬКО колонцифру и колонтитул (чередующиеся «Список сокращений»/«Приложение») без единой строки набора; в томе I стыка-пустот нет (414 → 415 подряд) | review-required | Гипотеза: пустые текстовые фреймы/артефакт вёрстки, а не намеренные вакаты (вакат не несёт фурнитуры). Полосы вне блока указателей — молча не чинить (guardrail); строка WAITING в ledger, диагностика на baseline IDML в [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md). |
+| D8 | Том II: три полосы 627–629 несут ТОЛЬКО колонцифру и колонтитул (чередующиеся «Список сокращений»/«Приложение») без единой строки набора; в томе I стыка-пустот нет (414 → 415 подряд) | review-required | Гипотеза: пустые текстовые фреймы/артефакт вёрстки, а не намеренные вакаты (вакат не несёт фурнитуры). Полосы вне блока указателей — молча не чинить (guardrail); строка WAITING в ledger, диагностика на baseline IDML в [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md). |
 | D9 | Regular-тире внутри полужирного диапазона «539–541» (II) | defect (cosmetic) | Очередь; правило §7.3. |
 | D10 | Двойной пробел после тире-глоссы «Аламбуша —␣␣апсара» (II, стр. 630) | defect (cosmetic) | Очередь; правило §7.1. |
 
@@ -252,7 +252,7 @@ material FAIL по рулингу 21 (наблюдение тома II — §11-
 Составлено Fable 5 (`claude-fable-5`) по PDF-пруфам 12.10.25 (метод — §1), MANUAL
 конвейера и решениям
 [PLAN](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/PLAN_LITPAM_INDEXATOR_PRINT_READINESS_2026.md).
-Handoff: [H2588](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md).
+Handoff: [H2588](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md).
 Ни один production-файл (packages, PDF, XLSX, `.jsx`) не изменялся.
 
 _Dr. Mārcis Gasūns_

@@ -6,7 +6,7 @@ _Created: 14-08-2026 · Last updated: 14-08-2026_
 (рулинги 15, 20
 [PLAN](https://github.com/gasyoun/RussianRamayana/blob/main/Litpam-Indexator/docs/PLAN_LITPAM_INDEXATOR_PRINT_READINESS_2026.md)).
 Машинную половину (полный проход каждой ссылки и каждой статьи) делает `coverage`
-из [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md);
+из [H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md);
 этот чек-лист НЕ выборка вместо машинной полноты, а выборка для того, что машина
 не оценивает (визуальное качество, редакционная точность глосс).
 
@@ -27,7 +27,7 @@ _Created: 14-08-2026 · Last updated: 14-08-2026_
 | A3 | 3 алфавитно первые статьи ровно с одним локатором | минимальный случай; частая точка потери статьи |
 | A4 | Все статьи с ≥3 подстатьями; если их >5 — алфавитно первые 5 | иерархия уровня 2, отступы 17/40 pt, orphan-контроль |
 | A5 | Все пары статей, различающиеся только регистром/вариантом написания (из отчёта валидатора словника); если пар >5 — первые 5 по листу | случайные дубли против законных вариантов «, или» |
-| A6 | Все строки, затронутые исправлениями словника (43 операции ledger из [H2589 (Sonnet 5)](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md), шаг 3) и попавшие в данный указатель | исправление дошло до печати и не породило соседний дефект |
+| A6 | Все строки, затронутые исправлениями словника (43 операции ledger из [H2589 (Sonnet 5)](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md), шаг 3) и попавшие в данный указатель | исправление дошло до печати и не породило соседний дефект |
 | A7 | 5 алфавитно первых статей, содержащих диапазон «–» | en dash, отсутствие отбивок, возрастание |
 | A8 | 5 алфавитно первых статей с полужирными локаторами + 2 статьи со СМЕШАННЫМИ (bold и regular) локаторами | семантика §7.3 spec, вес тире в диапазонах |
 | A9 | ВСЕ ссылки «см.» регенерированного указателя, если их ≤10; иначе каждая ⌈N/10⌉-я по порядку следования, начиная с первой, плюс последняя | модель §7.5 spec; адресат существует; алфавитное место. Печать 2025 тома I ссылок не содержит (D3 spec) — выборка живёт на регенерате |

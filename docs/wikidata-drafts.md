@@ -67,7 +67,7 @@ JSON-LD страниц (`sameAs`).
 
 ## Замер 26-08-2026 (H3558) — что удалось и что нет
 
-Проверка проведена в рамках [H3558](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3558-Opus_multi_stale-roadmap-s5-lane-a-residuals_26.08.26.md)
+Проверка проведена в рамках [H3558](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3558-Opus_multi_stale-roadmap-s5-lane-a-residuals_26.08.26.md)
 (Opus 5, `claude-opus-5`) по пункту «Идентификаторы людей» Фазы 3
 [docs/DH_ROADMAP.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/DH_ROADMAP.md).
 Метод: `wbsearchentities` (Wikidata API, `language=ru` и `language=en`) и

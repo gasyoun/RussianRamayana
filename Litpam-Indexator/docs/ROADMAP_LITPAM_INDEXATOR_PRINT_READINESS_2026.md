@@ -6,11 +6,11 @@ _Created: 12-08-2026 · Last updated: 12-08-2026_
 
 ## Wave 0A — print-контракт (Fable 5)
 
-[H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md) фиксирует style spec, defect policy и deterministic review packet. Это первый обязательный запуск.
+[H2588 (Fable 5) — общий print-контракт четырёх указателей книг I–II](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2588-Fable_RussianRamayana_litpam-index-style-print-contract_12.08.26.md) фиксирует style spec, defect policy и deterministic review packet. Это первый обязательный запуск.
 
 ## Wave 0B / Wave 1 — детерминированный фундамент и книга I (Sonnet 5, 5–8 ч)
 
-[H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md) может строить tooling параллельно H2588, но production formatting начинает после print-контракта.
+[H2589 (Sonnet 5) — deterministic tooling и print-readiness пилот книги I](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2589-Sonnet_RussianRamayana_litpam-book1-print-readiness-pilot_12.08.26.md) может строить tooling параллельно H2588, но production formatting начинает после print-контракта.
 
 1. Зафиксировать manifests/checksums оригиналов 2025 и baseline-экспорты InDesign 2022.
 2. Создать версионную копию XLSX; применить 43 детерминированные коррекции с before/after ledger; добиться чистого validator run.

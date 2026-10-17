@@ -47,7 +47,7 @@ _Created: 12-06-2026 · Last updated: 01-09-2026_
 - [x] Создать `.ai_state.md` по орг-конвенции (см. CLAUDE.md уровня GitHub/). — готово 2026-06-12; живой журнал с 4 каноническими секциями.
 - [x] Разобрать `_meta/`: рабочие документы (AUDIT.md, FAQ.md, HANDOFF.md, стайлгайды) → `docs/internal/`; AI-сгенерированные PNG-черновики дизайна — удалить из трекинга (вычистятся из истории в Фазе 1). — готово 2026-06-12: disposition = `_meta/` в `.gitignore` (RuWritingStyles-скрапы, не портальный контент); `docs/internal/` не создавался. PNG-черновики выйдут из истории в Фазе 1 вместе с MP3.
 - [x] Проверить, что `cover-og.png` (указан в OpenGraph) реально существует и отдаётся. — готово 2026-06-12: [`web-src/cover-og.png`](https://github.com/gasyoun/RussianRamayana/blob/main/web-src/cover-og.png) (1200×630); OG на страницах указывает на `…/web-src/cover-og.png`.
-- [x] В `js/utils.js` и страницах — подготовить точку замены URL аудио (сейчас `raw.githubusercontent.com`, это нестабильный хостинг медиа). — готово 2026-08-01 ([H2061](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2061-Grok_RussianRamayana_dh-phase0-audio-url-switch_01.08.26.md)): `resolveAudioUrl(track)` в [`js/utils.js`](https://github.com/gasyoun/RussianRamayana/blob/main/js/utils.js) предпочитает `ia_url` → `url`; wired в `audio.html`, `index.html`, `media.html`. Фаза 1 заполняет `ia_url` — плееры переключатся без правок страниц.
+- [x] В `js/utils.js` и страницах — подготовить точку замены URL аудио (сейчас `raw.githubusercontent.com`, это нестабильный хостинг медиа). — готово 2026-08-01 ([H2061](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2061-Grok_RussianRamayana_dh-phase0-audio-url-switch_01.08.26.md)): `resolveAudioUrl(track)` в [`js/utils.js`](https://github.com/gasyoun/RussianRamayana/blob/main/js/utils.js) предпочитает `ia_url` → `url`; wired в `audio.html`, `index.html`, `media.html`. Фаза 1 заполняет `ia_url` — плееры переключатся без правок страниц.
 
 ## Фаза 1 — Аудио → Internet Archive + чистка git-истории (≈1 неделя)
 
@@ -100,7 +100,7 @@ _Created: 12-06-2026 · Last updated: 01-09-2026_
 
 ## Статус-проверка 26-08-2026 (H3003) — кто разблокирует каждый открытый пункт
 
-Проверка проведена в рамках [H3003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3003-Opus_multi_stale-roadmap-s5-dh-narrative-ask-replan_17.08.26.md)
+Проверка проведена в рамках [H3003](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3003-Opus_multi_stale-roadmap-s5-dh-narrative-ask-replan_17.08.26.md)
 (Opus 5, `claude-opus-5`). Метод: каждый открытый чек-бокс сверялся с диском —
 наличие файлов, подсчёт заполненных полей по каждому JSON, имена job в `ci.yml`,
 `git ls-files`, измерение `.git`. Проза роадмапа и README доказательством не считались.
