@@ -6,6 +6,18 @@ _Created: 14-05-2026 · Last updated: 30-10-2026_
 
 ## 2026-10-30
 
+- H7506 (OxAlpha, GLM 5.3 Flash via ZCode): **реальный замок закрытого раздела
+  [drafts.html](https://github.com/gasyoun/RussianRamayana/blob/main/drafts.html)**
+  вместо плейсхолдера (вердикт М.Г. 30-10-2026, дрен-ревизия гейтов) — SHA-256
+  через Web Crypto ([js/drafts-gate.js](https://github.com/gasyoun/RussianRamayana/blob/main/js/drafts-gate.js)),
+  default-deny при незаданном хеше (никакой ввод раздел не открывает), анти-брутфорс:
+  после 4 отказов блок-пауза 30 с с удвоением, кап 15 мин, счётчик в `localStorage`.
+  Пароль в репозиторий не попадает: однострочник генерации хеша и порядок смены —
+  в [SECURITY.md](https://github.com/gasyoun/RussianRamayana/blob/main/SECURITY.md)
+  («Пароль закрытого раздела drafts.html»). До задания пароля М.Г. раздел закрыт
+  (default-deny). Тесты: [tests/test_drafts_gate.py](https://github.com/gasyoun/RussianRamayana/blob/main/tests/test_drafts_gate.py)
+  — absence-grep по репо + 4 сценария под node (отказ / default-deny / вход / кап).
+
 - Дрен-ревизия гейтов (GLM 5.3 via ZCode, М.Г. интерактив): **правовой гейт
   IA-item снят** — права наследников Потаповой получены (слова М.Г. 30-10-2026);
   [docs/RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md) «Открытые вопросы» № 1 закрыт (вариант (а)),

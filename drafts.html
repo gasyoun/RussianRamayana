@@ -303,20 +303,39 @@
 </div>
 
 <script src="js/utils.js"></script>
+<script src="js/drafts-gate.js"></script>
 <script>
-/* ВНИМАНИЕ: это НЕ контроль доступа, а только удобство интерфейса.
-   Сайт статический: data/drafts.json доступен по прямой ссылке, а этот хеш
-   виден в исходнике. Поэтому в data/drafts.json НЕЛЬЗЯ класть подлинно
-   приватный подписочный текст — только публично-безопасные тизеры; реальные
-   рабочие материалы держите за настоящей авторизацией платформы подписки.
-   См. SECURITY.md. (При PLACEHOLDER_HASH калитка открывается любым вводом.) */
-const PASSWORD_HASH = 'PLACEHOLDER_HASH';
+/* Замок закрытого раздела (H7506). Логика — в js/drafts-gate.js, здесь
+   только конфиг и DOM-обвязка. PASSWORD_HASH — SHA-256 (hex) пароля
+   подписчика. Пустая строка или плейсхолдер → default-deny: раздел не
+   открывается никаким вводом. Как задать/сменить пароль — раздел
+   «Пароль закрытого раздела drafts.html» в SECURITY.md.
 
-async function sha256(message) {
-  const msgBuffer = new TextEncoder().encode(message);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+   По-прежнему ВАЖНО: это удобство интерфейса, не контроль доступа —
+   data/drafts.json доступен по прямой ссылке, поэтому в нём только
+   публично-безопасные тизеры. См. SECURITY.md. */
+const PASSWORD_HASH = '';
+
+const gateEl = document.getElementById('password-gate');
+const inputEl = document.getElementById('password-input');
+const submitEl = document.getElementById('password-submit');
+const errorEl = document.getElementById('password-error');
+
+const DENY_MESSAGE = 'Неверный пароль';
+const DEFAULT_DENY_MESSAGE = 'Раздел временно недоступен: вход по паролю приостановлен. Следите за обновлениями.';
+
+function showError(message) {
+  errorEl.textContent = message;
+  errorEl.style.display = 'block';
+}
+
+function hideError() {
+  errorEl.style.display = 'none';
+}
+
+function setFormDisabled(disabled) {
+  inputEl.disabled = disabled;
+  submitEl.disabled = disabled;
 }
 
 async function loadDrafts() {
@@ -352,33 +371,66 @@ async function loadDrafts() {
   });
 }
 
-document.getElementById('password-submit').addEventListener('click', async () => {
-  const input = document.getElementById('password-input').value.trim();
-  const errorEl = document.getElementById('password-error');
+function openDrafts() {
+  hideError();
+  gateEl.style.display = 'none';
+  document.getElementById('draft-content').style.display = 'block';
+  loadDrafts();
+}
 
-  if (!input) return;
+let lockTimer = null;
 
-  if (PASSWORD_HASH === 'PLACEHOLDER_HASH') {
-    document.getElementById('password-gate').style.display = 'none';
-    document.getElementById('draft-content').style.display = 'block';
-    await loadDrafts();
-    return;
-  }
+function startLockCountdown(seconds) {
+  setFormDisabled(true);
+  const until = Date.now() + seconds * 1000;
+  const tick = () => {
+    const left = Math.max(0, Math.ceil((until - Date.now()) / 1000));
+    if (left <= 0) {
+      clearInterval(lockTimer);
+      lockTimer = null;
+      if (RrGate.isConfigured(PASSWORD_HASH)) {
+        setFormDisabled(false);
+        hideError();
+      } else {
+        setFormDisabled(true);
+        showError(DEFAULT_DENY_MESSAGE);
+      }
+      return;
+    }
+    showError('Слишком много попыток. Повторите через ' + left + ' с.');
+  };
+  tick();
+  lockTimer = setInterval(tick, 1000);
+}
 
-  const hash = await sha256(input);
-  if (hash === PASSWORD_HASH) {
-    document.getElementById('password-gate').style.display = 'none';
-    document.getElementById('draft-content').style.display = 'block';
-    errorEl.style.display = 'none';
-    await loadDrafts();
+/* Default-deny уже при загрузке: пока пароль не задан, форма не делает
+   вид, что любой ввод что-то открывает. */
+if (!RrGate.isConfigured(PASSWORD_HASH)) {
+  setFormDisabled(true);
+  showError(DEFAULT_DENY_MESSAGE);
+}
+
+submitEl.addEventListener('click', async () => {
+  if (lockTimer) return;
+  const value = inputEl.value.trim();
+  if (!value) return;
+
+  const verdict = await RrGate.attemptPassword(value, PASSWORD_HASH);
+  if (verdict.status === 'grant') {
+    openDrafts();
+  } else if (verdict.status === 'config-missing') {
+    setFormDisabled(true);
+    showError(DEFAULT_DENY_MESSAGE);
+  } else if (verdict.status === 'locked-out' || verdict.waitSeconds > 0) {
+    startLockCountdown(verdict.waitSeconds);
   } else {
-    errorEl.style.display = 'block';
+    showError(DENY_MESSAGE);
   }
 });
 
-document.getElementById('password-input').addEventListener('keydown', async (e) => {
+inputEl.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
-    document.getElementById('password-submit').click();
+    submitEl.click();
   }
 });
 </script>
