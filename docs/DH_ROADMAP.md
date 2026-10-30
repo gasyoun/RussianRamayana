@@ -1,6 +1,6 @@
 # DH-роадмап: приведение «Русской Рамаяны» к стандартам цифровой гуманитаристики
 
-_Created: 12-06-2026 · Last updated: 01-09-2026_
+_Created: 12-06-2026 · Last updated: 30-10-2026_
 
 > **~~Human-gate 27-08-2026~~ — СНЯТ 01-09-2026** ([H3777](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3777-Opus_RussianRamayana_dh-roadmap-block-diagnose-drain_31.08.26.md), Opus 5 `claude-opus-5`).
 > Врезка требовала «fetch MP3 of books V and VI from Yandex Disk». Выкачивать нечего:
@@ -55,7 +55,7 @@ _Created: 12-06-2026 · Last updated: 01-09-2026_
 Ни один пункт здесь **не** является инженерным «просто сделать».
 
 - [x] **(закрыт замером 01-09-2026, [H3777](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3777-Opus_RussianRamayana_dh-roadmap-block-diagnose-drain_31.08.26.md))** Свести воедино MP3 всех 7 книг. Сводить не пришлось: на Windows-машине (главный чекаут `C:\Users\user\Documents\GitHub\RussianRamayana`) лежат **7 из 7** файлов, и у всех семи совпадают и `size_bytes`, и `sha256` с [data/audio.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/audio.json) и с таблицей [docs/ia-upload.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/ia-upload.md). Медиа не выкачивалось — замерено уже лежащее. Воспроизводится: `python scripts/audio_inventory.py --verify` → `OK — all 7 books present and SHA-256 matched`. Оба прежних «отсутствия» объяснены в разделе «Разрешение противоречия по MP3» ниже; Яндекс Диск для аудио не нужен и никогда не был нужен.
-- [ ] **(C — человек)** Создать item(ы) на archive.org: `ramayana-russian-1986` — все 7 книг, метаданные (чтец Е. Кривецкий, перевод В. Потаповой, 1986), обложки, rights statement. **Блокировано** пунктом «Открытые вопросы» № 1 в [docs/RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md): до урегулирования с наследниками Потаповой item не делается публичным. Черновик процедуры загрузки: [docs/ia-upload.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/ia-upload.md).
+- [ ] **(C — человек)** Создать item(ы) на archive.org: `ramayana-russian-1986` — все 7 книг, метаданные (чтец Е. Кривецкий, перевод В. Потаповой, 1986), обложки, rights statement. **Правовой гейт снят 30-10-2026** (М.Г., дрен-ревизия гейтов): права наследников Потаповой получены — «Открытые вопросы» № 1 в [docs/RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md) решён, item может быть публичным. Остался владелческий шаг: загрузка по черновику [docs/ia-upload.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/ia-upload.md) с IA-аккаунта М.Г. (живая проба 30-10-2026: item ещё не существует, HTTP 404).
 - [ ] **(B — ждёт артефакта)** Дозаполнить [data/audio.json](https://github.com/gasyoun/RussianRamayana/blob/main/data/audio.json). Проверено 26-08-2026: `ia_identifier` **7/7**, `sha256` **7/7**, `rights` **7/7** — не хватает только `ia_url` (**0/7**), а он появляется лишь после предыдущего пункта. Пока поле пусто, `resolveAudioUrl()` из Фазы 0 работает вхолостую и отдаёт старый `url`.
 - [ ] **(C — человек)** Переписать историю (`git filter-repo`): удалить все `*.mp3`/`*.MP3` и `_meta/*.png`-черновики.
   - ⚠️ Force-push: снять/вернуть branch protection; предупредить соавторов о re-clone. Агенту force-push запрещён — это действие человека.
