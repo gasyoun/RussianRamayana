@@ -1,10 +1,18 @@
-_Created: 14-05-2026 · Last updated: 15-09-2026_
+_Created: 14-05-2026 · Last updated: 30-10-2026_
 
 # Changelog
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
-## 2026-09-15
+## 2026-10-30
+
+- Дрен-ревизия гейтов (GLM 5.3 via ZCode, М.Г. интерактив): **правовой гейт
+  IA-item снят** — права наследников Потаповой получены (слова М.Г. 30-10-2026);
+  [docs/RIGHTS.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/RIGHTS.md) «Открытые вопросы» № 1 закрыт (вариант (а)),
+  [docs/DH_ROADMAP.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/DH_ROADMAP.md) чекбокс `ramayana-russian-1986`
+  расшит: осталась загрузка с IA-аккаунта М.Г. по
+  [docs/ia-upload.md](https://github.com/gasyoun/RussianRamayana/blob/main/docs/ia-upload.md) (живая проба 30-10: item ещё не
+  существует, HTTP 404). Узнать приоритет загрузки — GTD @DO.
 
 - H4706 (OxAlpha): слой параллельных пассажей DCS для сносок переводчика —
   kosha-датасет `dcs-parallel-passages-full` (PARA/Polnorazmernye) инвертирован
