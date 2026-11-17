@@ -37,7 +37,7 @@ EXCLUDE = {'drafts.html'}
 # Top-level items to copy into dist (everything the served site needs).
 ASSET_DIRS = ['data', 'js', 'web', 'web-src', 'compare']
 ASSET_FILES = ['style.css', 'sitemap.xml', 'robots.txt', 'datapackage.json',
-               'CITATION.cff']
+               'CITATION.cff', 'llms.txt']
 
 
 def copy_assets():
