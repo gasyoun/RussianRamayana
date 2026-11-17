@@ -1,0 +1,16 @@
+# Русская Рамаяна
+
+> Archive of Russian Ramāyaṇa translations and the project of completing the first full poetic academic translation of Vālmīki's Rāmāyaṇa from Sanskrit — «Гринцер начал, Леонов продолжает».
+
+## Overview
+
+- [Project home](https://gasyoun.github.io/RussianRamayana/) · [About the project](https://gasyoun.github.io/RussianRamayana/project.html) · [How to cite](https://gasyoun.github.io/RussianRamayana/cite.html) · [Support](https://gasyoun.github.io/RussianRamayana/support.html)
+
+## Content
+
+- [Translations](https://gasyoun.github.io/RussianRamayana/translations.html) · [Kāṇḍas (books)](https://gasyoun.github.io/RussianRamayana/kandas.html) · [Compare](https://gasyoun.github.io/RussianRamayana/compare/)
+- [Characters](https://gasyoun.github.io/RussianRamayana/characters.html) · [Timeline](https://gasyoun.github.io/RussianRamayana/timeline.html) · [Map (Leaflet)](https://gasyoun.github.io/RussianRamayana/ramayana-map-leaflet.html)
+- [Recensions](https://gasyoun.github.io/RussianRamayana/recensions.html) · [Reception](https://gasyoun.github.io/RussianRamayana/reception.html) · [Bibliography](https://gasyoun.github.io/RussianRamayana/bibliography.html)
+- [Audio](https://gasyoun.github.io/RussianRamayana/audio.html) · [Media](https://gasyoun.github.io/RussianRamayana/media.html) · [Drafts](https://gasyoun.github.io/RussianRamayana/drafts.html) · [Reports](https://gasyoun.github.io/RussianRamayana/reports.html) · [Rights](https://gasyoun.github.io/RussianRamayana/rights.html)
+
+Source: https://github.com/gasyoun/RussianRamayana
