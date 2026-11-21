@@ -1,8 +1,25 @@
-_Created: 14-05-2026 · Last updated: 30-10-2026_
+_Created: 14-05-2026 · Last updated: 21-11-2026_
 
 # Changelog
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
+
+## 2026-11-21
+
+- H8528 (GLM 5.3 Flash via ZCode): **пилотная контент-линия «Рубрики Рамаяны»**
+  по плану Яны Кокс (Google Groups Sanscrit, 07-01-2020; 9 рубрик → пилот 4:
+  Изречения / Словарь Рамаяны / Переводчики / Календарь). Заведена драфт-очередь
+  [rubrics_queue/](https://github.com/gasyoun/RussianRamayana/tree/main/rubrics_queue):
+  README-контракт (канал-хозяин t.me/samskrtamru по конвенции IndoMemy 27-09-2026,
+  каденс 1 пост/нед ротацией, статусы draft→awaiting-gate→approved→posted, красные
+  линии: Книга VI subscriber-only, права/атрибуция, Эрман=пересказ), queue.tsv
+  (4 слота W48–W51) и первый драфт
+  [drafts/RB1-001.md](https://github.com/gasyoun/RussianRamayana/blob/main/rubrics_queue/drafts/RB1-001.md)
+  — шлoca R.1.18.10 «Рождение Рамы» (деванагари + IAST + дословно + разбор двух форм),
+  текст-only (озвучка — шаг 2), публикация только после MG-гейта. Тег-кандидаты
+  (#рамаянаизречения, #рамаянасловарь, #рамаянапереводчики, #рамаянакалендарь) — на
+  вердикт М.Г.; после вердикта канон-таблица REPORT_HASHTAG_CENSUS_17-09-2026.md
+  в Uprava дополняется. Credit origin плана — Яна Кокс.
 
 ## 2026-10-30
 
