@@ -69,7 +69,7 @@ gate: pending                # pending | approved(MG, дата) | rejected(MG, �
 
 `rubrics_queue/queue.tsv` — TSV, колонки:
 `id · rubric · status · episode · canonical_ref · week · draft_file · posted_at · tg_msg_id`.
-Статусы: `draft` → `awaiting-approve` → `approved` → `posted`. Чек: TSV парсится,
+Статусы: `draft` → `awaiting-gate` → `approved` → `posted`. Чек: TSV парсится,
 каждая строка — валидный статус и валидный формат id `RB<n>-<NNN>`.
 
 ## Сопутствующие страницы сайта (вне скоупа этой очереди)
