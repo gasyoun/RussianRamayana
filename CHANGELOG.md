@@ -6,6 +6,14 @@ _Created: 14-05-2026 · Last updated: 21-11-2026_
 
 ## 2026-11-21
 
+- MG-рулинг 21-11 (вторая волна): **«никакого копипаста, бот сам все»** — публикация
+  линии полностью автоматическая. Заведён [rubrics_queue/poster.py](https://github.com/gasyoun/RussianRamayana/blob/main/rubrics_queue/poster.py)
+  (H8530): Bot API sendMessage в @ramayanaru, селектор `approved`+текущая-неделя,
+  флип `posted`+`tg_msg_id`, `--dry-run` без токена, идемпотентность по posted_at,
+  красная линия «только approved» в коде. Токен — env `RRAM_TG_BOT_TOKEN` или
+  gitignored `.bot_token`; бот-админ в @ramayanaru — MG-шаг. Первая автоматическая
+  публикация — W48 (пн 23-11), RB1-001 approved.
+
 - MG-вердикты 21-11 (интерактив-сессия): **канал-хозяин линии — @ramayanaru**
   «РАМАЯНА — русский академический перевод» (рулинг: главный канал материалов по
   Рамаяне; было t.me/samskrtamru по IndoMemy-конвенции), тег-канон утверждён
