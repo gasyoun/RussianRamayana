@@ -94,7 +94,7 @@ def main():
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     cur = iso_week(args.week)
 
-    picked = [r for r in rows if args.id and r[0] == args.id] or \
+    picked = [r for r in rows if args.id and r[0] == args.id and not r[7]] or \
              [r for r in rows if not args.id
               and r[2] in STATUSES_ALLOWED
               and iso_week(r[5]) == cur
@@ -123,7 +123,7 @@ def main():
             print(body)
             continue
         mid = send(token, body)
-        r[7], r[8] = now, str(mid)
+        r[2], r[7], r[8] = "posted", now, str(mid)
         changed = True
         print("POSTED %s -> %s msg_id=%s" % (r[0], CHANNEL, mid))
 
