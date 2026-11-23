@@ -4,6 +4,18 @@ _Created: 14-05-2026 · Last updated: 21-11-2026_
 
 Рабочий журнал изменений, решений и уточнений по проекту `RussianRamayana`.
 
+## 2026-11-23
+
+- Ночной багхант ([BUGHUNT-FINDINGS-RussianRamayana-23.11.2026.md](https://github.com/gasyoun/RussianRamayana/blob/main/BUGHUNT-FINDINGS-RussianRamayana-23.11.2026.md)):
+  HIGH — переписан [scripts/update-counter.ps1](https://github.com/gasyoun/RussianRamayana/blob/main/scripts/update-counter.ps1):
+  плоская схема счётчика (`collected_rub` вместо `onetime.collected_rub` / `monthly.*`)
+  ломала index.html/support.html и затирала блок monthly; BOM-less UTF-8 с кириллицей
+  не парсился в Windows PowerShell 5.1 (RU-ANSI); анонимные доноры раздували
+  `donor_count` (`anon_N` на каждую строку). Теперь: вложенная схема, monthly
+  сохраняется, UTF-8 BOM в скрипте, вывод BOM-less, доноры по имени. Верифицировано
+  live на реальном PowerShell 5.1 (MSI). MEDIUM/LOW (poster.py re-post hazard,
+  stale bibliography.csl.json, import_donations silent overwrite, 4×LOW) — в отчёте.
+
 ## 2026-11-21
 
 - MG-рулинг 21-11 (вторая волна): **«никакого копипаста, бот сам все»** — публикация
